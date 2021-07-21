@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Archi Validator
+Bundle-SymbolicName: com.archimatetool.hammer;singleton:=true
+Bundle-Localization: plugin
+Bundle-Version: 4.7.1.qualifier
+Bundle-Vendor: Archi
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui,
+ org.eclipse.help.ui,
+ com.archimatetool.editor,
+ com.archimatetool.help
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Activator: com.archimatetool.hammer.ArchiHammerPlugin
+Export-Package: com.archimatetool.hammer,
+ com.archimatetool.hammer.validation,
+ com.archimatetool.hammer.validation.checkers,
+ com.archimatetool.hammer.validation.issues,
+ com.archimatetool.hammer.view
+Automatic-Module-Name: com.archimatetool.hammer

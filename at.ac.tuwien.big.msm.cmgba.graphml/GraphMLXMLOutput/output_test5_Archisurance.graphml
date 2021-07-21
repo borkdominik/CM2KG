@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+     http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">  
+<key id="ClassName" for="node" attr.name="ClassName" attr.type="string"/> 
+<key id="Label" for="node" attr.name="Label" attr.type="string"/> 
+<key id="ArchimateModel_name" for="node" attr.name="ArchimateModel_name" attr.type="string"/> 
+<key id="ArchimateModel_purpose" for="node" attr.name="ArchimateModel_purpose" attr.type="string"/> 
+<key id="ArchimateModel_file" for="node" attr.name="ArchimateModel_file" attr.type="string"/> 
+<key id="ArchimateModel_version" for="node" attr.name="ArchimateModel_version" attr.type="string"/> 
+<key id="Folder_name" for="node" attr.name="Folder_name" attr.type="string"/> 
+<key id="Folder_documentation" for="node" attr.name="Folder_documentation" attr.type="string"/> 
+<key id="Folder_type" for="node" attr.name="Folder_type" attr.type="string"/> 
+<key id="EReference_ReferenceName" for="edge" attr.name="EReference_ReferenceName" attr.type="string"/> 
+<key id="Label" for="edge" attr.name="Label" attr.type="string"/> 
+<graph id="123" edgedefault="undirected"> 
+<node id="id-f0b89fff3d46408abd613bf5e6444ccb"> 
+<data key="ClassName">ArchimateModel</data> 
+<data key="Label">com.archimatetool.model.impl.ArchimateModel@5db6b9cd (name: , id: id-f0b89fff3d46408abd613bf5e6444ccb, purpose: , file: null, version: )</data> 
+<data key="ArchimateModel_name"></data> 
+<data key="ArchimateModel_purpose"></data> 
+<data key="ArchimateModel_file">null</data> 
+<data key="ArchimateModel_version"></data> 
+</node> 
+<node id="id-11a7c6cb0b5d480fa464b36ac89e2aa3"> 
+<data key="ClassName">Folder</data> 
+<data key="Label">com.archimatetool.model.impl.Folder@210ab13f (name: Strategy, id: id-11a7c6cb0b5d480fa464b36ac89e2aa3, documentation: , type: strategy)</data> 
+<data key="Folder_name">Strategy</data> 
+<data key="Folder_documentation"></data> 
+<data key="Folder_type">strategy</data> 
+</node> 
+<node id="id-a89b9d50f704416a8a46e75392f96181"> 
+<data key="ClassName">Folder</data> 
+<data key="Label">com.archimatetool.model.impl.Folder@20b2475a (name: Business, id: id-a89b9d50f704416a8a46e75392f96181, documentation: , type: business)</data> 
+<data key="Folder_name">Business</data> 
+<data key="Folder_documentation"></data> 
+<data key="Folder_type">business</data> 
+</node> 
+<node id="id-9493a682183741618a84d88b7d36dde4"> 
+<data key="ClassName">Folder</data> 
+<data key="Label">com.archimatetool.model.impl.Folder@7857fe2 (name: Application, id: id-9493a682183741618a84d88b7d36dde4, documentation: , type: application)</data> 
+<data key="Folder_name">Application</data> 
+<data key="Folder_documentation"></data> 
+<data key="Folder_type">application</data> 
+</node> 
+<node id="id-78984cba2dca4ae88800b9eccf4d1155"> 
+<data key="ClassName">Folder</data> 
+<data key="Label">com.archimatetool.model.impl.Folder@6f15d60e (name: Technology & Physical, id: id-78984cba2dca4ae88800b9eccf4d1155, documentation: , type: technology)</data> 
+<data key="Folder_name">Technology & Physical</data> 
+<data key="Folder_documentation"></data> 
+<data key="Folder_type">technology</data> 
+</node> 
+<node id="id-3a8deb5b1a1c4f90b7a3b74780d574c2"> 
+<data key="ClassName">Folder</data> 
+<data key="Label">com.archimatetool.model.impl.Folder@1be2019a (name: Motivation, id: id-3a8deb5b1a1c4f90b7a3b74780d574c2, documentation: , type: motivation)</data> 
+<data key="Folder_name">Motivation</data> 
+<data key="Folder_documentation"></data> 
+<data key="Folder_type">motivation</data> 
+</node> 
+<node id="id-c3dcdeda00d142be9ba911a3e2227975"> 
+<data key="ClassName">Folder</data> 
+<data key="Label">com.archimatetool.model.impl.Folder@29d80d2b (name: Implementation & Migration, id: id-c3dcdeda00d142be9ba911a3e2227975, documentation: , type: implementation_migration)</data> 
+<data key="Folder_name">Implementation & Migration</data> 
+<data key="Folder_documentation"></data> 
+<data key="Folder_type">implementation_migration</data> 
+</node> 
+<node id="id-0e311a3f17764733a3ef677ce51f659f"> 
+<data key="ClassName">Folder</data> 
+<data key="Label">com.archimatetool.model.impl.Folder@58e1d9d (name: Other, id: id-0e311a3f17764733a3ef677ce51f659f, documentation: , type: other)</data> 
+<data key="Folder_name">Other</data> 
+<data key="Folder_documentation"></data> 
+<data key="Folder_type">other</data> 
+</node> 
+<node id="id-afc8c3a81ae7405b890b0b688d5196a1"> 
+<data key="ClassName">Folder</data> 
+<data key="Label">com.archimatetool.model.impl.Folder@446a1e84 (name: Relations, id: id-afc8c3a81ae7405b890b0b688d5196a1, documentation: , type: relations)</data> 
+<data key="Folder_name">Relations</data> 
+<data key="Folder_documentation"></data> 
+<data key="Folder_type">relations</data> 
+</node> 
+<node id="id-ac80cb641816465e9591b8989a3f278e"> 
+<data key="ClassName">Folder</data> 
+<data key="Label">com.archimatetool.model.impl.Folder@4f0f2942 (name: Views, id: id-ac80cb641816465e9591b8989a3f278e, documentation: , type: diagrams)</data> 
+<data key="Folder_name">Views</data> 
+<data key="Folder_documentation"></data> 
+<data key="Folder_type">diagrams</data> 
+</node> 
+<edge source="id-f0b89fff3d46408abd613bf5e6444ccb" target="id-11a7c6cb0b5d480fa464b36ac89e2aa3"> 
+<data key="EReference_ReferenceName">folders</data> 
+<data key="Label">folders</data> 
+</edge> 
+<edge source="id-f0b89fff3d46408abd613bf5e6444ccb" target="id-a89b9d50f704416a8a46e75392f96181"> 
+<data key="EReference_ReferenceName">folders</data> 
+<data key="Label">folders</data> 
+</edge> 
+<edge source="id-f0b89fff3d46408abd613bf5e6444ccb" target="id-9493a682183741618a84d88b7d36dde4"> 
+<data key="EReference_ReferenceName">folders</data> 
+<data key="Label">folders</data> 
+</edge> 
+<edge source="id-f0b89fff3d46408abd613bf5e6444ccb" target="id-78984cba2dca4ae88800b9eccf4d1155"> 
+<data key="EReference_ReferenceName">folders</data> 
+<data key="Label">folders</data> 
+</edge> 
+<edge source="id-f0b89fff3d46408abd613bf5e6444ccb" target="id-3a8deb5b1a1c4f90b7a3b74780d574c2"> 
+<data key="EReference_ReferenceName">folders</data> 
+<data key="Label">folders</data> 
+</edge> 
+<edge source="id-f0b89fff3d46408abd613bf5e6444ccb" target="id-c3dcdeda00d142be9ba911a3e2227975"> 
+<data key="EReference_ReferenceName">folders</data> 
+<data key="Label">folders</data> 
+</edge> 
+<edge source="id-f0b89fff3d46408abd613bf5e6444ccb" target="id-0e311a3f17764733a3ef677ce51f659f"> 
+<data key="EReference_ReferenceName">folders</data> 
+<data key="Label">folders</data> 
+</edge> 
+<edge source="id-f0b89fff3d46408abd613bf5e6444ccb" target="id-afc8c3a81ae7405b890b0b688d5196a1"> 
+<data key="EReference_ReferenceName">folders</data> 
+<data key="Label">folders</data> 
+</edge> 
+<edge source="id-f0b89fff3d46408abd613bf5e6444ccb" target="id-ac80cb641816465e9591b8989a3f278e"> 
+<data key="EReference_ReferenceName">folders</data> 
+<data key="Label">folders</data> 
+</edge> 
+</graph> 
+</graphml> 

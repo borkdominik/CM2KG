@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+     http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">  
+<key id="ClassName" for="node" attr.name="ClassName" attr.type="string"/> 
+<key id="Label" for="node" attr.name="Label" attr.type="string"/> 
+<key id="Store_name" for="node" attr.name="Store_name" attr.type="string"/> 
+<key id="Book_id" for="node" attr.name="Book_id" attr.type="string"/> 
+<key id="Worker_workerName" for="node" attr.name="Worker_workerName" attr.type="string"/> 
+<key id="EReference_ReferenceName" for="edge" attr.name="EReference_ReferenceName" attr.type="string"/> 
+<key id="Label" for="edge" attr.name="Label" attr.type="string"/> 
+<graph id="123" edgedefault="undirected"> 
+<node id="1646464088"> 
+<data key="ClassName">Store</data> 
+<data key="Label">tmodel.impl.StoreImpl@62230c58 (name: Store name)</data> 
+<data key="Store_name">Store name</data> 
+</node> 
+<node id="1950701640"> 
+<data key="ClassName">Book</data> 
+<data key="Label">tmodel.impl.BookImpl@74455848 (id: Book1)</data> 
+<data key="Book_id">Book1</data> 
+</node> 
+<node id="243194708"> 
+<data key="ClassName">Book</data> 
+<data key="Label">tmodel.impl.BookImpl@e7edb54 (id: Book2)</data> 
+<data key="Book_id">Book2</data> 
+</node> 
+<node id="931480286"> 
+<data key="ClassName">Worker</data> 
+<data key="Label">tmodel.impl.WorkerImpl@378542de (workerName: Worker Name 1)</data> 
+<data key="Worker_workerName">Worker Name 1</data> 
+</node> 
+<node id="926434463"> 
+<data key="ClassName">Worker</data> 
+<data key="Label">tmodel.impl.WorkerImpl@3738449f (workerName: Worker Name 2)</data> 
+<data key="Worker_workerName">Worker Name 2</data> 
+</node> 
+<edge source="1646464088" target="1950701640"> 
+<data key="EReference_ReferenceName">books</data> 
+<data key="Label">books</data> 
+</edge> 
+<edge source="1646464088" target="243194708"> 
+<data key="EReference_ReferenceName">books</data> 
+<data key="Label">books</data> 
+</edge> 
+<edge source="1646464088" target="931480286"> 
+<data key="EReference_ReferenceName">workers</data> 
+<data key="Label">workers</data> 
+</edge> 
+<edge source="1646464088" target="926434463"> 
+<data key="EReference_ReferenceName">workers</data> 
+<data key="Label">workers</data> 
+</edge> 
+</graph> 
+</graphml> 

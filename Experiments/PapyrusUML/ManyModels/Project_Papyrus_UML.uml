@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_s4wY0N-eEei0K-PxqMeh2Q" name="Project_Papyrus_UML" visibility="protected">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_tELlsN-eEei0K-PxqMeh2Q">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_95VfwN-wEei0K-PxqMeh2Q" name="int"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_-OWtgN-wEei0K-PxqMeh2Q" name="String"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_-V4R0N-wEei0K-PxqMeh2Q" name="boolean"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_RVLX8N-yEei0K-PxqMeh2Q" name="double"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_crwOoN-yEei0K-PxqMeh2Q" name="Website">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ClmoUN-2Eei0K-PxqMeh2Q" name="companyList" visibility="private" type="_cKmXcN-0Eei0K-PxqMeh2Q" isUnique="false">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FfAeYN-2Eei0K-PxqMeh2Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FfJBQN-2Eei0K-PxqMeh2Q" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_KcrSQN-2Eei0K-PxqMeh2Q" name="airportList" visibility="private" type="_cKmXcN-0Eei0K-PxqMeh2Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KcrSQd-2Eei0K-PxqMeh2Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KcrSQt-2Eei0K-PxqMeh2Q" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_7BRewN-2Eei0K-PxqMeh2Q" name="returnRouteList" visibility="private" type="_cKmXcN-0Eei0K-PxqMeh2Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7BRewd-2Eei0K-PxqMeh2Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7BRewt-2Eei0K-PxqMeh2Q" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_7BSs4N-2Eei0K-PxqMeh2Q" name="departureRouteList" visibility="private" type="_cKmXcN-0Eei0K-PxqMeh2Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7BSs4d-2Eei0K-PxqMeh2Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7BSs4t-2Eei0K-PxqMeh2Q" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_PteBAN-3Eei0K-PxqMeh2Q" name="hotelList" visibility="private" type="_cKmXcN-0Eei0K-PxqMeh2Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PteBAd-3Eei0K-PxqMeh2Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PteBAt-3Eei0K-PxqMeh2Q" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Ptf2MN-3Eei0K-PxqMeh2Q" name="carList" visibility="private" type="_cKmXcN-0Eei0K-PxqMeh2Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ptf2Md-3Eei0K-PxqMeh2Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ptf2Mt-3Eei0K-PxqMeh2Q" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_p7p2EN_AEei0K-PxqMeh2Q" name="currentAccount" visibility="private" type="_nlq3IN-1Eei0K-PxqMeh2Q"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_jDdPMN_AEei0K-PxqMeh2Q" name="createAccount" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_jDdPMd_AEei0K-PxqMeh2Q" type="_Pv4FsN_AEei0K-PxqMeh2Q" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_jKsfoN_AEei0K-PxqMeh2Q" name="logIn" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_jKsfod_AEei0K-PxqMeh2Q" type="_Pv4FsN_AEei0K-PxqMeh2Q" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_sDH44N_AEei0K-PxqMeh2Q" name="findReservation">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_sDH44d_AEei0K-PxqMeh2Q" type="_Pv4FsN_AEei0K-PxqMeh2Q" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_7xojsN_BEei0K-PxqMeh2Q" name="calculateRoutes" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_dyG_cN_CEei0K-PxqMeh2Q" type="_Pv4FsN_AEei0K-PxqMeh2Q" direction="return"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_olK5YN_CEei0K-PxqMeh2Q" name="destination" type="_n9clUN-yEei0K-PxqMeh2Q"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_1rt44N_CEei0K-PxqMeh2Q" name="departing" type="_n9clUN-yEei0K-PxqMeh2Q"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_AQODUN_MEei0K-PxqMeh2Q" name="Website"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_n9clUN-yEei0K-PxqMeh2Q" name="Airport" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_WnJrEN-2Eei0K-PxqMeh2Q" name="arrivalList" visibility="private" type="_cKmXcN-0Eei0K-PxqMeh2Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WnJrEd-2Eei0K-PxqMeh2Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WnJrEt-2Eei0K-PxqMeh2Q" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZnkIEN-2Eei0K-PxqMeh2Q" name="departureList" visibility="private" type="_cKmXcN-0Eei0K-PxqMeh2Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZnkIEd-2Eei0K-PxqMeh2Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZnkIEt-2Eei0K-PxqMeh2Q" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_bICcUN-2Eei0K-PxqMeh2Q" name="airlineList" visibility="private" type="_cKmXcN-0Eei0K-PxqMeh2Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bICcUd-2Eei0K-PxqMeh2Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bICcUt-2Eei0K-PxqMeh2Q" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ibNxMN_FEei0K-PxqMeh2Q" name="group" visibility="private" type="_95VfwN-wEei0K-PxqMeh2Q"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_yeH3UN_JEei0K-PxqMeh2Q" name="addArrival">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_3MYWMN_JEei0K-PxqMeh2Q" type="_Pv4FsN_AEei0K-PxqMeh2Q" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_AH3qgN_KEei0K-PxqMeh2Q" name="addDeparture">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_AH3qgd_KEei0K-PxqMeh2Q" type="_Pv4FsN_AEei0K-PxqMeh2Q" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_PdOq8N_KEei0K-PxqMeh2Q" name="addAirline">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_PdOq8d_KEei0K-PxqMeh2Q" type="_Pv4FsN_AEei0K-PxqMeh2Q" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_BdknQN_MEei0K-PxqMeh2Q" name="Airport"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_pscdwN-yEei0K-PxqMeh2Q" name="Car" visibility="public">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lZGnAN-3Eei0K-PxqMeh2Q" name="make" visibility="private" type="_-OWtgN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_leA8MN-3Eei0K-PxqMeh2Q" name="model" visibility="private" type="_-OWtgN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lldoAN-3Eei0K-PxqMeh2Q" name="license plate" visibility="private" type="_-OWtgN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_mAy5IN-3Eei0K-PxqMeh2Q" name="isAvailable" visibility="private" type="_-V4R0N-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_mMGKMN-3Eei0K-PxqMeh2Q" name="type" visibility="private" type="_-OWtgN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_mZjXYN-3Eei0K-PxqMeh2Q" name="renter" visibility="private" type="_nlq3IN-1Eei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_mksQYN-3Eei0K-PxqMeh2Q" name="price" visibility="private" type="_95VfwN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_m4WMMN-3Eei0K-PxqMeh2Q" name="mpg" visibility="private" type="_RVLX8N-yEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_m6eTIN-3Eei0K-PxqMeh2Q" name="stars" visibility="private" type="_RVLX8N-yEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_m7ql8N-3Eei0K-PxqMeh2Q" name="miles" visibility="private" type="_RVLX8N-yEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__bOKcN_KEei0K-PxqMeh2Q" name="carRentalLocation" visibility="private" type="_VvricN-0Eei0K-PxqMeh2Q"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_HTAwoN_MEei0K-PxqMeh2Q" name="Car"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_qf9lYN-yEei0K-PxqMeh2Q" name="Company" visibility="public" isAbstract="true">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_bPkyQN-3Eei0K-PxqMeh2Q" name="name" visibility="private" type="_-OWtgN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_iOkksN-3Eei0K-PxqMeh2Q" name="rating" visibility="private" type="_RVLX8N-yEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fPtD4OE4EeimF4WIzugk2Q" name="multiplier" type="_RVLX8N-yEei0K-PxqMeh2Q"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_lZuz8N_JEei0K-PxqMeh2Q" name="calculatePrice" visibility="public" isAbstract="true">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_uXmG0N_JEei0K-PxqMeh2Q" type="_RVLX8N-yEei0K-PxqMeh2Q" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Eyk0MN_MEei0K-PxqMeh2Q" name="Company"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9WH9oN-zEei0K-PxqMeh2Q" name="Room">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_m-_C4N-7Eei0K-PxqMeh2Q" name="type" visibility="private" type="_-OWtgN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_nA68kN-7Eei0K-PxqMeh2Q" name="price" visibility="private" type="_RVLX8N-yEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_nCzy8N-7Eei0K-PxqMeh2Q" name="occupado" visibility="private" type="_-V4R0N-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_nD-3oN-7Eei0K-PxqMeh2Q" name="number" visibility="private" type="_95VfwN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ylP9kN_KEei0K-PxqMeh2Q" name="hotel" visibility="private" type="_-GlxQN-zEei0K-PxqMeh2Q"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_XulLMN_MEei0K-PxqMeh2Q" name="Room"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_-GlxQN-zEei0K-PxqMeh2Q" name="Hotel">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZMiHAN-4Eei0K-PxqMeh2Q" name="rooms" visibility="private" type="_cKmXcN-0Eei0K-PxqMeh2Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gsBXYN-4Eei0K-PxqMeh2Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gsIFEN-4Eei0K-PxqMeh2Q" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZOyJwN-4Eei0K-PxqMeh2Q" name="guests" visibility="private" type="_cKmXcN-0Eei0K-PxqMeh2Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4rFYkN-4Eei0K-PxqMeh2Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4rH00N-4Eei0K-PxqMeh2Q" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZQcWoN-4Eei0K-PxqMeh2Q" name="stars" visibility="private" type="_95VfwN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZbtygN-4Eei0K-PxqMeh2Q" name="numServices" visibility="private" type="_95VfwN-wEei0K-PxqMeh2Q"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_dn69IN_MEei0K-PxqMeh2Q" name="Hotel"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="__hWfEN-zEei0K-PxqMeh2Q" name="Card">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_AW-l4N-8Eei0K-PxqMeh2Q" name="type" visibility="private" type="_-OWtgN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_AZMzcN-8Eei0K-PxqMeh2Q" name="multiplier" visibility="private" type="_RVLX8N-yEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_AbDNkN-8Eei0K-PxqMeh2Q" name="securityCode" visibility="private" type="_95VfwN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_AcyS8N-8Eei0K-PxqMeh2Q" name="cardNumber" visibility="private" type="_95VfwN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_OvuNEN-8Eei0K-PxqMeh2Q" name="expirationDate" visibility="private" type="_a_TaQN-6Eei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_O1ihMN-8Eei0K-PxqMeh2Q" name="company" visibility="private" type="_-OWtgN-wEei0K-PxqMeh2Q"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Dxt0IN_MEei0K-PxqMeh2Q" name="Card"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_M_qeUN-0Eei0K-PxqMeh2Q" name="Aircraft">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_slEk0N-_Eei0K-PxqMeh2Q" name="model" visibility="private" type="_-OWtgN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_TUmykOEyEeimF4WIzugk2Q" name="fuelEfficiency" visibility="private" type="_RVLX8N-yEei0K-PxqMeh2Q"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_PQPs8N_MEei0K-PxqMeh2Q" name="Aircraft"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_NyAhQN-0Eei0K-PxqMeh2Q" name="Seat">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_zenW4N-8Eei0K-PxqMeh2Q" name="number" visibility="private" type="_95VfwN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_zivB4N-8Eei0K-PxqMeh2Q" name="window" visibility="private" type="_-V4R0N-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_zlQxcN-8Eei0K-PxqMeh2Q" name="avail" visibility="private" type="_-V4R0N-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_1BNLAN-8Eei0K-PxqMeh2Q" name="priority" visibility="private" type="_95VfwN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_1CgLgN-8Eei0K-PxqMeh2Q" name="price" visibility="private" type="_RVLX8N-yEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_k8jTQN_KEei0K-PxqMeh2Q" name="flight" visibility="private" type="_cL7FwN-3Eei0K-PxqMeh2Q"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_SZLz0N_MEei0K-PxqMeh2Q" name="Seat"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_OU5L4N-0Eei0K-PxqMeh2Q" name="Reservation">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_g5fZYN-9Eei0K-PxqMeh2Q" name="account" visibility="private" type="_nlq3IN-1Eei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_g7hZsN-9Eei0K-PxqMeh2Q" name="departingRoute" visibility="private" type="_pRqFkN-6Eei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_g8mXwN-9Eei0K-PxqMeh2Q" name="returningRoute" visibility="private" type="_pRqFkN-6Eei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_g9zRoN-9Eei0K-PxqMeh2Q" name="car" visibility="private" type="_pscdwN-yEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_hDFaQN-9Eei0K-PxqMeh2Q" name="hotel" visibility="private" type="_-GlxQN-zEei0K-PxqMeh2Q"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_X3B8kN_MEei0K-PxqMeh2Q" name="Reservation"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_VvricN-0Eei0K-PxqMeh2Q" name="CarRentalLocation">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ZX1l0N-9Eei0K-PxqMeh2Q" name="cars" visibility="private" type="_cKmXcN-0Eei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_OHDFsN_LEei0K-PxqMeh2Q" name="company" visibility="private" type="_5eERgN-0Eei0K-PxqMeh2Q"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_IxMl4N_MEei0K-PxqMeh2Q" name="CarRentalLocation"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_XmbosN-0Eei0K-PxqMeh2Q" name="Airline">
+    <generalization xmi:type="uml:Generalization" xmi:id="_YfOIgN_NEei0K-PxqMeh2Q" general="_qf9lYN-yEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_2lD4gN--Eei0K-PxqMeh2Q" name="airports" visibility="private" type="_cKmXcN-0Eei0K-PxqMeh2Q"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_LNoMEN_MEei0K-PxqMeh2Q" name="Airline"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_RXFBIN_NEei0K-PxqMeh2Q" name="calculatePrice" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_RXFBId_NEei0K-PxqMeh2Q" type="_RVLX8N-yEei0K-PxqMeh2Q" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_cKmXcN-0Eei0K-PxqMeh2Q" name="ArrayList&lt;>"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_i9fnkN-0Eei0K-PxqMeh2Q" name="Location">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QF4rkN-4Eei0K-PxqMeh2Q" name="streetAddress" visibility="private" type="_-OWtgN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QKrE8N-4Eei0K-PxqMeh2Q" name="city" visibility="private" type="_-OWtgN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QP48IN-4Eei0K-PxqMeh2Q" name="state" visibility="private" type="_-OWtgN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QUqucN-4Eei0K-PxqMeh2Q" name="zip code" visibility="private" type="_95VfwN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_RHQB8N-4Eei0K-PxqMeh2Q" name="Country" visibility="private" type="_-OWtgN-wEei0K-PxqMeh2Q"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_p6eT4N_MEei0K-PxqMeh2Q" name="Location"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_spiP8OExEeimF4WIzugk2Q" name="countDigits" concurrency="concurrent">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_wK6sAOExEeimF4WIzugk2Q" type="_95VfwN-wEei0K-PxqMeh2Q" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uVCuoN-0Eei0K-PxqMeh2Q" name="HotelCompany">
+    <generalization xmi:type="uml:Generalization" xmi:id="_Zq-xAN_NEei0K-PxqMeh2Q" general="_qf9lYN-yEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_oJClwN-8Eei0K-PxqMeh2Q" name="hotels" type="_cKmXcN-0Eei0K-PxqMeh2Q"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_TcKTwN_MEei0K-PxqMeh2Q" name="HotelCompany"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_K4U1AN_NEei0K-PxqMeh2Q" name="calculatePrice" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_K4U1Ad_NEei0K-PxqMeh2Q" type="_RVLX8N-yEei0K-PxqMeh2Q" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5eERgN-0Eei0K-PxqMeh2Q" name="RentalCarCompany">
+    <generalization xmi:type="uml:Generalization" xmi:id="_aHYZIN_NEei0K-PxqMeh2Q" general="_qf9lYN-yEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_gd9wcN-8Eei0K-PxqMeh2Q" name="locations" type="_cKmXcN-0Eei0K-PxqMeh2Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kEIl4N-8Eei0K-PxqMeh2Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kEOFcN-8Eei0K-PxqMeh2Q" value="*"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_UkP9MN_MEei0K-PxqMeh2Q" name="RentalCarCompany"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_KwS6YN_NEei0K-PxqMeh2Q" name="calculatePrice" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_KwS6Yd_NEei0K-PxqMeh2Q" type="_RVLX8N-yEei0K-PxqMeh2Q" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_nlq3IN-1Eei0K-PxqMeh2Q" name="Account">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_klJLwN-9Eei0K-PxqMeh2Q" name="name" visibility="private" type="_-OWtgN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_km0mwN-9Eei0K-PxqMeh2Q" name="email" visibility="private" type="_-OWtgN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_kpZZoN-9Eei0K-PxqMeh2Q" name="accountName" visibility="private" type="_-OWtgN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ktl9IN-9Eei0K-PxqMeh2Q" name="password" visibility="private" type="_-OWtgN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lcTdQN-9Eei0K-PxqMeh2Q" name="reservations" visibility="private" type="_cKmXcN-0Eei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fQ77oN_HEei0K-PxqMeh2Q" name="website" visibility="private" type="_crwOoN-yEei0K-PxqMeh2Q"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_A0At4N_BEei0K-PxqMeh2Q" name="Account"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_VUjAcN_GEei0K-PxqMeh2Q" name="createReservation">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_VUjAcd_GEei0K-PxqMeh2Q" type="_Pv4FsN_AEei0K-PxqMeh2Q" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_qOiHEN_GEei0K-PxqMeh2Q" name="selectHotel" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_qOiHEd_GEei0K-PxqMeh2Q" type="_-GlxQN-zEei0K-PxqMeh2Q" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_qQKewN_GEei0K-PxqMeh2Q" name="selectCar">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_qQKewd_GEei0K-PxqMeh2Q" type="_pscdwN-yEei0K-PxqMeh2Q" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_qR3H4N_GEei0K-PxqMeh2Q" name="selectDepart">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_qR3H4d_GEei0K-PxqMeh2Q" type="_pRqFkN-6Eei0K-PxqMeh2Q" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_qc1o0N_GEei0K-PxqMeh2Q" name="selectReturn">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_qc1o0d_GEei0K-PxqMeh2Q" type="_pRqFkN-6Eei0K-PxqMeh2Q" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_BhjsMN_IEei0K-PxqMeh2Q" name="confirmReservation">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_BhjsMd_IEei0K-PxqMeh2Q" type="_-V4R0N-wEei0K-PxqMeh2Q" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_cL7FwN-3Eei0K-PxqMeh2Q" name="Flight">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_53-pgN-4Eei0K-PxqMeh2Q" name="flightNumber" visibility="private" type="_-OWtgN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_55gTgN-4Eei0K-PxqMeh2Q" name="aircraft" visibility="private" type="_M_qeUN-0Eei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_57DLoN-4Eei0K-PxqMeh2Q" name="capacity" visibility="private" type="_RVLX8N-yEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_582icN-4Eei0K-PxqMeh2Q" name="arriving" visibility="private" type="_n9clUN-yEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_5-UiEN-4Eei0K-PxqMeh2Q" name="departing" visibility="private" type="_n9clUN-yEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_5_XD4N-4Eei0K-PxqMeh2Q" name="seats" visibility="private" type="_cKmXcN-0Eei0K-PxqMeh2Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q94YoN-6Eei0K-PxqMeh2Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q994MN-6Eei0K-PxqMeh2Q" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6BEUEN-4Eei0K-PxqMeh2Q" name="departureTime" visibility="private" type="_95VfwN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6COKoN-4Eei0K-PxqMeh2Q" name="departureDate" visibility="private" type="_a_TaQN-6Eei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6D2iUN-4Eei0K-PxqMeh2Q" name="arrivalTime" visibility="private" type="_95VfwN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6Fm10N-4Eei0K-PxqMeh2Q" name="arrivalDate" visibility="private" type="_a_TaQN-6Eei0K-PxqMeh2Q"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_-4fcYN_AEei0K-PxqMeh2Q" name="Flight"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_X_F-UN_KEei0K-PxqMeh2Q" name="addSeat">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_X_F-Ud_KEei0K-PxqMeh2Q" type="_Pv4FsN_AEei0K-PxqMeh2Q" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_a_TaQN-6Eei0K-PxqMeh2Q" name="Date">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_dsTzEN-6Eei0K-PxqMeh2Q" name="month" visibility="private" type="_95VfwN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_dtuvYN-6Eei0K-PxqMeh2Q" name="day" visibility="private" type="_95VfwN-wEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_dvUDwN-6Eei0K-PxqMeh2Q" name="year" visibility="private" type="_95VfwN-wEei0K-PxqMeh2Q"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_FUAHQN_BEei0K-PxqMeh2Q" name="Date"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_nAyPEOB-EeiYjelRzu_aPg" name="PrintDate">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_sAitoOB-EeiYjelRzu_aPg" type="_Pv4FsN_AEei0K-PxqMeh2Q" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_pRqFkN-6Eei0K-PxqMeh2Q" name="Route">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_57fo0N--Eei0K-PxqMeh2Q" name="begin" visibility="private" type="_n9clUN-yEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_5-OzwN--Eei0K-PxqMeh2Q" name="flights" visibility="private" type="_cKmXcN-0Eei0K-PxqMeh2Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iRElcN-_Eei0K-PxqMeh2Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iRNvYN-_Eei0K-PxqMeh2Q" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6BMBIN--Eei0K-PxqMeh2Q" name="end" visibility="private" type="_n9clUN-yEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_efDsYN-_Eei0K-PxqMeh2Q" name="layoverList" visibility="private" type="_cKmXcN-0Eei0K-PxqMeh2Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hTimMN-_Eei0K-PxqMeh2Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hTmQkN-_Eei0K-PxqMeh2Q" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_escBEN-_Eei0K-PxqMeh2Q" name="totalTime" visibility="private" type="_95VfwN-wEei0K-PxqMeh2Q"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_TX0SMN-_Eei0K-PxqMeh2Q" name="checkValidity">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZNAj8N-_Eei0K-PxqMeh2Q" type="_-V4R0N-wEei0K-PxqMeh2Q" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ToEUsN-_Eei0K-PxqMeh2Q" name="calcLayover" visibility="public">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Yoo2IN_AEei0K-PxqMeh2Q" type="_Pv4FsN_AEei0K-PxqMeh2Q" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_smCiQN_MEei0K-PxqMeh2Q" name="Route"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_S7YfwN-9Eei0K-PxqMeh2Q" name="layover">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6tOnwN--Eei0K-PxqMeh2Q" name="airport" visibility="private" type="_n9clUN-yEei0K-PxqMeh2Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6vLIgN--Eei0K-PxqMeh2Q" name="time" visibility="private" type="_95VfwN-wEei0K-PxqMeh2Q"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_G_sNAN_BEei0K-PxqMeh2Q" name="layover"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_Pv4FsN_AEei0K-PxqMeh2Q" name="void"/>
+</uml:Model>

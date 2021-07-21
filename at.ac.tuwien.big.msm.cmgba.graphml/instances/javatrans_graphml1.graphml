@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="ASCII"?>
+<graphml:GraphML xmlns:graphml="http://www.example.org/graphml">
+  <graphs id="123">
+    <nodes id="1866875501" name="City">
+      <dataAttributes value="City" key="ClassName"/>
+      <dataAttributes value="CityImpl" key="Label"/>
+      <dataAttributes value="Vienna" key="cityName"/>
+    </nodes>
+    <nodes id="1409545055" name="Store">
+      <dataAttributes value="Store" key="ClassName"/>
+      <dataAttributes value="StoreImpl" key="Label"/>
+      <dataAttributes value="Store 1" key="name"/>
+    </nodes>
+    <nodes id="1212116343" name="Book">
+      <dataAttributes value="Book" key="ClassName"/>
+      <dataAttributes value="BookImpl" key="Label"/>
+      <dataAttributes value="book 11" key="bookName"/>
+    </nodes>
+    <nodes id="2119891622" name="Book">
+      <dataAttributes value="Book" key="ClassName"/>
+      <dataAttributes value="BookImpl" key="Label"/>
+      <dataAttributes value="book 12" key="bookName"/>
+    </nodes>
+    <nodes id="1671507048" name="Book">
+      <dataAttributes value="Book" key="ClassName"/>
+      <dataAttributes value="BookImpl" key="Label"/>
+      <dataAttributes value="book 13" key="bookName"/>
+    </nodes>
+    <nodes id="687059528" name="Book">
+      <dataAttributes value="Book" key="ClassName"/>
+      <dataAttributes value="BookImpl" key="Label"/>
+      <dataAttributes value="book 14" key="bookName"/>
+    </nodes>
+    <nodes id="454305524" name="Worker">
+      <dataAttributes value="Worker" key="ClassName"/>
+      <dataAttributes value="WorkerImpl" key="Label"/>
+      <dataAttributes value="Worker 11" key="workerName"/>
+    </nodes>
+    <nodes id="850551034" name="Worker">
+      <dataAttributes value="Worker" key="ClassName"/>
+      <dataAttributes value="WorkerImpl" key="Label"/>
+      <dataAttributes value="Worker 12" key="workerName"/>
+    </nodes>
+    <nodes id="1478150312" name="Store">
+      <dataAttributes value="Store" key="ClassName"/>
+      <dataAttributes value="StoreImpl" key="Label"/>
+      <dataAttributes value="Store 2" key="name"/>
+    </nodes>
+    <nodes id="1833848849" name="Book">
+      <dataAttributes value="Book" key="ClassName"/>
+      <dataAttributes value="BookImpl" key="Label"/>
+      <dataAttributes value="book 21" key="bookName"/>
+    </nodes>
+    <nodes id="1473771722" name="Book">
+      <dataAttributes value="Book" key="ClassName"/>
+      <dataAttributes value="BookImpl" key="Label"/>
+      <dataAttributes value="book 22" key="bookName"/>
+    </nodes>
+    <nodes id="1992550266" name="Book">
+      <dataAttributes value="Book" key="ClassName"/>
+      <dataAttributes value="BookImpl" key="Label"/>
+      <dataAttributes value="book 23" key="bookName"/>
+    </nodes>
+    <nodes id="2014461570" name="Book">
+      <dataAttributes value="Book" key="ClassName"/>
+      <dataAttributes value="BookImpl" key="Label"/>
+      <dataAttributes value="book 24" key="bookName"/>
+    </nodes>
+    <nodes id="1740846921" name="Worker">
+      <dataAttributes value="Worker" key="ClassName"/>
+      <dataAttributes value="WorkerImpl" key="Label"/>
+      <dataAttributes value="worker 21" key="workerName"/>
+    </nodes>
+    <nodes id="263885523" name="Worker">
+      <dataAttributes value="Worker" key="ClassName"/>
+      <dataAttributes value="WorkerImpl" key="Label"/>
+      <dataAttributes value="worker 22" key="workerName"/>
+    </nodes>
+    <nodes id="1714113641" name="User">
+      <dataAttributes value="User" key="ClassName"/>
+      <dataAttributes value="UserImpl" key="Label"/>
+      <dataAttributes value="muhamed" key="username"/>
+    </nodes>
+    <nodes id="262445056" name="BookBorrow">
+      <dataAttributes value="BookBorrow" key="ClassName"/>
+      <dataAttributes value="BookBorrowImpl" key="Label"/>
+      <dataAttributes value="21.05.2020" key="dateFrom"/>
+      <dataAttributes value="25.05.2020" key="dateTo"/>
+    </nodes>
+    <nodes id="1898155970" name="BookBorrow">
+      <dataAttributes value="BookBorrow" key="ClassName"/>
+      <dataAttributes value="BookBorrowImpl" key="Label"/>
+      <dataAttributes value="15.05.2020" key="dateFrom"/>
+      <dataAttributes value="20.05.2020" key="dateTo"/>
+    </nodes>
+    <nodes id="710190911" name="User">
+      <dataAttributes value="User" key="ClassName"/>
+      <dataAttributes value="UserImpl" key="Label"/>
+      <dataAttributes value="dominik" key="username"/>
+    </nodes>
+    <nodes id="379645464" name="BookBorrow">
+      <dataAttributes value="BookBorrow" key="ClassName"/>
+      <dataAttributes value="BookBorrowImpl" key="Label"/>
+      <dataAttributes value="20.05.2020" key="dateFrom"/>
+      <dataAttributes value="20.05.2020" key="dateTo"/>
+    </nodes>
+    <nodes id="1030684756" name="BookBorrow">
+      <dataAttributes value="BookBorrow" key="ClassName"/>
+      <dataAttributes value="BookBorrowImpl" key="Label"/>
+      <dataAttributes value="01.01.2020" key="dateFrom"/>
+      <dataAttributes value="01.02.2020" key="dateTo"/>
+    </nodes>
+    <nodes id="1348453796" name="BookBorrow">
+      <dataAttributes value="BookBorrow" key="ClassName"/>
+      <dataAttributes value="BookBorrowImpl" key="Label"/>
+      <dataAttributes value="01.01.2020" key="dateFrom"/>
+      <dataAttributes value="01.02.2020" key="dateTo"/>
+    </nodes>
+    <nodes id="1606286799" name="User">
+      <dataAttributes value="User" key="ClassName"/>
+      <dataAttributes value="UserImpl" key="Label"/>
+      <dataAttributes value="john" key="username"/>
+    </nodes>
+    <edges id="60292059" name="EReference" source="//@graphs.0/@nodes.0" target="//@graphs.0/@nodes.1">
+      <dataAttributes value="stores" key="ReferenceName"/>
+      <dataAttributes value="stores" key="Label"/>
+    </edges>
+    <edges id="60292059" name="EReference" source="//@graphs.0/@nodes.0" target="//@graphs.0/@nodes.8">
+      <dataAttributes value="stores" key="ReferenceName"/>
+      <dataAttributes value="stores" key="Label"/>
+    </edges>
+    <edges id="869601985" name="EReference" source="//@graphs.0/@nodes.0" target="//@graphs.0/@nodes.15">
+      <dataAttributes value="users" key="ReferenceName"/>
+      <dataAttributes value="users" key="Label"/>
+    </edges>
+    <edges id="869601985" name="EReference" source="//@graphs.0/@nodes.0" target="//@graphs.0/@nodes.18">
+      <dataAttributes value="users" key="ReferenceName"/>
+      <dataAttributes value="users" key="Label"/>
+    </edges>
+    <edges id="869601985" name="EReference" source="//@graphs.0/@nodes.0" target="//@graphs.0/@nodes.22">
+      <dataAttributes value="users" key="ReferenceName"/>
+      <dataAttributes value="users" key="Label"/>
+    </edges>
+    <edges id="873610597" name="EReference" source="//@graphs.0/@nodes.1" target="//@graphs.0/@nodes.2">
+      <dataAttributes value="books" key="ReferenceName"/>
+      <dataAttributes value="books" key="Label"/>
+    </edges>
+    <edges id="873610597" name="EReference" source="//@graphs.0/@nodes.1" target="//@graphs.0/@nodes.3">
+      <dataAttributes value="books" key="ReferenceName"/>
+      <dataAttributes value="books" key="Label"/>
+    </edges>
+    <edges id="873610597" name="EReference" source="//@graphs.0/@nodes.1" target="//@graphs.0/@nodes.4">
+      <dataAttributes value="books" key="ReferenceName"/>
+      <dataAttributes value="books" key="Label"/>
+    </edges>
+    <edges id="873610597" name="EReference" source="//@graphs.0/@nodes.1" target="//@graphs.0/@nodes.5">
+      <dataAttributes value="books" key="ReferenceName"/>
+      <dataAttributes value="books" key="Label"/>
+    </edges>
+    <edges id="1497845528" name="EReference" source="//@graphs.0/@nodes.1" target="//@graphs.0/@nodes.6">
+      <dataAttributes value="workers" key="ReferenceName"/>
+      <dataAttributes value="workers" key="Label"/>
+    </edges>
+    <edges id="1497845528" name="EReference" source="//@graphs.0/@nodes.1" target="//@graphs.0/@nodes.7">
+      <dataAttributes value="workers" key="ReferenceName"/>
+      <dataAttributes value="workers" key="Label"/>
+    </edges>
+    <edges id="873610597" name="EReference" source="//@graphs.0/@nodes.8" target="//@graphs.0/@nodes.9">
+      <dataAttributes value="books" key="ReferenceName"/>
+      <dataAttributes value="books" key="Label"/>
+    </edges>
+    <edges id="873610597" name="EReference" source="//@graphs.0/@nodes.8" target="//@graphs.0/@nodes.10">
+      <dataAttributes value="books" key="ReferenceName"/>
+      <dataAttributes value="books" key="Label"/>
+    </edges>
+    <edges id="873610597" name="EReference" source="//@graphs.0/@nodes.8" target="//@graphs.0/@nodes.11">
+      <dataAttributes value="books" key="ReferenceName"/>
+      <dataAttributes value="books" key="Label"/>
+    </edges>
+    <edges id="873610597" name="EReference" source="//@graphs.0/@nodes.8" target="//@graphs.0/@nodes.12">
+      <dataAttributes value="books" key="ReferenceName"/>
+      <dataAttributes value="books" key="Label"/>
+    </edges>
+    <edges id="1497845528" name="EReference" source="//@graphs.0/@nodes.8" target="//@graphs.0/@nodes.13">
+      <dataAttributes value="workers" key="ReferenceName"/>
+      <dataAttributes value="workers" key="Label"/>
+    </edges>
+    <edges id="1497845528" name="EReference" source="//@graphs.0/@nodes.8" target="//@graphs.0/@nodes.14">
+      <dataAttributes value="workers" key="ReferenceName"/>
+      <dataAttributes value="workers" key="Label"/>
+    </edges>
+    <edges id="1609124502" name="EReference" source="//@graphs.0/@nodes.15" target="//@graphs.0/@nodes.16">
+      <dataAttributes value="borrowedBooks" key="ReferenceName"/>
+      <dataAttributes value="borrowedBooks" key="Label"/>
+    </edges>
+    <edges id="1609124502" name="EReference" source="//@graphs.0/@nodes.15" target="//@graphs.0/@nodes.17">
+      <dataAttributes value="borrowedBooks" key="ReferenceName"/>
+      <dataAttributes value="borrowedBooks" key="Label"/>
+    </edges>
+    <edges id="1636506029" name="EReference" source="//@graphs.0/@nodes.16" target="//@graphs.0/@nodes.2">
+      <dataAttributes value="issuedBook" key="ReferenceName"/>
+      <dataAttributes value="issuedBook" key="Label"/>
+    </edges>
+    <edges id="758348212" name="EReference" source="//@graphs.0/@nodes.16" target="//@graphs.0/@nodes.6">
+      <dataAttributes value="responsibleWorker" key="ReferenceName"/>
+      <dataAttributes value="responsibleWorker" key="Label"/>
+    </edges>
+    <edges id="1636506029" name="EReference" source="//@graphs.0/@nodes.17" target="//@graphs.0/@nodes.3">
+      <dataAttributes value="issuedBook" key="ReferenceName"/>
+      <dataAttributes value="issuedBook" key="Label"/>
+    </edges>
+    <edges id="758348212" name="EReference" source="//@graphs.0/@nodes.17" target="//@graphs.0/@nodes.6">
+      <dataAttributes value="responsibleWorker" key="ReferenceName"/>
+      <dataAttributes value="responsibleWorker" key="Label"/>
+    </edges>
+    <edges id="1609124502" name="EReference" source="//@graphs.0/@nodes.18" target="//@graphs.0/@nodes.19">
+      <dataAttributes value="borrowedBooks" key="ReferenceName"/>
+      <dataAttributes value="borrowedBooks" key="Label"/>
+    </edges>
+    <edges id="1609124502" name="EReference" source="//@graphs.0/@nodes.18" target="//@graphs.0/@nodes.20">
+      <dataAttributes value="borrowedBooks" key="ReferenceName"/>
+      <dataAttributes value="borrowedBooks" key="Label"/>
+    </edges>
+    <edges id="1609124502" name="EReference" source="//@graphs.0/@nodes.18" target="//@graphs.0/@nodes.21">
+      <dataAttributes value="borrowedBooks" key="ReferenceName"/>
+      <dataAttributes value="borrowedBooks" key="Label"/>
+    </edges>
+    <edges id="1636506029" name="EReference" source="//@graphs.0/@nodes.19" target="//@graphs.0/@nodes.11">
+      <dataAttributes value="issuedBook" key="ReferenceName"/>
+      <dataAttributes value="issuedBook" key="Label"/>
+    </edges>
+    <edges id="758348212" name="EReference" source="//@graphs.0/@nodes.19" target="//@graphs.0/@nodes.14">
+      <dataAttributes value="responsibleWorker" key="ReferenceName"/>
+      <dataAttributes value="responsibleWorker" key="Label"/>
+    </edges>
+    <edges id="1636506029" name="EReference" source="//@graphs.0/@nodes.20" target="//@graphs.0/@nodes.4">
+      <dataAttributes value="issuedBook" key="ReferenceName"/>
+      <dataAttributes value="issuedBook" key="Label"/>
+    </edges>
+    <edges id="758348212" name="EReference" source="//@graphs.0/@nodes.20" target="//@graphs.0/@nodes.7">
+      <dataAttributes value="responsibleWorker" key="ReferenceName"/>
+      <dataAttributes value="responsibleWorker" key="Label"/>
+    </edges>
+    <edges id="1636506029" name="EReference" source="//@graphs.0/@nodes.21" target="//@graphs.0/@nodes.12">
+      <dataAttributes value="issuedBook" key="ReferenceName"/>
+      <dataAttributes value="issuedBook" key="Label"/>
+    </edges>
+    <edges id="758348212" name="EReference" source="//@graphs.0/@nodes.21" target="//@graphs.0/@nodes.14">
+      <dataAttributes value="responsibleWorker" key="ReferenceName"/>
+      <dataAttributes value="responsibleWorker" key="Label"/>
+    </edges>
+  </graphs>
+</graphml:GraphML>

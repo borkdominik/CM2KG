@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_3z0L8BlDEeO0GLRd3TW-gw" name="Papyrus Testing Architecture">
+  <ownedComment xmi:type="uml:Comment" xmi:id="_pn5RsDsiEeO-Paokq9k_Iw" annotatedElement="_WapBYDscEeO-Paokq9k_Iw">
+    <body>Preconditions: &#xD;
+gmfgen.uml&#xD;
+[diag].gmfgen.uml</body>
+  </ownedComment>
+  <packagedElement xmi:type="uml:Package" xmi:id="_eI_k0BlJEeOwivtbZTtgSg" name="Test Generation"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_pV9MgBlJEeOwivtbZTtgSg" name="Model Test Generation"/>
+  <packagedElement xmi:type="uml:Model" xmi:id="_rIwm4BlJEeOwivtbZTtgSg" name="Generated Tests">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_juRa8Bn8EeOturMcvDy5FQ" importedPackage="_vhtcwBlMEeOwivtbZTtgSg"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_xL9fcBlJEeOwivtbZTtgSg" name="generatedBy" client="_rIwm4BlJEeOwivtbZTtgSg" supplier="_eI_k0BlJEeOwivtbZTtgSg"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_hkO1QBlMEeOwivtbZTtgSg" name="Scenario Tests"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_oXVgwBlMEeOwivtbZTtgSg" name="Canonical Tests"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_5CaeUBlJEeOwivtbZTtgSg" name="Performance Tests"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_nocFUBlKEeOwivtbZTtgSg" name="Regression Tests"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_vhtcwBlMEeOwivtbZTtgSg" name="Testing Infrastructure"/>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_h8GoEBlfEeOxm9SdFcHC5g" name="Test Case Generation Workflow" node="_jv4S0BlfEeOxm9SdFcHC5g _n3UCQBlfEeOxm9SdFcHC5g _6Sw8kBnxEeOd6sMINY--sw _yfX_IBn5EeOturMcvDy5FQ _HutDoBn6EeOturMcvDy5FQ">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_9yE8EBnxEeOd6sMINY--sw" name="" source="_n3UCQBlfEeOxm9SdFcHC5g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="__OdagBnxEeOd6sMINY--sw" name=""/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_AvgWgBnyEeOd6sMINY--sw" name=""/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_THSmIBnyEeOd6sMINY--sw" name="" source="_n3UCQBlfEeOxm9SdFcHC5g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_U-5j0Bn5EeOturMcvDy5FQ" name="ControlFlow1" target="_6Sw8kBnxEeOd6sMINY--sw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="__88-kBn5EeOturMcvDy5FQ" name="ControlFlow2" target="_yfX_IBn5EeOturMcvDy5FQ" source="_n3UCQBlfEeOxm9SdFcHC5g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_FfRXoBn6EeOturMcvDy5FQ" name="ControlFlow3" source="_yfX_IBn5EeOturMcvDy5FQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_NQaYsBn6EeOturMcvDy5FQ" name="ControlFlow4" target="_HutDoBn6EeOturMcvDy5FQ" source="_yfX_IBn5EeOturMcvDy5FQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_SY78QBn7EeOturMcvDy5FQ" name="ControlFlow6" target="_n3UCQBlfEeOxm9SdFcHC5g" source="_jv4S0BlfEeOxm9SdFcHC5g"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_mbUFcBn7EeOturMcvDy5FQ" name="ControlFlow7" target="_6Sw8kBnxEeOd6sMINY--sw" source="_HutDoBn6EeOturMcvDy5FQ"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_jv4S0BlfEeOxm9SdFcHC5g" name="InitialNode1" outgoing="_SY78QBn7EeOturMcvDy5FQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_n3UCQBlfEeOxm9SdFcHC5g" name="Transform to UML GMFGen Model" incoming="_SY78QBn7EeOturMcvDy5FQ" outgoing="_9yE8EBnxEeOd6sMINY--sw _THSmIBnyEeOd6sMINY--sw __88-kBn5EeOturMcvDy5FQ">
+      <inputValue xmi:type="uml:InputPin" xmi:id="_O-FCYBlgEeOxm9SdFcHC5g" name="[diagram].gmfgen">
+        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_O-Tr4BlgEeOxm9SdFcHC5g" value="1"/>
+      </inputValue>
+      <outputValue xmi:type="uml:OutputPin" xmi:id="_PNMvIBnyEeOd6sMINY--sw" name="[diagram].gmfgen.uml">
+        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_POFf8BnyEeOd6sMINY--sw" value="1"/>
+      </outputValue>
+    </node>
+    <node xmi:type="uml:FlowFinalNode" xmi:id="_6Sw8kBnxEeOd6sMINY--sw" name="FlowFinalNode1" incoming="_U-5j0Bn5EeOturMcvDy5FQ _mbUFcBn7EeOturMcvDy5FQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yfX_IBn5EeOturMcvDy5FQ" name="Create UTP-applied UML test model" incoming="__88-kBn5EeOturMcvDy5FQ" outgoing="_FfRXoBn6EeOturMcvDy5FQ _NQaYsBn6EeOturMcvDy5FQ">
+      <outputValue xmi:type="uml:OutputPin" xmi:id="_2xO14Bn5EeOturMcvDy5FQ" name="[diagram]test.uml">
+        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_2xgisBn5EeOturMcvDy5FQ" value="1"/>
+      </outputValue>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_HutDoBn6EeOturMcvDy5FQ" name="Generate JUnit code" incoming="_NQaYsBn6EeOturMcvDy5FQ" outgoing="_mbUFcBn7EeOturMcvDy5FQ">
+      <inputValue xmi:type="uml:InputPin" xmi:id="_SBPDYBn6EeOturMcvDy5FQ" name="[diagram].gmfgen.uml">
+        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_SBb3sBn6EeOturMcvDy5FQ" value="1"/>
+      </inputValue>
+      <inputValue xmi:type="uml:InputPin" xmi:id="_ZEH3UBn6EeOturMcvDy5FQ" name="[diagram]test.uml">
+        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_ZESPYBn6EeOturMcvDy5FQ" value="1"/>
+      </inputValue>
+      <outputValue xmi:type="uml:OutputPin" xmi:id="_JJkfIBn6EeOturMcvDy5FQ" name="[Diagram]Test.java">
+        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_JJxTcBn6EeOturMcvDy5FQ" value="1"/>
+      </outputValue>
+    </node>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_55sKYDsQEeO-Paokq9k_Iw" name="Papyrus Developer"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_-yMKYDsQEeO-Paokq9k_Iw" name="Develop plugin diagram"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_5mJiUDsbEeO-Paokq9k_Iw" name="Create diagram test plugin">
+    <include xmi:type="uml:Include" xmi:id="_Zj7e0DsiEeO-Paokq9k_Iw" addition="_WapBYDscEeO-Paokq9k_Iw"/>
+    <include xmi:type="uml:Include" xmi:id="_aE3BoDsiEeO-Paokq9k_Iw" addition="_sAkA8DscEeO-Paokq9k_Iw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WapBYDscEeO-Paokq9k_Iw" name="Create test model">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_bnZLYDsiEeO-Paokq9k_Iw" name="point"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_bGklADscEeO-Paokq9k_Iw" name="Modify test model">
+    <extend xmi:type="uml:Extend" xmi:id="_bmZF0DsiEeO-Paokq9k_Iw" extendedCase="_WapBYDscEeO-Paokq9k_Iw" extensionLocation="_bnZLYDsiEeO-Paokq9k_Iw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nQJl8DscEeO-Paokq9k_Iw" name="" memberEnd="_nQJl8TscEeO-Paokq9k_Iw _nQJl9DscEeO-Paokq9k_Iw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_nQJl8TscEeO-Paokq9k_Iw" name="papyrus developer" type="_55sKYDsQEeO-Paokq9k_Iw" association="_nQJl8DscEeO-Paokq9k_Iw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nQJl8jscEeO-Paokq9k_Iw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nQJl8zscEeO-Paokq9k_Iw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_nQJl9DscEeO-Paokq9k_Iw" name="create diagram test plugin" type="_5mJiUDsbEeO-Paokq9k_Iw" association="_nQJl8DscEeO-Paokq9k_Iw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nQJl9TscEeO-Paokq9k_Iw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nQJl9jscEeO-Paokq9k_Iw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_sAkA8DscEeO-Paokq9k_Iw" name="Generate test code">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_cHTagDsiEeO-Paokq9k_Iw" name="point"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_uUDGgDscEeO-Paokq9k_Iw" name="Modify generated test code">
+    <extend xmi:type="uml:Extend" xmi:id="_cHNT4DsiEeO-Paokq9k_Iw" extendedCase="_sAkA8DscEeO-Paokq9k_Iw" extensionLocation="_cHTagDsiEeO-Paokq9k_Iw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_gVyNIDsiEeO-Paokq9k_Iw" name="" memberEnd="_gVyNITsiEeO-Paokq9k_Iw _gVyNJDsiEeO-Paokq9k_Iw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_gVyNITsiEeO-Paokq9k_Iw" name="papyrus developer" type="_55sKYDsQEeO-Paokq9k_Iw" association="_gVyNIDsiEeO-Paokq9k_Iw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gVyNIjsiEeO-Paokq9k_Iw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gVyNIzsiEeO-Paokq9k_Iw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_gVyNJDsiEeO-Paokq9k_Iw" name="develop plugin diagram" type="_-yMKYDsQEeO-Paokq9k_Iw" association="_gVyNIDsiEeO-Paokq9k_Iw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gVyNJTsiEeO-Paokq9k_Iw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gVyNJjsiEeO-Paokq9k_Iw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_o5MZ8EhaEeOIq_z89NNNYw" name="CanonicalTest"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JvC40EhfEeOZGbAGN97tSQ" name="UMLElementTypes"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PV4lgEhfEeOZGbAGN97tSQ" name="UMLPackage"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_szfQIHo9EeOZT4MIgJS4Rg" name="Workflow">
+    <packagedElement xmi:type="uml:Activity" xmi:id="_zU6VwHo9EeOZT4MIgJS4Rg" name="Papyrus Test Generation Workflow" node="_6HDX8Ho9EeOZT4MIgJS4Rg _7OGfkHo9EeOZT4MIgJS4Rg _KraiIHo-EeOZT4MIgJS4Rg _n3qk8GNhEeSV7o_0d6AoqA _aIyQwGN6EeSWoYP_vHX_3A">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_zy3CQGN6EeSWoYP_vHX_3A" target="_KraiIHo-EeOZT4MIgJS4Rg" source="_6HDX8Ho9EeOZT4MIgJS4Rg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_071cgGN6EeSWoYP_vHX_3A" target="_n3qk8GNhEeSV7o_0d6AoqA" source="_KraiIHo-EeOZT4MIgJS4Rg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_1nK4gGN6EeSWoYP_vHX_3A" target="_aIyQwGN6EeSWoYP_vHX_3A" source="_n3qk8GNhEeSV7o_0d6AoqA"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_6JPVgGN6EeSWoYP_vHX_3A" target="_7OGfkHo9EeOZT4MIgJS4Rg" source="_aIyQwGN6EeSWoYP_vHX_3A"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_6HDX8Ho9EeOZT4MIgJS4Rg" name="InitialNode" outgoing="_zy3CQGN6EeSWoYP_vHX_3A"/>
+      <node xmi:type="uml:FlowFinalNode" xmi:id="_7OGfkHo9EeOZT4MIgJS4Rg" name="FlowFinalNode" incoming="_6JPVgGN6EeSWoYP_vHX_3A"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_KraiIHo-EeOZT4MIgJS4Rg" name="Transform GMFGen model to UML" incoming="_zy3CQGN6EeSWoYP_vHX_3A" outgoing="_071cgGN6EeSWoYP_vHX_3A">
+        <inputValue xmi:type="uml:InputPin" xmi:id="_fLcbsGNhEeSV7o_0d6AoqA" name="[DiagramType].gmfgen">
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_fLdp0GNhEeSV7o_0d6AoqA" value="1"/>
+        </inputValue>
+        <outputValue xmi:type="uml:OutputPin" xmi:id="_wvgIUGNhEeSV7o_0d6AoqA" name="[DiagramType].gmfgen.uml">
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_wvh9gGNhEeSV7o_0d6AoqA" value="1"/>
+        </outputValue>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_n3qk8GNhEeSV7o_0d6AoqA" name="Generate UML-UTP Test Model" incoming="_071cgGN6EeSWoYP_vHX_3A" outgoing="_1nK4gGN6EeSWoYP_vHX_3A">
+        <inputValue xmi:type="uml:InputPin" xmi:id="_sTyyAGNhEeSV7o_0d6AoqA" name="[DiagramType].gmfgen.uml">
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_sTzZEGNhEeSV7o_0d6AoqA" value="1"/>
+        </inputValue>
+        <inputValue xmi:type="uml:InputPin" xmi:id="_F8-ewGN6EeSWoYP_vHX_3A" name="testFrameworkBase.uml">
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_F9KE8GN6EeSWoYP_vHX_3A" value="1"/>
+        </inputValue>
+        <inputValue xmi:type="uml:InputPin" xmi:id="_MG2nEGN6EeSWoYP_vHX_3A" name="utp.profile.uml">
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_MG3OIGN6EeSWoYP_vHX_3A" value="1"/>
+        </inputValue>
+        <inputValue xmi:type="uml:InputPin" xmi:id="_QC0tYGN6EeSWoYP_vHX_3A" name="testModelScript.qvto">
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_QC1UcGN6EeSWoYP_vHX_3A" value="1"/>
+        </inputValue>
+        <outputValue xmi:type="uml:OutputPin" xmi:id="_U5NNgGN6EeSWoYP_vHX_3A" name="[DiagramType]TestModel.uml">
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_U5PCsGN6EeSWoYP_vHX_3A" value="1"/>
+        </outputValue>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_aIyQwGN6EeSWoYP_vHX_3A" name="Generate JUnit tests" incoming="_1nK4gGN6EeSWoYP_vHX_3A" outgoing="_6JPVgGN6EeSWoYP_vHX_3A">
+        <inputValue xmi:type="uml:InputPin" xmi:id="_jdxqMGN6EeSWoYP_vHX_3A" name="[DiagramType]TestModel.uml">
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_jdyRQGN6EeSWoYP_vHX_3A" value="1"/>
+        </inputValue>
+        <outputValue xmi:type="uml:OutputPin" xmi:id="_nIgPgGN6EeSWoYP_vHX_3A" name="Test[DiagramType][UseCase].java">
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_nIiEsGN6EeSWoYP_vHX_3A" value="1"/>
+        </outputValue>
+      </node>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

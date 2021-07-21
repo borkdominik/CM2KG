@@ -1,0 +1,11 @@
+//this one is not clear for me from the description and from the implementation
+MATCH (a)-[r]-(b)
+WHERE a.ClassName='BusinessService' and  (b.ClassName = 'BusinessService' or b.ClassName = 'BusinessService' or b.ClassName = 'SystemSoftware')
+with a, count(r) as cnt
+where cnt>0
+MATCH (a)-[r1]-(b1)
+WHERE  b1.ClassName <> 'BusinessObject' and b1.ClassName <> 'DataObject' and b1.ClassName <> 'SystemSoftware'
+with a, count(r1) as cnt1
+where cnt1=0 
+MATCH (a)-[r2]-(b2)
+return a,b2

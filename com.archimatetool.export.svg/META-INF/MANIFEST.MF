@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SVG Image Export
+Bundle-SymbolicName: com.archimatetool.export.svg;singleton:=true
+Bundle-Version: 4.7.1.qualifier
+Bundle-Activator: com.archimatetool.export.svg.ExportSVGPlugin
+Bundle-Vendor: Phil Beauvoir
+Eclipse-BundleShape: dir
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.archimatetool.editor
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: com.archimatetool.export.svg.jar,
+ lib/batik-all-1.11.jar,
+ lib/fop-transcoder-allinone-2.3.jar,
+ lib/xml-apis-ext-1.3.04.jar,
+ lib/xmlgraphics-commons-2.3.jar
+Export-Package: com.archimatetool.export.svg
+Automatic-Module-Name: com.archimatetool.export.svg

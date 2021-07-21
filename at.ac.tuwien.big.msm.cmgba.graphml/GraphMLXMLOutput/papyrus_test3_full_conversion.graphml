@@ -1,0 +1,1148 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" 
+xmlns:java="http://www.yworks.com/xml/yfiles-common/1.0/java" 
+xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0" 
+xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/2.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:y="http://www.yworks.com/xml/graphml" 
+xmlns:yed="http://www.yworks.com/xml/yed/3" 
+xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd">  
+  <key attr.name="Description" attr.type="string" for="graph" id="d0"/>
+  <key for="port" id="d1" yfiles.type="portgraphics"/>
+  <key for="port" id="d2" yfiles.type="portgeometry"/>
+  <key for="port" id="d3" yfiles.type="portuserdata"/>
+  <key attr.name="url" attr.type="string" for="node" id="d4"/>
+  <key attr.name="description" attr.type="string" for="node" id="d5"/>
+  <key for="node" id="d6" yfiles.type="nodegraphics"/>
+  <key for="graphml" id="d7" yfiles.type="resources"/>
+  <key attr.name="url" attr.type="string" for="edge" id="d8"/>
+  <key attr.name="description" attr.type="string" for="edge" id="d9"/>
+  <key for="edge" id="d10" yfiles.type="edgegraphics"/> 
+<key id="ClassName" for="node" attr.name="ClassName" attr.type="string"/> 
+<key id="Model_mixed" for="node" attr.name="Model_mixed" attr.type="string"/> 
+<key id="Model_any" for="node" attr.name="Model_any" attr.type="string"/> 
+<key id="Model_anyAttribute" for="node" attr.name="Model_anyAttribute" attr.type="string"/> 
+<key id="Label" for="node" attr.name="Label" attr.type="string"/> 
+<key id="PackageImport_mixed" for="node" attr.name="PackageImport_mixed" attr.type="string"/> 
+<key id="PackageImport_any" for="node" attr.name="PackageImport_any" attr.type="string"/> 
+<key id="PackageImport_anyAttribute" for="node" attr.name="PackageImport_anyAttribute" attr.type="string"/> 
+<key id="Class_mixed" for="node" attr.name="Class_mixed" attr.type="string"/> 
+<key id="Class_any" for="node" attr.name="Class_any" attr.type="string"/> 
+<key id="Class_anyAttribute" for="node" attr.name="Class_anyAttribute" attr.type="string"/> 
+<key id="Property_mixed" for="node" attr.name="Property_mixed" attr.type="string"/> 
+<key id="Property_any" for="node" attr.name="Property_any" attr.type="string"/> 
+<key id="Property_anyAttribute" for="node" attr.name="Property_anyAttribute" attr.type="string"/> 
+<key id="LiteralInteger_mixed" for="node" attr.name="LiteralInteger_mixed" attr.type="string"/> 
+<key id="LiteralInteger_any" for="node" attr.name="LiteralInteger_any" attr.type="string"/> 
+<key id="LiteralInteger_anyAttribute" for="node" attr.name="LiteralInteger_anyAttribute" attr.type="string"/> 
+<key id="LiteralUnlimitedNatural_mixed" for="node" attr.name="LiteralUnlimitedNatural_mixed" attr.type="string"/> 
+<key id="LiteralUnlimitedNatural_any" for="node" attr.name="LiteralUnlimitedNatural_any" attr.type="string"/> 
+<key id="LiteralUnlimitedNatural_anyAttribute" for="node" attr.name="LiteralUnlimitedNatural_anyAttribute" attr.type="string"/> 
+<key id="Generalization_mixed" for="node" attr.name="Generalization_mixed" attr.type="string"/> 
+<key id="Generalization_any" for="node" attr.name="Generalization_any" attr.type="string"/> 
+<key id="Generalization_anyAttribute" for="node" attr.name="Generalization_anyAttribute" attr.type="string"/> 
+<key id="Association_mixed" for="node" attr.name="Association_mixed" attr.type="string"/> 
+<key id="Association_any" for="node" attr.name="Association_any" attr.type="string"/> 
+<key id="Association_anyAttribute" for="node" attr.name="Association_anyAttribute" attr.type="string"/> 
+<key id="EAnnotation_source" for="node" attr.name="EAnnotation_source" attr.type="string"/> 
+<key id="EStringToStringMapEntry_key" for="node" attr.name="EStringToStringMapEntry_key" attr.type="string"/> 
+<key id="EStringToStringMapEntry_value" for="node" attr.name="EStringToStringMapEntry_value" attr.type="string"/> 
+<key id="Dependency_mixed" for="node" attr.name="Dependency_mixed" attr.type="string"/> 
+<key id="Dependency_any" for="node" attr.name="Dependency_any" attr.type="string"/> 
+<key id="Dependency_anyAttribute" for="node" attr.name="Dependency_anyAttribute" attr.type="string"/> 
+<key id="EReference_ReferenceName" for="edge" attr.name="EReference_ReferenceName" attr.type="string"/> 
+<key id="Label" for="edge" attr.name="Label" attr.type="string"/> 
+<graph id="123" edgedefault="undirected"> 
+<node id="300604602"> 
+<data key="ClassName">Model</data> 
+<data key="Model_mixed">[ecore.xml.type:text=
+  , packageImport=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@71b3bc45 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@7a8fa663 (name: PackageImport) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+    , importedPackage=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@78a287ed (eProxyURI: pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0 eClass: org.eclipse.emf.ecore.impl.EClassImpl@4721d212 (name: Model) (instanceClassName: null) (abstract: false, interface: false)), ecore.xml.type:text=
+  ], anyAttribute: null), ecore.xml.type:text=
+  , packagedElement=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@7e38a7fe (eClass: org.eclipse.emf.ecore.impl.EClassImpl@366ef90e (name: Class) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+    , ownedAttribute=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@31e75d13 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+      , lowerValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@21aa6d6c (eClass: org.eclipse.emf.ecore.impl.EClassImpl@b968a76 (name: LiteralInteger) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: null), ecore.xml.type:text=
+      , upperValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@2611b9a3 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@54227100 (name: LiteralUnlimitedNatural) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [value=*]), ecore.xml.type:text=
+    ], anyAttribute: [name=hasLivingStyle, type=_ISyJoOApEeu-XNcrlfd6Uw, association=_KqQXUOApEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ], anyAttribute: [name=Animal]), ecore.xml.type:text=
+  , packagedElement=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@1433046b (eClass: org.eclipse.emf.ecore.impl.EClassImpl@366ef90e (name: Class) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+    , generalization=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@7829b776 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@5778826f (name: Generalization) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [general=_0jvMIOAoEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ], anyAttribute: [name=Cat]), ecore.xml.type:text=
+  , packagedElement=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@4763c727 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@366ef90e (name: Class) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+    , generalization=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@72445aba (eClass: org.eclipse.emf.ecore.impl.EClassImpl@5778826f (name: Generalization) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [general=_0jvMIOAoEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ], anyAttribute: [name=Dog]), ecore.xml.type:text=
+  , packagedElement=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@61bcd567 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@366ef90e (name: Class) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [name=LivingStyle]), ecore.xml.type:text=
+  , packagedElement=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@1c80e49b (eClass: org.eclipse.emf.ecore.impl.EClassImpl@458342d3 (name: Association) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+    , eAnnotations=org.eclipse.emf.ecore.impl.EAnnotationImpl@9ed238c (source: org.eclipse.papyrus), ecore.xml.type:text=
+    , ownedEnd=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@56f6d40b (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [name=animal, type=_0jvMIOAoEeu-XNcrlfd6Uw, association=_KqQXUOApEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ], anyAttribute: [name=, memberEnd=_KqRlcOApEeu-XNcrlfd6Uw _KqSMguApEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  , packagedElement=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@36676c1a (eClass: org.eclipse.emf.ecore.impl.EClassImpl@366ef90e (name: Class) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+    , ownedAttribute=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@5b408dc3 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+      , upperValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@4d098f9b (eClass: org.eclipse.emf.ecore.impl.EClassImpl@54227100 (name: LiteralUnlimitedNatural) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [value=*]), ecore.xml.type:text=
+    ], anyAttribute: [name=class8, type=_qoDRkOCVEeu-XNcrlfd6Uw, association=_rZO24OCVEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ], anyAttribute: [name=Class7]), ecore.xml.type:text=
+  , packagedElement=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@2dbf4cbd (eClass: org.eclipse.emf.ecore.impl.EClassImpl@366ef90e (name: Class) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+    , ownedAttribute=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@20b5f2ac (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+      , lowerValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@7fc44dec (eClass: org.eclipse.emf.ecore.impl.EClassImpl@b968a76 (name: LiteralInteger) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: null), ecore.xml.type:text=
+      , upperValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@7e3060d8 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@54227100 (name: LiteralUnlimitedNatural) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [value=1]), ecore.xml.type:text=
+    ], anyAttribute: [name=class9, type=_q1w9cOCVEeu-XNcrlfd6Uw, association=_rx8R0OCVEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ], anyAttribute: [name=Class8]), ecore.xml.type:text=
+  , packagedElement=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@293d0107 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@366ef90e (name: Class) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+    , ownedAttribute=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@2692b61e (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+      , lowerValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@7b64240d (eClass: org.eclipse.emf.ecore.impl.EClassImpl@b968a76 (name: LiteralInteger) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: null), ecore.xml.type:text=
+      , upperValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@62fad19 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@54227100 (name: LiteralUnlimitedNatural) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [value=1]), ecore.xml.type:text=
+    ], anyAttribute: [name=class7, type=_qYEU0OCVEeu-XNcrlfd6Uw, association=_sLeMIOCVEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ], anyAttribute: [name=Class9]), ecore.xml.type:text=
+  , packagedElement=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@47dbb1e2 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@458342d3 (name: Association) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+    , eAnnotations=org.eclipse.emf.ecore.impl.EAnnotationImpl@74cadd41 (source: org.eclipse.papyrus), ecore.xml.type:text=
+    , ownedEnd=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@55e8ec2f (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [name=class7, type=_qYEU0OCVEeu-XNcrlfd6Uw, association=_rZO24OCVEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ], anyAttribute: [memberEnd=_rZPd8eCVEeu-XNcrlfd6Uw _rZPd9OCVEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  , packagedElement=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@4f2613d1 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@458342d3 (name: Association) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+    , eAnnotations=org.eclipse.emf.ecore.impl.EAnnotationImpl@6d24ffa1 (source: org.eclipse.papyrus), ecore.xml.type:text=
+    , ownedEnd=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@773f7880 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [name=class8, type=_qoDRkOCVEeu-XNcrlfd6Uw, association=_rx8R0OCVEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ], anyAttribute: [memberEnd=_rx8R0-CVEeu-XNcrlfd6Uw _rx844OCVEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  , packagedElement=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@878452d (eClass: org.eclipse.emf.ecore.impl.EClassImpl@458342d3 (name: Association) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+    , eAnnotations=org.eclipse.emf.ecore.impl.EAnnotationImpl@426b6a74 (source: org.eclipse.papyrus), ecore.xml.type:text=
+    , ownedEnd=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@83298d7 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [name=class9, type=_q1w9cOCVEeu-XNcrlfd6Uw, association=_sLeMIOCVEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ], anyAttribute: [memberEnd=_sLeMI-CVEeu-XNcrlfd6Uw _sLeMJuCVEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  , packagedElement=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@42a9e5d1 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@5b080f3a (name: Dependency) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [client=_qYEU0OCVEeu-XNcrlfd6Uw, supplier=_1YFaMOAoEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+]</data> 
+<data key="Model_any">[packageImport=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@71b3bc45 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@7a8fa663 (name: PackageImport) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+    , importedPackage=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@78a287ed (eProxyURI: pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0 eClass: org.eclipse.emf.ecore.impl.EClassImpl@4721d212 (name: Model) (instanceClassName: null) (abstract: false, interface: false)), ecore.xml.type:text=
+  ], anyAttribute: null), packagedElement=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@7e38a7fe (eClass: org.eclipse.emf.ecore.impl.EClassImpl@366ef90e (name: Class) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+    , ownedAttribute=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@31e75d13 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+      , lowerValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@21aa6d6c (eClass: org.eclipse.emf.ecore.impl.EClassImpl@b968a76 (name: LiteralInteger) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: null), ecore.xml.type:text=
+      , upperValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@2611b9a3 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@54227100 (name: LiteralUnlimitedNatural) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [value=*]), ecore.xml.type:text=
+    ], anyAttribute: [name=hasLivingStyle, type=_ISyJoOApEeu-XNcrlfd6Uw, association=_KqQXUOApEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ], anyAttribute: [name=Animal]), packagedElement=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@1433046b (eClass: org.eclipse.emf.ecore.impl.EClassImpl@366ef90e (name: Class) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+    , generalization=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@7829b776 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@5778826f (name: Generalization) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [general=_0jvMIOAoEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ], anyAttribute: [name=Cat]), packagedElement=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@4763c727 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@366ef90e (name: Class) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+    , generalization=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@72445aba (eClass: org.eclipse.emf.ecore.impl.EClassImpl@5778826f (name: Generalization) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [general=_0jvMIOAoEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ], anyAttribute: [name=Dog]), packagedElement=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@61bcd567 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@366ef90e (name: Class) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [name=LivingStyle]), packagedElement=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@1c80e49b (eClass: org.eclipse.emf.ecore.impl.EClassImpl@458342d3 (name: Association) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+    , eAnnotations=org.eclipse.emf.ecore.impl.EAnnotationImpl@9ed238c (source: org.eclipse.papyrus), ecore.xml.type:text=
+    , ownedEnd=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@56f6d40b (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [name=animal, type=_0jvMIOAoEeu-XNcrlfd6Uw, association=_KqQXUOApEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ], anyAttribute: [name=, memberEnd=_KqRlcOApEeu-XNcrlfd6Uw _KqSMguApEeu-XNcrlfd6Uw]), packagedElement=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@36676c1a (eClass: org.eclipse.emf.ecore.impl.EClassImpl@366ef90e (name: Class) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+    , ownedAttribute=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@5b408dc3 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+      , upperValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@4d098f9b (eClass: org.eclipse.emf.ecore.impl.EClassImpl@54227100 (name: LiteralUnlimitedNatural) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [value=*]), ecore.xml.type:text=
+    ], anyAttribute: [name=class8, type=_qoDRkOCVEeu-XNcrlfd6Uw, association=_rZO24OCVEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ], anyAttribute: [name=Class7]), packagedElement=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@2dbf4cbd (eClass: org.eclipse.emf.ecore.impl.EClassImpl@366ef90e (name: Class) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+    , ownedAttribute=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@20b5f2ac (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+      , lowerValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@7fc44dec (eClass: org.eclipse.emf.ecore.impl.EClassImpl@b968a76 (name: LiteralInteger) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: null), ecore.xml.type:text=
+      , upperValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@7e3060d8 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@54227100 (name: LiteralUnlimitedNatural) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [value=1]), ecore.xml.type:text=
+    ], anyAttribute: [name=class9, type=_q1w9cOCVEeu-XNcrlfd6Uw, association=_rx8R0OCVEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ], anyAttribute: [name=Class8]), packagedElement=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@293d0107 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@366ef90e (name: Class) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+    , ownedAttribute=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@2692b61e (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+      , lowerValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@7b64240d (eClass: org.eclipse.emf.ecore.impl.EClassImpl@b968a76 (name: LiteralInteger) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: null), ecore.xml.type:text=
+      , upperValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@62fad19 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@54227100 (name: LiteralUnlimitedNatural) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [value=1]), ecore.xml.type:text=
+    ], anyAttribute: [name=class7, type=_qYEU0OCVEeu-XNcrlfd6Uw, association=_sLeMIOCVEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ], anyAttribute: [name=Class9]), packagedElement=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@47dbb1e2 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@458342d3 (name: Association) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+    , eAnnotations=org.eclipse.emf.ecore.impl.EAnnotationImpl@74cadd41 (source: org.eclipse.papyrus), ecore.xml.type:text=
+    , ownedEnd=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@55e8ec2f (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [name=class7, type=_qYEU0OCVEeu-XNcrlfd6Uw, association=_rZO24OCVEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ], anyAttribute: [memberEnd=_rZPd8eCVEeu-XNcrlfd6Uw _rZPd9OCVEeu-XNcrlfd6Uw]), packagedElement=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@4f2613d1 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@458342d3 (name: Association) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+    , eAnnotations=org.eclipse.emf.ecore.impl.EAnnotationImpl@6d24ffa1 (source: org.eclipse.papyrus), ecore.xml.type:text=
+    , ownedEnd=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@773f7880 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [name=class8, type=_qoDRkOCVEeu-XNcrlfd6Uw, association=_rx8R0OCVEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ], anyAttribute: [memberEnd=_rx8R0-CVEeu-XNcrlfd6Uw _rx844OCVEeu-XNcrlfd6Uw]), packagedElement=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@878452d (eClass: org.eclipse.emf.ecore.impl.EClassImpl@458342d3 (name: Association) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+    , eAnnotations=org.eclipse.emf.ecore.impl.EAnnotationImpl@426b6a74 (source: org.eclipse.papyrus), ecore.xml.type:text=
+    , ownedEnd=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@83298d7 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [name=class9, type=_q1w9cOCVEeu-XNcrlfd6Uw, association=_sLeMIOCVEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ], anyAttribute: [memberEnd=_sLeMI-CVEeu-XNcrlfd6Uw _sLeMJuCVEeu-XNcrlfd6Uw]), packagedElement=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@42a9e5d1 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@5b080f3a (name: Dependency) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [client=_qYEU0OCVEeu-XNcrlfd6Uw, supplier=_1YFaMOAoEeu-XNcrlfd6Uw])]</data> 
+<data key="Model_anyAttribute">[name=PapyrusTestModel]</data> 
+<data key="Label">[name=PapyrusTestModel]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[name=PapyrusTestModel]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="1907604549"> 
+<data key="ClassName">PackageImport</data> 
+<data key="PackageImport_mixed">[ecore.xml.type:text=
+    , importedPackage=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@78a287ed (eProxyURI: pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0 eClass: org.eclipse.emf.ecore.impl.EClassImpl@4721d212 (name: Model) (instanceClassName: null) (abstract: false, interface: false)), ecore.xml.type:text=
+  ]</data> 
+<data key="PackageImport_any">[importedPackage=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@78a287ed (eProxyURI: pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0 eClass: org.eclipse.emf.ecore.impl.EClassImpl@4721d212 (name: Model) (instanceClassName: null) (abstract: false, interface: false))]</data> 
+<data key="PackageImport_anyAttribute">[]</data> 
+<data key="Label">[]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="2023917549"> 
+<data key="ClassName">Model</data> 
+<data key="Model_mixed">[]</data> 
+<data key="Model_any">[]</data> 
+<data key="Model_anyAttribute">[]</data> 
+<data key="Label">[]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="2117642238"> 
+<data key="ClassName">Class</data> 
+<data key="Class_mixed">[ecore.xml.type:text=
+    , ownedAttribute=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@31e75d13 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+      , lowerValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@21aa6d6c (eClass: org.eclipse.emf.ecore.impl.EClassImpl@b968a76 (name: LiteralInteger) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: null), ecore.xml.type:text=
+      , upperValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@2611b9a3 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@54227100 (name: LiteralUnlimitedNatural) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [value=*]), ecore.xml.type:text=
+    ], anyAttribute: [name=hasLivingStyle, type=_ISyJoOApEeu-XNcrlfd6Uw, association=_KqQXUOApEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ]</data> 
+<data key="Class_any">[ownedAttribute=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@31e75d13 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+      , lowerValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@21aa6d6c (eClass: org.eclipse.emf.ecore.impl.EClassImpl@b968a76 (name: LiteralInteger) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: null), ecore.xml.type:text=
+      , upperValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@2611b9a3 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@54227100 (name: LiteralUnlimitedNatural) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [value=*]), ecore.xml.type:text=
+    ], anyAttribute: [name=hasLivingStyle, type=_ISyJoOApEeu-XNcrlfd6Uw, association=_KqQXUOApEeu-XNcrlfd6Uw])]</data> 
+<data key="Class_anyAttribute">[name=Animal]</data> 
+<data key="Label">[name=Animal]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[name=Animal]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="837246227"> 
+<data key="ClassName">Property</data> 
+<data key="Property_mixed">[ecore.xml.type:text=
+      , lowerValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@21aa6d6c (eClass: org.eclipse.emf.ecore.impl.EClassImpl@b968a76 (name: LiteralInteger) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: null), ecore.xml.type:text=
+      , upperValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@2611b9a3 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@54227100 (name: LiteralUnlimitedNatural) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [value=*]), ecore.xml.type:text=
+    ]</data> 
+<data key="Property_any">[lowerValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@21aa6d6c (eClass: org.eclipse.emf.ecore.impl.EClassImpl@b968a76 (name: LiteralInteger) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: null), upperValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@2611b9a3 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@54227100 (name: LiteralUnlimitedNatural) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [value=*])]</data> 
+<data key="Property_anyAttribute">[name=hasLivingStyle, type=_ISyJoOApEeu-XNcrlfd6Uw, association=_KqQXUOApEeu-XNcrlfd6Uw]</data> 
+<data key="Label">[name=hasLivingStyle, type=_ISyJoOApEeu-XNcrlfd6Uw, association=_KqQXUOApEeu-XNcrlfd6Uw]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[name=hasLivingStyle, type=_ISyJoOApEeu-XNcrlfd6Uw, association=_KqQXUOApEeu-XNcrlfd6Uw]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="564817260"> 
+<data key="ClassName">LiteralInteger</data> 
+<data key="LiteralInteger_mixed">[]</data> 
+<data key="LiteralInteger_any">[]</data> 
+<data key="LiteralInteger_anyAttribute">[]</data> 
+<data key="Label">[]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="638695843"> 
+<data key="ClassName">LiteralUnlimitedNatural</data> 
+<data key="LiteralUnlimitedNatural_mixed">[]</data> 
+<data key="LiteralUnlimitedNatural_any">[]</data> 
+<data key="LiteralUnlimitedNatural_anyAttribute">[value=*]</data> 
+<data key="Label">[value=*]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[value=*]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="338887787"> 
+<data key="ClassName">Class</data> 
+<data key="Class_mixed">[ecore.xml.type:text=
+    , generalization=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@7829b776 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@5778826f (name: Generalization) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [general=_0jvMIOAoEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ]</data> 
+<data key="Class_any">[generalization=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@7829b776 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@5778826f (name: Generalization) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [general=_0jvMIOAoEeu-XNcrlfd6Uw])]</data> 
+<data key="Class_anyAttribute">[name=Cat]</data> 
+<data key="Label">[name=Cat]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[name=Cat]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="2015999862"> 
+<data key="ClassName">Generalization</data> 
+<data key="Generalization_mixed">[]</data> 
+<data key="Generalization_any">[]</data> 
+<data key="Generalization_anyAttribute">[general=_0jvMIOAoEeu-XNcrlfd6Uw]</data> 
+<data key="Label">[general=_0jvMIOAoEeu-XNcrlfd6Uw]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[general=_0jvMIOAoEeu-XNcrlfd6Uw]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="1197721383"> 
+<data key="ClassName">Class</data> 
+<data key="Class_mixed">[ecore.xml.type:text=
+    , generalization=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@72445aba (eClass: org.eclipse.emf.ecore.impl.EClassImpl@5778826f (name: Generalization) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [general=_0jvMIOAoEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ]</data> 
+<data key="Class_any">[generalization=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@72445aba (eClass: org.eclipse.emf.ecore.impl.EClassImpl@5778826f (name: Generalization) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [general=_0jvMIOAoEeu-XNcrlfd6Uw])]</data> 
+<data key="Class_anyAttribute">[name=Dog]</data> 
+<data key="Label">[name=Dog]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[name=Dog]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="1917082298"> 
+<data key="ClassName">Generalization</data> 
+<data key="Generalization_mixed">[]</data> 
+<data key="Generalization_any">[]</data> 
+<data key="Generalization_anyAttribute">[general=_0jvMIOAoEeu-XNcrlfd6Uw]</data> 
+<data key="Label">[general=_0jvMIOAoEeu-XNcrlfd6Uw]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[general=_0jvMIOAoEeu-XNcrlfd6Uw]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="1639765351"> 
+<data key="ClassName">Class</data> 
+<data key="Class_mixed">[]</data> 
+<data key="Class_any">[]</data> 
+<data key="Class_anyAttribute">[name=LivingStyle]</data> 
+<data key="Label">[name=LivingStyle]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[name=LivingStyle]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="478209179"> 
+<data key="ClassName">Association</data> 
+<data key="Association_mixed">[ecore.xml.type:text=
+    , eAnnotations=org.eclipse.emf.ecore.impl.EAnnotationImpl@9ed238c (source: org.eclipse.papyrus), ecore.xml.type:text=
+    , ownedEnd=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@56f6d40b (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [name=animal, type=_0jvMIOAoEeu-XNcrlfd6Uw, association=_KqQXUOApEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ]</data> 
+<data key="Association_any">[eAnnotations=org.eclipse.emf.ecore.impl.EAnnotationImpl@9ed238c (source: org.eclipse.papyrus), ownedEnd=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@56f6d40b (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [name=animal, type=_0jvMIOAoEeu-XNcrlfd6Uw, association=_KqQXUOApEeu-XNcrlfd6Uw])]</data> 
+<data key="Association_anyAttribute">[name=, memberEnd=_KqRlcOApEeu-XNcrlfd6Uw _KqSMguApEeu-XNcrlfd6Uw]</data> 
+<data key="Label">[name=, memberEnd=_KqRlcOApEeu-XNcrlfd6Uw _KqSMguApEeu-XNcrlfd6Uw]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[name=, memberEnd=_KqRlcOApEeu-XNcrlfd6Uw _KqSMguApEeu-XNcrlfd6Uw]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="166536076"> 
+<data key="ClassName">EAnnotation</data> 
+<data key="EAnnotation_source">org.eclipse.papyrus</data> 
+<data key="Label">EAnnotationImpl</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">EAnnotationImpl<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="1445424568"> 
+<data key="ClassName">EStringToStringMapEntry</data> 
+<data key="EStringToStringMapEntry_key">nature</data> 
+<data key="EStringToStringMapEntry_value">UML_Nature</data> 
+<data key="Label">EStringToStringMapEntryImpl</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">EStringToStringMapEntryImpl<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="1459016715"> 
+<data key="ClassName">Property</data> 
+<data key="Property_mixed">[]</data> 
+<data key="Property_any">[]</data> 
+<data key="Property_anyAttribute">[name=animal, type=_0jvMIOAoEeu-XNcrlfd6Uw, association=_KqQXUOApEeu-XNcrlfd6Uw]</data> 
+<data key="Label">[name=animal, type=_0jvMIOAoEeu-XNcrlfd6Uw, association=_KqQXUOApEeu-XNcrlfd6Uw]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[name=animal, type=_0jvMIOAoEeu-XNcrlfd6Uw, association=_KqQXUOApEeu-XNcrlfd6Uw]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="912747546"> 
+<data key="ClassName">Class</data> 
+<data key="Class_mixed">[ecore.xml.type:text=
+    , ownedAttribute=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@5b408dc3 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+      , upperValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@4d098f9b (eClass: org.eclipse.emf.ecore.impl.EClassImpl@54227100 (name: LiteralUnlimitedNatural) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [value=*]), ecore.xml.type:text=
+    ], anyAttribute: [name=class8, type=_qoDRkOCVEeu-XNcrlfd6Uw, association=_rZO24OCVEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ]</data> 
+<data key="Class_any">[ownedAttribute=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@5b408dc3 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+      , upperValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@4d098f9b (eClass: org.eclipse.emf.ecore.impl.EClassImpl@54227100 (name: LiteralUnlimitedNatural) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [value=*]), ecore.xml.type:text=
+    ], anyAttribute: [name=class8, type=_qoDRkOCVEeu-XNcrlfd6Uw, association=_rZO24OCVEeu-XNcrlfd6Uw])]</data> 
+<data key="Class_anyAttribute">[name=Class7]</data> 
+<data key="Label">[name=Class7]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[name=Class7]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="1530957251"> 
+<data key="ClassName">Property</data> 
+<data key="Property_mixed">[ecore.xml.type:text=
+      , upperValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@4d098f9b (eClass: org.eclipse.emf.ecore.impl.EClassImpl@54227100 (name: LiteralUnlimitedNatural) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [value=*]), ecore.xml.type:text=
+    ]</data> 
+<data key="Property_any">[upperValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@4d098f9b (eClass: org.eclipse.emf.ecore.impl.EClassImpl@54227100 (name: LiteralUnlimitedNatural) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [value=*])]</data> 
+<data key="Property_anyAttribute">[name=class8, type=_qoDRkOCVEeu-XNcrlfd6Uw, association=_rZO24OCVEeu-XNcrlfd6Uw]</data> 
+<data key="Label">[name=class8, type=_qoDRkOCVEeu-XNcrlfd6Uw, association=_rZO24OCVEeu-XNcrlfd6Uw]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[name=class8, type=_qoDRkOCVEeu-XNcrlfd6Uw, association=_rZO24OCVEeu-XNcrlfd6Uw]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="1292472219"> 
+<data key="ClassName">LiteralUnlimitedNatural</data> 
+<data key="LiteralUnlimitedNatural_mixed">[]</data> 
+<data key="LiteralUnlimitedNatural_any">[]</data> 
+<data key="LiteralUnlimitedNatural_anyAttribute">[value=*]</data> 
+<data key="Label">[value=*]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[value=*]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="767511741"> 
+<data key="ClassName">Class</data> 
+<data key="Class_mixed">[ecore.xml.type:text=
+    , ownedAttribute=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@20b5f2ac (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+      , lowerValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@7fc44dec (eClass: org.eclipse.emf.ecore.impl.EClassImpl@b968a76 (name: LiteralInteger) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: null), ecore.xml.type:text=
+      , upperValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@7e3060d8 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@54227100 (name: LiteralUnlimitedNatural) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [value=1]), ecore.xml.type:text=
+    ], anyAttribute: [name=class9, type=_q1w9cOCVEeu-XNcrlfd6Uw, association=_rx8R0OCVEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ]</data> 
+<data key="Class_any">[ownedAttribute=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@20b5f2ac (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+      , lowerValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@7fc44dec (eClass: org.eclipse.emf.ecore.impl.EClassImpl@b968a76 (name: LiteralInteger) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: null), ecore.xml.type:text=
+      , upperValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@7e3060d8 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@54227100 (name: LiteralUnlimitedNatural) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [value=1]), ecore.xml.type:text=
+    ], anyAttribute: [name=class9, type=_q1w9cOCVEeu-XNcrlfd6Uw, association=_rx8R0OCVEeu-XNcrlfd6Uw])]</data> 
+<data key="Class_anyAttribute">[name=Class8]</data> 
+<data key="Label">[name=Class8]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[name=Class8]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="548795052"> 
+<data key="ClassName">Property</data> 
+<data key="Property_mixed">[ecore.xml.type:text=
+      , lowerValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@7fc44dec (eClass: org.eclipse.emf.ecore.impl.EClassImpl@b968a76 (name: LiteralInteger) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: null), ecore.xml.type:text=
+      , upperValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@7e3060d8 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@54227100 (name: LiteralUnlimitedNatural) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [value=1]), ecore.xml.type:text=
+    ]</data> 
+<data key="Property_any">[lowerValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@7fc44dec (eClass: org.eclipse.emf.ecore.impl.EClassImpl@b968a76 (name: LiteralInteger) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: null), upperValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@7e3060d8 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@54227100 (name: LiteralUnlimitedNatural) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [value=1])]</data> 
+<data key="Property_anyAttribute">[name=class9, type=_q1w9cOCVEeu-XNcrlfd6Uw, association=_rx8R0OCVEeu-XNcrlfd6Uw]</data> 
+<data key="Label">[name=class9, type=_q1w9cOCVEeu-XNcrlfd6Uw, association=_rx8R0OCVEeu-XNcrlfd6Uw]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[name=class9, type=_q1w9cOCVEeu-XNcrlfd6Uw, association=_rx8R0OCVEeu-XNcrlfd6Uw]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="2143571436"> 
+<data key="ClassName">LiteralInteger</data> 
+<data key="LiteralInteger_mixed">[]</data> 
+<data key="LiteralInteger_any">[]</data> 
+<data key="LiteralInteger_anyAttribute">[]</data> 
+<data key="Label">[]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="2117099736"> 
+<data key="ClassName">LiteralUnlimitedNatural</data> 
+<data key="LiteralUnlimitedNatural_mixed">[]</data> 
+<data key="LiteralUnlimitedNatural_any">[]</data> 
+<data key="LiteralUnlimitedNatural_anyAttribute">[value=1]</data> 
+<data key="Label">[value=1]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[value=1]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="691863815"> 
+<data key="ClassName">Class</data> 
+<data key="Class_mixed">[ecore.xml.type:text=
+    , ownedAttribute=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@2692b61e (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+      , lowerValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@7b64240d (eClass: org.eclipse.emf.ecore.impl.EClassImpl@b968a76 (name: LiteralInteger) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: null), ecore.xml.type:text=
+      , upperValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@62fad19 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@54227100 (name: LiteralUnlimitedNatural) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [value=1]), ecore.xml.type:text=
+    ], anyAttribute: [name=class7, type=_qYEU0OCVEeu-XNcrlfd6Uw, association=_sLeMIOCVEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ]</data> 
+<data key="Class_any">[ownedAttribute=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@2692b61e (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [ecore.xml.type:text=
+      , lowerValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@7b64240d (eClass: org.eclipse.emf.ecore.impl.EClassImpl@b968a76 (name: LiteralInteger) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: null), ecore.xml.type:text=
+      , upperValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@62fad19 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@54227100 (name: LiteralUnlimitedNatural) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [value=1]), ecore.xml.type:text=
+    ], anyAttribute: [name=class7, type=_qYEU0OCVEeu-XNcrlfd6Uw, association=_sLeMIOCVEeu-XNcrlfd6Uw])]</data> 
+<data key="Class_anyAttribute">[name=Class9]</data> 
+<data key="Label">[name=Class9]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[name=Class9]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="647149086"> 
+<data key="ClassName">Property</data> 
+<data key="Property_mixed">[ecore.xml.type:text=
+      , lowerValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@7b64240d (eClass: org.eclipse.emf.ecore.impl.EClassImpl@b968a76 (name: LiteralInteger) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: null), ecore.xml.type:text=
+      , upperValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@62fad19 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@54227100 (name: LiteralUnlimitedNatural) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [value=1]), ecore.xml.type:text=
+    ]</data> 
+<data key="Property_any">[lowerValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@7b64240d (eClass: org.eclipse.emf.ecore.impl.EClassImpl@b968a76 (name: LiteralInteger) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: null), upperValue=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@62fad19 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@54227100 (name: LiteralUnlimitedNatural) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [value=1])]</data> 
+<data key="Property_anyAttribute">[name=class7, type=_qYEU0OCVEeu-XNcrlfd6Uw, association=_sLeMIOCVEeu-XNcrlfd6Uw]</data> 
+<data key="Label">[name=class7, type=_qYEU0OCVEeu-XNcrlfd6Uw, association=_sLeMIOCVEeu-XNcrlfd6Uw]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[name=class7, type=_qYEU0OCVEeu-XNcrlfd6Uw, association=_sLeMIOCVEeu-XNcrlfd6Uw]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="2070160397"> 
+<data key="ClassName">LiteralInteger</data> 
+<data key="LiteralInteger_mixed">[]</data> 
+<data key="LiteralInteger_any">[]</data> 
+<data key="LiteralInteger_anyAttribute">[]</data> 
+<data key="Label">[]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="103787801"> 
+<data key="ClassName">LiteralUnlimitedNatural</data> 
+<data key="LiteralUnlimitedNatural_mixed">[]</data> 
+<data key="LiteralUnlimitedNatural_any">[]</data> 
+<data key="LiteralUnlimitedNatural_anyAttribute">[value=1]</data> 
+<data key="Label">[value=1]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[value=1]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="1205580258"> 
+<data key="ClassName">Association</data> 
+<data key="Association_mixed">[ecore.xml.type:text=
+    , eAnnotations=org.eclipse.emf.ecore.impl.EAnnotationImpl@74cadd41 (source: org.eclipse.papyrus), ecore.xml.type:text=
+    , ownedEnd=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@55e8ec2f (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [name=class7, type=_qYEU0OCVEeu-XNcrlfd6Uw, association=_rZO24OCVEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ]</data> 
+<data key="Association_any">[eAnnotations=org.eclipse.emf.ecore.impl.EAnnotationImpl@74cadd41 (source: org.eclipse.papyrus), ownedEnd=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@55e8ec2f (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [name=class7, type=_qYEU0OCVEeu-XNcrlfd6Uw, association=_rZO24OCVEeu-XNcrlfd6Uw])]</data> 
+<data key="Association_anyAttribute">[memberEnd=_rZPd8eCVEeu-XNcrlfd6Uw _rZPd9OCVEeu-XNcrlfd6Uw]</data> 
+<data key="Label">[memberEnd=_rZPd8eCVEeu-XNcrlfd6Uw _rZPd9OCVEeu-XNcrlfd6Uw]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[memberEnd=_rZPd8eCVEeu-XNcrlfd6Uw _rZPd9OCVEeu-XNcrlfd6Uw]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="1959451969"> 
+<data key="ClassName">EAnnotation</data> 
+<data key="EAnnotation_source">org.eclipse.papyrus</data> 
+<data key="Label">EAnnotationImpl</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">EAnnotationImpl<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="777313177"> 
+<data key="ClassName">EStringToStringMapEntry</data> 
+<data key="EStringToStringMapEntry_key">nature</data> 
+<data key="EStringToStringMapEntry_value">UML_Nature</data> 
+<data key="Label">EStringToStringMapEntryImpl</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">EStringToStringMapEntryImpl<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="1441328175"> 
+<data key="ClassName">Property</data> 
+<data key="Property_mixed">[]</data> 
+<data key="Property_any">[]</data> 
+<data key="Property_anyAttribute">[name=class7, type=_qYEU0OCVEeu-XNcrlfd6Uw, association=_rZO24OCVEeu-XNcrlfd6Uw]</data> 
+<data key="Label">[name=class7, type=_qYEU0OCVEeu-XNcrlfd6Uw, association=_rZO24OCVEeu-XNcrlfd6Uw]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[name=class7, type=_qYEU0OCVEeu-XNcrlfd6Uw, association=_rZO24OCVEeu-XNcrlfd6Uw]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="1327895505"> 
+<data key="ClassName">Association</data> 
+<data key="Association_mixed">[ecore.xml.type:text=
+    , eAnnotations=org.eclipse.emf.ecore.impl.EAnnotationImpl@6d24ffa1 (source: org.eclipse.papyrus), ecore.xml.type:text=
+    , ownedEnd=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@773f7880 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [name=class8, type=_qoDRkOCVEeu-XNcrlfd6Uw, association=_rx8R0OCVEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ]</data> 
+<data key="Association_any">[eAnnotations=org.eclipse.emf.ecore.impl.EAnnotationImpl@6d24ffa1 (source: org.eclipse.papyrus), ownedEnd=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@773f7880 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [name=class8, type=_qoDRkOCVEeu-XNcrlfd6Uw, association=_rx8R0OCVEeu-XNcrlfd6Uw])]</data> 
+<data key="Association_anyAttribute">[memberEnd=_rx8R0-CVEeu-XNcrlfd6Uw _rx844OCVEeu-XNcrlfd6Uw]</data> 
+<data key="Label">[memberEnd=_rx8R0-CVEeu-XNcrlfd6Uw _rx844OCVEeu-XNcrlfd6Uw]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[memberEnd=_rx8R0-CVEeu-XNcrlfd6Uw _rx844OCVEeu-XNcrlfd6Uw]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="1831141281"> 
+<data key="ClassName">EAnnotation</data> 
+<data key="EAnnotation_source">org.eclipse.papyrus</data> 
+<data key="Label">EAnnotationImpl</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">EAnnotationImpl<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="1705277839"> 
+<data key="ClassName">EStringToStringMapEntry</data> 
+<data key="EStringToStringMapEntry_key">nature</data> 
+<data key="EStringToStringMapEntry_value">UML_Nature</data> 
+<data key="Label">EStringToStringMapEntryImpl</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">EStringToStringMapEntryImpl<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="2000648320"> 
+<data key="ClassName">Property</data> 
+<data key="Property_mixed">[]</data> 
+<data key="Property_any">[]</data> 
+<data key="Property_anyAttribute">[name=class8, type=_qoDRkOCVEeu-XNcrlfd6Uw, association=_rx8R0OCVEeu-XNcrlfd6Uw]</data> 
+<data key="Label">[name=class8, type=_qoDRkOCVEeu-XNcrlfd6Uw, association=_rx8R0OCVEeu-XNcrlfd6Uw]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[name=class8, type=_qoDRkOCVEeu-XNcrlfd6Uw, association=_rx8R0OCVEeu-XNcrlfd6Uw]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="142099757"> 
+<data key="ClassName">Association</data> 
+<data key="Association_mixed">[ecore.xml.type:text=
+    , eAnnotations=org.eclipse.emf.ecore.impl.EAnnotationImpl@426b6a74 (source: org.eclipse.papyrus), ecore.xml.type:text=
+    , ownedEnd=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@83298d7 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [name=class9, type=_q1w9cOCVEeu-XNcrlfd6Uw, association=_sLeMIOCVEeu-XNcrlfd6Uw]), ecore.xml.type:text=
+  ]</data> 
+<data key="Association_any">[eAnnotations=org.eclipse.emf.ecore.impl.EAnnotationImpl@426b6a74 (source: org.eclipse.papyrus), ownedEnd=org.eclipse.emf.ecore.xml.type.impl.AnyTypeImpl@83298d7 (eClass: org.eclipse.emf.ecore.impl.EClassImpl@a5b0b86 (name: Property) (instanceClassName: null) (abstract: false, interface: false)) (mixed: [], anyAttribute: [name=class9, type=_q1w9cOCVEeu-XNcrlfd6Uw, association=_sLeMIOCVEeu-XNcrlfd6Uw])]</data> 
+<data key="Association_anyAttribute">[memberEnd=_sLeMI-CVEeu-XNcrlfd6Uw _sLeMJuCVEeu-XNcrlfd6Uw]</data> 
+<data key="Label">[memberEnd=_sLeMI-CVEeu-XNcrlfd6Uw _sLeMJuCVEeu-XNcrlfd6Uw]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[memberEnd=_sLeMI-CVEeu-XNcrlfd6Uw _sLeMJuCVEeu-XNcrlfd6Uw]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="1114335860"> 
+<data key="ClassName">EAnnotation</data> 
+<data key="EAnnotation_source">org.eclipse.papyrus</data> 
+<data key="Label">EAnnotationImpl</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">EAnnotationImpl<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="80026551"> 
+<data key="ClassName">EStringToStringMapEntry</data> 
+<data key="EStringToStringMapEntry_key">nature</data> 
+<data key="EStringToStringMapEntry_value">UML_Nature</data> 
+<data key="Label">EStringToStringMapEntryImpl</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">EStringToStringMapEntryImpl<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="137533655"> 
+<data key="ClassName">Property</data> 
+<data key="Property_mixed">[]</data> 
+<data key="Property_any">[]</data> 
+<data key="Property_anyAttribute">[name=class9, type=_q1w9cOCVEeu-XNcrlfd6Uw, association=_sLeMIOCVEeu-XNcrlfd6Uw]</data> 
+<data key="Label">[name=class9, type=_q1w9cOCVEeu-XNcrlfd6Uw, association=_sLeMIOCVEeu-XNcrlfd6Uw]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[name=class9, type=_q1w9cOCVEeu-XNcrlfd6Uw, association=_sLeMIOCVEeu-XNcrlfd6Uw]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<node id="1118430673"> 
+<data key="ClassName">Dependency</data> 
+<data key="Dependency_mixed">[]</data> 
+<data key="Dependency_any">[]</data> 
+<data key="Dependency_anyAttribute">[client=_qYEU0OCVEeu-XNcrlfd6Uw, supplier=_1YFaMOAoEeu-XNcrlfd6Uw]</data> 
+<data key="Label">[client=_qYEU0OCVEeu-XNcrlfd6Uw, supplier=_1YFaMOAoEeu-XNcrlfd6Uw]</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">[client=_qYEU0OCVEeu-XNcrlfd6Uw, supplier=_1YFaMOAoEeu-XNcrlfd6Uw]<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</node> 
+<edge source="166536076" target="1445424568"> 
+<data key="EReference_ReferenceName">details</data> 
+<data key="Label">details</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">details<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</edge> 
+<edge source="1959451969" target="777313177"> 
+<data key="EReference_ReferenceName">details</data> 
+<data key="Label">details</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">details<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</edge> 
+<edge source="1831141281" target="1705277839"> 
+<data key="EReference_ReferenceName">details</data> 
+<data key="Label">details</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">details<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</edge> 
+<edge source="1114335860" target="80026551"> 
+<data key="EReference_ReferenceName">details</data> 
+<data key="Label">details</data> 
+<data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="746.6867968000003" y="-12.487705599997412"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.703125" x="-5.3515625" y="5.6494140625">details<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data> 
+</edge> 
+</graph> 
+</graphml> 

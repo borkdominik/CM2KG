@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements">
+  <uml:Model xmi:id="_c7XjUGzEEeiXKo7Z7RQZIw" name="04_Papyrus_ReqExchange" visibility="public">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_dALx4GzEEeiXKo7Z7RQZIw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_dAYmMGzEEeiXKo7Z7RQZIw">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML14_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gGe0cGzEEeiXKo7Z7RQZIw" name="Systemvorraussetzung"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_oR4IkGzEEeiXKo7Z7RQZIw" name="Projektverwaltung">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_sKbugGzEEeiXKo7Z7RQZIw" name="Erstellung"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_6UW2kGzEEeiXKo7Z7RQZIw" name="Beitritt"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_6fa3EGzEEeiXKo7Z7RQZIw" name="Generierung"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_7ktEIGzEEeiXKo7Z7RQZIw" name="Änderung"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_JqDOMGzFEeiXKo7Z7RQZIw" name="Requirement Export">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_Ldb3YGzFEeiXKo7Z7RQZIw" name="ReqIF"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_Udrv4GzFEeiXKo7Z7RQZIw" name="Microsoft Office Excel"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_bPjFQGzFEeiXKo7Z7RQZIw" name="Papyrus SysML"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_dUvQIGzFEeiXKo7Z7RQZIw" name="Microsoft Office Word"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_wNYxIGzFEeiXKo7Z7RQZIw" name="Erweiterbarkeit"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_9J31sGzFEeiXKo7Z7RQZIw" name="Synchronisation">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_AmkmEGzGEeiXKo7Z7RQZIw" name="Senden"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_AyMnQGzGEeiXKo7Z7RQZIw" name="Empfangen"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_A9J6EGzGEeiXKo7Z7RQZIw" name="Konflikte"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_Y4za4GzGEeiXKo7Z7RQZIw" name="Zusammenfügen von unabhängigen Änderungen"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Bl0ckGzGEeiXKo7Z7RQZIw" name="Konflikte Erweitert"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_TVh_kGzGEeiXKo7Z7RQZIw" name="DeriveReqt18" client="_A9J6EGzGEeiXKo7Z7RQZIw" supplier="_Bl0ckGzGEeiXKo7Z7RQZIw"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gSeXIGzGEeiXKo7Z7RQZIw" name="Metamodell"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hHghsGzGEeiXKo7Z7RQZIw" name="Synchronisationshinweis senden"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jiWzgGzGEeiXKo7Z7RQZIw" name="Synchronisationshinweis empfangen"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_leWmIGzGEeiXKo7Z7RQZIw" name="Effiziente Kommunikation"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dABZ0GzEEeiXKo7Z7RQZIw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dAEdIGzEEeiXKo7Z7RQZIw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dAFrQGzEEeiXKo7Z7RQZIw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dAFrQWzEEeiXKo7Z7RQZIw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dAIHgGzEEeiXKo7Z7RQZIw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dAIukGzEEeiXKo7Z7RQZIw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dAIukWzEEeiXKo7Z7RQZIw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dAIukmzEEeiXKo7Z7RQZIw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dAJVoGzEEeiXKo7Z7RQZIw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dAJVoWzEEeiXKo7Z7RQZIw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dAJVomzEEeiXKo7Z7RQZIw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dAJ8sGzEEeiXKo7Z7RQZIw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dAJ8sWzEEeiXKo7Z7RQZIw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dAJ8smzEEeiXKo7Z7RQZIw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dAJ8s2zEEeiXKo7Z7RQZIw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dAKjwGzEEeiXKo7Z7RQZIw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dAKjwWzEEeiXKo7Z7RQZIw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dAKjwmzEEeiXKo7Z7RQZIw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML14_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dALK0GzEEeiXKo7Z7RQZIw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dALK0WzEEeiXKo7Z7RQZIw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <Requirements:Requirement xmi:id="_gIUngGzEEeiXKo7Z7RQZIw" base_Class="_gGe0cGzEEeiXKo7Z7RQZIw" id="01" text="Das Ziel-Betriebssystem für ReqExchange Client und ReqExchange Server ist Windows 10."/>
+  <Requirements:Requirement xmi:id="_oR-PMGzEEeiXKo7Z7RQZIw" base_Class="_oR4IkGzEEeiXKo7Z7RQZIw" id="02" text="Der ReqExchange Client erlaubt dem Nutzer, Requirements Projekte zu verwalten."/>
+  <Requirements:Requirement xmi:id="_sKpw8GzEEeiXKo7Z7RQZIw" base_Class="_sKbugGzEEeiXKo7Z7RQZIw" id="02a" text="Der Nutzer kann mit Hilfe des ReqExchange-Client ein Projekt erstellen. Dafür muss der Nutzer eine Bezeichnung und ein Passwort angeben. Des Weiteren muss eine Datei im ReqIF-Format angegeben werden, dessen Requirements initial importiert werden."/>
+  <Requirements:Requirement xmi:id="_6UeLUGzEEeiXKo7Z7RQZIw" base_Class="_6UW2kGzEEeiXKo7Z7RQZIw" id="02b" text="Der Nutzer kann mithilfe des Passworts einem bestehenden Projekt beitreten."/>
+  <Requirements:Requirement xmi:id="_6fiL0GzEEeiXKo7Z7RQZIw" base_Class="_6fa3EGzEEeiXKo7Z7RQZIw" id="02c" text="Der Nutzer kann mithilfe des Passworts einem bestehenden Projekt beitreten."/>
+  <Requirements:Requirement xmi:id="_7kwugGzEEeiXKo7Z7RQZIw" base_Class="_7ktEIGzEEeiXKo7Z7RQZIw" id="02d" text="Der Nutzer kann mithilfe des Passworts einem bestehenden Projekt beitreten."/>
+  <Requirements:Requirement xmi:id="_JqG4kGzFEeiXKo7Z7RQZIw" base_Class="_JqDOMGzFEeiXKo7Z7RQZIw" id="03" text="Der Nutzer kann mithilfe des Passworts einem bestehenden Projekt beitreten."/>
+  <Requirements:Requirement xmi:id="_LdeToGzFEeiXKo7Z7RQZIw" base_Class="_Ldb3YGzFEeiXKo7Z7RQZIw" id="03a" text="Der Nutzer kann mithilfe des Passworts einem bestehenden Projekt beitreten."/>
+  <Requirements:Requirement xmi:id="_UdydkGzFEeiXKo7Z7RQZIw" base_Class="_Udrv4GzFEeiXKo7Z7RQZIw" id="03b" text="Der Nutzer kann mithilfe des Passworts einem bestehenden Projekt beitreten."/>
+  <Requirements:Requirement xmi:id="_bPmIkGzFEeiXKo7Z7RQZIw" base_Class="_bPjFQGzFEeiXKo7Z7RQZIw" id="03c" text="&quot;Requirement Dateien im (.di, .uml, .notation) Format werden durch den ReqExchange Client unterstützt.&#xA;&quot;"/>
+  <Requirements:Requirement xmi:id="_dUy6gGzFEeiXKo7Z7RQZIw" base_Class="_dUvQIGzFEeiXKo7Z7RQZIw" id="03d" text="Microsoft Office Word Dateien im Format .docx werden vom ReqExchange Client unterstützt."/>
+  <Requirements:Requirement xmi:id="_wNdCkGzFEeiXKo7Z7RQZIw" base_Class="_wNYxIGzFEeiXKo7Z7RQZIw" id="03e" text="Es soll möglich sein, weitere Formate in die Architektur einzubinden."/>
+  <Requirements:Requirement xmi:id="_9KC00GzFEeiXKo7Z7RQZIw" base_Class="_9J31sGzFEeiXKo7Z7RQZIw" id="04" text="Es soll möglich sein, weitere Formate in die Architektur einzubinden."/>
+  <Requirements:Requirement xmi:id="_AmoQcGzGEeiXKo7Z7RQZIw" base_Class="_AmkmEGzGEeiXKo7Z7RQZIw" id="04a" text="Der Nutzer kann Änderungen an Requirement Dateien mit Hilfe des ReqExchange Clients an den ReqExchange Server senden. Zuvor werden die Änderungen in das definierte Metamodell überführt."/>
+  <Requirements:Requirement xmi:id="_AyVxMGzGEeiXKo7Z7RQZIw" base_Class="_AyMnQGzGEeiXKo7Z7RQZIw" id="04b" text="Der Nutzer kann Änderungen an Requirement Dateien von anderen Nutzern mit Hilfe des ReqExchange Clients vom ReqExchange Server empfangen."/>
+  <Requirements:Requirement xmi:id="_A9R14GzGEeiXKo7Z7RQZIw" base_Class="_A9J6EGzGEeiXKo7Z7RQZIw" id="04c1" text="Der Nutzer kann Änderungen an Requirement Dateien von anderen Nutzern mit Hilfe des ReqExchange Clients vom ReqExchange Server empfangen."/>
+  <Requirements:Requirement xmi:id="_Bl8_cGzGEeiXKo7Z7RQZIw" base_Class="_Bl0ckGzGEeiXKo7Z7RQZIw" id="04c2" text="Der Nutzer kann Änderungen an Requirement Dateien von anderen Nutzern mit Hilfe des ReqExchange Clients vom ReqExchange Server empfangen."/>
+  <Requirements:DeriveReqt xmi:id="_TVlC4GzGEeiXKo7Z7RQZIw" base_DirectedRelationship="_TVh_kGzGEeiXKo7Z7RQZIw" base_Abstraction="_TVh_kGzGEeiXKo7Z7RQZIw"/>
+  <Requirements:Requirement xmi:id="_Y42eMGzGEeiXKo7Z7RQZIw" base_Class="_Y4za4GzGEeiXKo7Z7RQZIw" id="04d" text="Der Nutzer kann Änderungen an Requirement Dateien von anderen Nutzern mit Hilfe des ReqExchange Clients vom ReqExchange Server empfangen."/>
+  <Requirements:Requirement xmi:id="_gSmS8GzGEeiXKo7Z7RQZIw" base_Class="_gSeXIGzGEeiXKo7Z7RQZIw" id="05" text="Es wird ein einheintliches Metamodell für die Requirementrepräsentation auf dem ReqExchange Server verwendet. Änderungen an Requirement Dateien werden von dem ReqExchange Client in dieses Modell überführt."/>
+  <Requirements:Requirement xmi:id="_hHiW4GzGEeiXKo7Z7RQZIw" base_Class="_hHghsGzGEeiXKo7Z7RQZIw" id="07" text="Der ReqExchange Client markiert ein Projekt, wenn auf dem Client Änderungen an einem Projekt zum versenden verfügbar sind."/>
+  <Requirements:Requirement xmi:id="_jiZPwGzGEeiXKo7Z7RQZIw" base_Class="_jiWzgGzGEeiXKo7Z7RQZIw" id="08" text="Der ReqExchange Client markiert ein Projekt, wenn auf dem Client Änderungen an einem Projekt zum versenden verfügbar sind."/>
+  <Requirements:Requirement xmi:id="_leeh8GzGEeiXKo7Z7RQZIw" base_Class="_leWmIGzGEeiXKo7Z7RQZIw" id="09" text="Der ReqExchange Client markiert ein Projekt, wenn auf dem Client Änderungen an einem Projekt zum versenden verfügbar sind."/>
+</xmi:XMI>

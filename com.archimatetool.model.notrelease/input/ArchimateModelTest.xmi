@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:ArchimateModel
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    xsi:schemaLocation="http://www.archimatetool.com/archimate ../model/archimate.ecore">
+  <folders name="Business"
+      id="8c90fdfa"
+      type="business">
+    <folders
+        name="Actors"
+        id="fa63373b">
+      <elements
+          xsi:type="archimate:BusinessInterface"
+          name="mail"
+          id="sadasda"/>
+      <elements
+          xsi:type="archimate:ArchimateDiagramModel"
+          name="Archimate View">
+        <children
+            xsi:type="archimate:DiagramModelReference"
+            id="asdsad"/>
+        <children
+            xsi:type="archimate:DiagramModelArchimateObject">
+          <sourceConnections
+              id="asdasdsa"/>
+          <children
+              xsi:type="archimate:DiagramModelReference"
+              referencedModel="//@folders.0/@folders.0/@elements.1"/>
+        </children>
+        <children
+            xsi:type="archimate:DiagramModelGroup"
+            name="asdsadsa"/>
+        <children
+            xsi:type="archimate:DiagramModelArchimateObject"
+            name="objectt"
+            targetConnections="asdasdsa"
+            archimateElement="sadasda">
+          <sourceConnections
+              name="asdsadas"
+              source="//@folders.0/@folders.0/@elements.1/@children.2"
+              target="asdasdsa"
+              type="2">
+            <bendpoints
+                startX="123"
+                startY="123"
+                endX="123"
+                endY="123"/>
+          </sourceConnections>
+        </children>
+      </elements>
+    </folders>
+  </folders>
+</archimate:ArchimateModel>

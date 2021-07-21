@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+	<title>EA Graph Analysis</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="/js//neovis.js"></script>
+
+	<!-- unpkg CDN non-minified -->
+	<script src="https://unpkg.com/neo4j-driver"></script>
+</head>
+
+<body>
+
+	<div class="jumbotron text-center">
+		<h1>EA Model to Graph Transformation</h1>
+		<p>Transform your Archi or ADOxx model to GraphML and apply graph based-anaylsis.</p>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3>Step 1</h3>
+				<p>Upload your model.</p>
+			</div>
+			<div class="col-sm-4">
+				<h3>Step 2</h3>
+				<p>Your model is converted..</p>
+
+			</div>
+			<div class="col-sm-4">
+				<h3>Step 3</h3>
+				<p>Download your GraphML model.</p>
+			</div>
+		</div>
+
+
+	</div>
+
+	<div class="row" style="margin-left: 20px; margin-right: 20px;">
+
+		<div class="col-sm-2">
+			<div class="form-group">
+			
+				<label for="exampleFormControlSelect1">Centralities</label>
+				<select class="form-control" id="centralityAlghoritm">
+					<option value="degree">Degree</option>
+					<option value="eigenvector">Eigenvector</option>
+					<option value="pagerank">Page Rank</option>
+					<option value="articlerank">Article Rank</option>
+					<option value="betweenes">Betweenes</option>
+					<option value="1">Approx Betweenes</option>
+					<option value="closeness">Closeness</option>
+				</select>
+
+				<label for="communityAlghoritm">Community Detection</label>
+				<select class="form-control" id="communityAlghoritm">
+					<option value="louvain">louvain</option>
+					<option value="modularityOptimization">modularityOptimization</option>
+					<option value="labelPropagation">labelPropagation</option>
+					<option value="localClusteringCoefficient">localClusteringCoefficient</option>
+				</select>
+
+				<label for="exampleFormControlSelect3">Similarity</label>
+				<select class="form-control" id="exampleFormControlSelect3">
+
+				</select>
+			</div>
+
+			<div class="form-group">
+
+				<label for="alghoritmQuery">Alghorithm query:</label>
+				<textarea rows="20" cols="50" class="form-control" id="alghoritmQuery">
+				</textarea>
+
+			</div>
+			<input type="submit" value="Execute" id="reloadAlgo" onclick="drawAlgorithm(labelConf)">
+			<input type="submit" value="Stabilize" id="stabilize">
+		</div>
+
+		<div class="col-sm-8">
+			<div id="viz" style="height:900px"></div>
+		</div>
+
+		<div class="col-sm-2">
+			<div class="form-group">
+				<label for="caption">Caption</label>
+				<input type="text" class="form-control" id="caption" placeholder="Enter property name" value="name">
+
+				<label for="size">Size</label>
+				<input type="text" class="form-control" id="size" placeholder="Enter property name" value="score">
+
+				<label for="community">Community</label>
+				<input type="text" class="form-control" id="community" placeholder="Enter property name"
+					value="community">
+
+				<label for="fontSize">Font size</label>
+				<input type="text" class="form-control" id="fontSize" placeholder="Enter property name" value="20">
+
+				<label for="fontColor">Font color</label>
+				<input type="text" class="form-control" id="fontColor" placeholder="Enter property name"
+					value="#000000">
+
+
+				<label for="cypher">Cypher query:</label>
+				<textarea rows="4" cols="50" id="cypher" class="form-control">MATCH (n)-[r]->(m) RETURN n,r,m</textarea>
+
+			</div>
+			<input type="submit" value="Submit" id="reload" onclick="draw()">
+			<input type="submit" value="Stabilize" id="stabilize">
+		</div>
+
+	</div>
+
+</body>
+
+<script type="text/javascript">
+	// define config car
+	// instantiate nodevis object
+	// draw
+
+
+
+	console.log(NeoVis.NEOVIS_DEFAULT_CONFIG);
+
+	var viz;
+
+	function draw(labelConf) {
+		console.log(labelConf);
+		
+		var config = {
+			container_id: "viz",
+			server_url: "bolt://localhost:7687",
+			server_user: "neo4j",
+			server_password: "admin",
+			labels: labelConf,
+			relationships: {
+				"INTERACTS": {
+					"thickness": "weight",
+					"caption": false
+				}
+			},
+			initial_cypher: $("#cypher").val()
+		};
+
+		viz = new NeoVis.default(config);
+		viz.render();
+		console.log(viz);
+
+
+	}
+	var labelConf = [];
+
+	function addConfig() {
+		var driver = neo4j.driver(
+			'bolt://localhost:7687',
+			neo4j.auth.basic('neo4j', 'admin')
+		);
+
+		labelConf = [];
+		
+		var communityCounter = 0;
+		var session = driver.session();
+		session
+			.run("MATCH (n) RETURN distinct labels(n)[0] as label", {
+
+			})
+			.subscribe({
+				onKeys: keys => {
+					console.log(keys)
+				},
+				onNext: record => {
+					console.log(record.get('label'));
+					if (record.get('label')) {
+						
+						var communityResult;
+						/*if(record.get('community'))
+							communityResult = $("#community").val();
+						else
+							communityResult = communityCounter;
+						*/
+						//TO FIX THIS
+						communityResult = $("#community").val();
+						
+						labelConf[record.get('label')] = {
+							"caption": $("#caption").val(),
+							"size": $("#size").val(),
+							"community": communityResult // Math.floor(Math.random() * 20) + 0  //"#" + ((1<<24)*Math.random() | 0).toString(16)
+						};
+					}
+					communityCounter++;
+
+				},
+				onCompleted: () => {
+					session.close() // returns a Promise
+					driver.close();
+					console.log(labelConf);
+
+					console.log(JSON.stringify(labelConf));
+					draw(labelConf);
+				},
+				onError: error => {
+					console.log(error)
+				}
+			});
+	}
+	
+	function drawAlgorithm() {
+		//$("#alghoritmQuery").val();
+
+		var driver = neo4j.driver(
+			'bolt://localhost:7687',
+			neo4j.auth.basic('neo4j', 'admin')
+		);
+
+		var session = driver.session();
+		session
+			.run($("#alghoritmQuery").val(), {
+
+			})
+			.subscribe({
+				onKeys: keys => {
+					console.log(keys)
+				},
+				onNext: record => {
+					//console.log(record.get('name'))
+				},
+				onCompleted: () => {
+					session.close() // returns a Promise
+					driver.close();
+					addConfig();
+
+				},
+				onError: error => {
+					console.log(error)
+				}
+			});
+	}
+	
+	//initial load
+	//drawAlgorithm();
+</script>
+
+
+<script type="text/javascript">
+
+	var degree =
+		`CALL gds.alpha.degree.write({
+  nodeProjection: '*',
+  relationshipProjection: {
+    relType: {
+      type: '*',
+      orientation: 'REVERSE',
+      properties: {}
+    }
+  },
+  relationshipWeightProperty: null,
+  writeProperty: 'score'
+});
+`;
+
+	var eigenvector =
+		`CALL gds.alpha.eigenvector.write({
+  nodeProjection: '*',
+  relationshipProjection: {
+    relType: {
+      type: '*',
+      orientation: 'NATURAL',
+      properties: {}
+    }
+  },
+  maxIterations: 20,
+  normalization: 'none',
+  writeProperty: 'score'
+});
+`;
+	var pagerank =
+		`CALL gds.pageRank.write({
+  nodeProjection: '*',
+  relationshipProjection: {
+    relType: {
+      type: '*',
+      orientation: 'NATURAL',
+      properties: {}
+    }
+  },
+  relationshipWeightProperty: null,
+  dampingFactor: 0.85,
+  maxIterations: 20,
+  writeProperty: 'score'
+});
+`;
+
+	var betweenness =
+		`CALL gds.betweenness.write({
+  nodeProjection: '*',
+  relationshipProjection: {
+    relType: {
+      type: '*',
+      orientation: 'NATURAL',
+      properties: {}
+    }
+  },
+  writeProperty: 'score'
+});
+
+`;
+
+	var closeness =
+		`CALL gds.alpha.closeness.write({
+  nodeProjection: '*',
+  relationshipProjection: {
+    relType: {
+      type: '*',
+      orientation: 'NATURAL',
+      properties: {}
+    }
+  },
+  writeProperty: 'score'
+});
+`;
+
+
+var louvain =
+		`CALL gds.louvain.write({
+  nodeProjection: '*',
+  relationshipProjection: {
+    relType: {
+      type: '*',
+      orientation: 'UNDIRECTED',
+      properties: {}
+    }
+  },
+  relationshipWeightProperty: null,
+  includeIntermediateCommunities: false,
+  seedProperty: '',
+  writeProperty: 'community'
+});
+`;
+
+var modularityOptimization =
+		`CALL gds.beta.modularityOptimization.write({
+  nodeProjection: '*',
+  relationshipProjection: {
+    relType: {
+      type: '*',
+      orientation: 'UNDIRECTED',
+      properties: {}
+    }
+  },
+  relationshipWeightProperty: null,
+  seedProperty: '',
+  maxIterations: 10,
+  tolerance: 0.0001,
+  writeProperty: 'community'
+});
+`;
+
+var labelPropagation =
+		`CALL gds.labelPropagation.write({
+  nodeProjection: '*',
+  relationshipProjection: {
+    relType: {
+      type: '*',
+      orientation: 'UNDIRECTED',
+      properties: {}
+    }
+  },
+  relationshipWeightProperty: null,
+  writeProperty: 'community'
+});
+`;
+
+
+var localClusteringCoefficient =
+		`CALL gds.localClusteringCoefficient.write({
+  nodeProjection: '*',
+  relationshipProjection: {
+    relType: {
+      type: '*',
+      orientation: 'UNDIRECTED',
+      properties: {}
+    }
+  },
+  writeProperty: 'community'
+});
+`;
+
+
+	$("#alghoritmQuery").val(degree);
+
+	$('#centralityAlghoritm').on('change', function () {
+
+		if (this.value === "degree")
+			$("#alghoritmQuery").val(degree);
+		if (this.value === "eigenvector")
+			$("#alghoritmQuery").val(eigenvector);
+		if (this.value === "pagerank")
+			$("#alghoritmQuery").val(pagerank);
+		if (this.value === "betweenness")
+			$("#alghoritmQuery").val(betweenness);
+		if (this.value === "closeness")
+			$("#alghoritmQuery").val(closeness);
+	});
+	
+	
+	$('#communityAlghoritm').on('change', function () {
+
+		if (this.value === "louvain")
+			$("#alghoritmQuery").val(louvain);
+		if (this.value === "modularityOptimization")
+			$("#alghoritmQuery").val(modularityOptimization);
+		if (this.value === "labelPropagation")
+			$("#alghoritmQuery").val(labelPropagation);
+		if (this.value === "localClusteringCoefficient")
+			$("#alghoritmQuery").val(localClusteringCoefficient);
+
+	});
+	
+
+</script>
+
+</html>

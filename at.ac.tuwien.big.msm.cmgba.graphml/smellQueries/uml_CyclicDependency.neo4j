@@ -1,0 +1,2 @@
+MATCH (a)-[r1]->(b)-[r2]->(c)-[]->(a)
+return a,b,c

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmodel:City
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:tmodel="tmodel"
+    xsi:schemaLocation="tmodel ../metamodel/Test.ecore"
+    cityName="Vienna">
+  <stores name="Store 1">
+    <books bookName="book 11"/>
+    <books bookName="book 12"/>
+    <books bookName="book 13"/>
+    <books bookName="book 14"/>
+    <workers
+        workerName="Worker 11"/>
+    <workers
+        workerName="Worker 12"/>
+  </stores>
+  <stores name="Store 2">
+    <books bookName="book 21"/>
+    <books bookName="book 22"/>
+    <books bookName="book 23"/>
+    <books bookName="book 24"/>
+    <workers
+        workerName="worker 21"/>
+    <workers
+        workerName="worker 22"/>
+  </stores>
+  <users username="muhamed">
+    <borrowedBooks
+        issuedBook="//@stores.0/@books.0"
+        responsibleWorker="//@stores.0/@workers.0"
+        dateFrom="21.05.2020"
+        dateTo="25.05.2020"/>
+    <borrowedBooks
+        issuedBook="//@stores.0/@books.1"
+        responsibleWorker="//@stores.0/@workers.0"
+        dateFrom="15.05.2020"
+        dateTo="20.05.2020"/>
+  </users>
+  <users username="dominik">
+    <borrowedBooks
+        issuedBook="//@stores.1/@books.2"
+        responsibleWorker="//@stores.1/@workers.1"
+        dateFrom="20.05.2020"
+        dateTo="20.05.2020"/>
+    <borrowedBooks
+        issuedBook="//@stores.0/@books.2"
+        responsibleWorker="//@stores.0/@workers.1"
+        dateFrom="01.01.2020"
+        dateTo="01.02.2020"/>
+    <borrowedBooks
+        issuedBook="//@stores.1/@books.3"
+        responsibleWorker="//@stores.1/@workers.1"
+        dateFrom="01.01.2020"
+        dateTo="01.02.2020"/>
+  </users>
+  <users username="john"/>
+</tmodel:City>

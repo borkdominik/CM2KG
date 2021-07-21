@@ -1,0 +1,3 @@
+MATCH (a)-[r1]->(b)-[r2]->(c)-[]->(d)-[]->(e)
+where a.ClassName='BusinessService' and b.ClassName='BusinessService' and c.ClassName='BusinessService' and d.ClassName='BusinessService' and e.ClassName='BusinessService' 
+return a,b,c,d,e

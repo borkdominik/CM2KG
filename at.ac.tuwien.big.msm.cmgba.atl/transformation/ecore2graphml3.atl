@@ -1,0 +1,15 @@
+-- @nsURI MM=http://www.eclipse.org/emf/2002/Ecore
+-- @path graphml=/at.ac.tuwien.big.msm.cmgba.graphml/model/graphml.ecore
+
+module ecore2graphml3;
+create OUT : graphml from IN : MM;
+
+rule r1{
+	from s:MM!EPackage
+	to t:graphml!GraphML
+	}
+
+rule r2{
+	from s:MM!EClass
+	to t:graphml!Graph
+	}

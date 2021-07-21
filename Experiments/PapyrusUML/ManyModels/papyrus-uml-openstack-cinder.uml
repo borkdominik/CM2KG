@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_cLvrUNRPEeqkOan-8sezUg" name="papyrus-uml-openstack-cinder">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_cbPf4NRPEeqkOan-8sezUg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_vkJDYNRPEeqkOan-8sezUg" name="wafec">
+    <packagedElement xmi:type="uml:Package" xmi:id="_xbbVINRPEeqkOan-8sezUg" name="testing">
+      <packagedElement xmi:type="uml:Package" xmi:id="_zSinwNRPEeqkOan-8sezUg" name="modeling">
+        <packagedElement xmi:type="uml:Package" xmi:id="_2p16wNRPEeqkOan-8sezUg" name="openstack">
+          <packagedElement xmi:type="uml:Package" xmi:id="_4V4l0NRPEeqkOan-8sezUg" name="cinder">
+            <packagedElement xmi:type="uml:Package" xmi:id="_GQL9gNRQEeqkOan-8sezUg" name="features">
+              <packagedElement xmi:type="uml:Package" xmi:id="_HncEUNRQEeqkOan-8sezUg" name="volumes">
+                <packagedElement xmi:type="uml:Class" xmi:id="_kzpf0NRQEeqkOan-8sezUg" name="VolumeTest" classifierBehavior="_bPTw4NRSEeqkOan-8sezUg">
+                  <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_bPTw4NRSEeqkOan-8sezUg" name="VolumeTestStateMachine">
+                    <region xmi:type="uml:Region" xmi:id="_b5L0UNRSEeqkOan-8sezUg" name="Region1">
+                      <transition xmi:type="uml:Transition" xmi:id="_QmMAoNRTEeqkOan-8sezUg" source="_A6MB0NRTEeqkOan-8sezUg" target="_niVBsNRSEeqkOan-8sezUg"/>
+                      <subvertex xmi:type="uml:State" xmi:id="_niVBsNRSEeqkOan-8sezUg" name="NotCreated"/>
+                      <subvertex xmi:type="uml:State" xmi:id="_pmfR0NRSEeqkOan-8sezUg" name="Created">
+                        <region xmi:type="uml:Region" xmi:id="_yAd0gNRSEeqkOan-8sezUg" name="Region1">
+                          <transition xmi:type="uml:Transition" xmi:id="_X3aykNRTEeqkOan-8sezUg" source="__57esNRSEeqkOan-8sezUg" target="_6k7I4NRSEeqkOan-8sezUg"/>
+                          <transition xmi:type="uml:Transition" xmi:id="_4x5PkNRTEeqkOan-8sezUg" source="_6k7I4NRSEeqkOan-8sezUg" target="_7XU2MNRSEeqkOan-8sezUg"/>
+                          <transition xmi:type="uml:Transition" xmi:id="_5Ry3oNRTEeqkOan-8sezUg" source="_7XU2MNRSEeqkOan-8sezUg" target="_6k7I4NRSEeqkOan-8sezUg"/>
+                          <subvertex xmi:type="uml:State" xmi:id="_6k7I4NRSEeqkOan-8sezUg" name="Available"/>
+                          <subvertex xmi:type="uml:State" xmi:id="_7XU2MNRSEeqkOan-8sezUg" name="InUse"/>
+                          <subvertex xmi:type="uml:Pseudostate" xmi:id="__57esNRSEeqkOan-8sezUg" name=""/>
+                        </region>
+                      </subvertex>
+                      <subvertex xmi:type="uml:Pseudostate" xmi:id="_A6MB0NRTEeqkOan-8sezUg" name=""/>
+                      <subvertex xmi:type="uml:State" xmi:id="_hYNMUNRTEeqkOan-8sezUg" name="AwaitTransfer"/>
+                    </region>
+                  </ownedBehavior>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Signal" xmi:id="_pDEGkNRQEeqkOan-8sezUg" name="VolumeCreate">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_qyZWMNRQEeqkOan-8sezUg" name="size" visibility="public">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+                  </ownedAttribute>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Signal" xmi:id="_xYuJ8NRQEeqkOan-8sezUg" name="VolumeAttach">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_zK55QNRQEeqkOan-8sezUg" name="server" visibility="public">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+                  </ownedAttribute>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Signal" xmi:id="_2zja8NRQEeqkOan-8sezUg" name="VolumeDetach"/>
+                <packagedElement xmi:type="uml:Signal" xmi:id="_77ch0NRQEeqkOan-8sezUg" name="VolumeExtend">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_9lRmYNRQEeqkOan-8sezUg" name="size" visibility="public">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+                  </ownedAttribute>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Signal" xmi:id="_G5a10NRSEeqkOan-8sezUg" name="VolumeTransfer"/>
+                <packagedElement xmi:type="uml:Signal" xmi:id="_JiOrINRSEeqkOan-8sezUg" name="VolumeAcceptTransfer"/>
+                <packagedElement xmi:type="uml:Signal" xmi:id="_r6VjwNRSEeqkOan-8sezUg" name="VolumeDelete"/>
+              </packagedElement>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sxA_ANRQEeqkOan-8sezUg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sxL-INRQEeqkOan-8sezUg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>

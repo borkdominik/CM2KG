@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+	<title>EA Graph Analysis</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+	<div class="jumbotron text-center">
+		<h1>EA Model to Graph Transformation</h1>
+		<p>Transform your Archi or ADOxx model to GraphML and apply graph based-anaylsis.</p>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3>Step 1</h3>
+				<p>Upload your model.</p>
+			</div>
+			<div class="col-sm-4">
+				<h3>Step 2</h3>
+				<p>Your model is converted..</p>
+
+			</div>
+			<div class="col-sm-4">
+				<h3>Step 3</h3>
+				<p>Download your GraphML model.</p>
+			</div>
+		</div>
+
+
+	</div>
+
+	<div class="row" style="margin-left: 20px; margin-right: 20px;">
+		<div class="col-sm-6">
+			<div class="form-group">
+				<label for="exampleFormControlTextarea1">Your uploaded content.</label>
+				<pre id="inputPreview" lang="xml" th:text="${uploadcontent}"></pre>
+			</div>
+		</div>
+
+		<div class="col-sm-6">
+			<div class="form-group">
+				<label for="exampleFormControlTextarea1">Your transformed content.</label>
+				<a th:href="@{/repository/graph//{uid}/neo4j(uid=${fileUid})}">Initialize Neo4j Graph</a>
+				<a th:href="@{/repository/graph//{uid}(uid=${fileUid})}">Show GraphML xml</a>
+				<a href="#" id="download">Download</a>
+				<pre id="transformedPreview" lang="xml" th:text="${outputcontent}"></pre>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+
+<script>
+	$("#download").click(function () {
+		var fileContent = $("#transformedPreview").text();
+		var bb = new Blob([fileContent], {type: 'text/plain'});
+		var a = document.createElement('a');
+		a.download = 'output.graphml';
+		a.href = window.URL.createObjectURL(bb);
+		a.click();
+	});
+</script>
+
+
+</html>

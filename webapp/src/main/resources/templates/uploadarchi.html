@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+	<title>EA Graph Analysis</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+	<div class="jumbotron text-center">
+		<h1>EA Model to Graph Transformation</h1>
+		<p>Transform your Archi or ADOxx model to GraphML and apply graph based-anaylsis.</p>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3>Step 1</h3>
+				<p>Upload your model.</p>
+			</div>
+			<div class="col-sm-4">
+				<h3>Step 2</h3>
+				<p>Your model is converted..</p>
+
+			</div>
+			<div class="col-sm-4">
+				<h3>Step 3</h3>
+				<p>Download your GraphML model.</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4">
+				<form th:action="@{/upload/archi}" method="post" enctype="multipart/form-data">
+
+					<div class="form-group">
+						<label for="exampleFormControlFile1">Please select the relevant Archi XML file.</label>
+						<input type="file" name="file" class="form-control-file" id="exampleFormControlFile1">
+					</div>
+					
+					<button type="submit" id="uploadBtn" class="btn btn-primary">Upload</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="row invisible" id="loading">
+
+			<div class="text-center">
+				<label for="customFile">Please wait, the model is being transformed.</label>
+				<div class="spinner-border" role="status">
+					<span class="sr-only">Loading...</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+
+<script>
+	$("#uploadBtn").click(function () {
+		$("#loading").removeClass("invisible");
+	});
+</script>
+
+</html>

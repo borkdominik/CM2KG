@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml:GraphML
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:graphml="http://www.example.org/graphml"
+    xsi:schemaLocation="http://www.example.org/graphml ../model/graphml.ecore">
+  <graph id="G"
+      name="G">
+    <nodes id="n0"
+        name="n0"/>
+    <nodes id="n1"
+        name="n1"/>
+    <nodes id="n2"
+        name="n2"/>
+    <nodes id="n3"
+        name="n3"/>
+    <nodes id="n4"
+        name="n4"/>
+    <nodes id="n5"
+        name="n5">
+      <graph
+          id="n5"
+          name="n5">
+        <nodes
+            id="n5::n0"
+            name="n5::n0"/>
+        <nodes
+            id="n5::n1"
+            name="n5::n1"/>
+        <nodes
+            id="n5::n2"
+            name="n5::n2"/>
+        <edges
+            id="e0"
+            source="//@graph.0/@nodes.5/@graph/@nodes.0"
+            target="//@graph.0/@nodes.5/@graph/@nodes.2"/>
+        <edges
+            id="e2"
+            source="//@graph.0/@nodes.5/@graph/@nodes.1"
+            target="//@graph.0/@nodes.5/@graph/@nodes.2"/>
+      </graph>
+    </nodes>
+    <nodes id="n6"
+        name="n6">
+      <graph
+          id="n6:"
+          name="n6:">
+        <nodes
+            id="n6::n0"
+            name="n6::n0">
+          <graph
+              id="n6::n0:"
+              name="n6::n0:">
+            <nodes
+                id="n6::n0::n0"
+                name="n6::n0::n0"/>
+          </graph>
+        </nodes>
+        <nodes
+            id="n6::n1"
+            name="n6::n1"/>
+        <nodes
+            id="n6::n2"
+            name="n6::n2"/>
+        <edges
+            id="e10"
+            source="//@graph.0/@nodes.6/@graph/@nodes.1"
+            target="//@graph.0/@nodes.6/@graph/@nodes.0/@graph/@nodes.0"/>
+        <edges
+            id="e11"
+            source="//@graph.0/@nodes.6/@graph/@nodes.1"
+            target="//@graph.0/@nodes.6/@graph/@nodes.2"/>
+      </graph>
+    </nodes>
+    <edges id="e2"
+        source="//@graph.0/@nodes.5/@graph/@nodes.2"
+        target="//@graph.0/@nodes.0"/>
+    <edges id="e3"
+        source="//@graph.0/@nodes.0"
+        target="//@graph.0/@nodes.2"/>
+    <edges id="e4"
+        source="//@graph.0/@nodes.0"
+        target="//@graph.0/@nodes.1"/>
+    <edges id="e5"
+        source="//@graph.0/@nodes.1"
+        target="//@graph.0/@nodes.3"/>
+    <edges id="e6"
+        source="//@graph.0/@nodes.3"
+        target="//@graph.0/@nodes.2"/>
+    <edges id="e7"
+        source="//@graph.0/@nodes.2"
+        target="//@graph.0/@nodes.4"/>
+    <edges id="e8"
+        source="//@graph.0/@nodes.3"
+        target="//@graph.0/@nodes.6/@graph/@nodes.1"/>
+    <edges id="e9"
+        source="//@graph.0/@nodes.6/@graph/@nodes.1"
+        target="//@graph.0/@nodes.4"/>
+  </graph>
+</graphml:GraphML>

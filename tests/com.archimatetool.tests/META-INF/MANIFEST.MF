@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: All Archi JUnit Tests
+Bundle-SymbolicName: com.archimatetool.tests
+Bundle-Version: 4.0.0
+Bundle-Vendor: Archi
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: com.archimatetool.canvas,
+ com.archimatetool.commandline,
+ com.archimatetool.csv,
+ com.archimatetool.editor,
+ com.archimatetool.export.svg,
+ com.archimatetool.hammer,
+ com.archimatetool.help,
+ com.archimatetool.jasperreports,
+ com.archimatetool.jdom,
+ com.archimatetool.model,
+ com.archimatetool.modelimporter,
+ com.archimatetool.reports,
+ com.archimatetool.zest,
+ org.opengroup.archimate.xmlexchange,
+ org.junit
+Automatic-Module-Name: com.archimatetool.tests
