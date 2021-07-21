@@ -26,8 +26,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import at.ac.tuwien.big.msm.cmgba.graphml.ADOxxUtility;
 import at.ac.tuwien.big.msm.cmgba.graphml.ArchiUtility;
 import at.ac.tuwien.big.msm.cmgba.graphml.PapyrusUMLUtility;
-import neo4j.neo4jConnector;
-import neo4j.neo4jGraphmlImport;
 
 import java.util.Scanner;
 import java.util.UUID;
@@ -258,7 +256,7 @@ public class Upload {
 	@RequestMapping(value = "repository/graph/{uid}/neo4j", method = RequestMethod.GET)
 	public String initializeNeo4jGraph(HttpServletResponse response, @PathVariable String uid) {
 
-		neo4jGraphmlImport neoImport = new neo4jGraphmlImport(uid);
+		at.ac.tuwien.big.msm.cmgba.graphml.neo4jGraphmlImport neoImport = new at.ac.tuwien.big.msm.cmgba.graphml.neo4jGraphmlImport(uid);
 		neoImport.initializeGraph();
 
 		return "neovispreview";

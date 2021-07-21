@@ -1,4 +1,4 @@
-package neo4j;
+package at.ac.tuwien.big.msm.cmgba.graphml;
 
 public class neo4jGraphmlImport {
 
