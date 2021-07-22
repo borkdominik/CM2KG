@@ -1,6 +1,7 @@
 # Graph-based Analysis of Enterprise Architecture Models
 Repository contains implementation of prototype eGEAA platform.
 ![ScreenShot](/Figures/eGEAA-Platform.png)
+![ScreenShot](/Video/UML_Smells_v3.mp4)
 
 # Generic Framework
 ![ScreenShot](/Figures/Generic-Framework-2.png)
