@@ -116,7 +116,11 @@
 
 
 				<label for="cypher">Cypher query:</label>
-				<textarea rows="4" cols="50" id="cypher" class="form-control">MATCH (n)-[r]->(m) RETURN n,r,m</textarea>
+				<textarea rows="4" cols="50" id="cypher" class="form-control">
+MATCH (n)-[r]->(m), (a) 
+where not (a)--()
+RETURN n,r,m,a
+				</textarea>
 
 			</div>
 			<input type="submit" value="Submit" id="reload" onclick="draw()">

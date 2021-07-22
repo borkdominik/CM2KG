@@ -39,6 +39,16 @@ public class ExperimentUtility {
 		transformedFolder = Files.createDirectories(Paths.get(directoryPath, "transformed"));
 		// System.out.println("transformedFolder: "+transformedFolder);
 
+		
+		List<String[]> csvData = new ArrayList<>();
+		String[] header = { "filename",
+				"transformation_time_ns"
+				};
+		csvData.add(header);
+		
+		long startTime = System.nanoTime();
+		long stopTime = System.nanoTime();
+		
 		File dir = new File(directoryPath);
 		File[] directoryListing = dir.listFiles();
 		if (directoryListing != null) {
@@ -50,6 +60,9 @@ public class ExperimentUtility {
 
 				try {
 					System.out.println("file: " + child.getName());
+					
+					
+					startTime = System.nanoTime();
 					ArchiUtility archiUtil = new ArchiUtility();
 					archiUtil.setFile(child);
 					String filename = transformedFolder + "\\" + child.getName().replaceFirst("[.][^.]+$", "")
@@ -57,16 +70,34 @@ public class ExperimentUtility {
 
 					// System.out.println("export file: "+filename);
 					archiUtil.transform(filename);
+					stopTime = System.nanoTime();
+					
+					
+					String transformation_time = String.valueOf(stopTime-startTime);
+					String[] record1 = { child.getName(),
+							transformation_time,
+					};
+					csvData.add(record1);
 				} catch (Exception e) {
 					System.out.println("transformation failed: " + child.getName());
 				}
 			}
+			
+			try (CSVWriter writer = new CSVWriter(new FileWriter(transformedFolder + "\\analysis_transformation_time.csv"))) {
+				writer.writeAll(csvData);
+			}
+			System.out.println("\n");
+			System.out.println("adding transformation file: "+transformedFolder+ "\\analysis_transformation_time.csv");
+			
 		} else {
 			// Handle the case where dir is not really a directory.
 			// Checking dir.isDirectory() above would not be sufficient
 			// to avoid race conditions with another process that deletes
 			// directories.
 		}
+		
+		System.out.println("\n");
+		System.out.println("Transformation finished.");
 	}
 
 	// transform all files in folder
@@ -75,17 +106,29 @@ public class ExperimentUtility {
 		transformedFolder = Files.createDirectories(Paths.get(directoryPath, "transformed"));
 		// System.out.println("transformedFolder: "+transformedFolder);
 
+		
+		List<String[]> csvData = new ArrayList<>();
+		String[] header = { "filename",
+				"transformation_time_ns"
+				};
+		csvData.add(header);
+		
+		long startTime = System.nanoTime();
+		long stopTime = System.nanoTime();
+		
 		File dir = new File(directoryPath);
 		File[] directoryListing = dir.listFiles();
 		if (directoryListing != null) {
 			for (File child : directoryListing) {
 				// Do something with child
 
-				if (child.getName().equals("analysis.csv"))
+				if (child.getName().equals("analysis.csv") || child.getName().equals("analysis_transformation_time.csv"))
 					continue;
 
 				try {
 					System.out.println("file: " + child.getName());
+					
+					startTime = System.nanoTime();
 					PapyrusUMLUtility papyrusUtil = new PapyrusUMLUtility();
 					papyrusUtil.setFile(child);
 					String filename = transformedFolder + "\\" + child.getName().replaceFirst("[.][^.]+$", "")
@@ -93,9 +136,26 @@ public class ExperimentUtility {
 
 					// System.out.println("export file: "+filename);
 					papyrusUtil.transform(filename);
+					stopTime = System.nanoTime();
+					
+					
+					String transformation_time = String.valueOf(stopTime-startTime);
+					String[] record1 = { child.getName(),
+							transformation_time,
+					};
+					csvData.add(record1);
+					
 				} catch (Exception e) {
 					System.out.println("transformation failed: " + child.getName());
 				}
+				
+				try (CSVWriter writer = new CSVWriter(new FileWriter(transformedFolder + "\\analysis_transformation_time.csv"))) {
+					writer.writeAll(csvData);
+				}
+				System.out.println("\n");
+				System.out.println("adding transformation analysis file: "+transformedFolder+ "\\analysis_transformation_time.csv");
+				
+				
 			}
 		} else {
 			// Handle the case where dir is not really a directory.
@@ -117,7 +177,7 @@ public class ExperimentUtility {
 			for (File child : directoryListing) {
 
 				// Do something with child
-				if (child.getName().equals("analysis.csv"))
+				if (child.getName().equals("analysis.csv")|| child.getName().equals("analysis_transformation_time.csv"))
 					continue;
 
 				File tmpDest = new File(
@@ -195,14 +255,20 @@ public class ExperimentUtility {
 		List<String[]> csvData = new ArrayList<>();
 		String[] header = { "filename",
 				"failed_anlysis",
-				// "CHATTY_SERVICE",
-				"CYCLIC_DEPENDENCY", // good
-				// "DEAD_COMPONENT", //--check for unused abstraction
-				// "DENSE_STRUCTURE", //check if it is good
-				"MESSAGE_CHAIN", // good but use it in general case
-				// "SHARED_PERSISTENCY",
-				// "STRICT_LAYER_VIOLATION"
-				"UNUTILIZED_ABSTRACTION", "DEEP_HIERARCY", "MULTIPATH_HIERARCY" };
+				"CYCLIC_DEPENDENCY",
+				"CYCLIC_DEPENDENCY_time_ns",
+				"MESSAGE_CHAIN",
+				"MESSAGE_CHAIN_time_ns",
+				"UNUTILIZED_ABSTRACTION",
+				"UNUTILIZED_ABSTRACTION_time_ns",
+				"DEEP_HIERARCY",
+				"DEEP_HIERARCY_time_ns",
+				"MULTIPATH_HIERARCY",
+				"MULTIPATH_HIERARCY_time_ns",
+				"nodes",
+				"edges",
+				"file_size_bytes"
+				};
 		csvData.add(header);
 
 		File dir = new File(directoryPath);
@@ -211,8 +277,11 @@ public class ExperimentUtility {
 			for (File child : directoryListing) {
 				// Do something with child
 
+				long startTime = System.nanoTime();
+				long stopTime = System.nanoTime();
+				
 				try {
-					if (child.getName().equals("analysis.csv"))
+					if (child.getName().equals("analysis.csv")|| child.getName().equals("analysis_transformation_time.csv"))
 						continue;
 
 					File tmpDest = new File(
@@ -223,29 +292,58 @@ public class ExperimentUtility {
 					System.out.println("graph import name: " + child.getName());
 					neo4jUtil.neo4jGraphmlImport(child.getName());
 
+					startTime = System.nanoTime();
 					System.out.println("getUml_CyclicDependency: ");
 					String sml1 = neo4jUtil.executeQuery(neo4jUtil.getUml_CyclicDependency());
-
+					stopTime = System.nanoTime();
+					String sml1_time = String.valueOf(stopTime-startTime);
+					
+					startTime = System.nanoTime();
 					System.out.println("getUml_MessageChain: ");
 					String sml2 = neo4jUtil.executeQuery(neo4jUtil.getUml_MessageChain());
-
+					stopTime = System.nanoTime();
+					String sml2_time = String.valueOf(stopTime-startTime);
+				
+					startTime = System.nanoTime();
 					System.out.println("getUml_UnutilizedAbstraction: ");
 					String sml3 = neo4jUtil.executeQuery(neo4jUtil.getUml_UnutilizedAbstraction());
-
+					stopTime = System.nanoTime();
+					String sml3_time = String.valueOf(stopTime-startTime);
+					
+					startTime = System.nanoTime();
 					System.out.println("getUml_DeepHierarcy: ");
 					String sml4 = neo4jUtil.executeQuery(neo4jUtil.getUml_DeepHierarcy());
+					stopTime = System.nanoTime();
+					String sml4_time = String.valueOf(stopTime-startTime);
 
+					startTime = System.nanoTime();
 					System.out.println("getUml_MultipathHierarcy: ");
 					String sml5 = neo4jUtil.executeQuery(neo4jUtil.getUml_MultipathHierarcy());
+					stopTime = System.nanoTime();
+					String sml5_time = String.valueOf(stopTime-startTime);
 
+					
+					System.out.println("getNumberOfNodes: ");
+					String numberOfNodes = neo4jUtil.executeQuery(neo4jUtil.getNumberOfNodes());
+					
+					System.out.println("getNumberOfNodes: ");
+					String numberOfEdges = neo4jUtil.executeQuery(neo4jUtil.getNumberOfEdges());
+					
 					String[] record1 = { child.getName(),
 							"0",
 							String.valueOf(!sml1.isEmpty() ? 1 : 0),
+							sml1_time,
 							String.valueOf(!sml2.isEmpty() ? 1 : 0), 
+							sml2_time,
 							String.valueOf(!sml3.isEmpty() ? 1 : 0),
+							sml3_time,
 							String.valueOf(!sml4.isEmpty() ? 1 : 0), 
-							String.valueOf(!sml5.isEmpty() ? 1 : 0)
-
+							sml4_time,
+							String.valueOf(!sml5.isEmpty() ? 1 : 0),
+							sml5_time,
+							numberOfNodes.replaceAll("[^0-9]", ""),
+							numberOfEdges.replaceAll("[^0-9]", ""),
+							String.valueOf(child.length())
 					};
 					csvData.add(record1);
 				} catch (Exception e) {
@@ -255,6 +353,12 @@ public class ExperimentUtility {
 							"0", 
 							"0",
 							"0", 
+							"0",
+							"0",
+							"0",
+							"0",
+							"0",
+							"0",
 							"0"
 
 					};

@@ -142,6 +142,16 @@ public class neo4jUtil implements AutoCloseable {
 	private String uml_MessageChain;
 	private String uml_MultipathHierarcy;
 	private String uml_UnutilizedAbstraction;
+	private String numberOfNodes;
+	private String numberOfEdges;
+
+	public String getNumberOfNodes() {
+		return numberOfNodes;
+	}
+
+	public String getNumberOfEdges() {
+		return numberOfEdges;
+	}
 
 	public String getCHATTY_SERVICE_QUERY() {
 		return CHATTY_SERVICE_QUERY;
@@ -195,6 +205,8 @@ public class neo4jUtil implements AutoCloseable {
 			uml_UnutilizedAbstraction = Files.readString(Path.of("smellQueries/uml_UnutilizedAbstraction.neo4j"));
 			
 			
+			numberOfNodes  = Files.readString(Path.of("smellQueries/numberOfNodes.neo4j"));
+			numberOfEdges  = Files.readString(Path.of("smellQueries/numberOfEdges.neo4j"));
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

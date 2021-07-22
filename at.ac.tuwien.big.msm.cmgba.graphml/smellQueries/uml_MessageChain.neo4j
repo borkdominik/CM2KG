@@ -1,2 +1,2 @@
-MATCH (a)-[r1]->(b)-[r2]->(c)-[]->(d)-[]->(e)
-return a,b,c,d,e
+MATCH (a)-[r1]->(b)-[r2]->(c)-[r3]->(d)-[r4]->(e)
+return a,r1,b,r2,c,r3,d,r4,e

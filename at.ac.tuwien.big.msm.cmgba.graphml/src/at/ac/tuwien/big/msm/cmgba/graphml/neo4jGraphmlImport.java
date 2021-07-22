@@ -15,8 +15,8 @@ public class neo4jGraphmlImport {
 			+ "CALL apoc.refactor.setType(rel, rel.Label)\r\n"
 			+ "YIELD input, output\r\n"
 			+ "RETURN input, output";
-	private static String getAllNodes = "Match (n)-[r]->(m)\r\n"
-			+ "Return n,r,m";
+	private static String getAllNodes = "Match (n)-[r]->(m), (a)\r\n"
+			+ "where not (a)--() Return n,r,m,a";
 
 	public neo4jGraphmlImport(String graphUid) {
 		importGraphmlFile = "CALL apoc.import.graphml(\"http://localhost:8080/repository/graph/"+graphUid+"\", {storeNodeIds: true})";
