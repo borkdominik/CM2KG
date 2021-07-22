@@ -23,8 +23,6 @@ public String getGraphXML();
 ## Web UI
 To start the Web UI navigate to `webapp` folder and start the Spring Application.
 
-## Literature
-Papers that were considered can be found in `Papers` folder.
 
 ## Requirements
 In order to use Neo4j the database connection should be configured in `\src\main\java\neo4j\neo4jConnector.java`:
