@@ -1,10 +1,6 @@
-# Graph-based Analysis of Enterprise Architecture Models
-Repository contains implementation of prototype eGEAA platform.
-![ScreenShot](/Figures/eGEAA-Platform.png)
-![ScreenShot](/Video/video-markdown-gif.mp4)
-
-# Generic Framework
-![ScreenShot](/Figures/Generic-Framework-2.png)
+# Conceptual Model to Knowledge Graph (CM2KG) Platform
+Repository containing the implementation of the CM2KG platform.
+![ScreenShot](/Video/video-markdown-gif.gif)
 
 # Transformation clases
 Utility class for Archi can be found under `at.ac.tuwien.big.msm.cmgba.graphml/src/at/ac/tuwien/big/msm/cmgba/graphml/ArchiUtility.java`:
@@ -27,8 +23,6 @@ public String getGraphXML();
 ## Web UI
 To start the Web UI navigate to `webapp` folder and start the Spring Application.
 
-## Literature
-Papers that were considered can be found in `Papers` folder.
 
 ## Requirements
 In order to use Neo4j the database connection should be configured in `\src\main\java\neo4j\neo4jConnector.java`:
@@ -53,6 +47,7 @@ EMF
             soruce models 
             transformed models
 ```
+
 
 
 
