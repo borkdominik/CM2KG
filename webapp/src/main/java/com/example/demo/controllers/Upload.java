@@ -25,6 +25,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import at.ac.tuwien.big.msm.cmgba.graphml.ADOxxUtility;
 import at.ac.tuwien.big.msm.cmgba.graphml.ArchiUtility;
+import at.ac.tuwien.big.msm.cmgba.graphml.OwlUtility;
 import at.ac.tuwien.big.msm.cmgba.graphml.PapyrusUMLUtility;
 
 import java.util.Scanner;
@@ -36,6 +37,15 @@ import javax.servlet.http.HttpServletResponse;
 @Controller
 public class Upload {
 
+	@RequestMapping(value = "", method = RequestMethod.GET)
+	public String home(Model model) {
+
+		// model.addAttribute("sum", "to be calculated");
+
+		System.out.println("upload controller");
+		return "home";
+	}
+	
 	@RequestMapping(value = "upload", method = RequestMethod.GET)
 	public String products(Model model) {
 
@@ -253,6 +263,32 @@ public class Upload {
 		// path to your file
 	}
 
+	@RequestMapping(value = "repository/graph/owl/{uid}", method = RequestMethod.GET, produces = MediaType.TEXT_PLAIN_VALUE)
+	@ResponseBody
+	public FileSystemResource getGraphOwl(HttpServletResponse response, @PathVariable String uid) {
+
+		OwlUtility owlUtil = new OwlUtility();
+		owlUtil.transformToOwl("export/"+ uid + ".graphml");
+		
+		response.setContentType("text/plain");
+		return new FileSystemResource(new File("export/", uid + ".graphml.ttl")); // Or path to your file
+		// return new FileSystemResource(new File("export/", "simple.graphml")); //Or
+		// path to your file
+	}
+	
+	@RequestMapping(value = "repository/graph/rdf/{uid}", method = RequestMethod.GET, produces = MediaType.TEXT_PLAIN_VALUE)
+	@ResponseBody
+	public FileSystemResource getGraphRdf(HttpServletResponse response, @PathVariable String uid) {
+
+		OwlUtility owlUtil = new OwlUtility();
+		owlUtil.transformToRdf("export/"+ uid + ".graphml");
+		
+		response.setContentType("text/plain");
+		return new FileSystemResource(new File("export/", uid + ".graphml.rdf")); // Or path to your file
+		// return new FileSystemResource(new File("export/", "simple.graphml")); //Or
+		// path to your file
+	}
+	
 	@RequestMapping(value = "repository/graph/{uid}/neo4j", method = RequestMethod.GET)
 	public String initializeNeo4jGraph(HttpServletResponse response, @PathVariable String uid) {
 
