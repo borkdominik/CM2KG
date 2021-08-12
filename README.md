@@ -5,6 +5,10 @@ Repository containing the implementation of the CM2KG platform.
 Platform consists of multiple applications for analyzing conceptual models.
 ![ScreenShot](/Figures/platform_homepage.png)
 
+<p align="center">
+  <img src="https://github.com/borkdominik/CM2KG/blob/main/Video/video-markdown-gif.gif?raw=true" />
+</p>
+
 # Transformation clases
 Utility class for Archi can be found under `at.ac.tuwien.big.msm.cmgba.graphml/src/at/ac/tuwien/big/msm/cmgba/graphml/ArchiUtility.java`:
 ```java
