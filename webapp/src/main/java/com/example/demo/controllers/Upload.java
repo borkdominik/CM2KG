@@ -26,7 +26,12 @@ import javax.servlet.http.HttpServletResponse;
 
 @Controller
 public class Upload {
-
+	
+	@RequestMapping(value = "", method = RequestMethod.GET)
+	public String home(Model model) {
+		return "home";
+	}
+	
 	@RequestMapping(value = "upload", method = RequestMethod.GET)
 	public String products(Model model) {
 		System.out.println("upload controller");

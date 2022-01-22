@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+	<title>EA Graph Analysis</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+	<div class="jumbotron text-center">
+		<h1>CM2KG Conceptual Model to Knowledge Graph</h1>
+		<p>Transform your conceptual model (Archi, ADOxx, Papyrus ...) to GraphML and gain insights about your model by
+			apply graph based-anaylsis.</p>
+			
+		<img src="images/CM2KG-Framework_v2.png" class="card-img-top" alt="..." style="width: 800px">
+	</div>
+
+	<div class="container">
+
+		<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+			<div class="col">
+				<div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+					style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7e8e9ErwQoWNmyCHmQLxBr1QHJB5meFBlew&usqp=CAU'); background-repeat: no-repeat; background-position: top;background-size: 200px;">
+					<div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+						<h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Model transformation</h2>
+						<small>Transform your conceptual model to a graph structure in order to enable further analysis
+							graph engines provide.</small>
+						<ul class="d-flex list-unstyled mt-auto pt-5">
+							<li class="me-auto">
+								<a class="btn btn-light" th:href="@{~/upload}">
+									Proceed
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col">
+				<div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+					style="background-image: url('https://www.israel21c.org/wp-content/uploads/2020/04/shutterstock_365267750-768x432.jpg'); background-repeat: no-repeat; background-position: top;background-size: 250px;">
+					<div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+						<h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Smell detection</h2>
+						<small>Transform your conceptual model to a graph structure in order to enable further analysis
+							graph engines provide.</small>
+						<ul class="d-flex list-unstyled mt-auto pt-5">
+							<li class="me-auto">
+								<a href="#" class="btn btn-light">
+									Proceed
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col">
+				<div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+					style="background-image: url('unsplash-photo-1.jpg');">
+					<div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+						<h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Further app</h2>
+						<small>To be added</small>
+						<ul class="d-flex list-unstyled mt-auto pt-5">
+							<li class="me-auto">
+								<a href="#" class="btn btn-light">
+									Proceed
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+	</div>
+
+</body>
+
+</html>
