@@ -12,18 +12,18 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Test.ecore#//Store/workers"/>
     </genClasses>
     <genClasses ecoreClass="Test.ecore#//Book">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Test.ecore#//Book/bookName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Test.ecore#//Book/name"/>
     </genClasses>
     <genClasses ecoreClass="Test.ecore#//Worker">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Test.ecore#//Worker/workerName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Test.ecore#//Worker/name"/>
     </genClasses>
     <genClasses ecoreClass="Test.ecore#//City">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Test.ecore#//City/stores"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Test.ecore#//City/users"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Test.ecore#//City/cityName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Test.ecore#//City/name"/>
     </genClasses>
     <genClasses ecoreClass="Test.ecore#//User">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Test.ecore#//User/username"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Test.ecore#//User/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Test.ecore#//User/borrowedBooks"/>
     </genClasses>
     <genClasses ecoreClass="Test.ecore#//BookBorrow">
@@ -31,6 +31,7 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Test.ecore#//BookBorrow/responsibleWorker"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Test.ecore#//BookBorrow/dateFrom"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Test.ecore#//BookBorrow/dateTo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Test.ecore#//BookBorrow/name"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

@@ -20,20 +20,10 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
   <key for="edge" id="d10" yfiles.type="edgegraphics"/> 
 <key id="ClassName" for="node" attr.name="ClassName" attr.type="string"/> 
 <key id="Label" for="node" attr.name="Label" attr.type="string"/> 
-<key id="BusinessInteraction_name" for="node" attr.name="BusinessInteraction_name" attr.type="string"/> 
-<key id="BusinessInteraction_documentation" for="node" attr.name="BusinessInteraction_documentation" attr.type="string"/> 
-<key id="BusinessActor_name" for="node" attr.name="BusinessActor_name" attr.type="string"/> 
-<key id="BusinessActor_documentation" for="node" attr.name="BusinessActor_documentation" attr.type="string"/> 
-<key id="Requirement_name" for="node" attr.name="Requirement_name" attr.type="string"/> 
-<key id="Requirement_documentation" for="node" attr.name="Requirement_documentation" attr.type="string"/> 
-<key id="Grouping_name" for="node" attr.name="Grouping_name" attr.type="string"/> 
-<key id="Grouping_documentation" for="node" attr.name="Grouping_documentation" attr.type="string"/> 
-<key id="BusinessObject_name" for="node" attr.name="BusinessObject_name" attr.type="string"/> 
-<key id="BusinessObject_documentation" for="node" attr.name="BusinessObject_documentation" attr.type="string"/> 
-<key id="Outcome_name" for="node" attr.name="Outcome_name" attr.type="string"/> 
-<key id="Outcome_documentation" for="node" attr.name="Outcome_documentation" attr.type="string"/> 
-<key id="EReference_ReferenceName" for="edge" attr.name="EReference_ReferenceName" attr.type="string"/> 
-<key id="Label" for="edge" attr.name="Label" attr.type="string"/> 
+<key id="ArchimateLayer" for="node" attr.name="ArchimateLayer" attr.type="string"/> 
+<key id="name" for="node" attr.name="name" attr.type="string"/> 
+<key id="documentation" for="node" attr.name="documentation" attr.type="string"/> 
+<key id="ReferenceName" for="edge" attr.name="ReferenceName" attr.type="string"/> 
 <graph id="init_graph_01" edgedefault="directed"> 
 <node id="fab33435"> 
 <data key="ClassName">BusinessInteraction</data> 
@@ -53,8 +43,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessInteraction_name">Continuous communication and integration of working groups when working on a model</data> 
-<data key="BusinessInteraction_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">Continuous communication and integration of working groups when working on a model</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="fc21ae93"> 
 <data key="ClassName">BusinessActor</data> 
@@ -74,8 +65,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessActor_name">Working group 1</data> 
-<data key="BusinessActor_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">Working group 1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="ee994815"> 
 <data key="ClassName">Requirement</data> 
@@ -95,8 +87,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Requirement_name">Use the ubiquitous language 1</data> 
-<data key="Requirement_documentation"></data> 
+<data key="ArchimateLayer">IMotivationElement</data> 
+<data key="name">Use the ubiquitous language 1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="d12d3679"> 
 <data key="ClassName">BusinessActor</data> 
@@ -116,8 +109,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessActor_name">Working group 2</data> 
-<data key="BusinessActor_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">Working group 2</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="b074d3d8"> 
 <data key="ClassName">Requirement</data> 
@@ -137,8 +131,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Requirement_name">The models used in a certain context should be consistent</data> 
-<data key="Requirement_documentation"></data> 
+<data key="ArchimateLayer">IMotivationElement</data> 
+<data key="name">The models used in a certain context should be consistent</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="b9d4cc11"> 
 <data key="ClassName">Grouping</data> 
@@ -158,8 +153,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">Bounded context 1</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Bounded context 1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-999deb25"> 
 <data key="ClassName">Grouping</data> 
@@ -179,8 +175,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">aggregate 2</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">aggregate 2</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-4bbc05e3"> 
 <data key="ClassName">Grouping</data> 
@@ -200,8 +197,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">aggregate 1</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">aggregate 1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-2e5ff6c8"> 
 <data key="ClassName">Grouping</data> 
@@ -221,8 +219,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">aggregate 3</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">aggregate 3</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-922e1d74"> 
 <data key="ClassName">BusinessObject</data> 
@@ -242,8 +241,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">entity 2</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">entity 2</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="b14b4137"> 
 <data key="ClassName">BusinessObject</data> 
@@ -263,8 +263,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">entity 1</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">entity 1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-550f310b"> 
 <data key="ClassName">BusinessObject</data> 
@@ -284,8 +285,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">entity 3</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">entity 3</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-9dbd6a7e"> 
 <data key="ClassName">BusinessObject</data> 
@@ -305,8 +307,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">entity 4</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">entity 4</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-1b6211b4"> 
 <data key="ClassName">Outcome</data> 
@@ -326,11 +329,12 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Outcome_name">When more than one working group is working on the model (within one limited context). In order to maintain the model in its entirety as well as a single common language and a vocabulary of concepts, it is necessary to constantly integrate working groups among themselves.</data> 
-<data key="Outcome_documentation"></data> 
+<data key="ArchimateLayer">IMotivationElement</data> 
+<data key="name">When more than one working group is working on the model (within one limited context). In order to maintain the model in its entirety as well as a single common language and a vocabulary of concepts, it is necessary to constantly integrate working groups among themselves.</data> 
+<data key="documentation"></data> 
 </node> 
 <edge source="b14b4137" target="id-922e1d74"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -349,7 +353,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="id-4bbc05e3" target="b9d4cc11"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -368,7 +372,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="id-2e5ff6c8" target="id-9dbd6a7e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -387,7 +391,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="id-4bbc05e3" target="b14b4137"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -406,7 +410,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="id-550f310b" target="b9d4cc11"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -425,7 +429,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="id-922e1d74" target="b9d4cc11"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -444,7 +448,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="id-9dbd6a7e" target="b9d4cc11"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -463,7 +467,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="fab33435" target="fc21ae93"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssignmentRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -482,7 +486,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="id-2e5ff6c8" target="id-550f310b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -501,7 +505,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="id-4bbc05e3" target="id-999deb25"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -520,7 +524,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="id-999deb25" target="id-922e1d74"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -539,7 +543,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="id-922e1d74" target="id-550f310b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -558,7 +562,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="b14b4137" target="b9d4cc11"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -577,7 +581,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="b9d4cc11" target="b074d3d8"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -596,7 +600,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="b9d4cc11" target="ee994815"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -615,7 +619,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="id-2e5ff6c8" target="b9d4cc11"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -634,7 +638,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="id-2e5ff6c8" target="id-4bbc05e3"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -653,7 +657,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="id-999deb25" target="b9d4cc11"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -672,7 +676,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="id-550f310b" target="b14b4137"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -691,7 +695,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="id-9dbd6a7e" target="id-550f310b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -710,7 +714,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="id-999deb25" target="id-2e5ff6c8"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -729,7 +733,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="fab33435" target="d12d3679"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssignmentRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -748,7 +752,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="b9d4cc11" target="fab33435"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssignmentRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -767,7 +771,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="id-1b6211b4" target="fab33435"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>

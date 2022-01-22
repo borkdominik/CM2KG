@@ -13,7 +13,7 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link tmodel.Worker#getWorkerName <em>Worker Name</em>}</li>
+ *   <li>{@link tmodel.Worker#getName <em>Name</em>}</li>
  * </ul>
  *
  * @see tmodel.TmodelPackage#getWorker()
@@ -22,25 +22,25 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface Worker extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Worker Name</b></em>' attribute.
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Worker Name</em>' attribute.
-	 * @see #setWorkerName(String)
-	 * @see tmodel.TmodelPackage#getWorker_WorkerName()
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see tmodel.TmodelPackage#getWorker_Name()
 	 * @model
 	 * @generated
 	 */
-	String getWorkerName();
+	String getName();
 
 	/**
-	 * Sets the value of the '{@link tmodel.Worker#getWorkerName <em>Worker Name</em>}' attribute.
+	 * Sets the value of the '{@link tmodel.Worker#getName <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Worker Name</em>' attribute.
-	 * @see #getWorkerName()
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
 	 * @generated
 	 */
-	void setWorkerName(String value);
+	void setName(String value);
 
 } // Worker

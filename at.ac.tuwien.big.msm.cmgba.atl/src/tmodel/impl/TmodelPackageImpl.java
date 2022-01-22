@@ -178,7 +178,7 @@ public class TmodelPackageImpl extends EPackageImpl implements TmodelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBook_BookName() {
+	public EAttribute getBook_Name() {
 		return (EAttribute)bookEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -196,7 +196,7 @@ public class TmodelPackageImpl extends EPackageImpl implements TmodelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWorker_WorkerName() {
+	public EAttribute getWorker_Name() {
 		return (EAttribute)workerEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -232,7 +232,7 @@ public class TmodelPackageImpl extends EPackageImpl implements TmodelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCity_CityName() {
+	public EAttribute getCity_Name() {
 		return (EAttribute)cityEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -250,7 +250,7 @@ public class TmodelPackageImpl extends EPackageImpl implements TmodelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUser_Username() {
+	public EAttribute getUser_Name() {
 		return (EAttribute)userEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -313,6 +313,15 @@ public class TmodelPackageImpl extends EPackageImpl implements TmodelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getBookBorrow_Name() {
+		return (EAttribute)bookBorrowEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public TmodelFactory getTmodelFactory() {
 		return (TmodelFactory)getEFactoryInstance();
 	}
@@ -342,18 +351,18 @@ public class TmodelPackageImpl extends EPackageImpl implements TmodelPackage {
 		createEReference(storeEClass, STORE__WORKERS);
 
 		bookEClass = createEClass(BOOK);
-		createEAttribute(bookEClass, BOOK__BOOK_NAME);
+		createEAttribute(bookEClass, BOOK__NAME);
 
 		workerEClass = createEClass(WORKER);
-		createEAttribute(workerEClass, WORKER__WORKER_NAME);
+		createEAttribute(workerEClass, WORKER__NAME);
 
 		cityEClass = createEClass(CITY);
 		createEReference(cityEClass, CITY__STORES);
 		createEReference(cityEClass, CITY__USERS);
-		createEAttribute(cityEClass, CITY__CITY_NAME);
+		createEAttribute(cityEClass, CITY__NAME);
 
 		userEClass = createEClass(USER);
-		createEAttribute(userEClass, USER__USERNAME);
+		createEAttribute(userEClass, USER__NAME);
 		createEReference(userEClass, USER__BORROWED_BOOKS);
 
 		bookBorrowEClass = createEClass(BOOK_BORROW);
@@ -361,6 +370,7 @@ public class TmodelPackageImpl extends EPackageImpl implements TmodelPackage {
 		createEReference(bookBorrowEClass, BOOK_BORROW__RESPONSIBLE_WORKER);
 		createEAttribute(bookBorrowEClass, BOOK_BORROW__DATE_FROM);
 		createEAttribute(bookBorrowEClass, BOOK_BORROW__DATE_TO);
+		createEAttribute(bookBorrowEClass, BOOK_BORROW__NAME);
 	}
 
 	/**
@@ -399,18 +409,18 @@ public class TmodelPackageImpl extends EPackageImpl implements TmodelPackage {
 		initEReference(getStore_Workers(), this.getWorker(), null, "workers", null, 0, -1, Store.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(bookEClass, Book.class, "Book", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getBook_BookName(), ecorePackage.getEString(), "bookName", null, 0, 1, Book.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBook_Name(), ecorePackage.getEString(), "name", null, 0, 1, Book.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(workerEClass, Worker.class, "Worker", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getWorker_WorkerName(), ecorePackage.getEString(), "workerName", null, 0, 1, Worker.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getWorker_Name(), ecorePackage.getEString(), "name", null, 0, 1, Worker.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(cityEClass, City.class, "City", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCity_Stores(), this.getStore(), null, "stores", null, 0, -1, City.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCity_Users(), this.getUser(), null, "users", null, 0, -1, City.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getCity_CityName(), ecorePackage.getEString(), "cityName", null, 0, 1, City.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCity_Name(), ecorePackage.getEString(), "name", null, 0, 1, City.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(userEClass, User.class, "User", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getUser_Username(), ecorePackage.getEString(), "username", null, 0, 1, User.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUser_Name(), ecorePackage.getEString(), "name", null, 0, 1, User.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getUser_BorrowedBooks(), this.getBookBorrow(), null, "borrowedBooks", null, 0, -1, User.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(bookBorrowEClass, BookBorrow.class, "BookBorrow", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -418,6 +428,7 @@ public class TmodelPackageImpl extends EPackageImpl implements TmodelPackage {
 		initEReference(getBookBorrow_ResponsibleWorker(), this.getWorker(), null, "responsibleWorker", null, 0, 1, BookBorrow.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBookBorrow_DateFrom(), ecorePackage.getEString(), "dateFrom", null, 0, 1, BookBorrow.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBookBorrow_DateTo(), ecorePackage.getEString(), "dateTo", null, 0, 1, BookBorrow.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBookBorrow_Name(), ecorePackage.getEString(), "name", null, 0, 1, BookBorrow.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

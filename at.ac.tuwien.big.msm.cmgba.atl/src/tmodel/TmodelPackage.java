@@ -122,13 +122,13 @@ public interface TmodelPackage extends EPackage {
 	int BOOK = 1;
 
 	/**
-	 * The feature id for the '<em><b>Book Name</b></em>' attribute.
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int BOOK__BOOK_NAME = 0;
+	int BOOK__NAME = 0;
 
 	/**
 	 * The number of structural features of the '<em>Book</em>' class.
@@ -160,13 +160,13 @@ public interface TmodelPackage extends EPackage {
 	int WORKER = 2;
 
 	/**
-	 * The feature id for the '<em><b>Worker Name</b></em>' attribute.
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORKER__WORKER_NAME = 0;
+	int WORKER__NAME = 0;
 
 	/**
 	 * The number of structural features of the '<em>Worker</em>' class.
@@ -216,13 +216,13 @@ public interface TmodelPackage extends EPackage {
 	int CITY__USERS = 1;
 
 	/**
-	 * The feature id for the '<em><b>City Name</b></em>' attribute.
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CITY__CITY_NAME = 2;
+	int CITY__NAME = 2;
 
 	/**
 	 * The number of structural features of the '<em>City</em>' class.
@@ -253,13 +253,13 @@ public interface TmodelPackage extends EPackage {
 	int USER = 4;
 
 	/**
-	 * The feature id for the '<em><b>Username</b></em>' attribute.
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int USER__USERNAME = 0;
+	int USER__NAME = 0;
 
 	/**
 	 * The feature id for the '<em><b>Borrowed Books</b></em>' containment reference list.
@@ -335,13 +335,22 @@ public interface TmodelPackage extends EPackage {
 	int BOOK_BORROW__DATE_TO = 3;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BOOK_BORROW__NAME = 4;
+
+	/**
 	 * The number of structural features of the '<em>Book Borrow</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int BOOK_BORROW_FEATURE_COUNT = 4;
+	int BOOK_BORROW_FEATURE_COUNT = 5;
 
 	/**
 	 * The number of operations of the '<em>Book Borrow</em>' class.
@@ -407,15 +416,15 @@ public interface TmodelPackage extends EPackage {
 	EClass getBook();
 
 	/**
-	 * Returns the meta object for the attribute '{@link tmodel.Book#getBookName <em>Book Name</em>}'.
+	 * Returns the meta object for the attribute '{@link tmodel.Book#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Book Name</em>'.
-	 * @see tmodel.Book#getBookName()
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see tmodel.Book#getName()
 	 * @see #getBook()
 	 * @generated
 	 */
-	EAttribute getBook_BookName();
+	EAttribute getBook_Name();
 
 	/**
 	 * Returns the meta object for class '{@link tmodel.Worker <em>Worker</em>}'.
@@ -428,15 +437,15 @@ public interface TmodelPackage extends EPackage {
 	EClass getWorker();
 
 	/**
-	 * Returns the meta object for the attribute '{@link tmodel.Worker#getWorkerName <em>Worker Name</em>}'.
+	 * Returns the meta object for the attribute '{@link tmodel.Worker#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Worker Name</em>'.
-	 * @see tmodel.Worker#getWorkerName()
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see tmodel.Worker#getName()
 	 * @see #getWorker()
 	 * @generated
 	 */
-	EAttribute getWorker_WorkerName();
+	EAttribute getWorker_Name();
 
 	/**
 	 * Returns the meta object for class '{@link tmodel.City <em>City</em>}'.
@@ -471,15 +480,15 @@ public interface TmodelPackage extends EPackage {
 	EReference getCity_Users();
 
 	/**
-	 * Returns the meta object for the attribute '{@link tmodel.City#getCityName <em>City Name</em>}'.
+	 * Returns the meta object for the attribute '{@link tmodel.City#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>City Name</em>'.
-	 * @see tmodel.City#getCityName()
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see tmodel.City#getName()
 	 * @see #getCity()
 	 * @generated
 	 */
-	EAttribute getCity_CityName();
+	EAttribute getCity_Name();
 
 	/**
 	 * Returns the meta object for class '{@link tmodel.User <em>User</em>}'.
@@ -492,15 +501,15 @@ public interface TmodelPackage extends EPackage {
 	EClass getUser();
 
 	/**
-	 * Returns the meta object for the attribute '{@link tmodel.User#getUsername <em>Username</em>}'.
+	 * Returns the meta object for the attribute '{@link tmodel.User#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Username</em>'.
-	 * @see tmodel.User#getUsername()
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see tmodel.User#getName()
 	 * @see #getUser()
 	 * @generated
 	 */
-	EAttribute getUser_Username();
+	EAttribute getUser_Name();
 
 	/**
 	 * Returns the meta object for the containment reference list '{@link tmodel.User#getBorrowedBooks <em>Borrowed Books</em>}'.
@@ -566,6 +575,17 @@ public interface TmodelPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getBookBorrow_DateTo();
+
+	/**
+	 * Returns the meta object for the attribute '{@link tmodel.BookBorrow#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see tmodel.BookBorrow#getName()
+	 * @see #getBookBorrow()
+	 * @generated
+	 */
+	EAttribute getBookBorrow_Name();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -635,12 +655,12 @@ public interface TmodelPackage extends EPackage {
 		EClass BOOK = eINSTANCE.getBook();
 
 		/**
-		 * The meta object literal for the '<em><b>Book Name</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute BOOK__BOOK_NAME = eINSTANCE.getBook_BookName();
+		EAttribute BOOK__NAME = eINSTANCE.getBook_Name();
 
 		/**
 		 * The meta object literal for the '{@link tmodel.impl.WorkerImpl <em>Worker</em>}' class.
@@ -653,12 +673,12 @@ public interface TmodelPackage extends EPackage {
 		EClass WORKER = eINSTANCE.getWorker();
 
 		/**
-		 * The meta object literal for the '<em><b>Worker Name</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute WORKER__WORKER_NAME = eINSTANCE.getWorker_WorkerName();
+		EAttribute WORKER__NAME = eINSTANCE.getWorker_Name();
 
 		/**
 		 * The meta object literal for the '{@link tmodel.impl.CityImpl <em>City</em>}' class.
@@ -687,12 +707,12 @@ public interface TmodelPackage extends EPackage {
 		EReference CITY__USERS = eINSTANCE.getCity_Users();
 
 		/**
-		 * The meta object literal for the '<em><b>City Name</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute CITY__CITY_NAME = eINSTANCE.getCity_CityName();
+		EAttribute CITY__NAME = eINSTANCE.getCity_Name();
 
 		/**
 		 * The meta object literal for the '{@link tmodel.impl.UserImpl <em>User</em>}' class.
@@ -705,12 +725,12 @@ public interface TmodelPackage extends EPackage {
 		EClass USER = eINSTANCE.getUser();
 
 		/**
-		 * The meta object literal for the '<em><b>Username</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute USER__USERNAME = eINSTANCE.getUser_Username();
+		EAttribute USER__NAME = eINSTANCE.getUser_Name();
 
 		/**
 		 * The meta object literal for the '<em><b>Borrowed Books</b></em>' containment reference list feature.
@@ -761,6 +781,14 @@ public interface TmodelPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute BOOK_BORROW__DATE_TO = eINSTANCE.getBookBorrow_DateTo();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BOOK_BORROW__NAME = eINSTANCE.getBookBorrow_Name();
 
 	}
 

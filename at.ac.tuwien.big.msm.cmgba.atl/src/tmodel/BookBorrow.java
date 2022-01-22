@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link tmodel.BookBorrow#getResponsibleWorker <em>Responsible Worker</em>}</li>
  *   <li>{@link tmodel.BookBorrow#getDateFrom <em>Date From</em>}</li>
  *   <li>{@link tmodel.BookBorrow#getDateTo <em>Date To</em>}</li>
+ *   <li>{@link tmodel.BookBorrow#getName <em>Name</em>}</li>
  * </ul>
  *
  * @see tmodel.TmodelPackage#getBookBorrow()
@@ -111,5 +112,27 @@ public interface BookBorrow extends EObject {
 	 * @generated
 	 */
 	void setDateTo(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see tmodel.TmodelPackage#getBookBorrow_Name()
+	 * @model
+	 * @generated
+	 */
+	String getName();
+
+	/**
+	 * Sets the value of the '{@link tmodel.BookBorrow#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
+	void setName(String value);
 
 } // BookBorrow

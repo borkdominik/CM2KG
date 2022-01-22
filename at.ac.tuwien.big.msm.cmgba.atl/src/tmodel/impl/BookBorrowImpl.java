@@ -27,6 +27,7 @@ import tmodel.Worker;
  *   <li>{@link tmodel.impl.BookBorrowImpl#getResponsibleWorker <em>Responsible Worker</em>}</li>
  *   <li>{@link tmodel.impl.BookBorrowImpl#getDateFrom <em>Date From</em>}</li>
  *   <li>{@link tmodel.impl.BookBorrowImpl#getDateTo <em>Date To</em>}</li>
+ *   <li>{@link tmodel.impl.BookBorrowImpl#getName <em>Name</em>}</li>
  * </ul>
  *
  * @generated
@@ -91,6 +92,26 @@ public class BookBorrowImpl extends MinimalEObjectImpl.Container implements Book
 	 * @ordered
 	 */
 	protected String dateTo = DATE_TO_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -234,6 +255,27 @@ public class BookBorrowImpl extends MinimalEObjectImpl.Container implements Book
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, TmodelPackage.BOOK_BORROW__NAME, oldName, name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -247,6 +289,8 @@ public class BookBorrowImpl extends MinimalEObjectImpl.Container implements Book
 				return getDateFrom();
 			case TmodelPackage.BOOK_BORROW__DATE_TO:
 				return getDateTo();
+			case TmodelPackage.BOOK_BORROW__NAME:
+				return getName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -270,6 +314,9 @@ public class BookBorrowImpl extends MinimalEObjectImpl.Container implements Book
 				return;
 			case TmodelPackage.BOOK_BORROW__DATE_TO:
 				setDateTo((String)newValue);
+				return;
+			case TmodelPackage.BOOK_BORROW__NAME:
+				setName((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -295,6 +342,9 @@ public class BookBorrowImpl extends MinimalEObjectImpl.Container implements Book
 			case TmodelPackage.BOOK_BORROW__DATE_TO:
 				setDateTo(DATE_TO_EDEFAULT);
 				return;
+			case TmodelPackage.BOOK_BORROW__NAME:
+				setName(NAME_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -315,6 +365,8 @@ public class BookBorrowImpl extends MinimalEObjectImpl.Container implements Book
 				return DATE_FROM_EDEFAULT == null ? dateFrom != null : !DATE_FROM_EDEFAULT.equals(dateFrom);
 			case TmodelPackage.BOOK_BORROW__DATE_TO:
 				return DATE_TO_EDEFAULT == null ? dateTo != null : !DATE_TO_EDEFAULT.equals(dateTo);
+			case TmodelPackage.BOOK_BORROW__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -333,6 +385,8 @@ public class BookBorrowImpl extends MinimalEObjectImpl.Container implements Book
 		result.append(dateFrom);
 		result.append(", dateTo: ");
 		result.append(dateTo);
+		result.append(", name: ");
+		result.append(name);
 		result.append(')');
 		return result.toString();
 	}

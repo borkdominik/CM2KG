@@ -1,0 +1,4 @@
+MATCH (a),(b)
+where a<>b and  a.ClassName = b.ClassName and apoc.text.jaroWinklerDistance(a.Label, b.Label)>0.8
+RETURN a,b,apoc.text.jaroWinklerDistance(a.Label, b.Label) as similarNameScore
+order by similarNameScore desc

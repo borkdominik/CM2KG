@@ -1,0 +1,2 @@
+MATCH (p)
+RETURN CASE WHEN avg(apoc.node.degree(p))>1.75 THEN 1 ELSE 0 END AS result;

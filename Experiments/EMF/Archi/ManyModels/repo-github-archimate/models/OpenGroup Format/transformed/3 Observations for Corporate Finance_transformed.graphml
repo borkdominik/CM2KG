@@ -20,19 +20,11 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
   <key for="edge" id="d10" yfiles.type="edgegraphics"/> 
 <key id="ClassName" for="node" attr.name="ClassName" attr.type="string"/> 
 <key id="Label" for="node" attr.name="Label" attr.type="string"/> 
-<key id="BusinessObject_name" for="node" attr.name="BusinessObject_name" attr.type="string"/> 
-<key id="BusinessObject_documentation" for="node" attr.name="BusinessObject_documentation" attr.type="string"/> 
-<key id="Meaning_name" for="node" attr.name="Meaning_name" attr.type="string"/> 
-<key id="Meaning_documentation" for="node" attr.name="Meaning_documentation" attr.type="string"/> 
-<key id="Constraint_name" for="node" attr.name="Constraint_name" attr.type="string"/> 
-<key id="Constraint_documentation" for="node" attr.name="Constraint_documentation" attr.type="string"/> 
-<key id="Junction_name" for="node" attr.name="Junction_name" attr.type="string"/> 
-<key id="Junction_documentation" for="node" attr.name="Junction_documentation" attr.type="string"/> 
-<key id="Junction_type" for="node" attr.name="Junction_type" attr.type="string"/> 
-<key id="BusinessProcess_name" for="node" attr.name="BusinessProcess_name" attr.type="string"/> 
-<key id="BusinessProcess_documentation" for="node" attr.name="BusinessProcess_documentation" attr.type="string"/> 
-<key id="EReference_ReferenceName" for="edge" attr.name="EReference_ReferenceName" attr.type="string"/> 
-<key id="Label" for="edge" attr.name="Label" attr.type="string"/> 
+<key id="ArchimateLayer" for="node" attr.name="ArchimateLayer" attr.type="string"/> 
+<key id="name" for="node" attr.name="name" attr.type="string"/> 
+<key id="documentation" for="node" attr.name="documentation" attr.type="string"/> 
+<key id="type" for="node" attr.name="type" attr.type="string"/> 
+<key id="ReferenceName" for="edge" attr.name="ReferenceName" attr.type="string"/> 
 <graph id="init_graph_01" edgedefault="directed"> 
 <node id="id-307e7f50-59e8-4216-bfb3-015bd78c00ce"> 
 <data key="ClassName">BusinessObject</data> 
@@ -52,8 +44,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">dimension element</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">dimension element</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="eaf3c3dc-74a4-4dd4-a65f-a84451a4a7a2"> 
 <data key="ClassName">BusinessObject</data> 
@@ -73,8 +66,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">observation</data> 
-<data key="BusinessObject_documentation">We can allow
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">observation</data> 
+<data key="documentation">We can allow
 a single observation to be both (measurement and category)</data> 
 </node> 
 <node id="a310e337"> 
@@ -95,8 +89,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Meaning_name">observation can be both: measurement and category</data> 
-<data key="Meaning_documentation"></data> 
+<data key="ArchimateLayer">IMotivationElement</data> 
+<data key="name">observation can be both: measurement and category</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="adfe914e-2041-4aa1-aca0-49cc0e16e263"> 
 <data key="ClassName">BusinessObject</data> 
@@ -116,8 +111,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">dimension</data> 
-<data key="BusinessObject_documentation">тип измерения
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">dimension</data> 
+<data key="documentation">тип измерения
 например по географиескому признаку, по функции</data> 
 </node> 
 <node id="ba10e503-7f8a-4256-8d5b-32b957977330"> 
@@ -138,8 +134,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">dimension level</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">dimension level</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="e041ba57-d50f-4724-a48f-2a17f58d98dd"> 
 <data key="ClassName">BusinessObject</data> 
@@ -159,8 +156,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">comparative status type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">comparative status type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="dd80f418-7d19-4049-aa05-289f8531bd69"> 
 <data key="ClassName">BusinessObject</data> 
@@ -180,8 +178,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">object of care</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">object of care</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-7249b628-7cf6-457e-86c9-8e542129c051"> 
 <data key="ClassName">BusinessObject</data> 
@@ -201,8 +200,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">patient</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">patient</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="f40f347d-e441-4170-be27-27b1e5aec245"> 
 <data key="ClassName">BusinessObject</data> 
@@ -222,8 +222,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">population</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">population</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="ba669d4d-0e2e-4952-a1c6-cfc77bc9d8c2"> 
 <data key="ClassName">BusinessObject</data> 
@@ -243,8 +244,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">enterprise segment</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">enterprise segment</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="e38ad440-2dfd-4de3-a774-28c9baf279ae"> 
 <data key="ClassName">BusinessObject</data> 
@@ -264,8 +266,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">quantity</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">quantity</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-94e8220e-a489-45ab-9189-d8060b3ab29f"> 
 <data key="ClassName">Constraint</data> 
@@ -285,8 +288,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Constraint_name">parent must be of the same subtipe</data> 
-<data key="Constraint_documentation"></data> 
+<data key="ArchimateLayer">IMotivationElement</data> 
+<data key="name">parent must be of the same subtipe</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-73789dff-183c-462d-9b27-b30f3188abc8"> 
 <data key="ClassName">BusinessObject</data> 
@@ -306,8 +310,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">plan</data> 
-<data key="BusinessObject_documentation">Planned measurements require us to make a distinction between
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">plan</data> 
+<data key="documentation">Planned measurements require us to make a distinction between
 actual or planned values, which correspond to the ac tive and projected
 observations discussed in Section 3.10. In addition, the projected observation
 must record what plan was the source for the projection, so that we can
@@ -331,8 +336,9 @@ distinguish between annual plans, quarterly forecast</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">simple status type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">simple status type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-8a03b07e-d1b5-44fe-afcd-bc0dd5e62955"> 
 <data key="ClassName">Junction</data> 
@@ -352,9 +358,10 @@ distinguish between annual plans, quarterly forecast</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="id-70e9a2f3"> 
 <data key="ClassName">BusinessObject</data> 
@@ -374,8 +381,9 @@ distinguish between annual plans, quarterly forecast</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">status type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">status type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-76af18a6"> 
 <data key="ClassName">BusinessObject</data> 
@@ -395,8 +403,9 @@ distinguish between annual plans, quarterly forecast</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">duration</data> 
-<data key="BusinessObject_documentation">For current values
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">duration</data> 
+<data key="documentation">For current values
 there will be no offset (or it can be zero)</data> 
 </node> 
 <node id="id-8b6c051c"> 
@@ -417,8 +426,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">planned</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">planned</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-2e0e4933"> 
 <data key="ClassName">BusinessObject</data> 
@@ -438,8 +448,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">actual</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">actual</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-6973737c"> 
 <data key="ClassName">Junction</data> 
@@ -459,9 +470,10 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="id-3fb3100d"> 
 <data key="ClassName">BusinessProcess</data> 
@@ -481,8 +493,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessProcess_name">creating a measurement</data> 
-<data key="BusinessProcess_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">creating a measurement</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-406e47ed"> 
 <data key="ClassName">BusinessProcess</data> 
@@ -502,8 +515,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessProcess_name">finding the arguments (depends on whether casual or comparative)</data> 
-<data key="BusinessProcess_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">finding the arguments (depends on whether casual or comparative)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-6efe69ff"> 
 <data key="ClassName">BusinessProcess</data> 
@@ -523,8 +537,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessProcess_name">for casual</data> 
-<data key="BusinessProcess_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">for casual</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-6d663bdf"> 
 <data key="ClassName">BusinessProcess</data> 
@@ -544,8 +559,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessProcess_name">find all measurements with the simple status type</data> 
-<data key="BusinessProcess_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">find all measurements with the simple status type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-93f046fe"> 
 <data key="ClassName">BusinessProcess</data> 
@@ -565,8 +581,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessProcess_name">for comparative</data> 
-<data key="BusinessProcess_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">for comparative</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-30989048"> 
 <data key="ClassName">BusinessProcess</data> 
@@ -586,8 +603,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessProcess_name">find two measurements with comparative status type</data> 
-<data key="BusinessProcess_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">find two measurements with comparative status type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="ecea8ab0"> 
 <data key="ClassName">BusinessProcess</data> 
@@ -607,8 +625,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessProcess_name">executing a formula</data> 
-<data key="BusinessProcess_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">executing a formula</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-8c133006"> 
 <data key="ClassName">BusinessProcess</data> 
@@ -628,8 +647,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessProcess_name">creating a new measurement object with the resulting value</data> 
-<data key="BusinessProcess_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">creating a new measurement object with the resulting value</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-8d68fa77"> 
 <data key="ClassName">BusinessObject</data> 
@@ -649,8 +669,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">absence</data> 
-<data key="BusinessObject_documentation">четкая уверенность в присутствии или отсутствии</data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">absence</data> 
+<data key="documentation">четкая уверенность в присутствии или отсутствии</data> 
 </node> 
 <node id="id-74a4f76d"> 
 <data key="ClassName">BusinessObject</data> 
@@ -670,8 +691,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">presence</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">presence</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="c64315f2"> 
 <data key="ClassName">Junction</data> 
@@ -691,9 +713,10 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="id-4525ce8d"> 
 <data key="ClassName">BusinessObject</data> 
@@ -713,8 +736,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">category observation</data> 
-<data key="BusinessObject_documentation">запись об измерении: перечислительная</data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">category observation</data> 
+<data key="documentation">запись об измерении: перечислительная</data> 
 </node> 
 <node id="id-079c68a9-4e08-42f0-ab46-4c4f0cde8d66"> 
 <data key="ClassName">BusinessObject</data> 
@@ -734,8 +758,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">measurement</data> 
-<data key="BusinessObject_documentation">Measurements are
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">measurement</data> 
+<data key="documentation">Measurements are
 always calculated through their measurement protoco</data> 
 </node> 
 <node id="id-81c9e0fd-5961-49c5-98e3-a21131397fe9"> 
@@ -756,8 +781,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">calculated measurement</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">calculated measurement</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-4b678976"> 
 <data key="ClassName">Junction</data> 
@@ -777,9 +803,10 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="id-5eb1640b"> 
 <data key="ClassName">Junction</data> 
@@ -799,9 +826,10 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="dcad23f0"> 
 <data key="ClassName">BusinessObject</data> 
@@ -821,8 +849,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">no type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">no type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="faa4c8fb"> 
 <data key="ClassName">BusinessObject</data> 
@@ -842,8 +871,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">no type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">no type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-65ce073f"> 
 <data key="ClassName">BusinessObject</data> 
@@ -863,8 +893,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">associated observation</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">associated observation</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-6647b4c3"> 
 <data key="ClassName">BusinessObject</data> 
@@ -884,8 +915,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">no type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">no type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-2e3822e9"> 
 <data key="ClassName">Junction</data> 
@@ -905,9 +937,10 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="id-307e7f50-59e8-4216-bfb3-015bd78c00ce"> 
 <data key="ClassName">BusinessObject</data> 
@@ -927,8 +960,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">dimension element</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">dimension element</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="adfe914e-2041-4aa1-aca0-49cc0e16e263"> 
 <data key="ClassName">BusinessObject</data> 
@@ -948,8 +982,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">dimension</data> 
-<data key="BusinessObject_documentation">тип измерения
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">dimension</data> 
+<data key="documentation">тип измерения
 например по географиескому признаку, по функции</data> 
 </node> 
 <node id="ba10e503-7f8a-4256-8d5b-32b957977330"> 
@@ -970,8 +1005,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">dimension level</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">dimension level</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="dd80f418-7d19-4049-aa05-289f8531bd69"> 
 <data key="ClassName">BusinessObject</data> 
@@ -991,8 +1027,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">object of care</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">object of care</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-7249b628-7cf6-457e-86c9-8e542129c051"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1012,8 +1049,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">patient</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">patient</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="f40f347d-e441-4170-be27-27b1e5aec245"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1033,8 +1071,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">population</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">population</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="ba669d4d-0e2e-4952-a1c6-cfc77bc9d8c2"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1054,8 +1093,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">enterprise segment</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">enterprise segment</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-94e8220e-a489-45ab-9189-d8060b3ab29f"> 
 <data key="ClassName">Constraint</data> 
@@ -1075,8 +1115,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Constraint_name">parent must be of the same subtipe</data> 
-<data key="Constraint_documentation"></data> 
+<data key="ArchimateLayer">IMotivationElement</data> 
+<data key="name">parent must be of the same subtipe</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="eaf3c3dc-74a4-4dd4-a65f-a84451a4a7a2"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1096,8 +1137,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">observation</data> 
-<data key="BusinessObject_documentation">We can allow
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">observation</data> 
+<data key="documentation">We can allow
 a single observation to be both (measurement and category)</data> 
 </node> 
 <node id="a310e337"> 
@@ -1118,8 +1160,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Meaning_name">observation can be both: measurement and category</data> 
-<data key="Meaning_documentation"></data> 
+<data key="ArchimateLayer">IMotivationElement</data> 
+<data key="name">observation can be both: measurement and category</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="e041ba57-d50f-4724-a48f-2a17f58d98dd"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1139,8 +1182,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">comparative status type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">comparative status type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-73789dff-183c-462d-9b27-b30f3188abc8"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1160,8 +1204,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">plan</data> 
-<data key="BusinessObject_documentation">Planned measurements require us to make a distinction between
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">plan</data> 
+<data key="documentation">Planned measurements require us to make a distinction between
 actual or planned values, which correspond to the ac tive and projected
 observations discussed in Section 3.10. In addition, the projected observation
 must record what plan was the source for the projection, so that we can
@@ -1185,8 +1230,9 @@ distinguish between annual plans, quarterly forecast</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">simple status type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">simple status type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-8a03b07e-d1b5-44fe-afcd-bc0dd5e62955"> 
 <data key="ClassName">Junction</data> 
@@ -1206,9 +1252,10 @@ distinguish between annual plans, quarterly forecast</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="id-70e9a2f3"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1228,8 +1275,9 @@ distinguish between annual plans, quarterly forecast</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">status type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">status type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-76af18a6"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1249,8 +1297,9 @@ distinguish between annual plans, quarterly forecast</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">duration</data> 
-<data key="BusinessObject_documentation">For current values
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">duration</data> 
+<data key="documentation">For current values
 there will be no offset (or it can be zero)</data> 
 </node> 
 <node id="id-8b6c051c"> 
@@ -1271,8 +1320,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">planned</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">planned</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-2e0e4933"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1292,8 +1342,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">actual</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">actual</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-6973737c"> 
 <data key="ClassName">Junction</data> 
@@ -1313,9 +1364,10 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="id-8d68fa77"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1335,8 +1387,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">absence</data> 
-<data key="BusinessObject_documentation">четкая уверенность в присутствии или отсутствии</data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">absence</data> 
+<data key="documentation">четкая уверенность в присутствии или отсутствии</data> 
 </node> 
 <node id="id-74a4f76d"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1356,8 +1409,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">presence</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">presence</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="c64315f2"> 
 <data key="ClassName">Junction</data> 
@@ -1377,9 +1431,10 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="id-4525ce8d"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1399,8 +1454,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">category observation</data> 
-<data key="BusinessObject_documentation">запись об измерении: перечислительная</data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">category observation</data> 
+<data key="documentation">запись об измерении: перечислительная</data> 
 </node> 
 <node id="id-079c68a9-4e08-42f0-ab46-4c4f0cde8d66"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1420,8 +1476,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">measurement</data> 
-<data key="BusinessObject_documentation">Measurements are
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">measurement</data> 
+<data key="documentation">Measurements are
 always calculated through their measurement protoco</data> 
 </node> 
 <node id="id-81c9e0fd-5961-49c5-98e3-a21131397fe9"> 
@@ -1442,8 +1499,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">calculated measurement</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">calculated measurement</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-4b678976"> 
 <data key="ClassName">Junction</data> 
@@ -1463,9 +1521,10 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="id-5eb1640b"> 
 <data key="ClassName">Junction</data> 
@@ -1485,9 +1544,10 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="dcad23f0"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1507,8 +1567,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">no type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">no type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="faa4c8fb"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1528,8 +1589,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">no type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">no type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-65ce073f"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1549,8 +1611,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">associated observation</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">associated observation</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-6647b4c3"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1570,8 +1633,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">no type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">no type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-2e3822e9"> 
 <data key="ClassName">Junction</data> 
@@ -1591,9 +1655,10 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="eaf3c3dc-74a4-4dd4-a65f-a84451a4a7a2"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1613,8 +1678,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">observation</data> 
-<data key="BusinessObject_documentation">We can allow
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">observation</data> 
+<data key="documentation">We can allow
 a single observation to be both (measurement and category)</data> 
 </node> 
 <node id="a310e337"> 
@@ -1635,8 +1701,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Meaning_name">observation can be both: measurement and category</data> 
-<data key="Meaning_documentation"></data> 
+<data key="ArchimateLayer">IMotivationElement</data> 
+<data key="name">observation can be both: measurement and category</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-8d68fa77"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1656,8 +1723,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">absence</data> 
-<data key="BusinessObject_documentation">четкая уверенность в присутствии или отсутствии</data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">absence</data> 
+<data key="documentation">четкая уверенность в присутствии или отсутствии</data> 
 </node> 
 <node id="id-74a4f76d"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1677,8 +1745,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">presence</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">presence</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="c64315f2"> 
 <data key="ClassName">Junction</data> 
@@ -1698,9 +1767,10 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="id-4525ce8d"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1720,8 +1790,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">category observation</data> 
-<data key="BusinessObject_documentation">запись об измерении: перечислительная</data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">category observation</data> 
+<data key="documentation">запись об измерении: перечислительная</data> 
 </node> 
 <node id="id-079c68a9-4e08-42f0-ab46-4c4f0cde8d66"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1741,8 +1812,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">measurement</data> 
-<data key="BusinessObject_documentation">Measurements are
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">measurement</data> 
+<data key="documentation">Measurements are
 always calculated through their measurement protoco</data> 
 </node> 
 <node id="id-81c9e0fd-5961-49c5-98e3-a21131397fe9"> 
@@ -1763,8 +1835,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">calculated measurement</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">calculated measurement</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-4b678976"> 
 <data key="ClassName">Junction</data> 
@@ -1784,9 +1857,10 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="id-5eb1640b"> 
 <data key="ClassName">Junction</data> 
@@ -1806,9 +1880,10 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="dcad23f0"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1828,8 +1903,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">no type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">no type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="faa4c8fb"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1849,8 +1925,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">no type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">no type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-65ce073f"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1870,8 +1947,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">associated observation</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">associated observation</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-6647b4c3"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1891,8 +1969,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">no type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">no type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-2e3822e9"> 
 <data key="ClassName">Junction</data> 
@@ -1912,9 +1991,10 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="id-307e7f50-59e8-4216-bfb3-015bd78c00ce"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1934,8 +2014,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">dimension element</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">dimension element</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="eaf3c3dc-74a4-4dd4-a65f-a84451a4a7a2"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1955,8 +2036,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">observation</data> 
-<data key="BusinessObject_documentation">We can allow
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">observation</data> 
+<data key="documentation">We can allow
 a single observation to be both (measurement and category)</data> 
 </node> 
 <node id="a310e337"> 
@@ -1977,8 +2059,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Meaning_name">observation can be both: measurement and category</data> 
-<data key="Meaning_documentation"></data> 
+<data key="ArchimateLayer">IMotivationElement</data> 
+<data key="name">observation can be both: measurement and category</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="adfe914e-2041-4aa1-aca0-49cc0e16e263"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1998,8 +2081,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">dimension</data> 
-<data key="BusinessObject_documentation">тип измерения
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">dimension</data> 
+<data key="documentation">тип измерения
 например по географиескому признаку, по функции</data> 
 </node> 
 <node id="ba10e503-7f8a-4256-8d5b-32b957977330"> 
@@ -2020,8 +2104,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">dimension level</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">dimension level</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="e041ba57-d50f-4724-a48f-2a17f58d98dd"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2041,8 +2126,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">comparative status type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">comparative status type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="dd80f418-7d19-4049-aa05-289f8531bd69"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2062,8 +2148,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">object of care</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">object of care</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-7249b628-7cf6-457e-86c9-8e542129c051"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2083,8 +2170,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">patient</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">patient</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="f40f347d-e441-4170-be27-27b1e5aec245"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2104,8 +2192,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">population</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">population</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="ba669d4d-0e2e-4952-a1c6-cfc77bc9d8c2"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2125,8 +2214,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">enterprise segment</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">enterprise segment</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="e38ad440-2dfd-4de3-a774-28c9baf279ae"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2146,8 +2236,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">quantity</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">quantity</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-94e8220e-a489-45ab-9189-d8060b3ab29f"> 
 <data key="ClassName">Constraint</data> 
@@ -2167,8 +2258,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Constraint_name">parent must be of the same subtipe</data> 
-<data key="Constraint_documentation"></data> 
+<data key="ArchimateLayer">IMotivationElement</data> 
+<data key="name">parent must be of the same subtipe</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-73789dff-183c-462d-9b27-b30f3188abc8"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2188,8 +2280,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">plan</data> 
-<data key="BusinessObject_documentation">Planned measurements require us to make a distinction between
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">plan</data> 
+<data key="documentation">Planned measurements require us to make a distinction between
 actual or planned values, which correspond to the ac tive and projected
 observations discussed in Section 3.10. In addition, the projected observation
 must record what plan was the source for the projection, so that we can
@@ -2213,8 +2306,9 @@ distinguish between annual plans, quarterly forecast</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">simple status type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">simple status type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-8a03b07e-d1b5-44fe-afcd-bc0dd5e62955"> 
 <data key="ClassName">Junction</data> 
@@ -2234,9 +2328,10 @@ distinguish between annual plans, quarterly forecast</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="id-70e9a2f3"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2256,8 +2351,9 @@ distinguish between annual plans, quarterly forecast</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">status type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">status type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-76af18a6"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2277,8 +2373,9 @@ distinguish between annual plans, quarterly forecast</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">duration</data> 
-<data key="BusinessObject_documentation">For current values
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">duration</data> 
+<data key="documentation">For current values
 there will be no offset (or it can be zero)</data> 
 </node> 
 <node id="id-8b6c051c"> 
@@ -2299,8 +2396,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">planned</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">planned</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-2e0e4933"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2320,8 +2418,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">actual</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">actual</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-6973737c"> 
 <data key="ClassName">Junction</data> 
@@ -2341,9 +2440,10 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="id-3fb3100d"> 
 <data key="ClassName">BusinessProcess</data> 
@@ -2363,8 +2463,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessProcess_name">creating a measurement</data> 
-<data key="BusinessProcess_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">creating a measurement</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-406e47ed"> 
 <data key="ClassName">BusinessProcess</data> 
@@ -2384,8 +2485,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessProcess_name">finding the arguments (depends on whether casual or comparative)</data> 
-<data key="BusinessProcess_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">finding the arguments (depends on whether casual or comparative)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-6efe69ff"> 
 <data key="ClassName">BusinessProcess</data> 
@@ -2405,8 +2507,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessProcess_name">for casual</data> 
-<data key="BusinessProcess_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">for casual</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-6d663bdf"> 
 <data key="ClassName">BusinessProcess</data> 
@@ -2426,8 +2529,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessProcess_name">find all measurements with the simple status type</data> 
-<data key="BusinessProcess_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">find all measurements with the simple status type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-93f046fe"> 
 <data key="ClassName">BusinessProcess</data> 
@@ -2447,8 +2551,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessProcess_name">for comparative</data> 
-<data key="BusinessProcess_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">for comparative</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-30989048"> 
 <data key="ClassName">BusinessProcess</data> 
@@ -2468,8 +2573,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessProcess_name">find two measurements with comparative status type</data> 
-<data key="BusinessProcess_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">find two measurements with comparative status type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="ecea8ab0"> 
 <data key="ClassName">BusinessProcess</data> 
@@ -2489,8 +2595,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessProcess_name">executing a formula</data> 
-<data key="BusinessProcess_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">executing a formula</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-8c133006"> 
 <data key="ClassName">BusinessProcess</data> 
@@ -2510,8 +2617,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessProcess_name">creating a new measurement object with the resulting value</data> 
-<data key="BusinessProcess_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">creating a new measurement object with the resulting value</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-8d68fa77"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2531,8 +2639,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">absence</data> 
-<data key="BusinessObject_documentation">четкая уверенность в присутствии или отсутствии</data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">absence</data> 
+<data key="documentation">четкая уверенность в присутствии или отсутствии</data> 
 </node> 
 <node id="id-74a4f76d"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2552,8 +2661,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">presence</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">presence</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="c64315f2"> 
 <data key="ClassName">Junction</data> 
@@ -2573,9 +2683,10 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="id-4525ce8d"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2595,8 +2706,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">category observation</data> 
-<data key="BusinessObject_documentation">запись об измерении: перечислительная</data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">category observation</data> 
+<data key="documentation">запись об измерении: перечислительная</data> 
 </node> 
 <node id="id-079c68a9-4e08-42f0-ab46-4c4f0cde8d66"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2616,8 +2728,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">measurement</data> 
-<data key="BusinessObject_documentation">Measurements are
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">measurement</data> 
+<data key="documentation">Measurements are
 always calculated through their measurement protoco</data> 
 </node> 
 <node id="id-81c9e0fd-5961-49c5-98e3-a21131397fe9"> 
@@ -2638,8 +2751,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">calculated measurement</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">calculated measurement</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-4b678976"> 
 <data key="ClassName">Junction</data> 
@@ -2659,9 +2773,10 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="id-5eb1640b"> 
 <data key="ClassName">Junction</data> 
@@ -2681,9 +2796,10 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="dcad23f0"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2703,8 +2819,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">no type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">no type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="faa4c8fb"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2724,8 +2841,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">no type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">no type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-307e7f50-59e8-4216-bfb3-015bd78c00ce"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2745,8 +2863,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">dimension element</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">dimension element</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="eaf3c3dc-74a4-4dd4-a65f-a84451a4a7a2"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2766,8 +2885,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">observation</data> 
-<data key="BusinessObject_documentation">We can allow
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">observation</data> 
+<data key="documentation">We can allow
 a single observation to be both (measurement and category)</data> 
 </node> 
 <node id="a310e337"> 
@@ -2788,8 +2908,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Meaning_name">observation can be both: measurement and category</data> 
-<data key="Meaning_documentation"></data> 
+<data key="ArchimateLayer">IMotivationElement</data> 
+<data key="name">observation can be both: measurement and category</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="adfe914e-2041-4aa1-aca0-49cc0e16e263"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2809,8 +2930,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">dimension</data> 
-<data key="BusinessObject_documentation">тип измерения
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">dimension</data> 
+<data key="documentation">тип измерения
 например по географиескому признаку, по функции</data> 
 </node> 
 <node id="ba10e503-7f8a-4256-8d5b-32b957977330"> 
@@ -2831,8 +2953,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">dimension level</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">dimension level</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="e041ba57-d50f-4724-a48f-2a17f58d98dd"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2852,8 +2975,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">comparative status type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">comparative status type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="dd80f418-7d19-4049-aa05-289f8531bd69"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2873,8 +2997,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">object of care</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">object of care</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-7249b628-7cf6-457e-86c9-8e542129c051"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2894,8 +3019,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">patient</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">patient</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="f40f347d-e441-4170-be27-27b1e5aec245"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2915,8 +3041,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">population</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">population</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="ba669d4d-0e2e-4952-a1c6-cfc77bc9d8c2"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2936,8 +3063,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">enterprise segment</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">enterprise segment</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="e38ad440-2dfd-4de3-a774-28c9baf279ae"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2957,8 +3085,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">quantity</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">quantity</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-94e8220e-a489-45ab-9189-d8060b3ab29f"> 
 <data key="ClassName">Constraint</data> 
@@ -2978,8 +3107,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Constraint_name">parent must be of the same subtipe</data> 
-<data key="Constraint_documentation"></data> 
+<data key="ArchimateLayer">IMotivationElement</data> 
+<data key="name">parent must be of the same subtipe</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-73789dff-183c-462d-9b27-b30f3188abc8"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2999,8 +3129,9 @@ a single observation to be both (measurement and category)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">plan</data> 
-<data key="BusinessObject_documentation">Planned measurements require us to make a distinction between
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">plan</data> 
+<data key="documentation">Planned measurements require us to make a distinction between
 actual or planned values, which correspond to the ac tive and projected
 observations discussed in Section 3.10. In addition, the projected observation
 must record what plan was the source for the projection, so that we can
@@ -3024,8 +3155,9 @@ distinguish between annual plans, quarterly forecast</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">simple status type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">simple status type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-8a03b07e-d1b5-44fe-afcd-bc0dd5e62955"> 
 <data key="ClassName">Junction</data> 
@@ -3045,9 +3177,10 @@ distinguish between annual plans, quarterly forecast</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="id-70e9a2f3"> 
 <data key="ClassName">BusinessObject</data> 
@@ -3067,8 +3200,9 @@ distinguish between annual plans, quarterly forecast</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">status type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">status type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-76af18a6"> 
 <data key="ClassName">BusinessObject</data> 
@@ -3088,8 +3222,9 @@ distinguish between annual plans, quarterly forecast</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">duration</data> 
-<data key="BusinessObject_documentation">For current values
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">duration</data> 
+<data key="documentation">For current values
 there will be no offset (or it can be zero)</data> 
 </node> 
 <node id="id-8b6c051c"> 
@@ -3110,8 +3245,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">planned</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">planned</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-2e0e4933"> 
 <data key="ClassName">BusinessObject</data> 
@@ -3131,8 +3267,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">actual</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">actual</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-6973737c"> 
 <data key="ClassName">Junction</data> 
@@ -3152,9 +3289,10 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="id-8d68fa77"> 
 <data key="ClassName">BusinessObject</data> 
@@ -3174,8 +3312,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">absence</data> 
-<data key="BusinessObject_documentation">четкая уверенность в присутствии или отсутствии</data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">absence</data> 
+<data key="documentation">четкая уверенность в присутствии или отсутствии</data> 
 </node> 
 <node id="id-74a4f76d"> 
 <data key="ClassName">BusinessObject</data> 
@@ -3195,8 +3334,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">presence</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">presence</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="c64315f2"> 
 <data key="ClassName">Junction</data> 
@@ -3216,9 +3356,10 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="id-4525ce8d"> 
 <data key="ClassName">BusinessObject</data> 
@@ -3238,8 +3379,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">category observation</data> 
-<data key="BusinessObject_documentation">запись об измерении: перечислительная</data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">category observation</data> 
+<data key="documentation">запись об измерении: перечислительная</data> 
 </node> 
 <node id="id-079c68a9-4e08-42f0-ab46-4c4f0cde8d66"> 
 <data key="ClassName">BusinessObject</data> 
@@ -3259,8 +3401,9 @@ there will be no offset (or it can be zero)</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">measurement</data> 
-<data key="BusinessObject_documentation">Measurements are
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">measurement</data> 
+<data key="documentation">Measurements are
 always calculated through their measurement protoco</data> 
 </node> 
 <node id="id-81c9e0fd-5961-49c5-98e3-a21131397fe9"> 
@@ -3281,8 +3424,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">calculated measurement</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">calculated measurement</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-4b678976"> 
 <data key="ClassName">Junction</data> 
@@ -3302,9 +3446,10 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="id-5eb1640b"> 
 <data key="ClassName">Junction</data> 
@@ -3324,9 +3469,10 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <node id="dcad23f0"> 
 <data key="ClassName">BusinessObject</data> 
@@ -3346,8 +3492,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">no type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">no type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="faa4c8fb"> 
 <data key="ClassName">BusinessObject</data> 
@@ -3367,8 +3514,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">no type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">no type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-65ce073f"> 
 <data key="ClassName">BusinessObject</data> 
@@ -3388,8 +3536,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">associated observation</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">associated observation</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-6647b4c3"> 
 <data key="ClassName">BusinessObject</data> 
@@ -3409,8 +3558,9 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">no type</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">no type</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-2e3822e9"> 
 <data key="ClassName">Junction</data> 
@@ -3430,12 +3580,13 @@ always calculated through their measurement protoco</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Junction_name">Junction</data> 
-<data key="Junction_documentation"></data> 
-<data key="Junction_type">or</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Junction</data> 
+<data key="documentation"></data> 
+<data key="type">or</data> 
 </node> 
 <edge source="id-307e7f50-59e8-4216-bfb3-015bd78c00ce" target="id-94e8220e-a489-45ab-9189-d8060b3ab29f"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3454,7 +3605,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="dd80f418-7d19-4049-aa05-289f8531bd69" target="id-7249b628-7cf6-457e-86c9-8e542129c051"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">SpecializationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3473,7 +3624,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="f40f347d-e441-4170-be27-27b1e5aec245" target="dd80f418-7d19-4049-aa05-289f8531bd69"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3492,7 +3643,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="dd80f418-7d19-4049-aa05-289f8531bd69" target="ba669d4d-0e2e-4952-a1c6-cfc77bc9d8c2"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">SpecializationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3511,7 +3662,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="ba10e503-7f8a-4256-8d5b-32b957977330" target="adfe914e-2041-4aa1-aca0-49cc0e16e263"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3530,7 +3681,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="ba10e503-7f8a-4256-8d5b-32b957977330" target="adfe914e-2041-4aa1-aca0-49cc0e16e263"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AggregationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3549,7 +3700,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-97127417-8532-461a-a7f0-9268736ddb47" target="id-8a03b07e-d1b5-44fe-afcd-bc0dd5e62955"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3568,7 +3719,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="e041ba57-d50f-4724-a48f-2a17f58d98dd" target="id-8a03b07e-d1b5-44fe-afcd-bc0dd5e62955"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3587,7 +3738,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="dd80f418-7d19-4049-aa05-289f8531bd69" target="eaf3c3dc-74a4-4dd4-a65f-a84451a4a7a2"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3606,7 +3757,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-307e7f50-59e8-4216-bfb3-015bd78c00ce" target="ba669d4d-0e2e-4952-a1c6-cfc77bc9d8c2"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3625,7 +3776,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="adfe914e-2041-4aa1-aca0-49cc0e16e263" target="ba10e503-7f8a-4256-8d5b-32b957977330"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3644,7 +3795,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="ba10e503-7f8a-4256-8d5b-32b957977330" target="id-307e7f50-59e8-4216-bfb3-015bd78c00ce"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3663,7 +3814,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="adfe914e-2041-4aa1-aca0-49cc0e16e263" target="id-307e7f50-59e8-4216-bfb3-015bd78c00ce"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3682,7 +3833,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="e38ad440-2dfd-4de3-a774-28c9baf279ae" target="id-079c68a9-4e08-42f0-ab46-4c4f0cde8d66"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3701,7 +3852,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-079c68a9-4e08-42f0-ab46-4c4f0cde8d66" target="id-81c9e0fd-5961-49c5-98e3-a21131397fe9"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3720,7 +3871,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-81c9e0fd-5961-49c5-98e3-a21131397fe9" target="id-079c68a9-4e08-42f0-ab46-4c4f0cde8d66"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3739,7 +3890,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-70e9a2f3" target="eaf3c3dc-74a4-4dd4-a65f-a84451a4a7a2"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3758,7 +3909,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-76af18a6" target="id-2e0e4933"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3777,7 +3928,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-73789dff-183c-462d-9b27-b30f3188abc8" target="id-8b6c051c"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3796,7 +3947,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-8a03b07e-d1b5-44fe-afcd-bc0dd5e62955" target="id-70e9a2f3"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3815,7 +3966,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-97127417-8532-461a-a7f0-9268736ddb47" target="e041ba57-d50f-4724-a48f-2a17f58d98dd"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3834,7 +3985,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-97127417-8532-461a-a7f0-9268736ddb47" target="e041ba57-d50f-4724-a48f-2a17f58d98dd"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3853,7 +4004,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-8b6c051c" target="id-6973737c"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3872,7 +4023,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-2e0e4933" target="id-6973737c"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3891,7 +4042,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-6973737c" target="id-70e9a2f3"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3910,7 +4061,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-406e47ed" target="id-3fb3100d"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3929,7 +4080,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="ecea8ab0" target="id-3fb3100d"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3948,7 +4099,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-8c133006" target="id-3fb3100d"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3967,7 +4118,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="ecea8ab0" target="id-406e47ed"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3986,7 +4137,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-8c133006" target="ecea8ab0"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4005,7 +4156,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-6d663bdf" target="id-406e47ed"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4024,7 +4175,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-079c68a9-4e08-42f0-ab46-4c4f0cde8d66" target="id-6d663bdf"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AccessRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4043,7 +4194,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-6efe69ff" target="id-406e47ed"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4062,7 +4213,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-6d663bdf" target="id-6efe69ff"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4081,7 +4232,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-93f046fe" target="id-406e47ed"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4100,7 +4251,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-30989048" target="id-93f046fe"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4119,7 +4270,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-079c68a9-4e08-42f0-ab46-4c4f0cde8d66" target="id-8c133006"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AccessRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4138,7 +4289,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-30989048" target="id-3fb3100d"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4157,7 +4308,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-8d68fa77" target="c64315f2"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4176,7 +4327,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-74a4f76d" target="c64315f2"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4195,7 +4346,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="c64315f2" target="id-4525ce8d"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4214,7 +4365,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="eaf3c3dc-74a4-4dd4-a65f-a84451a4a7a2" target="id-81c9e0fd-5961-49c5-98e3-a21131397fe9"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4233,7 +4384,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-4b678976" target="eaf3c3dc-74a4-4dd4-a65f-a84451a4a7a2"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4252,7 +4403,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-4525ce8d" target="id-4b678976"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4271,7 +4422,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-5eb1640b" target="eaf3c3dc-74a4-4dd4-a65f-a84451a4a7a2"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4290,7 +4441,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-079c68a9-4e08-42f0-ab46-4c4f0cde8d66" target="id-5eb1640b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4309,7 +4460,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="dcad23f0" target="id-4b678976"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4328,7 +4479,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="faa4c8fb" target="id-5eb1640b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4347,7 +4498,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-65ce073f" target="id-2e3822e9"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4366,7 +4517,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-2e3822e9" target="eaf3c3dc-74a4-4dd4-a65f-a84451a4a7a2"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4385,7 +4536,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="id-6647b4c3" target="id-2e3822e9"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4404,7 +4555,7 @@ always calculated through their measurement protoco</data>
       </data> 
 </edge> 
 <edge source="eaf3c3dc-74a4-4dd4-a65f-a84451a4a7a2" target="id-65ce073f"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>

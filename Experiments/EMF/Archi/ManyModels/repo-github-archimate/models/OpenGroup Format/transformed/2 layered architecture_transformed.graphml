@@ -20,22 +20,10 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
   <key for="edge" id="d10" yfiles.type="edgegraphics"/> 
 <key id="ClassName" for="node" attr.name="ClassName" attr.type="string"/> 
 <key id="Label" for="node" attr.name="Label" attr.type="string"/> 
-<key id="Grouping_name" for="node" attr.name="Grouping_name" attr.type="string"/> 
-<key id="Grouping_documentation" for="node" attr.name="Grouping_documentation" attr.type="string"/> 
-<key id="BusinessActor_name" for="node" attr.name="BusinessActor_name" attr.type="string"/> 
-<key id="BusinessActor_documentation" for="node" attr.name="BusinessActor_documentation" attr.type="string"/> 
-<key id="Node_name" for="node" attr.name="Node_name" attr.type="string"/> 
-<key id="Node_documentation" for="node" attr.name="Node_documentation" attr.type="string"/> 
-<key id="ApplicationInterface_name" for="node" attr.name="ApplicationInterface_name" attr.type="string"/> 
-<key id="ApplicationInterface_documentation" for="node" attr.name="ApplicationInterface_documentation" attr.type="string"/> 
-<key id="ApplicationComponent_name" for="node" attr.name="ApplicationComponent_name" attr.type="string"/> 
-<key id="ApplicationComponent_documentation" for="node" attr.name="ApplicationComponent_documentation" attr.type="string"/> 
-<key id="DataObject_name" for="node" attr.name="DataObject_name" attr.type="string"/> 
-<key id="DataObject_documentation" for="node" attr.name="DataObject_documentation" attr.type="string"/> 
-<key id="ApplicationFunction_name" for="node" attr.name="ApplicationFunction_name" attr.type="string"/> 
-<key id="ApplicationFunction_documentation" for="node" attr.name="ApplicationFunction_documentation" attr.type="string"/> 
-<key id="EReference_ReferenceName" for="edge" attr.name="EReference_ReferenceName" attr.type="string"/> 
-<key id="Label" for="edge" attr.name="Label" attr.type="string"/> 
+<key id="ArchimateLayer" for="node" attr.name="ArchimateLayer" attr.type="string"/> 
+<key id="name" for="node" attr.name="name" attr.type="string"/> 
+<key id="documentation" for="node" attr.name="documentation" attr.type="string"/> 
+<key id="ReferenceName" for="edge" attr.name="ReferenceName" attr.type="string"/> 
 <graph id="init_graph_01" edgedefault="directed"> 
 <node id="id-8491092a"> 
 <data key="ClassName">Grouping</data> 
@@ -55,8 +43,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">Presentation Layer (User Interface)</data> 
-<data key="Grouping_documentation">Отвечает за вывод информации пользователю и интерпретирование его команд. Внешним действующим субъектом
+<data key="ArchimateLayer">null</data> 
+<data key="name">Presentation Layer (User Interface)</data> 
+<data key="documentation">Отвечает за вывод информации пользователю и интерпретирование его команд. Внешним действующим субъектом
 может быть не человек, а другая компьютерная система</data> 
 </node> 
 <node id="b0553cad"> 
@@ -77,8 +66,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">Application Layer (operational)</data> 
-<data key="Grouping_documentation">Application Services Represent Use Cases, not CRUD
+<data key="ArchimateLayer">null</data> 
+<data key="name">Application Layer (operational)</data> 
+<data key="documentation">Application Services Represent Use Cases, not CRUD
 
 Определяет задачи, которые должна решить задача, и распредеяет их межу объектами, выражающими суть предметной
 области. Задания, выполняемые этим уровнем, имеют смысл
@@ -105,8 +95,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">Domain Layer (model)</data> 
-<data key="Grouping_documentation">Отвечает за представление понятий прикладной предметной
+<data key="ArchimateLayer">null</data> 
+<data key="name">Domain Layer (model)</data> 
+<data key="documentation">Отвечает за представление понятий прикладной предметной
 области, рабочие состояния, деловые регламенты. Именно
 здесь контролируется и используется текущее состояние
 прикладной модели, пусть даже технические подробности
@@ -132,8 +123,9 @@ nрограммы</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">Infrаstrсtиrе Layer</data> 
-<data key="Grouping_documentation">Обеспечивает непосредственную техническую поддержку
+<data key="ArchimateLayer">null</data> 
+<data key="name">Infrаstrсtиrе Layer</data> 
+<data key="documentation">Обеспечивает непосредственную техническую поддержку
 для верхних уровней: передачу сооБIl�ений на операционном
 уровне, непрерывность существования объектов на уровне
 модели, вывод элементов управления на уровне пользовательского интерфейса и т.д. Инфраструктурный уровень
@@ -158,8 +150,9 @@ nрограммы</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">application service</data> 
-<data key="Grouping_documentation">Application Services that orchestrate use cases
+<data key="ArchimateLayer">null</data> 
+<data key="name">application service</data> 
+<data key="documentation">Application Services that orchestrate use cases
 and manage transactions;</data> 
 </node> 
 <node id="id-3d4f867e"> 
@@ -180,8 +173,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">domain model</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">domain model</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-3446aa46"> 
 <data key="ClassName">Grouping</data> 
@@ -201,8 +195,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">application service</data> 
-<data key="Grouping_documentation">Application Services that orchestrate use cases
+<data key="ArchimateLayer">null</data> 
+<data key="name">application service</data> 
+<data key="documentation">Application Services that orchestrate use cases
 and manage transactions;</data> 
 </node> 
 <node id="id-062cc7dc"> 
@@ -223,8 +218,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">output adapter</data> 
-<data key="Grouping_documentation">Input Adapters , such as user interface
+<data key="ArchimateLayer">null</data> 
+<data key="name">output adapter</data> 
+<data key="documentation">Input Adapters , such as user interface
 controllers, REST endpoints, and message listeners;</data> 
 </node> 
 <node id="fd1cc256"> 
@@ -245,8 +241,9 @@ controllers, REST endpoints, and message listeners;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessActor_name">user</data> 
-<data key="BusinessActor_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">user</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-145d732a"> 
 <data key="ClassName">Node</data> 
@@ -266,8 +263,9 @@ controllers, REST endpoints, and message listeners;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Node_name">database</data> 
-<data key="Node_documentation"></data> 
+<data key="ArchimateLayer">ITechnologyElement</data> 
+<data key="name">database</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="dae1efe6"> 
 <data key="ClassName">Grouping</data> 
@@ -287,8 +285,9 @@ controllers, REST endpoints, and message listeners;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">application service</data> 
-<data key="Grouping_documentation">Application Services that orchestrate use cases
+<data key="ArchimateLayer">null</data> 
+<data key="name">application service</data> 
+<data key="documentation">Application Services that orchestrate use cases
 and manage transactions;</data> 
 </node> 
 <node id="d13d36d3"> 
@@ -309,8 +308,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">input adapter</data> 
-<data key="Grouping_documentation">Input Adapters , such as user interface
+<data key="ArchimateLayer">null</data> 
+<data key="name">input adapter</data> 
+<data key="documentation">Input Adapters , such as user interface
 controllers, REST endpoints, and message listeners;</data> 
 </node> 
 <node id="id-17f67f77"> 
@@ -331,8 +331,9 @@ controllers, REST endpoints, and message listeners;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">application service</data> 
-<data key="Grouping_documentation">Application Services that orchestrate use cases
+<data key="ArchimateLayer">null</data> 
+<data key="name">application service</data> 
+<data key="documentation">Application Services that orchestrate use cases
 and manage transactions;</data> 
 </node> 
 <node id="id-7510ce96"> 
@@ -353,8 +354,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">input adapter</data> 
-<data key="Grouping_documentation">Input Adapters , such as user interface
+<data key="ArchimateLayer">null</data> 
+<data key="name">input adapter</data> 
+<data key="documentation">Input Adapters , such as user interface
 controllers, REST endpoints, and message listeners;</data> 
 </node> 
 <node id="id-1428a49b"> 
@@ -375,8 +377,9 @@ controllers, REST endpoints, and message listeners;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">output adapter</data> 
-<data key="Grouping_documentation">Output Adapters such
+<data key="ArchimateLayer">null</data> 
+<data key="name">output adapter</data> 
+<data key="documentation">Output Adapters such
 as persistence management and message senders.</data> 
 </node> 
 <node id="id-34f960e2"> 
@@ -397,8 +400,9 @@ as persistence management and message senders.</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationInterface_name">system 2</data> 
-<data key="ApplicationInterface_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">system 2</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="d9d6b829"> 
 <data key="ClassName">ApplicationInterface</data> 
@@ -418,8 +422,9 @@ as persistence management and message senders.</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationInterface_name">system 1</data> 
-<data key="ApplicationInterface_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">system 1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-5766e7bd-a2b9-4862-a06d-d6533960df67"> 
 <data key="ClassName">Grouping</data> 
@@ -439,8 +444,9 @@ as persistence management and message senders.</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">Service Layer</data> 
-<data key="Grouping_documentation">Application Services Represent Use Cases, not CRUD
+<data key="ArchimateLayer">null</data> 
+<data key="name">Service Layer</data> 
+<data key="documentation">Application Services Represent Use Cases, not CRUD
 
 Определяет задачи, которые должна решить задача, и распредеяет их межу объектами, выражающими суть предметной
 области. Задания, выполняемые этим уровнем, имеют смысл
@@ -467,8 +473,9 @@ as persistence management and message senders.</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">Implementation / receiver</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">Implementation / receiver</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-0b725c77-ab5f-4d54-811a-ac61a7be4ada"> 
 <data key="ClassName">Grouping</data> 
@@ -488,8 +495,9 @@ as persistence management and message senders.</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">Domain Layer</data> 
-<data key="Grouping_documentation">Отвечает за представление понятий прикладной предметной
+<data key="ArchimateLayer">null</data> 
+<data key="name">Domain Layer</data> 
+<data key="documentation">Отвечает за представление понятий прикладной предметной
 области, рабочие состояния, деловые регламенты. Именно
 здесь контролируется и используется текущее состояние
 прикладной модели, пусть даже технические подробности
@@ -515,8 +523,9 @@ nрограммы</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationInterface_name">Interface</data> 
-<data key="ApplicationInterface_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">Interface</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="e16602d6-780c-4062-b708-31d89b2dae4d"> 
 <data key="ClassName">ApplicationComponent</data> 
@@ -536,8 +545,9 @@ nрограммы</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">caller</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">caller</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="f387c6fb-e680-4e59-a7e1-23b8c9bc4142"> 
 <data key="ClassName">Grouping</data> 
@@ -557,8 +567,9 @@ nрограммы</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">Service Layer</data> 
-<data key="Grouping_documentation">Application Services Represent Use Cases, not CRUD
+<data key="ArchimateLayer">null</data> 
+<data key="name">Service Layer</data> 
+<data key="documentation">Application Services Represent Use Cases, not CRUD
 
 Определяет задачи, которые должна решить задача, и распредеяет их межу объектами, выражающими суть предметной
 области. Задания, выполняемые этим уровнем, имеют смысл
@@ -585,8 +596,9 @@ nрограммы</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">some class</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">some class</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-91ab11f5-07cf-49f8-941e-49080d61e004"> 
 <data key="ClassName">Grouping</data> 
@@ -606,8 +618,9 @@ nрограммы</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">Domain Layer</data> 
-<data key="Grouping_documentation">Отвечает за представление понятий прикладной предметной
+<data key="ArchimateLayer">null</data> 
+<data key="name">Domain Layer</data> 
+<data key="documentation">Отвечает за представление понятий прикладной предметной
 области, рабочие состояния, деловые регламенты. Именно
 здесь контролируется и используется текущее состояние
 прикладной модели, пусть даже технические подробности
@@ -633,8 +646,9 @@ nрограммы</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationInterface_name">Interface</data> 
-<data key="ApplicationInterface_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">Interface</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="b85a7368-8445-4c45-9bf1-b86f9799acb3"> 
 <data key="ClassName">ApplicationComponent</data> 
@@ -654,8 +668,9 @@ nрограммы</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">implementation/receiver</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">implementation/receiver</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-5332fe59-870b-43ab-9893-eee2e5691be1"> 
 <data key="ClassName">Grouping</data> 
@@ -675,8 +690,9 @@ nрограммы</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">Service Layer</data> 
-<data key="Grouping_documentation">Application Services Represent Use Cases, not CRUD
+<data key="ArchimateLayer">null</data> 
+<data key="name">Service Layer</data> 
+<data key="documentation">Application Services Represent Use Cases, not CRUD
 
 Определяет задачи, которые должна решить задача, и распредеяет их межу объектами, выражающими суть предметной
 области. Задания, выполняемые этим уровнем, имеют смысл
@@ -703,8 +719,9 @@ nрограммы</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">some class</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">some class</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-08bfa105-a702-47c3-bc89-8500189cd245"> 
 <data key="ClassName">DataObject</data> 
@@ -724,8 +741,9 @@ nрограммы</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="DataObject_name">some value</data> 
-<data key="DataObject_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">some value</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="c6269d21-0631-42db-9bae-1169d804de47"> 
 <data key="ClassName">Grouping</data> 
@@ -745,8 +763,9 @@ nрограммы</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">Domain Layer</data> 
-<data key="Grouping_documentation">Отвечает за представление понятий прикладной предметной
+<data key="ArchimateLayer">null</data> 
+<data key="name">Domain Layer</data> 
+<data key="documentation">Отвечает за представление понятий прикладной предметной
 области, рабочие состояния, деловые регламенты. Именно
 здесь контролируется и используется текущее состояние
 прикладной модели, пусть даже технические подробности
@@ -772,8 +791,9 @@ nрограммы</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">Value-object</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">Value-object</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="d1bc4ddb-6e12-4486-b0ea-2f682a8b3672"> 
 <data key="ClassName">Grouping</data> 
@@ -793,8 +813,9 @@ nрограммы</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">Service Layer</data> 
-<data key="Grouping_documentation">Application Services Represent Use Cases, not CRUD
+<data key="ArchimateLayer">null</data> 
+<data key="name">Service Layer</data> 
+<data key="documentation">Application Services Represent Use Cases, not CRUD
 
 Определяет задачи, которые должна решить задача, и распредеяет их межу объектами, выражающими суть предметной
 области. Задания, выполняемые этим уровнем, имеют смысл
@@ -821,8 +842,9 @@ nрограммы</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">Implementation / receiver</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">Implementation / receiver</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-9bad6ba2-6cad-474c-97cb-13b3ae96b32e"> 
 <data key="ClassName">Grouping</data> 
@@ -842,8 +864,9 @@ nрограммы</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">Domain Layer</data> 
-<data key="Grouping_documentation">Отвечает за представление понятий прикладной предметной
+<data key="ArchimateLayer">null</data> 
+<data key="name">Domain Layer</data> 
+<data key="documentation">Отвечает за представление понятий прикладной предметной
 области, рабочие состояния, деловые регламенты. Именно
 здесь контролируется и используется текущее состояние
 прикладной модели, пусть даже технические подробности
@@ -869,8 +892,9 @@ nрограммы</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">caller</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">caller</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-0c09ca0c-cbcf-4e6d-a2e9-d4f59d1e4267"> 
 <data key="ClassName">Grouping</data> 
@@ -890,8 +914,9 @@ nрограммы</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">output adapter</data> 
-<data key="Grouping_documentation">Application Services that orchestrate use cases
+<data key="ArchimateLayer">null</data> 
+<data key="name">output adapter</data> 
+<data key="documentation">Application Services that orchestrate use cases
 and manage transactions;</data> 
 </node> 
 <node id="id-619ab2d6-6dab-491f-b8b0-5d6acdb178c2"> 
@@ -912,8 +937,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">Implementation / receiver</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">Implementation / receiver</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="fafb7e2c-abad-4b04-a86e-7a892d3a0379"> 
 <data key="ClassName">ApplicationFunction</data> 
@@ -933,8 +959,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationFunction_name">method2</data> 
-<data key="ApplicationFunction_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">method2</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="abb73f92-57a0-423e-a818-2402c1c7c7c6"> 
 <data key="ClassName">Grouping</data> 
@@ -954,8 +981,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">domain model</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">domain model</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="d4a8a996-0737-48a3-828c-54f9e2ad9ded"> 
 <data key="ClassName">ApplicationInterface</data> 
@@ -975,8 +1003,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationInterface_name">Interface</data> 
-<data key="ApplicationInterface_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">Interface</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-6fc4749b-a106-4d10-9b7f-87c452a8367f"> 
 <data key="ClassName">ApplicationFunction</data> 
@@ -996,8 +1025,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationFunction_name">method2</data> 
-<data key="ApplicationFunction_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">method2</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-04e6aa9d-a0dd-4a14-9b97-794968bd4b19"> 
 <data key="ClassName">ApplicationComponent</data> 
@@ -1017,8 +1047,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">caller</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">caller</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="ec59122f-871c-4134-8de0-f042ec0e002b"> 
 <data key="ClassName">ApplicationInterface</data> 
@@ -1038,8 +1069,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationInterface_name">Interface</data> 
-<data key="ApplicationInterface_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">Interface</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="afb26b61-bb50-4123-a60b-40b5b7995e0d"> 
 <data key="ClassName">ApplicationFunction</data> 
@@ -1059,8 +1091,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationFunction_name">method1</data> 
-<data key="ApplicationFunction_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">method1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-63ac1685-868f-43b4-b5d0-74dc40e8025c"> 
 <data key="ClassName">ApplicationComponent</data> 
@@ -1080,8 +1113,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">receiver</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">receiver</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-6a0d4e02-0610-4c8a-b51a-9ffd67e9da67"> 
 <data key="ClassName">ApplicationFunction</data> 
@@ -1101,8 +1135,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationFunction_name">method1</data> 
-<data key="ApplicationFunction_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">method1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-660c6b08-876a-4c23-b8b5-f674fef8f0c6"> 
 <data key="ClassName">ApplicationComponent</data> 
@@ -1122,8 +1157,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">Value-object</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">Value-object</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-6e8ea72f-fd4c-4a5a-977f-d06016592c8d"> 
 <data key="ClassName">Grouping</data> 
@@ -1143,8 +1179,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">output adapter</data> 
-<data key="Grouping_documentation">Application Services that orchestrate use cases
+<data key="ArchimateLayer">null</data> 
+<data key="name">output adapter</data> 
+<data key="documentation">Application Services that orchestrate use cases
 and manage transactions;</data> 
 </node> 
 <node id="id-356c39c0-8cb3-4a30-9f3e-08815fcb09ab"> 
@@ -1165,8 +1202,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">input adapter</data> 
-<data key="Grouping_documentation">Application Services that orchestrate use cases
+<data key="ArchimateLayer">null</data> 
+<data key="name">input adapter</data> 
+<data key="documentation">Application Services that orchestrate use cases
 and manage transactions;</data> 
 </node> 
 <node id="id-5a34543b-78c3-40d8-9b80-6e8a5597efac"> 
@@ -1187,8 +1225,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">caller</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">caller</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-98ab33c4-beaa-4566-a633-be9aa835dd09"> 
 <data key="ClassName">ApplicationComponent</data> 
@@ -1208,8 +1247,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">some class</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">some class</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-08bfa105-a702-47c3-bc89-8500189cd245"> 
 <data key="ClassName">DataObject</data> 
@@ -1229,8 +1269,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="DataObject_name">some value</data> 
-<data key="DataObject_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">some value</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-5fa6f7c6-38e1-4467-bbe5-24f813988886"> 
 <data key="ClassName">Grouping</data> 
@@ -1250,8 +1291,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">input adapter</data> 
-<data key="Grouping_documentation">Application Services that orchestrate use cases
+<data key="ArchimateLayer">null</data> 
+<data key="name">input adapter</data> 
+<data key="documentation">Application Services that orchestrate use cases
 and manage transactions;</data> 
 </node> 
 <node id="f0f4b1ac-3fc1-4b35-b23c-221c0fa03748"> 
@@ -1272,8 +1314,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">output adapter</data> 
-<data key="Grouping_documentation">Application Services that orchestrate use cases
+<data key="ArchimateLayer">null</data> 
+<data key="name">output adapter</data> 
+<data key="documentation">Application Services that orchestrate use cases
 and manage transactions;</data> 
 </node> 
 <node id="id-7263c0e0-8da8-4db4-8c8a-300cb5323ba3"> 
@@ -1294,8 +1337,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">Implementation / receiver</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">Implementation / receiver</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-50550c23-9462-4f16-a0fc-2e9f8dd7dd61"> 
 <data key="ClassName">ApplicationFunction</data> 
@@ -1315,8 +1359,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationFunction_name">method2</data> 
-<data key="ApplicationFunction_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">method2</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="bf1a9492-2d90-4017-8750-0d68273bcf1b"> 
 <data key="ClassName">Grouping</data> 
@@ -1336,8 +1381,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">domain model</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">domain model</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-74522522-33a8-4b4f-8d82-e0217a8a4812"> 
 <data key="ClassName">ApplicationInterface</data> 
@@ -1357,8 +1403,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationInterface_name">Interface</data> 
-<data key="ApplicationInterface_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">Interface</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="f19ee72e-1ec1-40ab-9494-74f07130532f"> 
 <data key="ClassName">ApplicationFunction</data> 
@@ -1378,8 +1425,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationFunction_name">method2</data> 
-<data key="ApplicationFunction_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">method2</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="fb9830bb-8cef-443d-8618-fbce7cd704ae"> 
 <data key="ClassName">ApplicationComponent</data> 
@@ -1399,8 +1447,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">caller</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">caller</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-4f43ad7e-fa74-417a-8358-5645750d4ef1"> 
 <data key="ClassName">ApplicationInterface</data> 
@@ -1420,8 +1469,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationInterface_name">Interface</data> 
-<data key="ApplicationInterface_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">Interface</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="ed234c7f-a5f0-4876-8d7b-cf38fcb37691"> 
 <data key="ClassName">ApplicationFunction</data> 
@@ -1441,8 +1491,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationFunction_name">method1</data> 
-<data key="ApplicationFunction_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">method1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-2559b70d-a407-4aa5-b43e-8b29712460ae"> 
 <data key="ClassName">ApplicationComponent</data> 
@@ -1462,8 +1513,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">receiver</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">receiver</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-5943129c-464b-40a8-8546-dd165d720732"> 
 <data key="ClassName">Grouping</data> 
@@ -1483,8 +1535,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">output adapter</data> 
-<data key="Grouping_documentation">Application Services that orchestrate use cases
+<data key="ArchimateLayer">null</data> 
+<data key="name">output adapter</data> 
+<data key="documentation">Application Services that orchestrate use cases
 and manage transactions;</data> 
 </node> 
 <node id="a42d4ea3-3c70-422e-b714-46d5a35bd6e2"> 
@@ -1505,8 +1558,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">input adapter</data> 
-<data key="Grouping_documentation">Application Services that orchestrate use cases
+<data key="ArchimateLayer">null</data> 
+<data key="name">input adapter</data> 
+<data key="documentation">Application Services that orchestrate use cases
 and manage transactions;</data> 
 </node> 
 <node id="id-3ed2893e-cda2-42c0-a382-b255924d22ac"> 
@@ -1527,8 +1581,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">Implementation / caller</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">Implementation / caller</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="cf7ddcc5-8e89-479a-9268-70438b7113a8"> 
 <data key="ClassName">ApplicationFunction</data> 
@@ -1548,8 +1603,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationFunction_name">method1</data> 
-<data key="ApplicationFunction_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">method1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="cfc849d9-55fd-4e92-a74b-5bc88ae5eed6"> 
 <data key="ClassName">Grouping</data> 
@@ -1569,8 +1625,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">input adapter</data> 
-<data key="Grouping_documentation">Application Services that orchestrate use cases
+<data key="ArchimateLayer">null</data> 
+<data key="name">input adapter</data> 
+<data key="documentation">Application Services that orchestrate use cases
 and manage transactions;</data> 
 </node> 
 <node id="id-54f2dc44"> 
@@ -1591,8 +1648,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">application service</data> 
-<data key="Grouping_documentation">Application Services that orchestrate use cases
+<data key="ArchimateLayer">null</data> 
+<data key="name">application service</data> 
+<data key="documentation">Application Services that orchestrate use cases
 and manage transactions;</data> 
 </node> 
 <node id="id-3d4f867e"> 
@@ -1613,8 +1671,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">domain model</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">domain model</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-3446aa46"> 
 <data key="ClassName">Grouping</data> 
@@ -1634,8 +1693,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">application service</data> 
-<data key="Grouping_documentation">Application Services that orchestrate use cases
+<data key="ArchimateLayer">null</data> 
+<data key="name">application service</data> 
+<data key="documentation">Application Services that orchestrate use cases
 and manage transactions;</data> 
 </node> 
 <node id="id-062cc7dc"> 
@@ -1656,8 +1716,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">output adapter</data> 
-<data key="Grouping_documentation">Input Adapters , such as user interface
+<data key="ArchimateLayer">null</data> 
+<data key="name">output adapter</data> 
+<data key="documentation">Input Adapters , such as user interface
 controllers, REST endpoints, and message listeners;</data> 
 </node> 
 <node id="fd1cc256"> 
@@ -1678,8 +1739,9 @@ controllers, REST endpoints, and message listeners;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessActor_name">user</data> 
-<data key="BusinessActor_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">user</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-145d732a"> 
 <data key="ClassName">Node</data> 
@@ -1699,8 +1761,9 @@ controllers, REST endpoints, and message listeners;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Node_name">database</data> 
-<data key="Node_documentation"></data> 
+<data key="ArchimateLayer">ITechnologyElement</data> 
+<data key="name">database</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="dae1efe6"> 
 <data key="ClassName">Grouping</data> 
@@ -1720,8 +1783,9 @@ controllers, REST endpoints, and message listeners;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">application service</data> 
-<data key="Grouping_documentation">Application Services that orchestrate use cases
+<data key="ArchimateLayer">null</data> 
+<data key="name">application service</data> 
+<data key="documentation">Application Services that orchestrate use cases
 and manage transactions;</data> 
 </node> 
 <node id="d13d36d3"> 
@@ -1742,8 +1806,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">input adapter</data> 
-<data key="Grouping_documentation">Input Adapters , such as user interface
+<data key="ArchimateLayer">null</data> 
+<data key="name">input adapter</data> 
+<data key="documentation">Input Adapters , such as user interface
 controllers, REST endpoints, and message listeners;</data> 
 </node> 
 <node id="id-17f67f77"> 
@@ -1764,8 +1829,9 @@ controllers, REST endpoints, and message listeners;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">application service</data> 
-<data key="Grouping_documentation">Application Services that orchestrate use cases
+<data key="ArchimateLayer">null</data> 
+<data key="name">application service</data> 
+<data key="documentation">Application Services that orchestrate use cases
 and manage transactions;</data> 
 </node> 
 <node id="id-7510ce96"> 
@@ -1786,8 +1852,9 @@ and manage transactions;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">input adapter</data> 
-<data key="Grouping_documentation">Input Adapters , such as user interface
+<data key="ArchimateLayer">null</data> 
+<data key="name">input adapter</data> 
+<data key="documentation">Input Adapters , such as user interface
 controllers, REST endpoints, and message listeners;</data> 
 </node> 
 <node id="id-1428a49b"> 
@@ -1808,8 +1875,9 @@ controllers, REST endpoints, and message listeners;</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">output adapter</data> 
-<data key="Grouping_documentation">Output Adapters such
+<data key="ArchimateLayer">null</data> 
+<data key="name">output adapter</data> 
+<data key="documentation">Output Adapters such
 as persistence management and message senders.</data> 
 </node> 
 <node id="id-34f960e2"> 
@@ -1830,8 +1898,9 @@ as persistence management and message senders.</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationInterface_name">system 2</data> 
-<data key="ApplicationInterface_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">system 2</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="d9d6b829"> 
 <data key="ClassName">ApplicationInterface</data> 
@@ -1851,11 +1920,12 @@ as persistence management and message senders.</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationInterface_name">system 1</data> 
-<data key="ApplicationInterface_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">system 1</data> 
+<data key="documentation"></data> 
 </node> 
 <edge source="b0553cad" target="id-8491092a"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AccessRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -1874,7 +1944,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="a9730637" target="id-8491092a"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AccessRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -1893,7 +1963,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="d8fd084d" target="id-8491092a"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AccessRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -1912,7 +1982,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="d8fd084d" target="b0553cad"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AccessRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -1931,7 +2001,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="d8fd084d" target="a9730637"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AccessRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -1950,7 +2020,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="a9730637" target="b0553cad"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AccessRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -1969,7 +2039,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-3d4f867e" target="id-17f67f77"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -1988,7 +2058,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-17f67f77" target="d13d36d3"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2007,7 +2077,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="d13d36d3" target="fd1cc256"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2026,7 +2096,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-145d732a" target="id-1428a49b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2045,7 +2115,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-17f67f77" target="d13d36d3"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2064,7 +2134,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-3d4f867e" target="id-17f67f77"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2083,7 +2153,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-1428a49b" target="id-3d4f867e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2102,7 +2172,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-1428a49b" target="id-17f67f77"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2121,7 +2191,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-54f2dc44" target="id-3d4f867e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2140,7 +2210,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="dae1efe6" target="id-3d4f867e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2159,7 +2229,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-3446aa46" target="id-3d4f867e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2178,7 +2248,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-062cc7dc" target="id-3446aa46"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2197,7 +2267,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-7510ce96" target="dae1efe6"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2216,7 +2286,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-1428a49b" target="id-54f2dc44"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2235,7 +2305,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-062cc7dc" target="d9d6b829"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2254,7 +2324,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-34f960e2" target="id-7510ce96"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2273,7 +2343,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-0b725c77-ab5f-4d54-811a-ac61a7be4ada" target="id-5766e7bd-a2b9-4862-a06d-d6533960df67"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AccessRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2292,7 +2362,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="d4a8a996-0737-48a3-828c-54f9e2ad9ded" target="id-0b725c77-ab5f-4d54-811a-ac61a7be4ada"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2311,7 +2381,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-619ab2d6-6dab-491f-b8b0-5d6acdb178c2" target="id-5766e7bd-a2b9-4862-a06d-d6533960df67"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2330,7 +2400,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="d4a8a996-0737-48a3-828c-54f9e2ad9ded" target="id-619ab2d6-6dab-491f-b8b0-5d6acdb178c2"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2349,7 +2419,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="ec59122f-871c-4134-8de0-f042ec0e002b" target="id-91ab11f5-07cf-49f8-941e-49080d61e004"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2368,7 +2438,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="ee1247b6-9700-4766-ae33-dca7acbfec06" target="f387c6fb-e680-4e59-a7e1-23b8c9bc4142"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2387,7 +2457,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="afb26b61-bb50-4123-a60b-40b5b7995e0d" target="id-5a34543b-78c3-40d8-9b80-6e8a5597efac"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">TriggeringRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2406,7 +2476,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-98ab33c4-beaa-4566-a633-be9aa835dd09" target="id-5332fe59-870b-43ab-9893-eee2e5691be1"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2425,7 +2495,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-660c6b08-876a-4c23-b8b5-f674fef8f0c6" target="c6269d21-0631-42db-9bae-1169d804de47"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2444,7 +2514,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-08bfa105-a702-47c3-bc89-8500189cd245" target="id-98ab33c4-beaa-4566-a633-be9aa835dd09"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AccessRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2463,7 +2533,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-660c6b08-876a-4c23-b8b5-f674fef8f0c6" target="id-08bfa105-a702-47c3-bc89-8500189cd245"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2482,7 +2552,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-0c09ca0c-cbcf-4e6d-a2e9-d4f59d1e4267" target="abb73f92-57a0-423e-a818-2402c1c7c7c6"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2501,7 +2571,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-356c39c0-8cb3-4a30-9f3e-08815fcb09ab" target="abb73f92-57a0-423e-a818-2402c1c7c7c6"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2520,7 +2590,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="abb73f92-57a0-423e-a818-2402c1c7c7c6" target="id-5fa6f7c6-38e1-4467-bbe5-24f813988886"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2539,7 +2609,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-6e8ea72f-fd4c-4a5a-977f-d06016592c8d" target="abb73f92-57a0-423e-a818-2402c1c7c7c6"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2558,7 +2628,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="d4a8a996-0737-48a3-828c-54f9e2ad9ded" target="abb73f92-57a0-423e-a818-2402c1c7c7c6"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2577,7 +2647,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-619ab2d6-6dab-491f-b8b0-5d6acdb178c2" target="id-0c09ca0c-cbcf-4e6d-a2e9-d4f59d1e4267"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2596,7 +2666,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-04e6aa9d-a0dd-4a14-9b97-794968bd4b19" target="abb73f92-57a0-423e-a818-2402c1c7c7c6"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2615,7 +2685,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="d4a8a996-0737-48a3-828c-54f9e2ad9ded" target="id-04e6aa9d-a0dd-4a14-9b97-794968bd4b19"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2634,7 +2704,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="ec59122f-871c-4134-8de0-f042ec0e002b" target="abb73f92-57a0-423e-a818-2402c1c7c7c6"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2653,7 +2723,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-5a34543b-78c3-40d8-9b80-6e8a5597efac" target="id-356c39c0-8cb3-4a30-9f3e-08815fcb09ab"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2672,7 +2742,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-63ac1685-868f-43b4-b5d0-74dc40e8025c" target="abb73f92-57a0-423e-a818-2402c1c7c7c6"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2691,7 +2761,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="ec59122f-871c-4134-8de0-f042ec0e002b" target="id-63ac1685-868f-43b4-b5d0-74dc40e8025c"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2710,7 +2780,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-98ab33c4-beaa-4566-a633-be9aa835dd09" target="id-356c39c0-8cb3-4a30-9f3e-08815fcb09ab"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2729,7 +2799,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-619ab2d6-6dab-491f-b8b0-5d6acdb178c2" target="id-04e6aa9d-a0dd-4a14-9b97-794968bd4b19"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2748,7 +2818,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-6a0d4e02-0610-4c8a-b51a-9ffd67e9da67" target="id-63ac1685-868f-43b4-b5d0-74dc40e8025c"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssignmentRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2767,7 +2837,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-6a0d4e02-0610-4c8a-b51a-9ffd67e9da67" target="afb26b61-bb50-4123-a60b-40b5b7995e0d"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">TriggeringRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2786,7 +2856,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="fafb7e2c-abad-4b04-a86e-7a892d3a0379" target="id-619ab2d6-6dab-491f-b8b0-5d6acdb178c2"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssignmentRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2805,7 +2875,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-6fc4749b-a106-4d10-9b7f-87c452a8367f" target="id-04e6aa9d-a0dd-4a14-9b97-794968bd4b19"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">TriggeringRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2824,7 +2894,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="fafb7e2c-abad-4b04-a86e-7a892d3a0379" target="id-6fc4749b-a106-4d10-9b7f-87c452a8367f"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">TriggeringRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2843,7 +2913,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="f19ee72e-1ec1-40ab-9494-74f07130532f" target="fb9830bb-8cef-443d-8618-fbce7cd704ae"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">TriggeringRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2862,7 +2932,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-2559b70d-a407-4aa5-b43e-8b29712460ae" target="bf1a9492-2d90-4017-8750-0d68273bcf1b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2881,7 +2951,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-50550c23-9462-4f16-a0fc-2e9f8dd7dd61" target="f19ee72e-1ec1-40ab-9494-74f07130532f"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">TriggeringRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2900,7 +2970,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-4f43ad7e-fa74-417a-8358-5645750d4ef1" target="id-3ed2893e-cda2-42c0-a382-b255924d22ac"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2919,7 +2989,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-3ed2893e-cda2-42c0-a382-b255924d22ac" target="a42d4ea3-3c70-422e-b714-46d5a35bd6e2"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2938,7 +3008,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-7263c0e0-8da8-4db4-8c8a-300cb5323ba3" target="f0f4b1ac-3fc1-4b35-b23c-221c0fa03748"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2957,7 +3027,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="fb9830bb-8cef-443d-8618-fbce7cd704ae" target="bf1a9492-2d90-4017-8750-0d68273bcf1b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2976,7 +3046,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-74522522-33a8-4b4f-8d82-e0217a8a4812" target="bf1a9492-2d90-4017-8750-0d68273bcf1b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2995,7 +3065,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="cf7ddcc5-8e89-479a-9268-70438b7113a8" target="ed234c7f-a5f0-4876-8d7b-cf38fcb37691"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">TriggeringRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3014,7 +3084,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="ed234c7f-a5f0-4876-8d7b-cf38fcb37691" target="id-2559b70d-a407-4aa5-b43e-8b29712460ae"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">TriggeringRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3033,7 +3103,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="bf1a9492-2d90-4017-8750-0d68273bcf1b" target="cfc849d9-55fd-4e92-a74b-5bc88ae5eed6"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3052,7 +3122,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-4f43ad7e-fa74-417a-8358-5645750d4ef1" target="bf1a9492-2d90-4017-8750-0d68273bcf1b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3071,7 +3141,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-50550c23-9462-4f16-a0fc-2e9f8dd7dd61" target="id-7263c0e0-8da8-4db4-8c8a-300cb5323ba3"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssignmentRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3090,7 +3160,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-5943129c-464b-40a8-8546-dd165d720732" target="bf1a9492-2d90-4017-8750-0d68273bcf1b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3109,7 +3179,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-74522522-33a8-4b4f-8d82-e0217a8a4812" target="id-7263c0e0-8da8-4db4-8c8a-300cb5323ba3"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3128,7 +3198,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="cf7ddcc5-8e89-479a-9268-70438b7113a8" target="id-3ed2893e-cda2-42c0-a382-b255924d22ac"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssignmentRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3147,7 +3217,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="ec59122f-871c-4134-8de0-f042ec0e002b" target="ee1247b6-9700-4766-ae33-dca7acbfec06"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">TriggeringRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3166,7 +3236,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="e16602d6-780c-4062-b708-31d89b2dae4d" target="id-0b725c77-ab5f-4d54-811a-ac61a7be4ada"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3185,7 +3255,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="d4a8a996-0737-48a3-828c-54f9e2ad9ded" target="e16602d6-780c-4062-b708-31d89b2dae4d"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">TriggeringRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3204,7 +3274,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="b85a7368-8445-4c45-9bf1-b86f9799acb3" target="id-91ab11f5-07cf-49f8-941e-49080d61e004"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3223,7 +3293,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="ec59122f-871c-4134-8de0-f042ec0e002b" target="b85a7368-8445-4c45-9bf1-b86f9799acb3"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3242,7 +3312,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-3acb37e9-6290-443e-859c-386dde79f7ce" target="id-9bad6ba2-6cad-474c-97cb-13b3ae96b32e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3261,7 +3331,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-5027278c-13b9-4a70-ad8c-958fad40bf77" target="d1bc4ddb-6e12-4486-b0ea-2f682a8b3672"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3280,7 +3350,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-7510ce96" target="id-34f960e2"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">ServingRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3299,7 +3369,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="dae1efe6" target="id-7510ce96"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">ServingRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3318,7 +3388,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-3d4f867e" target="dae1efe6"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">ServingRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3337,7 +3407,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-3d4f867e" target="id-3446aa46"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">ServingRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3356,7 +3426,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-3446aa46" target="id-062cc7dc"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">ServingRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3375,7 +3445,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-062cc7dc" target="d9d6b829"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">ServingRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3394,7 +3464,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-1428a49b" target="id-145d732a"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">ServingRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3413,7 +3483,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-54f2dc44" target="id-1428a49b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">ServingRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3432,7 +3502,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-3d4f867e" target="id-54f2dc44"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">ServingRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3451,7 +3521,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-3d4f867e" target="id-17f67f77"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">ServingRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3470,7 +3540,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="id-17f67f77" target="d13d36d3"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">ServingRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3489,7 +3559,7 @@ as persistence management and message senders.</data>
       </data> 
 </edge> 
 <edge source="d13d36d3" target="fd1cc256"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">ServingRelationship</data> 
 <data key="d6">
         <y:ShapeNode>

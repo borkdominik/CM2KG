@@ -1,2 +1,0 @@
-MATCH (p)
-RETURN avg(apoc.node.degree(p)) AS averageDegree;

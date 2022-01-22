@@ -20,31 +20,31 @@ import tmodel.Worker;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link tmodel.impl.WorkerImpl#getWorkerName <em>Worker Name</em>}</li>
+ *   <li>{@link tmodel.impl.WorkerImpl#getName <em>Name</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class WorkerImpl extends MinimalEObjectImpl.Container implements Worker {
 	/**
-	 * The default value of the '{@link #getWorkerName() <em>Worker Name</em>}' attribute.
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getWorkerName()
+	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String WORKER_NAME_EDEFAULT = null;
+	protected static final String NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getWorkerName() <em>Worker Name</em>}' attribute.
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getWorkerName()
+	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-	protected String workerName = WORKER_NAME_EDEFAULT;
+	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -70,8 +70,8 @@ public class WorkerImpl extends MinimalEObjectImpl.Container implements Worker {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getWorkerName() {
-		return workerName;
+	public String getName() {
+		return name;
 	}
 
 	/**
@@ -79,11 +79,11 @@ public class WorkerImpl extends MinimalEObjectImpl.Container implements Worker {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setWorkerName(String newWorkerName) {
-		String oldWorkerName = workerName;
-		workerName = newWorkerName;
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, TmodelPackage.WORKER__WORKER_NAME, oldWorkerName, workerName));
+			eNotify(new ENotificationImpl(this, Notification.SET, TmodelPackage.WORKER__NAME, oldName, name));
 	}
 
 	/**
@@ -94,8 +94,8 @@ public class WorkerImpl extends MinimalEObjectImpl.Container implements Worker {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case TmodelPackage.WORKER__WORKER_NAME:
-				return getWorkerName();
+			case TmodelPackage.WORKER__NAME:
+				return getName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -108,8 +108,8 @@ public class WorkerImpl extends MinimalEObjectImpl.Container implements Worker {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case TmodelPackage.WORKER__WORKER_NAME:
-				setWorkerName((String)newValue);
+			case TmodelPackage.WORKER__NAME:
+				setName((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -123,8 +123,8 @@ public class WorkerImpl extends MinimalEObjectImpl.Container implements Worker {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case TmodelPackage.WORKER__WORKER_NAME:
-				setWorkerName(WORKER_NAME_EDEFAULT);
+			case TmodelPackage.WORKER__NAME:
+				setName(NAME_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -138,8 +138,8 @@ public class WorkerImpl extends MinimalEObjectImpl.Container implements Worker {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case TmodelPackage.WORKER__WORKER_NAME:
-				return WORKER_NAME_EDEFAULT == null ? workerName != null : !WORKER_NAME_EDEFAULT.equals(workerName);
+			case TmodelPackage.WORKER__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -154,8 +154,8 @@ public class WorkerImpl extends MinimalEObjectImpl.Container implements Worker {
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (workerName: ");
-		result.append(workerName);
+		result.append(" (name: ");
+		result.append(name);
 		result.append(')');
 		return result.toString();
 	}

@@ -20,14 +20,10 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
   <key for="edge" id="d10" yfiles.type="edgegraphics"/> 
 <key id="ClassName" for="node" attr.name="ClassName" attr.type="string"/> 
 <key id="Label" for="node" attr.name="Label" attr.type="string"/> 
-<key id="Plateau_name" for="node" attr.name="Plateau_name" attr.type="string"/> 
-<key id="Plateau_documentation" for="node" attr.name="Plateau_documentation" attr.type="string"/> 
-<key id="Deliverable_name" for="node" attr.name="Deliverable_name" attr.type="string"/> 
-<key id="Deliverable_documentation" for="node" attr.name="Deliverable_documentation" attr.type="string"/> 
-<key id="ImplementationEvent_name" for="node" attr.name="ImplementationEvent_name" attr.type="string"/> 
-<key id="ImplementationEvent_documentation" for="node" attr.name="ImplementationEvent_documentation" attr.type="string"/> 
-<key id="EReference_ReferenceName" for="edge" attr.name="EReference_ReferenceName" attr.type="string"/> 
-<key id="Label" for="edge" attr.name="Label" attr.type="string"/> 
+<key id="ArchimateLayer" for="node" attr.name="ArchimateLayer" attr.type="string"/> 
+<key id="name" for="node" attr.name="name" attr.type="string"/> 
+<key id="documentation" for="node" attr.name="documentation" attr.type="string"/> 
+<key id="ReferenceName" for="edge" attr.name="ReferenceName" attr.type="string"/> 
 <graph id="init_graph_01" edgedefault="directed"> 
 <node id="id-6042363e"> 
 <data key="ClassName">Plateau</data> 
@@ -47,8 +43,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Plateau_name">Initial stages of the project</data> 
-<data key="Plateau_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Initial stages of the project</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-7e97e483"> 
 <data key="ClassName">Plateau</data> 
@@ -68,8 +65,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Plateau_name">Further stages of the project</data> 
-<data key="Plateau_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Further stages of the project</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="b86a4b6a"> 
 <data key="ClassName">Deliverable</data> 
@@ -89,8 +87,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Deliverable_name">domain vision statement</data> 
-<data key="Deliverable_documentation">For new enhancements, a product manager produces an internal press release
+<data key="ArchimateLayer">null</data> 
+<data key="name">domain vision statement</data> 
+<data key="documentation">For new enhancements, a product manager produces an internal press release
 announcing the fnished product, listing the benefts the feature brings.</data> 
 </node> 
 <node id="id-1873aee4"> 
@@ -111,8 +110,9 @@ announcing the fnished product, listing the benefts the feature brings.</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ImplementationEvent_name">Start of the project</data> 
-<data key="ImplementationEvent_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Start of the project</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-48d66af7"> 
 <data key="ClassName">Deliverable</data> 
@@ -132,8 +132,9 @@ announcing the fnished product, listing the benefts the feature brings.</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Deliverable_name">domain models</data> 
-<data key="Deliverable_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">domain models</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-7146c320"> 
 <data key="ClassName">Deliverable</data> 
@@ -153,8 +154,9 @@ announcing the fnished product, listing the benefts the feature brings.</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Deliverable_name">ubiquitous language</data> 
-<data key="Deliverable_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">ubiquitous language</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-542d1749"> 
 <data key="ClassName">Deliverable</data> 
@@ -174,11 +176,12 @@ announcing the fnished product, listing the benefts the feature brings.</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Deliverable_name">diagram</data> 
-<data key="Deliverable_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">diagram</data> 
+<data key="documentation"></data> 
 </node> 
 <edge source="id-6042363e" target="id-1873aee4"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">TriggeringRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -197,7 +200,7 @@ announcing the fnished product, listing the benefts the feature brings.</data>
       </data> 
 </edge> 
 <edge source="id-7e97e483" target="id-6042363e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">TriggeringRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -216,7 +219,7 @@ announcing the fnished product, listing the benefts the feature brings.</data>
       </data> 
 </edge> 
 <edge source="id-6042363e" target="b86a4b6a"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -235,7 +238,7 @@ announcing the fnished product, listing the benefts the feature brings.</data>
       </data> 
 </edge> 
 <edge source="id-7146c320" target="id-48d66af7"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -254,7 +257,7 @@ announcing the fnished product, listing the benefts the feature brings.</data>
       </data> 
 </edge> 
 <edge source="id-542d1749" target="id-48d66af7"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -273,7 +276,7 @@ announcing the fnished product, listing the benefts the feature brings.</data>
       </data> 
 </edge> 
 <edge source="id-7e97e483" target="id-48d66af7"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -292,7 +295,7 @@ announcing the fnished product, listing the benefts the feature brings.</data>
       </data> 
 </edge> 
 <edge source="id-48d66af7" target="b86a4b6a"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>

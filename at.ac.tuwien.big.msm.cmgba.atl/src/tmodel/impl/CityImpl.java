@@ -33,7 +33,7 @@ import tmodel.User;
  * <ul>
  *   <li>{@link tmodel.impl.CityImpl#getStores <em>Stores</em>}</li>
  *   <li>{@link tmodel.impl.CityImpl#getUsers <em>Users</em>}</li>
- *   <li>{@link tmodel.impl.CityImpl#getCityName <em>City Name</em>}</li>
+ *   <li>{@link tmodel.impl.CityImpl#getName <em>Name</em>}</li>
  * </ul>
  *
  * @generated
@@ -60,24 +60,24 @@ public class CityImpl extends MinimalEObjectImpl.Container implements City {
 	protected EList<User> users;
 
 	/**
-	 * The default value of the '{@link #getCityName() <em>City Name</em>}' attribute.
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCityName()
+	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String CITY_NAME_EDEFAULT = null;
+	protected static final String NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getCityName() <em>City Name</em>}' attribute.
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getCityName()
+	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-	protected String cityName = CITY_NAME_EDEFAULT;
+	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -127,8 +127,8 @@ public class CityImpl extends MinimalEObjectImpl.Container implements City {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getCityName() {
-		return cityName;
+	public String getName() {
+		return name;
 	}
 
 	/**
@@ -136,11 +136,11 @@ public class CityImpl extends MinimalEObjectImpl.Container implements City {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setCityName(String newCityName) {
-		String oldCityName = cityName;
-		cityName = newCityName;
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, TmodelPackage.CITY__CITY_NAME, oldCityName, cityName));
+			eNotify(new ENotificationImpl(this, Notification.SET, TmodelPackage.CITY__NAME, oldName, name));
 	}
 
 	/**
@@ -171,8 +171,8 @@ public class CityImpl extends MinimalEObjectImpl.Container implements City {
 				return getStores();
 			case TmodelPackage.CITY__USERS:
 				return getUsers();
-			case TmodelPackage.CITY__CITY_NAME:
-				return getCityName();
+			case TmodelPackage.CITY__NAME:
+				return getName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -194,8 +194,8 @@ public class CityImpl extends MinimalEObjectImpl.Container implements City {
 				getUsers().clear();
 				getUsers().addAll((Collection<? extends User>)newValue);
 				return;
-			case TmodelPackage.CITY__CITY_NAME:
-				setCityName((String)newValue);
+			case TmodelPackage.CITY__NAME:
+				setName((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -215,8 +215,8 @@ public class CityImpl extends MinimalEObjectImpl.Container implements City {
 			case TmodelPackage.CITY__USERS:
 				getUsers().clear();
 				return;
-			case TmodelPackage.CITY__CITY_NAME:
-				setCityName(CITY_NAME_EDEFAULT);
+			case TmodelPackage.CITY__NAME:
+				setName(NAME_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -234,8 +234,8 @@ public class CityImpl extends MinimalEObjectImpl.Container implements City {
 				return stores != null && !stores.isEmpty();
 			case TmodelPackage.CITY__USERS:
 				return users != null && !users.isEmpty();
-			case TmodelPackage.CITY__CITY_NAME:
-				return CITY_NAME_EDEFAULT == null ? cityName != null : !CITY_NAME_EDEFAULT.equals(cityName);
+			case TmodelPackage.CITY__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -250,8 +250,8 @@ public class CityImpl extends MinimalEObjectImpl.Container implements City {
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (cityName: ");
-		result.append(cityName);
+		result.append(" (name: ");
+		result.append(name);
 		result.append(')');
 		return result.toString();
 	}

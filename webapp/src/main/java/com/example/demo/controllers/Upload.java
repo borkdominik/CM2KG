@@ -1,15 +1,9 @@
 package com.example.demo.controllers;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
@@ -23,34 +17,18 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import at.ac.tuwien.big.msm.cmgba.graphml.ADOxxUtility;
-import at.ac.tuwien.big.msm.cmgba.graphml.ArchiUtility;
-import at.ac.tuwien.big.msm.cmgba.graphml.OwlUtility;
-import at.ac.tuwien.big.msm.cmgba.graphml.PapyrusUMLUtility;
+import utilities.ADOxxUtility;
+import utilities.ArchiUtility;
+import utilities.PapyrusUMLUtility;
 
-import java.util.Scanner;
 import java.util.UUID;
-
-import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
 
 @Controller
 public class Upload {
 
-	@RequestMapping(value = "", method = RequestMethod.GET)
-	public String home(Model model) {
-
-		// model.addAttribute("sum", "to be calculated");
-
-		System.out.println("upload controller");
-		return "home";
-	}
-	
 	@RequestMapping(value = "upload", method = RequestMethod.GET)
 	public String products(Model model) {
-
-		// model.addAttribute("sum", "to be calculated");
-
 		System.out.println("upload controller");
 		return "upload";
 	}
@@ -58,25 +36,18 @@ public class Upload {
 	@PostMapping(value = "upload")
 	public String saveProduct(@RequestParam("a") int a, @RequestParam("b") int b,
 			RedirectAttributes redirectAttributes) {
-
 		redirectAttributes.addFlashAttribute("sum", a + b);
-
 		return "redirect:/upload";
 	}
 
 	// ARCHI-------------------------------------------------------------------------------------------
 	@RequestMapping(value = "upload/archi", method = RequestMethod.GET)
 	public String uploadArchi(Model model) {
-
-		// model.addAttribute("sum", "to be calculated");
-
 		return "uploadarchi";
 	}
 
 	@PostMapping(value = "upload/archi")
 	public String uploadArchi(@RequestParam("file") MultipartFile file, RedirectAttributes redirectAttributes) {
-
-		// redirectAttributes.addFlashAttribute("sum", a + b);
 		try {
 
 			String content = new String(file.getBytes());
@@ -98,7 +69,6 @@ public class Upload {
 			String filename = "export/" + uid + ".graphml";
 
 			archiUtil.transform(filename);
-			// File outputFile = archiUtil.getFile();
 
 			String outputContent = archiUtil.getGraphXML();
 			System.out.println(outputContent);
@@ -108,7 +78,6 @@ public class Upload {
 			return "redirect:/upload/preview";
 
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			redirectAttributes.addFlashAttribute("uploadcontent", "An error occured!");
 			return "redirect:/upload/preview";
@@ -129,13 +98,10 @@ public class Upload {
 	@PostMapping(value = "upload/adoxx")
 	public String uploadADOxx(@RequestParam("file") MultipartFile file, @RequestParam("dtdfile") MultipartFile dtdFile,
 			RedirectAttributes redirectAttributes) {
-
-		// redirectAttributes.addFlashAttribute("sum", a + b);
 		try {
 
 			String content = new String(file.getBytes());
 			System.out.println("content: ");
-			// System.out.println(content);
 			redirectAttributes.addFlashAttribute("uploadcontent", content);
 
 			// xml file
@@ -158,7 +124,6 @@ public class Upload {
 			String uid = uuid.toString();
 			String filename = "export/" + uid + ".graphml";
 			adoxxUtil.transform(filename);
-			// File outputFile = archiUtil.getFile();
 
 			String outputContent = adoxxUtil.getGraphXML();
 			System.out.println(outputContent);
@@ -168,7 +133,6 @@ public class Upload {
 			return "redirect:/upload/preview";
 
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			redirectAttributes.addFlashAttribute("uploadcontent", "An error occured!");
 			return "redirect:/upload/preview";
@@ -180,21 +144,15 @@ public class Upload {
 	// papyrusUML-------------------------------------------------------------------------------------------
 	@RequestMapping(value = "upload/papyrusuml", method = RequestMethod.GET)
 	public String uploadPapyrusUML(Model model) {
-
-		// model.addAttribute("sum", "to be calculated");
-
 		return "uploadpapyrusuml";
 	}
 
 	@PostMapping(value = "upload/papyrusuml")
 	public String uploadPapyrusUML(@RequestParam("file") MultipartFile file, RedirectAttributes redirectAttributes) {
-
-		// redirectAttributes.addFlashAttribute("sum", a + b);
 		try {
 
 			String content = new String(file.getBytes());
 			System.out.println("content: ");
-			// System.out.println(content);
 			redirectAttributes.addFlashAttribute("uploadcontent", content);
 
 			// xml file
@@ -211,7 +169,6 @@ public class Upload {
 			String uid = uuid.toString();
 			String filename = "export/" + uid + ".graphml";
 			papyrusUmlUtil.transform(filename);
-			// File outputFile = archiUtil.getFile();
 
 			String outputContent = papyrusUmlUtil.getGraphXML();
 			System.out.println(outputContent);
@@ -221,7 +178,6 @@ public class Upload {
 			return "redirect:/upload/preview";
 
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			redirectAttributes.addFlashAttribute("uploadcontent", "An error occured!");
 			return "redirect:/upload/preview";
@@ -256,48 +212,15 @@ public class Upload {
 	@RequestMapping(value = "repository/graph/{uid}", method = RequestMethod.GET, produces = MediaType.APPLICATION_XML_VALUE)
 	@ResponseBody
 	public FileSystemResource getGraph2(HttpServletResponse response, @PathVariable String uid) {
-
 		response.setContentType("text/plain");
 		return new FileSystemResource(new File("export/", uid + ".graphml")); // Or path to your file
-		// return new FileSystemResource(new File("export/", "simple.graphml")); //Or
-		// path to your file
 	}
 
-	@RequestMapping(value = "repository/graph/owl/{uid}", method = RequestMethod.GET, produces = MediaType.TEXT_PLAIN_VALUE)
-	@ResponseBody
-	public FileSystemResource getGraphOwl(HttpServletResponse response, @PathVariable String uid) {
-
-		OwlUtility owlUtil = new OwlUtility();
-		owlUtil.transformToOwl("export/"+ uid + ".graphml");
-		
-		response.setContentType("text/plain");
-		return new FileSystemResource(new File("export/", uid + ".graphml.ttl")); // Or path to your file
-		// return new FileSystemResource(new File("export/", "simple.graphml")); //Or
-		// path to your file
-	}
-	
-	@RequestMapping(value = "repository/graph/rdf/{uid}", method = RequestMethod.GET, produces = MediaType.TEXT_PLAIN_VALUE)
-	@ResponseBody
-	public FileSystemResource getGraphRdf(HttpServletResponse response, @PathVariable String uid) {
-
-		OwlUtility owlUtil = new OwlUtility();
-		owlUtil.transformToRdf("export/"+ uid + ".graphml");
-		
-		response.setContentType("text/plain");
-		return new FileSystemResource(new File("export/", uid + ".graphml.rdf")); // Or path to your file
-		// return new FileSystemResource(new File("export/", "simple.graphml")); //Or
-		// path to your file
-	}
-	
 	@RequestMapping(value = "repository/graph/{uid}/neo4j", method = RequestMethod.GET)
 	public String initializeNeo4jGraph(HttpServletResponse response, @PathVariable String uid) {
-
-		at.ac.tuwien.big.msm.cmgba.graphml.neo4jGraphmlImport neoImport = new at.ac.tuwien.big.msm.cmgba.graphml.neo4jGraphmlImport(uid);
+		graphDb.neo4jGraphmlImport neoImport = new graphDb.neo4jGraphmlImport(uid);
 		neoImport.initializeGraph();
-
 		return "neovispreview";
-
-		// return "redirect:/repository/graph/"+uid;
 	}
 
 }

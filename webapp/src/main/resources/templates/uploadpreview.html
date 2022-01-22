@@ -56,12 +56,9 @@
 		<div class="col-sm-6">
 			<div class="form-group">
 				<label for="exampleFormControlTextarea1">Your transformed content.</label>
-				<a th:href="@{/repository/graph/{uid}/neo4j(uid=${fileUid})}">Initialize Neo4j Graph</a>
-				<a th:href="@{/repository/graph/{uid}(uid=${fileUid})}">Show GraphML xml</a>
+				<a th:href="@{/repository/graph//{uid}/neo4j(uid=${fileUid})}">Initialize Neo4j Graph</a>
+				<a th:href="@{/repository/graph//{uid}(uid=${fileUid})}">Show GraphML xml</a>
 				<a href="#" id="download">Download</a>
-				<a th:href="@{/repository/graph/rdf/{uid}(uid=${fileUid})}">RDF</a>
-				<a th:href="@{/repository/graph/owl/{uid}(uid=${fileUid})}">OWL</a>
-				
 				<pre id="transformedPreview" lang="xml" th:text="${outputcontent}"></pre>
 			</div>
 		</div>

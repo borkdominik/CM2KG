@@ -20,34 +20,10 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
   <key for="edge" id="d10" yfiles.type="edgegraphics"/> 
 <key id="ClassName" for="node" attr.name="ClassName" attr.type="string"/> 
 <key id="Label" for="node" attr.name="Label" attr.type="string"/> 
-<key id="Grouping_name" for="node" attr.name="Grouping_name" attr.type="string"/> 
-<key id="Grouping_documentation" for="node" attr.name="Grouping_documentation" attr.type="string"/> 
-<key id="BusinessObject_name" for="node" attr.name="BusinessObject_name" attr.type="string"/> 
-<key id="BusinessObject_documentation" for="node" attr.name="BusinessObject_documentation" attr.type="string"/> 
-<key id="ApplicationEvent_name" for="node" attr.name="ApplicationEvent_name" attr.type="string"/> 
-<key id="ApplicationEvent_documentation" for="node" attr.name="ApplicationEvent_documentation" attr.type="string"/> 
-<key id="TechnologyService_name" for="node" attr.name="TechnologyService_name" attr.type="string"/> 
-<key id="TechnologyService_documentation" for="node" attr.name="TechnologyService_documentation" attr.type="string"/> 
-<key id="ApplicationService_name" for="node" attr.name="ApplicationService_name" attr.type="string"/> 
-<key id="ApplicationService_documentation" for="node" attr.name="ApplicationService_documentation" attr.type="string"/> 
-<key id="Requirement_name" for="node" attr.name="Requirement_name" attr.type="string"/> 
-<key id="Requirement_documentation" for="node" attr.name="Requirement_documentation" attr.type="string"/> 
-<key id="ApplicationComponent_name" for="node" attr.name="ApplicationComponent_name" attr.type="string"/> 
-<key id="ApplicationComponent_documentation" for="node" attr.name="ApplicationComponent_documentation" attr.type="string"/> 
-<key id="ApplicationFunction_name" for="node" attr.name="ApplicationFunction_name" attr.type="string"/> 
-<key id="ApplicationFunction_documentation" for="node" attr.name="ApplicationFunction_documentation" attr.type="string"/> 
-<key id="ApplicationProcess_name" for="node" attr.name="ApplicationProcess_name" attr.type="string"/> 
-<key id="ApplicationProcess_documentation" for="node" attr.name="ApplicationProcess_documentation" attr.type="string"/> 
-<key id="ApplicationInterface_name" for="node" attr.name="ApplicationInterface_name" attr.type="string"/> 
-<key id="ApplicationInterface_documentation" for="node" attr.name="ApplicationInterface_documentation" attr.type="string"/> 
-<key id="DataObject_name" for="node" attr.name="DataObject_name" attr.type="string"/> 
-<key id="DataObject_documentation" for="node" attr.name="DataObject_documentation" attr.type="string"/> 
-<key id="BusinessEvent_name" for="node" attr.name="BusinessEvent_name" attr.type="string"/> 
-<key id="BusinessEvent_documentation" for="node" attr.name="BusinessEvent_documentation" attr.type="string"/> 
-<key id="BusinessService_name" for="node" attr.name="BusinessService_name" attr.type="string"/> 
-<key id="BusinessService_documentation" for="node" attr.name="BusinessService_documentation" attr.type="string"/> 
-<key id="EReference_ReferenceName" for="edge" attr.name="EReference_ReferenceName" attr.type="string"/> 
-<key id="Label" for="edge" attr.name="Label" attr.type="string"/> 
+<key id="ArchimateLayer" for="node" attr.name="ArchimateLayer" attr.type="string"/> 
+<key id="name" for="node" attr.name="name" attr.type="string"/> 
+<key id="documentation" for="node" attr.name="documentation" attr.type="string"/> 
+<key id="ReferenceName" for="edge" attr.name="ReferenceName" attr.type="string"/> 
 <graph id="init_graph_01" edgedefault="directed"> 
 <node id="id-35ffd5bd"> 
 <data key="ClassName">Grouping</data> 
@@ -67,8 +43,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">Bounded context 3</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Bounded context 3</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-2903bb30"> 
 <data key="ClassName">Grouping</data> 
@@ -88,8 +65,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">aggregate 2</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">aggregate 2</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="c6b98e32"> 
 <data key="ClassName">Grouping</data> 
@@ -109,8 +87,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">aggregate 9</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">aggregate 9</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="afe969eb"> 
 <data key="ClassName">BusinessObject</data> 
@@ -130,8 +109,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">entity 2</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">entity 2</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="fb0a1495"> 
 <data key="ClassName">BusinessObject</data> 
@@ -151,8 +131,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">entity 9</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">entity 9</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-998bbf6c"> 
 <data key="ClassName">Grouping</data> 
@@ -172,8 +153,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">service 4</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">service 4</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-8569655c"> 
 <data key="ClassName">ApplicationEvent</data> 
@@ -193,8 +175,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationEvent_name">event 2B (Bounded context 2)</data> 
-<data key="ApplicationEvent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">event 2B (Bounded context 2)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="fc05f7ef"> 
 <data key="ClassName">Grouping</data> 
@@ -214,8 +197,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">Bounded context 2</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Bounded context 2</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-864ec997"> 
 <data key="ClassName">Grouping</data> 
@@ -235,8 +219,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">aggregate 1</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">aggregate 1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="e4b4d1ce"> 
 <data key="ClassName">Grouping</data> 
@@ -256,8 +241,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">aggregate 7</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">aggregate 7</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-3eff38ad"> 
 <data key="ClassName">BusinessObject</data> 
@@ -277,8 +263,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">entity 1</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">entity 1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-6d8e4b38"> 
 <data key="ClassName">BusinessObject</data> 
@@ -298,8 +285,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">entity 7</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">entity 7</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-69b02469"> 
 <data key="ClassName">Grouping</data> 
@@ -319,8 +307,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">service 2</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">service 2</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="e52e0b1c"> 
 <data key="ClassName">Grouping</data> 
@@ -340,8 +329,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">service 3</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">service 3</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-6b84d307"> 
 <data key="ClassName">Grouping</data> 
@@ -361,8 +351,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">aggregate 8</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">aggregate 8</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-33bf4eda"> 
 <data key="ClassName">BusinessObject</data> 
@@ -382,8 +373,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">entity 8</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">entity 8</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-91838290"> 
 <data key="ClassName">ApplicationEvent</data> 
@@ -403,8 +395,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationEvent_name">Event 1B (Bounded context 2)</data> 
-<data key="ApplicationEvent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">Event 1B (Bounded context 2)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-5e86570b"> 
 <data key="ClassName">ApplicationEvent</data> 
@@ -424,8 +417,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationEvent_name">event 2A (Bounded context 1)</data> 
-<data key="ApplicationEvent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">event 2A (Bounded context 1)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="d923c51e"> 
 <data key="ClassName">Grouping</data> 
@@ -445,8 +439,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">Bounded context 1</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Bounded context 1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="c5a0c897"> 
 <data key="ClassName">Grouping</data> 
@@ -466,8 +461,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">aggregate 2</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">aggregate 2</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-743b564f"> 
 <data key="ClassName">Grouping</data> 
@@ -487,8 +483,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">aggregate 1</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">aggregate 1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-75c7166b"> 
 <data key="ClassName">Grouping</data> 
@@ -508,8 +505,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">aggregate 3</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">aggregate 3</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-9f1ad8e0"> 
 <data key="ClassName">BusinessObject</data> 
@@ -529,8 +527,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">entity 2</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">entity 2</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="ef0b6b49"> 
 <data key="ClassName">BusinessObject</data> 
@@ -550,8 +549,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">entity 1</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">entity 1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-8696ba6b"> 
 <data key="ClassName">BusinessObject</data> 
@@ -571,8 +571,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">entity 3</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">entity 3</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="baeb3a69"> 
 <data key="ClassName">BusinessObject</data> 
@@ -592,8 +593,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">object-value</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">object-value</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="b21b6ddb"> 
 <data key="ClassName">Grouping</data> 
@@ -613,8 +615,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">service 3</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">service 3</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-603f186d"> 
 <data key="ClassName">ApplicationEvent</data> 
@@ -634,8 +637,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationEvent_name">Event 1A (Bounded context 1)</data> 
-<data key="ApplicationEvent_documentation">It’s important that the modified Aggregate and the Domain Event be saved together in the same
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">Event 1A (Bounded context 1)</data> 
+<data key="documentation">It’s important that the modified Aggregate and the Domain Event be saved together in the same
 transaction</data> 
 </node> 
 <node id="id-389e1502"> 
@@ -656,8 +660,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="TechnologyService_name">messaging</data> 
-<data key="TechnologyService_documentation"></data> 
+<data key="ArchimateLayer">ITechnologyElement</data> 
+<data key="name">messaging</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="c973d266"> 
 <data key="ClassName">ApplicationService</data> 
@@ -677,8 +682,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationService_name">transform 1</data> 
-<data key="ApplicationService_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">transform 1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-02e604a2"> 
 <data key="ClassName">ApplicationService</data> 
@@ -698,8 +704,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationService_name">transform 2</data> 
-<data key="ApplicationService_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">transform 2</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-83ecc88f"> 
 <data key="ClassName">Requirement</data> 
@@ -719,8 +726,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Requirement_name">It is necessary to find out the permissible delay limits for business events (business SLA)</data> 
-<data key="Requirement_documentation"></data> 
+<data key="ArchimateLayer">IMotivationElement</data> 
+<data key="name">It is necessary to find out the permissible delay limits for business events (business SLA)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="d923c51e"> 
 <data key="ClassName">Grouping</data> 
@@ -740,8 +748,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">Bounded context 1</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Bounded context 1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="c5a0c897"> 
 <data key="ClassName">Grouping</data> 
@@ -761,8 +770,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">aggregate 2</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">aggregate 2</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-8ca950bf-38ae-43cd-91e1-b214a8633708"> 
 <data key="ClassName">ApplicationComponent</data> 
@@ -782,8 +792,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">event B handler</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">event B handler</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-743b564f"> 
 <data key="ClassName">Grouping</data> 
@@ -803,8 +814,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">aggregate 1</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">aggregate 1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="ec6b1385-bd05-4bf0-a06e-70c1f9866a54"> 
 <data key="ClassName">ApplicationComponent</data> 
@@ -824,8 +836,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">event C handler</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">event C handler</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-75c7166b"> 
 <data key="ClassName">Grouping</data> 
@@ -845,8 +858,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">aggregate 3</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">aggregate 3</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="c5162113-627a-4b2f-8636-a5bc2e495a05"> 
 <data key="ClassName">ApplicationComponent</data> 
@@ -866,8 +880,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">event A handler</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">event A handler</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-9f1ad8e0"> 
 <data key="ClassName">BusinessObject</data> 
@@ -887,8 +902,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">entity 2</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">entity 2</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="ef0b6b49"> 
 <data key="ClassName">BusinessObject</data> 
@@ -908,8 +924,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">entity 1</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">entity 1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-2082014e"> 
 <data key="ClassName">ApplicationEvent</data> 
@@ -929,8 +946,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationEvent_name">event B</data> 
-<data key="ApplicationEvent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">event B</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="a24a441e"> 
 <data key="ClassName">ApplicationEvent</data> 
@@ -950,8 +968,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationEvent_name">event C</data> 
-<data key="ApplicationEvent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">event C</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-6de33530"> 
 <data key="ClassName">ApplicationEvent</data> 
@@ -971,8 +990,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationEvent_name">event A</data> 
-<data key="ApplicationEvent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">event A</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-475b5169"> 
 <data key="ClassName">Grouping</data> 
@@ -992,8 +1012,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">aggregate 3</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">aggregate 3</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-8696ba6b"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1013,8 +1034,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">entity 3</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">entity 3</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="baeb3a69"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1034,8 +1056,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">object-value</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">object-value</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-17e387b4"> 
 <data key="ClassName">ApplicationComponent</data> 
@@ -1055,8 +1078,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">class event processor</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">class event processor</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="d10fb124"> 
 <data key="ClassName">ApplicationFunction</data> 
@@ -1076,8 +1100,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationFunction_name">Process (Domain Event)</data> 
-<data key="ApplicationFunction_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">Process (Domain Event)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-15d544f1"> 
 <data key="ClassName">ApplicationProcess</data> 
@@ -1097,8 +1122,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationProcess_name">DomainEvent.Process()</data> 
-<data key="ApplicationProcess_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">DomainEvent.Process()</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-4deedc43"> 
 <data key="ClassName">ApplicationInterface</data> 
@@ -1118,8 +1144,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationInterface_name">interface domain event</data> 
-<data key="ApplicationInterface_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">interface domain event</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="b63377d3"> 
 <data key="ClassName">ApplicationFunction</data> 
@@ -1139,8 +1166,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationFunction_name">Process()</data> 
-<data key="ApplicationFunction_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">Process()</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-5d2a14e8"> 
 <data key="ClassName">DataObject</data> 
@@ -1160,8 +1188,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="DataObject_name">recorded date time</data> 
-<data key="DataObject_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">recorded date time</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-7460224e"> 
 <data key="ClassName">DataObject</data> 
@@ -1181,8 +1210,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="DataObject_name">occurred date time</data> 
-<data key="DataObject_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">occurred date time</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-25653445"> 
 <data key="ClassName">ApplicationComponent</data> 
@@ -1202,8 +1232,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">class domain event 1</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">class domain event 1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="d03a6193"> 
 <data key="ClassName">DataObject</data> 
@@ -1223,8 +1254,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="DataObject_name">recorded date time</data> 
-<data key="DataObject_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">recorded date time</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-75e974d8"> 
 <data key="ClassName">DataObject</data> 
@@ -1244,8 +1276,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="DataObject_name">occurred date time</data> 
-<data key="DataObject_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">occurred date time</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="bbde1587"> 
 <data key="ClassName">ApplicationFunction</data> 
@@ -1265,8 +1298,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationFunction_name">Process()</data> 
-<data key="ApplicationFunction_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">Process()</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-53001c43"> 
 <data key="ClassName">ApplicationProcess</data> 
@@ -1286,8 +1320,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationProcess_name">aggregate 1 . processEvent1 (this)</data> 
-<data key="ApplicationProcess_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">aggregate 1 . processEvent1 (this)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-7b7d6e4b"> 
 <data key="ClassName">DataObject</data> 
@@ -1307,8 +1342,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="DataObject_name">ref to domain aggregate 1</data> 
-<data key="DataObject_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">ref to domain aggregate 1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-699dd85c"> 
 <data key="ClassName">DataObject</data> 
@@ -1328,8 +1364,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="DataObject_name">Additional attributes (ref to domain aggregate 2)</data> 
-<data key="DataObject_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">Additional attributes (ref to domain aggregate 2)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="f788aeb9"> 
 <data key="ClassName">Grouping</data> 
@@ -1349,8 +1386,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">aggregate 1</data> 
-<data key="Grouping_documentation">АГРЕГАТЫ обозначают область действия, в пределах которой на каждом этапе жизненного цикла должны удовлетворяться определенные инварианты</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">aggregate 1</data> 
+<data key="documentation">АГРЕГАТЫ обозначают область действия, в пределах которой на каждом этапе жизненного цикла должны удовлетворяться определенные инварианты</data> 
 </node> 
 <node id="id-8cc5841a"> 
 <data key="ClassName">ApplicationComponent</data> 
@@ -1370,8 +1408,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">class 2</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">class 2</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-7eedc86d"> 
 <data key="ClassName">ApplicationComponent</data> 
@@ -1391,8 +1430,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">class 1 (aggregate root)</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">class 1 (aggregate root)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="ee9ab407"> 
 <data key="ClassName">ApplicationFunction</data> 
@@ -1412,8 +1452,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationFunction_name">process Event 1 ( domain event 1 )</data> 
-<data key="ApplicationFunction_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">process Event 1 ( domain event 1 )</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-5dab3a44"> 
 <data key="ClassName">ApplicationProcess</data> 
@@ -1433,8 +1474,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationProcess_name">aggregate 2 . processEvent1 (domain event 1)</data> 
-<data key="ApplicationProcess_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">aggregate 2 . processEvent1 (domain event 1)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-58235754"> 
 <data key="ClassName">ApplicationComponent</data> 
@@ -1454,8 +1496,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">class 3</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">class 3</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-6b12f355"> 
 <data key="ClassName">ApplicationProcess</data> 
@@ -1475,8 +1518,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationProcess_name">Application Process</data> 
-<data key="ApplicationProcess_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">Application Process</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-4060872b"> 
 <data key="ClassName">ApplicationProcess</data> 
@@ -1496,8 +1540,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationProcess_name">put event 1</data> 
-<data key="ApplicationProcess_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">put event 1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-737723f7"> 
 <data key="ClassName">ApplicationProcess</data> 
@@ -1517,8 +1562,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationProcess_name">put event 2</data> 
-<data key="ApplicationProcess_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">put event 2</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="bebaab72"> 
 <data key="ClassName">ApplicationProcess</data> 
@@ -1538,8 +1584,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationProcess_name">put event 3</data> 
-<data key="ApplicationProcess_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">put event 3</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-5d1655f7"> 
 <data key="ClassName">Grouping</data> 
@@ -1559,8 +1606,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">aggregate 2</data> 
-<data key="Grouping_documentation">АГРЕГАТЫ обозначают область действия, в пределах которой на каждом этапе жизненного цикла должны удовлетворяться определенные инварианты</data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">aggregate 2</data> 
+<data key="documentation">АГРЕГАТЫ обозначают область действия, в пределах которой на каждом этапе жизненного цикла должны удовлетворяться определенные инварианты</data> 
 </node> 
 <node id="id-2ffdbd1c"> 
 <data key="ClassName">ApplicationComponent</data> 
@@ -1580,8 +1628,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">class 5</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">class 5</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-84880a95"> 
 <data key="ClassName">ApplicationComponent</data> 
@@ -1601,8 +1650,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">class 4 (aggregate root)</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">class 4 (aggregate root)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-0959b263"> 
 <data key="ClassName">ApplicationFunction</data> 
@@ -1622,8 +1672,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationFunction_name">process Event 1 ( domain event 1 )</data> 
-<data key="ApplicationFunction_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">process Event 1 ( domain event 1 )</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-010f0cdd"> 
 <data key="ClassName">ApplicationComponent</data> 
@@ -1643,8 +1694,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">class 6</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">class 6</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="d923c51e"> 
 <data key="ClassName">Grouping</data> 
@@ -1664,8 +1716,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">Bounded context 1</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Bounded context 1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="c5a0c897"> 
 <data key="ClassName">Grouping</data> 
@@ -1685,8 +1738,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">aggregate 2</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">aggregate 2</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-743b564f"> 
 <data key="ClassName">Grouping</data> 
@@ -1706,8 +1760,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">aggregate 1</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">aggregate 1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-75c7166b"> 
 <data key="ClassName">Grouping</data> 
@@ -1727,8 +1782,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">aggregate 3</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">aggregate 3</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-9f1ad8e0"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1748,8 +1804,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">entity 2</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">entity 2</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="ef0b6b49"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1769,8 +1826,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">entity 1</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">entity 1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="b21b6ddb"> 
 <data key="ClassName">Grouping</data> 
@@ -1790,8 +1848,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">service 3</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">service 3</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-8afb4e62"> 
 <data key="ClassName">Grouping</data> 
@@ -1811,8 +1870,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">service 2</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">service 2</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="f531a35a"> 
 <data key="ClassName">Grouping</data> 
@@ -1832,8 +1892,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">service 1</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">service 1</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-2082014e"> 
 <data key="ClassName">ApplicationEvent</data> 
@@ -1853,8 +1914,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationEvent_name">event B</data> 
-<data key="ApplicationEvent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">event B</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="a24a441e"> 
 <data key="ClassName">ApplicationEvent</data> 
@@ -1874,8 +1936,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationEvent_name">event C</data> 
-<data key="ApplicationEvent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">event C</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-6de33530"> 
 <data key="ClassName">ApplicationEvent</data> 
@@ -1895,8 +1958,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationEvent_name">event A</data> 
-<data key="ApplicationEvent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">event A</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-475b5169"> 
 <data key="ClassName">Grouping</data> 
@@ -1916,8 +1980,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">aggregate 3</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">aggregate 3</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-8696ba6b"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1937,8 +2002,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">entity 3</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">entity 3</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="baeb3a69"> 
 <data key="ClassName">BusinessObject</data> 
@@ -1958,8 +2024,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">object-value</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">object-value</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-57d6e6ee"> 
 <data key="ClassName">BusinessEvent</data> 
@@ -1979,8 +2046,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessEvent_name">event A</data> 
-<data key="BusinessEvent_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">event A</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="edf2d68f"> 
 <data key="ClassName">BusinessEvent</data> 
@@ -2000,8 +2068,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessEvent_name">event B</data> 
-<data key="BusinessEvent_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">event B</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-2a089573"> 
 <data key="ClassName">BusinessEvent</data> 
@@ -2021,8 +2090,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessEvent_name">event C</data> 
-<data key="BusinessEvent_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">event C</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="fc771a13"> 
 <data key="ClassName">Grouping</data> 
@@ -2042,8 +2112,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">Bounded context 1 (copy)</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">Bounded context 1 (copy)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-8ca80ee8"> 
 <data key="ClassName">Grouping</data> 
@@ -2063,8 +2134,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">aggregate 2 (copy)</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">aggregate 2 (copy)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-24a67daa"> 
 <data key="ClassName">Grouping</data> 
@@ -2084,8 +2156,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">aggregate 1 (copy)</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">aggregate 1 (copy)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="e1aeb092"> 
 <data key="ClassName">Grouping</data> 
@@ -2105,8 +2178,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">aggregate 3 (copy)</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">aggregate 3 (copy)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="d74f2352"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2126,8 +2200,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">entity 2 (copy)</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">entity 2 (copy)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="c8d6ac17"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2147,8 +2222,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">entity 1 (copy)</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">entity 1 (copy)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-4f9536a5"> 
 <data key="ClassName">Grouping</data> 
@@ -2168,8 +2244,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">service 3 (copy)</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">service 3 (copy)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-4f1d88fd"> 
 <data key="ClassName">Grouping</data> 
@@ -2189,8 +2266,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">service 2 (copy)</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">service 2 (copy)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-8c431a74"> 
 <data key="ClassName">Grouping</data> 
@@ -2210,8 +2288,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">service 1 (copy)</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">service 1 (copy)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="b9e7762d"> 
 <data key="ClassName">ApplicationEvent</data> 
@@ -2231,8 +2310,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationEvent_name">event B (copy)</data> 
-<data key="ApplicationEvent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">event B (copy)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-6f3d53f4"> 
 <data key="ClassName">ApplicationEvent</data> 
@@ -2252,8 +2332,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationEvent_name">event C (copy)</data> 
-<data key="ApplicationEvent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">event C (copy)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-382e0d35"> 
 <data key="ClassName">ApplicationEvent</data> 
@@ -2273,8 +2354,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationEvent_name">event A (copy)</data> 
-<data key="ApplicationEvent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">event A (copy)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-0449fcd6"> 
 <data key="ClassName">Grouping</data> 
@@ -2294,8 +2376,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Grouping_name">aggregate 3 (copy)</data> 
-<data key="Grouping_documentation"></data> 
+<data key="ArchimateLayer">null</data> 
+<data key="name">aggregate 3 (copy)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="f21eb09b"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2315,8 +2398,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">entity 3 (copy)</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">entity 3 (copy)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-2e7b61ad"> 
 <data key="ClassName">BusinessObject</data> 
@@ -2336,8 +2420,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessObject_name">object-value (copy)</data> 
-<data key="BusinessObject_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">object-value (copy)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-9d38d067"> 
 <data key="ClassName">BusinessEvent</data> 
@@ -2357,8 +2442,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessEvent_name">event A (copy)</data> 
-<data key="BusinessEvent_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">event A (copy)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-7fd2991b"> 
 <data key="ClassName">BusinessEvent</data> 
@@ -2378,8 +2464,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessEvent_name">event B (copy)</data> 
-<data key="BusinessEvent_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">event B (copy)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="dd7e35ba"> 
 <data key="ClassName">BusinessEvent</data> 
@@ -2399,8 +2486,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessEvent_name">event C (copy)</data> 
-<data key="BusinessEvent_documentation"></data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">event C (copy)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="f0b630fa-a541-47f2-bcf9-bf74093bebd2"> 
 <data key="ClassName">BusinessService</data> 
@@ -2420,8 +2508,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="BusinessService_name">Business Service</data> 
-<data key="BusinessService_documentation">A business service represents an explicitly defined exposed business behavior</data> 
+<data key="ArchimateLayer">IBusinessElement</data> 
+<data key="name">Business Service</data> 
+<data key="documentation">A business service represents an explicitly defined exposed business behavior</data> 
 </node> 
 <node id="c053d3e8-c76b-4175-83f3-5106e0deef82"> 
 <data key="ClassName">ApplicationService</data> 
@@ -2441,8 +2530,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationService_name">Application Service</data> 
-<data key="ApplicationService_documentation">An application service represents an explicitly defined exposed application behavior</data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">Application Service</data> 
+<data key="documentation">An application service represents an explicitly defined exposed application behavior</data> 
 </node> 
 <node id="id-0c08e074-ca7c-4bea-928c-138576952892"> 
 <data key="ClassName">TechnologyService</data> 
@@ -2462,8 +2552,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="TechnologyService_name">Technology Service</data> 
-<data key="TechnologyService_documentation">A technology service represents an explicitly defined exposed technology behavior.</data> 
+<data key="ArchimateLayer">ITechnologyElement</data> 
+<data key="name">Technology Service</data> 
+<data key="documentation">A technology service represents an explicitly defined exposed technology behavior.</data> 
 </node> 
 <node id="e7a28c41-4fd2-45f1-8592-7a65a7547032"> 
 <data key="ClassName">ApplicationService</data> 
@@ -2483,8 +2574,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationService_name">domain service</data> 
-<data key="ApplicationService_documentation">An application service represents an explicitly defined exposed application behavior</data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">domain service</data> 
+<data key="documentation">An application service represents an explicitly defined exposed application behavior</data> 
 </node> 
 <node id="id-3727b782-691d-4d2f-81a8-ffae82f2b125"> 
 <data key="ClassName">ApplicationInterface</data> 
@@ -2504,8 +2596,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationInterface_name">event handler interface</data> 
-<data key="ApplicationInterface_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">event handler interface</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="d8c1c8b0-6498-4f5f-892a-e5efa7973ae8"> 
 <data key="ClassName">ApplicationComponent</data> 
@@ -2525,8 +2618,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">event hadler implementation</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">event hadler implementation</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="cd97f974-5da5-4efb-8dda-63e9450ad8b8"> 
 <data key="ClassName">ApplicationComponent</data> 
@@ -2546,8 +2640,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationComponent_name">static class DomainEvent</data> 
-<data key="ApplicationComponent_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">static class DomainEvent</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-466c5188-3f9c-4d91-8ead-7b73776f233e"> 
 <data key="ClassName">DataObject</data> 
@@ -2567,8 +2662,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="DataObject_name">static list actions[]</data> 
-<data key="DataObject_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">static list actions[]</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-8a57ab57-c4cd-4b75-a199-d00cd387c354"> 
 <data key="ClassName">ApplicationFunction</data> 
@@ -2588,8 +2684,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationFunction_name">Register (callback)</data> 
-<data key="ApplicationFunction_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">Register (callback)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="aa035e3e-4dae-444b-8334-0eccc35ea073"> 
 <data key="ClassName">ApplicationProcess</data> 
@@ -2609,8 +2706,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationProcess_name">actions.Add (callback)</data> 
-<data key="ApplicationProcess_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">actions.Add (callback)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-4c8c274f-246b-498c-b0d7-f7a20ba4f2e9"> 
 <data key="ClassName">ApplicationFunction</data> 
@@ -2630,8 +2728,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationFunction_name">Raise event ()</data> 
-<data key="ApplicationFunction_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">Raise event ()</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="a8c96ff2-fc0a-4386-a1e8-bedb9ac188e8"> 
 <data key="ClassName">ApplicationProcess</data> 
@@ -2651,8 +2750,9 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationProcess_name">for each action in actions[]</data> 
-<data key="ApplicationProcess_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">for each action in actions[]</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-869bbb2c-061a-4f39-9c26-01f9b87a5001"> 
 <data key="ClassName">ApplicationProcess</data> 
@@ -2672,11 +2772,12 @@ transaction</data>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationProcess_name">call callback</data> 
-<data key="ApplicationProcess_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">call callback</data> 
+<data key="documentation"></data> 
 </node> 
 <edge source="id-3eff38ad" target="fc05f7ef"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2695,7 +2796,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-864ec997" target="fc05f7ef"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2714,7 +2815,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-69b02469" target="id-91838290"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2733,7 +2834,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="fb0a1495" target="id-35ffd5bd"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2752,7 +2853,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-743b564f" target="ef0b6b49"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2771,7 +2872,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="b21b6ddb" target="id-75c7166b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2790,7 +2891,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="fb0a1495" target="afe969eb"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2809,7 +2910,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-743b564f" target="d923c51e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2828,7 +2929,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="e4b4d1ce" target="fc05f7ef"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2847,7 +2948,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-6d8e4b38" target="fc05f7ef"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2866,7 +2967,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-33bf4eda" target="id-6d8e4b38"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2885,7 +2986,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="b21b6ddb" target="id-743b564f"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2904,7 +3005,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-8696ba6b" target="ef0b6b49"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2923,7 +3024,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="ef0b6b49" target="id-9f1ad8e0"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2942,7 +3043,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="c5a0c897" target="id-9f1ad8e0"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2961,7 +3062,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-6d8e4b38" target="id-3eff38ad"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2980,7 +3081,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="b21b6ddb" target="d923c51e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -2999,7 +3100,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="baeb3a69" target="id-8696ba6b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3018,7 +3119,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-6b84d307" target="e4b4d1ce"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3037,7 +3138,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-9f1ad8e0" target="d923c51e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3056,7 +3157,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-998bbf6c" target="c6b98e32"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3075,7 +3176,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-2903bb30" target="afe969eb"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3094,7 +3195,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-864ec997" target="id-3eff38ad"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3113,7 +3214,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="e4b4d1ce" target="id-864ec997"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3132,7 +3233,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="ef0b6b49" target="d923c51e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3151,7 +3252,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-6b84d307" target="fc05f7ef"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3170,7 +3271,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-6b84d307" target="id-33bf4eda"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3189,7 +3290,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-864ec997" target="id-743b564f"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3208,7 +3309,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="c6b98e32" target="id-6b84d307"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3227,7 +3328,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-69b02469" target="fc05f7ef"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3246,7 +3347,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-998bbf6c" target="id-35ffd5bd"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3265,7 +3366,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="baeb3a69" target="d923c51e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3284,7 +3385,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-33bf4eda" target="fc05f7ef"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3303,7 +3404,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-69b02469" target="e4b4d1ce"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3322,7 +3423,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-69b02469" target="id-864ec997"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3341,7 +3442,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-9f1ad8e0" target="id-8696ba6b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3360,7 +3461,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-75c7166b" target="baeb3a69"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3379,7 +3480,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="afe969eb" target="id-35ffd5bd"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3398,7 +3499,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-75c7166b" target="id-743b564f"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3417,7 +3518,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-5e86570b" target="e52e0b1c"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3436,7 +3537,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="c6b98e32" target="id-2903bb30"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3455,7 +3556,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="c6b98e32" target="id-35ffd5bd"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3474,7 +3575,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-75c7166b" target="e4b4d1ce"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3493,7 +3594,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-8696ba6b" target="d923c51e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3512,7 +3613,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-75c7166b" target="id-8696ba6b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3531,7 +3632,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="e4b4d1ce" target="id-6d8e4b38"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3550,7 +3651,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="e52e0b1c" target="id-6b84d307"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3569,7 +3670,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-743b564f" target="c5a0c897"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3588,7 +3689,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="c6b98e32" target="fb0a1495"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3607,7 +3708,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="e52e0b1c" target="fc05f7ef"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3626,7 +3727,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-998bbf6c" target="id-8569655c"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3645,7 +3746,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-2903bb30" target="id-35ffd5bd"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3664,7 +3765,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="c5a0c897" target="d923c51e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3683,7 +3784,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-603f186d" target="b21b6ddb"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3702,7 +3803,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="c5a0c897" target="id-75c7166b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3721,7 +3822,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-75c7166b" target="d923c51e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3740,7 +3841,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-603f186d" target="d923c51e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3759,7 +3860,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-91838290" target="fc05f7ef"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3778,7 +3879,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="c973d266" target="id-389e1502"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3797,7 +3898,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-02e604a2" target="id-389e1502"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3816,7 +3917,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="c973d266" target="id-603f186d"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3835,7 +3936,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-91838290" target="c973d266"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3854,7 +3955,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-02e604a2" target="id-5e86570b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3873,7 +3974,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-8569655c" target="id-02e604a2"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3892,7 +3993,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-8569655c" target="id-35ffd5bd"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3911,7 +4012,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-5e86570b" target="fc05f7ef"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3930,7 +4031,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-389e1502" target="id-603f186d"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3949,7 +4050,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-8afb4e62" target="d923c51e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3968,7 +4069,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="f531a35a" target="d923c51e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -3987,7 +4088,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="f531a35a" target="id-743b564f"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4006,7 +4107,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-8afb4e62" target="c5a0c897"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4025,7 +4126,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-2082014e" target="d923c51e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4044,7 +4145,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="a24a441e" target="d923c51e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4063,7 +4164,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-6de33530" target="d923c51e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4082,7 +4183,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-6de33530" target="id-743b564f"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4101,7 +4202,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="c5162113-627a-4b2f-8636-a5bc2e495a05" target="id-6de33530"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4120,7 +4221,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-2082014e" target="id-75c7166b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4139,7 +4240,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-8ca950bf-38ae-43cd-91e1-b214a8633708" target="id-2082014e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4158,7 +4259,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="a24a441e" target="c5a0c897"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4177,7 +4278,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="ec6b1385-bd05-4bf0-a06e-70c1f9866a54" target="a24a441e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4196,7 +4297,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-475b5169" target="d923c51e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4215,7 +4316,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-8696ba6b" target="id-475b5169"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4234,7 +4335,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="baeb3a69" target="id-475b5169"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4253,7 +4354,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-75c7166b" target="id-475b5169"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4272,7 +4373,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-57d6e6ee" target="d923c51e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4291,7 +4392,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="edf2d68f" target="d923c51e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4310,7 +4411,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-2a089573" target="d923c51e"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4329,7 +4430,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-57d6e6ee" target="ef0b6b49"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4348,7 +4449,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-8696ba6b" target="ef0b6b49"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4367,7 +4468,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="edf2d68f" target="id-475b5169"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4386,7 +4487,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-9f1ad8e0" target="id-8696ba6b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4405,7 +4506,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="ef0b6b49" target="id-9f1ad8e0"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4424,7 +4525,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="ef0b6b49" target="id-2a089573"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4443,7 +4544,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="d10fb124" target="id-17e387b4"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssignmentRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4462,7 +4563,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-15d544f1" target="d10fb124"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4481,7 +4582,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-5d2a14e8" target="id-4deedc43"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AccessRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4500,7 +4601,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-7460224e" target="id-4deedc43"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AccessRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4519,7 +4620,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-4deedc43" target="id-25653445"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">RealizationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4538,7 +4639,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="d03a6193" target="id-25653445"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AccessRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4557,7 +4658,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-75e974d8" target="id-25653445"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AccessRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4576,7 +4677,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="bbde1587" target="id-25653445"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssignmentRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4595,7 +4696,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="b63377d3" target="id-15d544f1"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4614,7 +4715,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-7b7d6e4b" target="id-25653445"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AccessRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4633,7 +4734,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-53001c43" target="bbde1587"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4652,7 +4753,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-7b7d6e4b" target="id-53001c43"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AccessRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4671,7 +4772,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-8cc5841a" target="f788aeb9"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4690,7 +4791,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-8cc5841a" target="id-58235754"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4709,7 +4810,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-7eedc86d" target="id-8cc5841a"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4728,7 +4829,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-58235754" target="id-7eedc86d"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4747,7 +4848,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-7eedc86d" target="f788aeb9"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4766,7 +4867,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-58235754" target="f788aeb9"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4785,7 +4886,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="ee9ab407" target="f788aeb9"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4804,7 +4905,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="ee9ab407" target="id-7eedc86d"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssignmentRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4823,7 +4924,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="ee9ab407" target="id-53001c43"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4842,7 +4943,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-699dd85c" target="id-25653445"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AccessRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4861,7 +4962,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-4060872b" target="id-6b12f355"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4880,7 +4981,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-737723f7" target="id-6b12f355"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4899,7 +5000,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="bebaab72" target="id-6b12f355"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4918,7 +5019,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-737723f7" target="id-4060872b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">TriggeringRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4937,7 +5038,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="bebaab72" target="id-737723f7"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">TriggeringRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4956,7 +5057,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="d10fb124" target="id-4060872b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4975,7 +5076,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="d10fb124" target="id-737723f7"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -4994,7 +5095,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="d10fb124" target="bebaab72"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5013,7 +5114,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-2ffdbd1c" target="id-010f0cdd"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5032,7 +5133,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-010f0cdd" target="id-5d1655f7"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5051,7 +5152,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-2ffdbd1c" target="id-5d1655f7"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5070,7 +5171,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-84880a95" target="id-5d1655f7"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5089,7 +5190,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-010f0cdd" target="id-84880a95"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5108,7 +5209,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-84880a95" target="id-2ffdbd1c"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5127,7 +5228,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-0959b263" target="id-84880a95"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssignmentRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5146,7 +5247,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-5dab3a44" target="ee9ab407"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5165,7 +5266,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-699dd85c" target="id-5dab3a44"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AccessRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5184,7 +5285,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-0959b263" target="id-5dab3a44"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5203,7 +5304,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-0449fcd6" target="fc771a13"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5222,7 +5323,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="f21eb09b" target="id-0449fcd6"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5241,7 +5342,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-2e7b61ad" target="id-0449fcd6"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5260,7 +5361,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="f21eb09b" target="c8d6ac17"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5279,7 +5380,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-4f1d88fd" target="id-8ca80ee8"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5298,7 +5399,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-2e7b61ad" target="f21eb09b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5317,7 +5418,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="d74f2352" target="fc771a13"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5336,7 +5437,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-8ca80ee8" target="fc771a13"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5355,7 +5456,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-4f1d88fd" target="b9e7762d"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5374,7 +5475,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-9d38d067" target="fc771a13"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5393,7 +5494,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-4f9536a5" target="e1aeb092"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5412,7 +5513,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="c8d6ac17" target="fc771a13"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5431,7 +5532,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-24a67daa" target="id-8ca80ee8"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5450,7 +5551,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-7fd2991b" target="fc771a13"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5469,7 +5570,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-8c431a74" target="id-24a67daa"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5488,7 +5589,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-4f9536a5" target="fc771a13"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5507,7 +5608,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="b9e7762d" target="id-4f9536a5"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5526,7 +5627,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="d74f2352" target="id-7fd2991b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5545,7 +5646,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-24a67daa" target="fc771a13"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5564,7 +5665,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-24a67daa" target="c8d6ac17"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5583,7 +5684,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="e1aeb092" target="id-24a67daa"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5602,7 +5703,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="dd7e35ba" target="d74f2352"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5621,7 +5722,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-7fd2991b" target="id-0449fcd6"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5640,7 +5741,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-382e0d35" target="id-8c431a74"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5659,7 +5760,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="dd7e35ba" target="fc771a13"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5678,7 +5779,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-8c431a74" target="fc771a13"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5697,7 +5798,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="c8d6ac17" target="dd7e35ba"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5716,7 +5817,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-382e0d35" target="fc771a13"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5735,7 +5836,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-8ca80ee8" target="e1aeb092"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5754,7 +5855,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="e1aeb092" target="id-0449fcd6"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5773,7 +5874,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="b9e7762d" target="fc771a13"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5792,7 +5893,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-8ca80ee8" target="d74f2352"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5811,7 +5912,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="d74f2352" target="f21eb09b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5830,7 +5931,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-4f1d88fd" target="fc771a13"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5849,7 +5950,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-0449fcd6" target="id-9d38d067"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5868,7 +5969,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-9d38d067" target="c8d6ac17"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5887,7 +5988,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-6f3d53f4" target="id-4f1d88fd"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5906,7 +6007,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-4f9536a5" target="id-382e0d35"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5925,7 +6026,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-6f3d53f4" target="fc771a13"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5944,7 +6045,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="e1aeb092" target="fc771a13"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5963,7 +6064,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-8c431a74" target="id-6f3d53f4"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">FlowRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -5982,7 +6083,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="c8d6ac17" target="d74f2352"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -6001,7 +6102,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="c5162113-627a-4b2f-8636-a5bc2e495a05" target="id-75c7166b"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -6020,7 +6121,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-8ca950bf-38ae-43cd-91e1-b214a8633708" target="c5a0c897"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -6039,7 +6140,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="ec6b1385-bd05-4bf0-a06e-70c1f9866a54" target="id-743b564f"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -6058,7 +6159,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="e7a28c41-4fd2-45f1-8592-7a65a7547032" target="c053d3e8-c76b-4175-83f3-5106e0deef82"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">ServingRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -6077,7 +6178,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="f0b630fa-a541-47f2-bcf9-bf74093bebd2" target="e7a28c41-4fd2-45f1-8592-7a65a7547032"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">ServingRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -6096,7 +6197,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="c053d3e8-c76b-4175-83f3-5106e0deef82" target="id-0c08e074-ca7c-4bea-928c-138576952892"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">ServingRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -6115,7 +6216,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-466c5188-3f9c-4d91-8ead-7b73776f233e" target="cd97f974-5da5-4efb-8dda-63e9450ad8b8"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AccessRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -6134,7 +6235,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-8a57ab57-c4cd-4b75-a199-d00cd387c354" target="cd97f974-5da5-4efb-8dda-63e9450ad8b8"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssignmentRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -6153,7 +6254,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="aa035e3e-4dae-444b-8334-0eccc35ea073" target="id-8a57ab57-c4cd-4b75-a199-d00cd387c354"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -6172,7 +6273,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-466c5188-3f9c-4d91-8ead-7b73776f233e" target="aa035e3e-4dae-444b-8334-0eccc35ea073"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AccessRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -6191,7 +6292,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-4c8c274f-246b-498c-b0d7-f7a20ba4f2e9" target="cd97f974-5da5-4efb-8dda-63e9450ad8b8"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssignmentRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -6210,7 +6311,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="a8c96ff2-fc0a-4386-a1e8-bedb9ac188e8" target="id-4c8c274f-246b-498c-b0d7-f7a20ba4f2e9"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -6229,7 +6330,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-869bbb2c-061a-4f39-9c26-01f9b87a5001" target="a8c96ff2-fc0a-4386-a1e8-bedb9ac188e8"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">CompositionRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -6248,7 +6349,7 @@ transaction</data>
       </data> 
 </edge> 
 <edge source="id-466c5188-3f9c-4d91-8ead-7b73776f233e" target="a8c96ff2-fc0a-4386-a1e8-bedb9ac188e8"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AccessRelationship</data> 
 <data key="d6">
         <y:ShapeNode>

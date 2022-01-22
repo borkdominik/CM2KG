@@ -20,31 +20,31 @@ import tmodel.TmodelPackage;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link tmodel.impl.BookImpl#getBookName <em>Book Name</em>}</li>
+ *   <li>{@link tmodel.impl.BookImpl#getName <em>Name</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class BookImpl extends MinimalEObjectImpl.Container implements Book {
 	/**
-	 * The default value of the '{@link #getBookName() <em>Book Name</em>}' attribute.
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getBookName()
+	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String BOOK_NAME_EDEFAULT = null;
+	protected static final String NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getBookName() <em>Book Name</em>}' attribute.
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getBookName()
+	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-	protected String bookName = BOOK_NAME_EDEFAULT;
+	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -70,8 +70,8 @@ public class BookImpl extends MinimalEObjectImpl.Container implements Book {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getBookName() {
-		return bookName;
+	public String getName() {
+		return name;
 	}
 
 	/**
@@ -79,11 +79,11 @@ public class BookImpl extends MinimalEObjectImpl.Container implements Book {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setBookName(String newBookName) {
-		String oldBookName = bookName;
-		bookName = newBookName;
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, TmodelPackage.BOOK__BOOK_NAME, oldBookName, bookName));
+			eNotify(new ENotificationImpl(this, Notification.SET, TmodelPackage.BOOK__NAME, oldName, name));
 	}
 
 	/**
@@ -94,8 +94,8 @@ public class BookImpl extends MinimalEObjectImpl.Container implements Book {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case TmodelPackage.BOOK__BOOK_NAME:
-				return getBookName();
+			case TmodelPackage.BOOK__NAME:
+				return getName();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -108,8 +108,8 @@ public class BookImpl extends MinimalEObjectImpl.Container implements Book {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case TmodelPackage.BOOK__BOOK_NAME:
-				setBookName((String)newValue);
+			case TmodelPackage.BOOK__NAME:
+				setName((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -123,8 +123,8 @@ public class BookImpl extends MinimalEObjectImpl.Container implements Book {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case TmodelPackage.BOOK__BOOK_NAME:
-				setBookName(BOOK_NAME_EDEFAULT);
+			case TmodelPackage.BOOK__NAME:
+				setName(NAME_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -138,8 +138,8 @@ public class BookImpl extends MinimalEObjectImpl.Container implements Book {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case TmodelPackage.BOOK__BOOK_NAME:
-				return BOOK_NAME_EDEFAULT == null ? bookName != null : !BOOK_NAME_EDEFAULT.equals(bookName);
+			case TmodelPackage.BOOK__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -154,8 +154,8 @@ public class BookImpl extends MinimalEObjectImpl.Container implements Book {
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (bookName: ");
-		result.append(bookName);
+		result.append(" (name: ");
+		result.append(name);
 		result.append(')');
 		return result.toString();
 	}

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.opengroup.org/xsd/archimate/3.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengroup.org/xsd/archimate/3.0/ http://www.opengroup.org/xsd/archimate/3.1/archimate3_Diagram.xsd" identifier="be0eecc1">
+  <name xml:lang="en">Test Model</name>
+  <documentation xml:lang="en">A variety of testing scenarios</documentation>
+  <elements>
+    <element identifier="id-59fa6c90" xsi:type="BusinessActor">
+      <name xml:lang="en">Business Actor</name>
+    </element>
+    <element identifier="id-1efcd76f" xsi:type="BusinessRole">
+      <name xml:lang="en">Business Role</name>
+    </element>
+  </elements>
+  <relationships>
+    <relationship identifier="ffdc8ea9" source="id-59fa6c90" target="id-1efcd76f" xsi:type="Assignment" />
+  </relationships>
+  <organizations>
+    <item>
+      <label xml:lang="en">Business</label>
+      <item identifierRef="id-59fa6c90" />
+      <item identifierRef="id-1efcd76f" />
+    </item>
+    <item>
+      <label xml:lang="en">Relations</label>
+      <item identifierRef="ffdc8ea9" />
+    </item>
+    <item>
+      <label xml:lang="en">Views</label>
+      <item identifierRef="id-17cdf396" />
+      <item identifierRef="id-23c519cc" />
+      <item identifierRef="id-09cc5e51" />
+    </item>
+  </organizations>
+  <views>
+    <diagrams>
+      <view identifier="id-17cdf396" xsi:type="Diagram">
+        <name xml:lang="en">0 Blank View</name>
+      </view>
+      <view identifier="id-23c519cc" xsi:type="Diagram">
+        <name xml:lang="en">2 Test Bounds and Images</name>
+        <node identifier="b8013607" xsi:type="Label" x="0" y="0" w="193" h="85">
+          <label xml:lang="en">This note marks the x, y min of this view</label>
+          <style>
+            <fillColor r="255" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Lucida Grande" size="12">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="f5b333fe" x="156" y="204" w="529" h="157" xsi:type="Container">
+          <label xml:lang="en">Group</label>
+          <style>
+            <fillColor r="210" g="215" b="215" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Lucida Grande" size="12">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <node identifier="eac5adf1" elementRef="id-59fa6c90" xsi:type="Element" x="192" y="246" w="120" h="55">
+            <style>
+              <fillColor r="255" g="255" b="181" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Lucida Grande" size="12">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+          <node identifier="f6f8e6ac" elementRef="id-1efcd76f" xsi:type="Element" x="396" y="246" w="120" h="55">
+            <style>
+              <fillColor r="255" g="255" b="181" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Lucida Grande" size="12">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+          </node>
+        </node>
+        <node identifier="bf4b21c0" xsi:type="Label" x="720" y="468" w="193" h="85">
+          <label xml:lang="en">This note marks the max width and height of this view</label>
+          <style>
+            <fillColor r="255" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Lucida Grande" size="12">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <connection identifier="f408e9d0" relationshipRef="ffdc8ea9" xsi:type="Relationship" source="eac5adf1" target="f6f8e6ac">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+            <font name="Lucida Grande" size="12">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </connection>
+      </view>
+      <view identifier="id-09cc5e51" xsi:type="Diagram">
+        <name xml:lang="en">3 Test Bounds and Images with Connections</name>
+        <node identifier="id-6e21f397" elementRef="id-59fa6c90" xsi:type="Element" x="12" y="24" w="120" h="55">
+          <style>
+            <fillColor r="255" g="255" b="181" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Lucida Grande" size="12">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="id-7551795b" elementRef="id-1efcd76f" xsi:type="Element" x="12" y="132" w="120" h="55">
+          <style>
+            <fillColor r="255" g="255" b="181" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Lucida Grande" size="12">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <connection identifier="id-6cb40cfb" relationshipRef="ffdc8ea9" xsi:type="Relationship" source="id-6e21f397" target="id-7551795b">
+          <style>
+            <lineColor r="0" g="0" b="0" />
+            <font name="Lucida Grande" size="12">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <bendpoint x="588" y="336" />
+        </connection>
+      </view>
+    </diagrams>
+  </views>
+</model>

@@ -30,7 +30,7 @@ import tmodel.User;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link tmodel.impl.UserImpl#getUsername <em>Username</em>}</li>
+ *   <li>{@link tmodel.impl.UserImpl#getName <em>Name</em>}</li>
  *   <li>{@link tmodel.impl.UserImpl#getBorrowedBooks <em>Borrowed Books</em>}</li>
  * </ul>
  *
@@ -38,24 +38,24 @@ import tmodel.User;
  */
 public class UserImpl extends MinimalEObjectImpl.Container implements User {
 	/**
-	 * The default value of the '{@link #getUsername() <em>Username</em>}' attribute.
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getUsername()
+	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String USERNAME_EDEFAULT = null;
+	protected static final String NAME_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getUsername() <em>Username</em>}' attribute.
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getUsername()
+	 * @see #getName()
 	 * @generated
 	 * @ordered
 	 */
-	protected String username = USERNAME_EDEFAULT;
+	protected String name = NAME_EDEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getBorrowedBooks() <em>Borrowed Books</em>}' containment reference list.
@@ -91,8 +91,8 @@ public class UserImpl extends MinimalEObjectImpl.Container implements User {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getUsername() {
-		return username;
+	public String getName() {
+		return name;
 	}
 
 	/**
@@ -100,11 +100,11 @@ public class UserImpl extends MinimalEObjectImpl.Container implements User {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setUsername(String newUsername) {
-		String oldUsername = username;
-		username = newUsername;
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, TmodelPackage.USER__USERNAME, oldUsername, username));
+			eNotify(new ENotificationImpl(this, Notification.SET, TmodelPackage.USER__NAME, oldName, name));
 	}
 
 	/**
@@ -141,8 +141,8 @@ public class UserImpl extends MinimalEObjectImpl.Container implements User {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case TmodelPackage.USER__USERNAME:
-				return getUsername();
+			case TmodelPackage.USER__NAME:
+				return getName();
 			case TmodelPackage.USER__BORROWED_BOOKS:
 				return getBorrowedBooks();
 		}
@@ -158,8 +158,8 @@ public class UserImpl extends MinimalEObjectImpl.Container implements User {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case TmodelPackage.USER__USERNAME:
-				setUsername((String)newValue);
+			case TmodelPackage.USER__NAME:
+				setName((String)newValue);
 				return;
 			case TmodelPackage.USER__BORROWED_BOOKS:
 				getBorrowedBooks().clear();
@@ -177,8 +177,8 @@ public class UserImpl extends MinimalEObjectImpl.Container implements User {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case TmodelPackage.USER__USERNAME:
-				setUsername(USERNAME_EDEFAULT);
+			case TmodelPackage.USER__NAME:
+				setName(NAME_EDEFAULT);
 				return;
 			case TmodelPackage.USER__BORROWED_BOOKS:
 				getBorrowedBooks().clear();
@@ -195,8 +195,8 @@ public class UserImpl extends MinimalEObjectImpl.Container implements User {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case TmodelPackage.USER__USERNAME:
-				return USERNAME_EDEFAULT == null ? username != null : !USERNAME_EDEFAULT.equals(username);
+			case TmodelPackage.USER__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case TmodelPackage.USER__BORROWED_BOOKS:
 				return borrowedBooks != null && !borrowedBooks.isEmpty();
 		}
@@ -213,8 +213,8 @@ public class UserImpl extends MinimalEObjectImpl.Container implements User {
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (username: ");
-		result.append(username);
+		result.append(" (name: ");
+		result.append(name);
 		result.append(')');
 		return result.toString();
 	}

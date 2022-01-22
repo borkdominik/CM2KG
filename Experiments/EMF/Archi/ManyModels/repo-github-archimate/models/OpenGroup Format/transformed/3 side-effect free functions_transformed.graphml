@@ -20,14 +20,10 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
   <key for="edge" id="d10" yfiles.type="edgegraphics"/> 
 <key id="ClassName" for="node" attr.name="ClassName" attr.type="string"/> 
 <key id="Label" for="node" attr.name="Label" attr.type="string"/> 
-<key id="ApplicationFunction_name" for="node" attr.name="ApplicationFunction_name" attr.type="string"/> 
-<key id="ApplicationFunction_documentation" for="node" attr.name="ApplicationFunction_documentation" attr.type="string"/> 
-<key id="Meaning_name" for="node" attr.name="Meaning_name" attr.type="string"/> 
-<key id="Meaning_documentation" for="node" attr.name="Meaning_documentation" attr.type="string"/> 
-<key id="Constraint_name" for="node" attr.name="Constraint_name" attr.type="string"/> 
-<key id="Constraint_documentation" for="node" attr.name="Constraint_documentation" attr.type="string"/> 
-<key id="EReference_ReferenceName" for="edge" attr.name="EReference_ReferenceName" attr.type="string"/> 
-<key id="Label" for="edge" attr.name="Label" attr.type="string"/> 
+<key id="ArchimateLayer" for="node" attr.name="ArchimateLayer" attr.type="string"/> 
+<key id="name" for="node" attr.name="name" attr.type="string"/> 
+<key id="documentation" for="node" attr.name="documentation" attr.type="string"/> 
+<key id="ReferenceName" for="edge" attr.name="ReferenceName" attr.type="string"/> 
 <graph id="init_graph_01" edgedefault="directed"> 
 <node id="ff81d10e"> 
 <data key="ClassName">ApplicationFunction</data> 
@@ -47,8 +43,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationFunction_name">operation</data> 
-<data key="ApplicationFunction_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">operation</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="d4473445"> 
 <data key="ClassName">ApplicationFunction</data> 
@@ -68,8 +65,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationFunction_name">command</data> 
-<data key="ApplicationFunction_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">command</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="f0043de9"> 
 <data key="ClassName">ApplicationFunction</data> 
@@ -89,8 +87,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="ApplicationFunction_name">query</data> 
-<data key="ApplicationFunction_documentation"></data> 
+<data key="ArchimateLayer">IApplicationElement</data> 
+<data key="name">query</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="a8127ccb"> 
 <data key="ClassName">Meaning</data> 
@@ -110,8 +109,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Meaning_name">When using commands, side effects are possible</data> 
-<data key="Meaning_documentation"></data> 
+<data key="ArchimateLayer">IMotivationElement</data> 
+<data key="name">When using commands, side effects are possible</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="bad3b7a0"> 
 <data key="ClassName">Constraint</data> 
@@ -131,8 +131,9 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Constraint_name">For entities it is necessary to clearly distinguish commands from queries (and not to mix in one method the code)</data> 
-<data key="Constraint_documentation"></data> 
+<data key="ArchimateLayer">IMotivationElement</data> 
+<data key="name">For entities it is necessary to clearly distinguish commands from queries (and not to mix in one method the code)</data> 
+<data key="documentation"></data> 
 </node> 
 <node id="id-42a4cd6c"> 
 <data key="ClassName">Meaning</data> 
@@ -152,11 +153,12 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data> 
-<data key="Meaning_name">You can safely combine and use nested queries</data> 
-<data key="Meaning_documentation"></data> 
+<data key="ArchimateLayer">IMotivationElement</data> 
+<data key="name">You can safely combine and use nested queries</data> 
+<data key="documentation"></data> 
 </node> 
 <edge source="ff81d10e" target="f0043de9"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">SpecializationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -175,7 +177,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="ff81d10e" target="d4473445"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">SpecializationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -194,7 +196,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="a8127ccb" target="d4473445"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -213,7 +215,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="ff81d10e" target="bad3b7a0"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>
@@ -232,7 +234,7 @@ xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/
       </data> 
 </edge> 
 <edge source="id-42a4cd6c" target="f0043de9"> 
-<data key="EReference_ReferenceName">source</data> 
+<data key="ReferenceName">source</data> 
 <data key="Label">AssociationRelationship</data> 
 <data key="d6">
         <y:ShapeNode>

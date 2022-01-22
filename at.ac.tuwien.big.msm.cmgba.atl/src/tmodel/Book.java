@@ -13,7 +13,7 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link tmodel.Book#getBookName <em>Book Name</em>}</li>
+ *   <li>{@link tmodel.Book#getName <em>Name</em>}</li>
  * </ul>
  *
  * @see tmodel.TmodelPackage#getBook()
@@ -22,25 +22,25 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface Book extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Book Name</b></em>' attribute.
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Book Name</em>' attribute.
-	 * @see #setBookName(String)
-	 * @see tmodel.TmodelPackage#getBook_BookName()
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see tmodel.TmodelPackage#getBook_Name()
 	 * @model
 	 * @generated
 	 */
-	String getBookName();
+	String getName();
 
 	/**
-	 * Sets the value of the '{@link tmodel.Book#getBookName <em>Book Name</em>}' attribute.
+	 * Sets the value of the '{@link tmodel.Book#getName <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Book Name</em>' attribute.
-	 * @see #getBookName()
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
 	 * @generated
 	 */
-	void setBookName(String value);
+	void setName(String value);
 
 } // Book

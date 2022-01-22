@@ -17,7 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link tmodel.City#getStores <em>Stores</em>}</li>
  *   <li>{@link tmodel.City#getUsers <em>Users</em>}</li>
- *   <li>{@link tmodel.City#getCityName <em>City Name</em>}</li>
+ *   <li>{@link tmodel.City#getName <em>Name</em>}</li>
  * </ul>
  *
  * @see tmodel.TmodelPackage#getCity()
@@ -50,25 +50,25 @@ public interface City extends EObject {
 	EList<User> getUsers();
 
 	/**
-	 * Returns the value of the '<em><b>City Name</b></em>' attribute.
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>City Name</em>' attribute.
-	 * @see #setCityName(String)
-	 * @see tmodel.TmodelPackage#getCity_CityName()
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see tmodel.TmodelPackage#getCity_Name()
 	 * @model
 	 * @generated
 	 */
-	String getCityName();
+	String getName();
 
 	/**
-	 * Sets the value of the '{@link tmodel.City#getCityName <em>City Name</em>}' attribute.
+	 * Sets the value of the '{@link tmodel.City#getName <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>City Name</em>' attribute.
-	 * @see #getCityName()
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
 	 * @generated
 	 */
-	void setCityName(String value);
+	void setName(String value);
 
 } // City
