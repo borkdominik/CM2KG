@@ -225,7 +225,8 @@ public class Upload {
 	public String initializeNeo4jGraph(HttpServletResponse response, @PathVariable String uid) {
 		graphDb.neo4jGraphmlImport neoImport = new graphDb.neo4jGraphmlImport(uid);
 		neoImport.initializeGraph();
-		return "neovispreview";
+		//return "neovispreview";
+		return "neovispreview_v2";
 	}
 
 }
