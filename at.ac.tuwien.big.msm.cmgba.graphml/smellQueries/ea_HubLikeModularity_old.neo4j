@@ -1,0 +1,13 @@
+match (a)-[r]-(b)
+where  (r.Label contains 'Aggregation' or r.Label contains 'Realization' or r.Label contains "Composition") 
+    and a.ArchimateLayer = b.ArchimateLayer
+with a,b,r
+match (a)-[ro1]->(c),(b)-[ro2]->(c) 
+where not (ro1.Label contains 'Aggregation' or ro1.Label contains 'Realization' or ro1.Label contains "Composition" or ro2.Label contains 'Aggregation' or ro2.Label contains 'Realization' or ro2.Label contains "Composition") 
+with a,b,c,ro1,ro2
+
+match (a)<-[ro3]-(d),(b)<-[ro4]-(d) 
+where not (ro3.Label contains 'Aggregation' or ro3.Label contains 'Realization' or ro3.Label contains "Composition" or ro4.Label contains 'Aggregation' or ro4.Label contains 'Realization' or ro4.Label contains "Composition") 
+with a,b,c,d, ro1,ro2, ro3,ro4
+with count(ro1)+count(ro2) as fanout, count(ro3)+count(ro4) as fanin
+return CASE WHEN fanout>7 and fanin>7 THEN 1 ELSE 0 END AS result;

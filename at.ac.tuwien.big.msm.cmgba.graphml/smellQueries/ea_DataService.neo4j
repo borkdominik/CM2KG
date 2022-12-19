@@ -1,0 +1,6 @@
+MATCH (a)-[r1]-(b1)
+WHERE a.ClassName contains 'Service' and (b1.ClassName = 'BusinessObject' or b1.ClassName = 'DataObject' or b1.ClassName = 'SystemSoftware')
+with a,r1,b1
+match (a)
+where not (a)--(:BusinessService)
+return a

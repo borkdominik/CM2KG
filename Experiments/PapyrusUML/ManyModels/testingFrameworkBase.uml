@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_3xixwD-oEeOBJIvKdeZtpQ" name="org.eclipse.papyrus.uml.diagram.tests">
+  <packagedElement xmi:type="uml:Class" xmi:id="_OlpbsD-pEeOBJIvKdeZtpQ" name="AbstractCreateElementFromPaletteTest" isAbstract="true">
+    <generalization xmi:id="_1sUbUF31EeSH9PN5AZl3pQ" general="_FAMH4D-qEeOBJIvKdeZtpQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kHbiID-pEeOBJIvKdeZtpQ" name="CreateLinkFromPaletteTest" isAbstract="true">
+    <generalization xmi:id="_vwyx8D-pEeOBJIvKdeZtpQ" general="_OlpbsD-pEeOBJIvKdeZtpQ"/>
+    <ownedOperation xmi:id="_NnRIkAHgEeSXTsFWGl8rRw" name="testCreateLinkFromPalette"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_FAMH4D-qEeOBJIvKdeZtpQ" name="AbstractPapyrusTestCase" isAbstract="true"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_8DwYEEhfEeOZGbAGN97tSQ" name="UMLElementTypes"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9YLNUEhfEeOZGbAGN97tSQ" name="UMLPackage"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_agsZgAEZEeS1CswA_Bot2A" name="CreateLinkOwnedBySourceFromPaletteTest" isAbstract="true">
+    <generalization xmi:id="_i6t_gAEZEeS1CswA_Bot2A" general="_kHbiID-pEeOBJIvKdeZtpQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_FH-oEAHgEeSXTsFWGl8rRw" name="CreateNodeFromPaletteTest" isAbstract="true">
+    <generalization xmi:id="_JBdbEAHgEeSXTsFWGl8rRw" general="_OlpbsD-pEeOBJIvKdeZtpQ"/>
+    <ownedOperation xmi:id="_zFEUMD-rEeOBJIvKdeZtpQ" name="testCreateNodeFromPalette"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_MeWEoDHjEeS_IJz4WAHZuA" name="AppearanceNodeTest" isAbstract="true">
+    <generalization xmi:id="_1QbJgF31EeSH9PN5AZl3pQ" general="_FAMH4D-qEeOBJIvKdeZtpQ"/>
+    <ownedOperation xmi:id="_7QFpYDf3EeShgKK1P_proQ" name="testAppearance"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_a-LPcEpGEeSXIouijOm2Dw" name="AbstractDropNodeTest" isAbstract="true">
+    <generalization xmi:id="__TJZMEpNEeSXIouijOm2Dw" general="_FAMH4D-qEeOBJIvKdeZtpQ"/>
+    <ownedOperation xmi:id="_AH0XYEpOEeSXIouijOm2Dw" name="testToDropNode"/>
+  </packagedElement>
+</uml:Model>

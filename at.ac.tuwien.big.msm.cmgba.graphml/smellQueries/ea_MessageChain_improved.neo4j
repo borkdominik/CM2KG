@@ -1,0 +1,7 @@
+MATCH (a)-[r1]->(b)-[r2]->(c)-[]->(d)-[]->(e)
+where (a:BusinessService or a:ApplicationService or a:TechnologyService)
+           and (b:BusinessService or b:ApplicationService or b:TechnologyService) 
+           and (c:BusinessService or c:ApplicationService or c:TechnologyService)
+           and (d:BusinessService or d:ApplicationService or d:TechnologyService) 
+           and (e:BusinessService or e:ApplicationService or e:TechnologyService)
+return a,b,c,d,e

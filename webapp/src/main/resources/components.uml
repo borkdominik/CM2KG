@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="__KLVQOBVEeW-1LDt9RpxOw" name="Components">
+  <packagedElement xmi:type="uml:Component" xmi:id="_QCVlMOBWEeWNL_YKB8_3iw" name="DICE IDE 0.1.6">
+    <packagedElement xmi:type="uml:Component" xmi:id="_eBirAOBWEeWNL_YKB8_3iw" name="Eclipse 4.6.2"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_js0y0OBWEeWNL_YKB8_3iw" name="EMF 2.12.0">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_Ps3PAOBXEeWNL_YKB8_3iw" client="_js0y0OBWEeWNL_YKB8_3iw" supplier="_OCjCQOBXEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_vIrLEOBWEeWNL_YKB8_3iw" name="Acceleo 3.6.5">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_YTcM4A4CEeaaU9FekHx-8w" client="_vIrLEOBWEeWNL_YKB8_3iw" supplier="_js0y0OBWEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_2_SiAOBWEeWNL_YKB8_3iw" name="WST 3.8.1">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_EL8wkOBXEeWNL_YKB8_3iw" client="_2_SiAOBWEeWNL_YKB8_3iw" supplier="_js0y0OBWEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_JO6UIOBXEeWNL_YKB8_3iw" name="Papyrus 2.0.1">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_xT5QAOBXEeWNL_YKB8_3iw" client="_JO6UIOBXEeWNL_YKB8_3iw" supplier="_tUc-8OBXEeWNL_YKB8_3iw"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_6P9MEOBXEeWNL_YKB8_3iw" client="_JO6UIOBXEeWNL_YKB8_3iw" supplier="_06-EYOBXEeWNL_YKB8_3iw"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_83M7IOBXEeWNL_YKB8_3iw" client="_JO6UIOBXEeWNL_YKB8_3iw" supplier="_Z2hmoOBXEeWNL_YKB8_3iw"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_Hx8KYOBYEeWNL_YKB8_3iw" client="_JO6UIOBXEeWNL_YKB8_3iw" supplier="_2_SiAOBWEeWNL_YKB8_3iw"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_Om_WoOBYEeWNL_YKB8_3iw" client="_JO6UIOBXEeWNL_YKB8_3iw" supplier="_J5SRYOBYEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_KW4o0OBXEeWNL_YKB8_3iw" name="Profiles 0.12.6">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_LKP_cOBXEeWNL_YKB8_3iw" client="_KW4o0OBXEeWNL_YKB8_3iw" supplier="_JO6UIOBXEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_OCjCQOBXEeWNL_YKB8_3iw" name="JDT 3.12.2">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_ixgkoOBXEeWNL_YKB8_3iw" client="_OCjCQOBXEeWNL_YKB8_3iw" supplier="_eBirAOBWEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_Z2hmoOBXEeWNL_YKB8_3iw" name="GMF 1.10.0">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_N_eMQDoAEeatYsKAZQo-xQ" client="_Z2hmoOBXEeWNL_YKB8_3iw" supplier="_js0y0OBWEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_tUc-8OBXEeWNL_YKB8_3iw" name="QVTO 3.6.0">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_Yq5DkA4CEeaaU9FekHx-8w" client="_tUc-8OBXEeWNL_YKB8_3iw" supplier="_js0y0OBWEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_06-EYOBXEeWNL_YKB8_3iw" name="UML2 5.2.1">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_4DqToOBXEeWNL_YKB8_3iw" client="_06-EYOBXEeWNL_YKB8_3iw" supplier="_js0y0OBWEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_J5SRYOBYEeWNL_YKB8_3iw" name="Xtext 2.10.0">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_orwIkBXYEea6Lq6Z3vyxgQ" client="_J5SRYOBYEeWNL_YKB8_3iw" supplier="_js0y0OBWEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_mK5F0OBYEeWNL_YKB8_3iw" name="PNML 2.2.12">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_YDPNsA4CEeaaU9FekHx-8w" client="_mK5F0OBYEeWNL_YKB8_3iw" supplier="_js0y0OBWEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_y7KTUOBYEeWNL_YKB8_3iw" name="Simulation 0.6.0">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_z_s5gOBYEeWNL_YKB8_3iw" client="_y7KTUOBYEeWNL_YKB8_3iw" supplier="_vIrLEOBWEeWNL_YKB8_3iw"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_0iFN0OBYEeWNL_YKB8_3iw" client="_y7KTUOBYEeWNL_YKB8_3iw" supplier="_mK5F0OBYEeWNL_YKB8_3iw"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_kWqGEBFCEeac_4PS_4DJkw" client="_y7KTUOBYEeWNL_YKB8_3iw" supplier="_KW4o0OBXEeWNL_YKB8_3iw"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_3aGoYLxVEeaXAoPfUQl9pQ" client="_y7KTUOBYEeWNL_YKB8_3iw" supplier="_pzRmULxVEeaXAoPfUQl9pQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_q1Kj4OEZEeWI17F7oX02dQ" name="ATL 3.6.0">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_tPp6IOUbEeWW3eVRuNk5hw" client="_q1Kj4OEZEeWI17F7oX02dQ" supplier="_js0y0OBWEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_B-yREOUbEeWW3eVRuNk5hw" name="Subclipse SVN 4.2.3">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_sTlJoBaCEea6b5ddKgFqJw" client="_B-yREOUbEeWW3eVRuNk5hw" supplier="_eBirAOBWEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_CLM8cOUbEeWW3eVRuNk5hw" name="EGIT 4.8.0">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_rpIecBaCEea6b5ddKgFqJw" client="_CLM8cOUbEeWW3eVRuNk5hw" supplier="_eBirAOBWEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_hxdmgA4CEeaaU9FekHx-8w" name="Monitoring 0.1.6">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_l2HuwA4CEeaaU9FekHx-8w" client="_hxdmgA4CEeaaU9FekHx-8w" supplier="_eBirAOBWEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_FkkjcBXYEea6Lq6Z3vyxgQ" name="Deployments 0.3.1">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_LBopEBXYEea6Lq6Z3vyxgQ" client="_FkkjcBXYEea6Lq6Z3vyxgQ" supplier="_eBirAOBWEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_NpjeACJDEeaIF4cCpWN5hQ" name="Verification 0.3.0">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_hweX8DoIEeayPqVVna4Iww" client="_NpjeACJDEeaIF4cCpWN5hQ" supplier="_eBirAOBWEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_WoA10KwDEeakmfIVdYS-eQ" name="Papyrus Marte 1.2.0">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_aCMdsKwDEeakmfIVdYS-eQ" client="_WoA10KwDEeakmfIVdYS-eQ" supplier="_JO6UIOBXEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_pVHHcLJAEeauNfMY7ucCOQ" name="Dicer 1.0.0">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_aJoq4NcjEeaMYpgEHxo6sQ" client="_pVHHcLJAEeauNfMY7ucCOQ" supplier="_Z2hmoOBXEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_oCLDcLJBEeauNfMY7ucCOQ" name="Methodology 0.1.6">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_oCLDcbJBEeauNfMY7ucCOQ" client="_oCLDcLJBEeauNfMY7ucCOQ" supplier="_eBirAOBWEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_pzRmULxVEeaXAoPfUQl9pQ" name="Birt 4.6.0">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_7ApQEAMIEeesuc2aXycPmw" client="_pzRmULxVEeaXAoPfUQl9pQ" supplier="_paq34AMIEeesuc2aXycPmw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_paq34AMIEeesuc2aXycPmw" name="Datatools 1.13.0">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_paq34QMIEeesuc2aXycPmw" client="_paq34AMIEeesuc2aXycPmw" supplier="_eBirAOBWEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_PdFD0FpEEeeHHZFFnLVIFA" name="Optimization 0.2.2">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_Spt-8FpEEeeHHZFFnLVIFA" client="_PdFD0FpEEeeHHZFFnLVIFA" supplier="_y7KTUOBYEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="__HyV8G4DEee-2pFlIsT02Q" name="M2E 1.7.0">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_EKaiUG4EEee-2pFlIsT02Q" client="__HyV8G4DEee-2pFlIsT02Q" supplier="_eBirAOBWEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_1ik94HEyEeeTB424yHWZ2g" name="Epsilon 1.4.0">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="__FxLYHEyEeeTB424yHWZ2g" client="_1ik94HEyEeeTB424yHWZ2g" supplier="_js0y0OBWEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_5ggMAHEyEeeTB424yHWZ2g" name="Enhancement 0.1.0">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="__sYfcHEyEeeTB424yHWZ2g" client="_5ggMAHEyEeeTB424yHWZ2g" supplier="_1ik94HEyEeeTB424yHWZ2g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_TihjcHEzEeeTB424yHWZ2g" name="Configuration Optiomization 1.0.0">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_bxJxwHEzEeeTB424yHWZ2g" client="_TihjcHEzEeeTB424yHWZ2g" supplier="_eBirAOBWEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_5rBY4HIBEeeTB424yHWZ2g" name="Quality Testing 0.1.6">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_5rBY4XIBEeeTB424yHWZ2g" client="_5rBY4HIBEeeTB424yHWZ2g" supplier="_eBirAOBWEeWNL_YKB8_3iw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_H2tWEHKzEeeTB424yHWZ2g" name="Anomaly Detection 1.0.0">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_H2tWEXKzEeeTB424yHWZ2g" client="_H2tWEHKzEeeTB424yHWZ2g" supplier="_eBirAOBWEeWNL_YKB8_3iw"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmodel:City
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:tmodel="tmodel"
+    xsi:schemaLocation="tmodel ../metamodel/Test.ecore"
+    name="Vienna">
+  <stores name="City Store">
+    <books name="Anna Karenina"/>
+    <books name="To Kill a Mockingbird"/>
+    <workers
+        name="Some worker 1"/>
+  </stores>
+  <users name="Some user 1">
+    <borrowedBooks
+        issuedBook="//@stores.0/@books.0"
+        responsibleWorker="//@stores.0/@workers.0"
+        dateFrom="01.01.2021"
+        dateTo="01.05.2021"
+        name="01.01.2021-01.05.2021"/>
+  </users>
+</tmodel:City>

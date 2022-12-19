@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:structure="http://DeveloperProcess/schemas/structure/_VA9p4McPEeO9CYUoXDRplw/1" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements http://DeveloperProcess/schemas/structure/_VA9p4McPEeO9CYUoXDRplw/1 pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_VA-4AMcPEeO9CYUoXDRplw">
+  <uml:Model xmi:id="_v2A68HaMEeKemeMpJaVA3A" name="DiagramEditorFunctionalities">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_xpU2MHaNEeKemeMpJaVA3A" annotatedElement="_v2A68HaMEeKemeMpJaVA3A">
+      <body>The purpose of this document is to explain basic functionalities intra diagram, i.e. how element in the diagram can be manipulated without taking in account link with model explorer, and properties view </body>
+    </ownedComment>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_v2A68XaMEeKemeMpJaVA3A">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Model" xmi:id="_sz15QOyrEeOTppRa5YYcIg" name="Requirements">
+      <packagedElement xmi:type="uml:Class" xmi:id="_6udOsHaNEeKemeMpJaVA3A" name="DisplayElementAtFirstLevel"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_u6MhAHaOEeKemeMpJaVA3A" name="DisplayElementAtFirstLevel_+1"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_4PBJEHaTEeKemeMpJaVA3A" name="MoveElementIntoAnother"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="__iyRoHaTEeKemeMpJaVA3A" name="MoveElementIntoADiagram"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_seSb0GP6EeOq0pDGL_YBMA" name="Edit Grid and Ruler Property"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_uKPAQGP6EeOq0pDGL_YBMA" name="Snap To Grid Behavior"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_UzjXQOGuEeO_JM12vRgWBQ" name="DropDromModelExplorer"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_dQjtQOvJEeOv4v5t8d2cOg" name="DiagramVersion"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_kB6T0PLxEeOPiKkVCmnccA" name="PaletteOrder"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_1WmHsPLxEeOPiKkVCmnccA" name="PaletteCustomization"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ae6f8PLyEeOPiKkVCmnccA" name="StereotypeVisualization"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ceWhcABHEeSBYd3pg3Jbjg" name="Delete from diagram"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_pn6YsABHEeSBYd3pg3Jbjg" name="HideFromDiagram"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_8etyYAHCEeS8N6Bcc06S3Q" name="ElementCreationFromPalette"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ne8ZMAHDEeS8N6Bcc06S3Q" name="ElementNodeCreationFromPalette"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_NfCf0AHDEeS8N6Bcc06S3Q" name="DeriveFrom_ElementCreationFromPalette" client="_Ne8ZMAHDEeS8N6Bcc06S3Q" supplier="_8etyYAHCEeS8N6Bcc06S3Q"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_n5hc8AH3EeSOr6S9q_OEFA" name="AppearenceElement"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_7xzO8AH3EeSOr6S9q_OEFA" name="AppearanceNodeElement"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_7x2SQAH3EeSOr6S9q_OEFA" name="DeriveFrom_AppearenceElement" client="_7xzO8AH3EeSOr6S9q_OEFA" supplier="_n5hc8AH3EeSOr6S9q_OEFA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Gy3vsAH4EeSOr6S9q_OEFA" name="AppearanceoNodelabel"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_Gy6L8AH4EeSOr6S9q_OEFA" name="DeriveFrom_AppearanceNodeElement" client="_Gy3vsAH4EeSOr6S9q_OEFA" supplier="_7xzO8AH3EeSOr6S9q_OEFA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_D-PLQAIAEeSOr6S9q_OEFA" name="EditableElement"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_tEgNoOy6EeOTppRa5YYcIg" name="UseCases"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="_tqyKgOy6EeOTppRa5YYcIg" name="Design"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="_uA3IMOy6EeOTppRa5YYcIg" name="test">
+      <packagedElement xmi:type="uml:Component" xmi:id="_xTGwkAH5EeSOr6S9q_OEFA" name="org.eclipse.papyrus.diagram.tests">
+        <packagedElement xmi:type="uml:Package" xmi:id="_3LNzcAH5EeSOr6S9q_OEFA" name="org.eclipse.papyrus.diagram.tests.appearance">
+          <packagedElement xmi:type="uml:Class" xmi:id="_GveLgAH6EeSOr6S9q_OEFA" name="AppearanceElementTest" isAbstract="true"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_H1ta0AH6EeSOr6S9q_OEFA" name="AppearanceNodeElementTest" isAbstract="true"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_IC_B0AH6EeSOr6S9q_OEFA" name="AppearanceNodelLabelTest" isAbstract="true"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_V0CKUHaNEeKemeMpJaVA3A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_V1EsIHaNEeKemeMpJaVA3A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_OOJC4LX8EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_7ilaIOvxEeOTppRa5YYcIg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7jjDcOvxEeOTppRa5YYcIg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_VA6mkMcPEeO9CYUoXDRplw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_kWqjAMbXEeO09JBvNFZRNw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_7jpKEOvxEeOTppRa5YYcIg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7kZYAOvxEeOTppRa5YYcIg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_VA-4AMcPEeO9CYUoXDRplw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_qCT3MMbXEeO09JBvNFZRNw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_7kbNMOvxEeOTppRa5YYcIg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7lJl8OvxEeOTppRa5YYcIg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_VBAtMccPEeO9CYUoXDRplw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_2LNtQMbYEeO09JBvNFZRNw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_U92EwOy8EeOTppRa5YYcIg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_U--tMOy8EeOTppRa5YYcIg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://DEVELOPER_PROFILES/Document.profile.uml#_qR44IMn0EeO9CYUoXDRplw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://DEVELOPER_PROFILES/Document.profile.uml#_D0JcUMnzEeO9CYUoXDRplw"/>
+    </profileApplication>
+  </uml:Model>
+  <Requirements:Requirement xmi:id="_6u56oHaNEeKemeMpJaVA3A" text="Papyrus shall let display every elements at first layer even if the namespace is not respected" id="Req_001" base_Class="_6udOsHaNEeKemeMpJaVA3A"/>
+  <Requirements:Requirement xmi:id="_u6MhAXaOEeKemeMpJaVA3A" text="Papyrus shall display element by respected namespace when they are contained graphically by other elements " id="Req_002" base_Class="_u6MhAHaOEeKemeMpJaVA3A"/>
+  <Requirements:Requirement xmi:id="_4PBJEXaTEeKemeMpJaVA3A" text="When an element is moved into another element, the container has to change, i.e. the qualified name change" id="Req_003" base_Class="_4PBJEHaTEeKemeMpJaVA3A"/>
+  <Requirements:Requirement xmi:id="__iyRoXaTEeKemeMpJaVA3A" text="When an element move from an element to the diagram, two options can be applied:&#xD;&#xA;- The container change and the namespace has to be adapted, so a clean into diagrams has to be done to respect Req_002&#xD;&#xA;- The container does not change; this is only a graphical move, as described by the req_001" id="Req_004" base_Class="__iyRoHaTEeKemeMpJaVA3A"/>
+  <Requirements:Requirement xmi:id="_tDokkGP6EeOq0pDGL_YBMA" text="The user must be able to change the Diagram Viewer properties (Snap To Grid/To Geometry, Show Rulers, Show Grid, Grid Style, Grid Color, Grid Order, Ruler Units, Grid Spacing )" id="Req_005" base_Class="_seSb0GP6EeOq0pDGL_YBMA"/>
+  <Requirements:Requirement xmi:id="_u_1LgGP6EeOq0pDGL_YBMA" text="Snap To Grid must be able to snap on : &#xD;&#xA;- 4 corners of rectangle&#xD;&#xA;- 4 middles of side of a rectangle&#xD;&#xA;- anchors of link&#xD;&#xA;- bendpoints" id="Req_006" base_Class="_uKPAQGP6EeOq0pDGL_YBMA"/>
+  <Requirements:Requirement xmi:id="_Uzo20OGuEeO_JM12vRgWBQ" text="Its possible to drop the seame element several time on the canva" id="Req_007" base_Class="_UzjXQOGuEeO_JM12vRgWBQ"/>
+  <Requirements:Requirement xmi:id="_dQusYOvJEeOv4v5t8d2cOg" text="Each diagram must have a version  in order to able possible migration" id="Req_008" base_Class="_dQjtQOvJEeOv4v5t8d2cOg"/>
+  <structure:Project xmi:id="_q9KrgOyrEeOTppRa5YYcIg" author="CEA LIST" version="1.0.0" base_Model="_v2A68HaMEeKemeMpJaVA3A" title="Generic function of a Papyrus diagram editor"/>
+  <structure:Requirements xmi:id="_ybsUwOy6EeOTppRa5YYcIg" base_Model="_sz15QOyrEeOTppRa5YYcIg"/>
+  <structure:UseCases xmi:id="_za0PcOy6EeOTppRa5YYcIg" base_Model="_tEgNoOy6EeOTppRa5YYcIg"/>
+  <structure:Design xmi:id="_0dIBAOy6EeOTppRa5YYcIg" base_Model="_tqyKgOy6EeOTppRa5YYcIg"/>
+  <structure:Tests xmi:id="_1R33sOy6EeOTppRa5YYcIg" base_Model="_uA3IMOy6EeOTppRa5YYcIg"/>
+  <Requirements:Requirement xmi:id="_kCAacPLxEeOPiKkVCmnccA" text="Element in the palette must classified by alphabetic order" id="Req_009" base_Class="_kB6T0PLxEeOPiKkVCmnccA"/>
+  <Requirements:Requirement xmi:id="_1WnV0PLxEeOPiKkVCmnccA" text="The palette of adiagram must be customizable" id="Req_010" base_Class="_1WmHsPLxEeOPiKkVCmnccA"/>
+  <Requirements:Requirement xmi:id="_Ae7HAPLyEeOPiKkVCmnccA" text="Applied stereotype must be displayed on diagram element ( brace, icon, text)" id="Req_011" base_Class="_Ae6f8PLyEeOPiKkVCmnccA"/>
+  <Requirements:Requirement xmi:id="_cemZEABHEeSBYd3pg3Jbjg" text="Each element must be deleted from the diagram, the semantic deleteion must be also done" id="Req_012" base_Class="_ceWhcABHEeSBYd3pg3Jbjg"/>
+  <Requirements:Requirement xmi:id="_pn8N4ABHEeSBYd3pg3Jbjg" text="The element can be deleted only form the diagram, the semantic element is not removed" id="Req_013" base_Class="_pn6YsABHEeSBYd3pg3Jbjg"/>
+  <Requirements:Requirement xmi:id="_8e4KcAHCEeS8N6Bcc06S3Q" text="UML element can be created and display in the diagram from the palette" id="Req_014" base_Class="_8etyYAHCEeS8N6Bcc06S3Q"/>
+  <Requirements:Requirement xmi:id="_Ne-OYAHDEeS8N6Bcc06S3Q" text="&#xA;UML element can be created and display in the diagram from the palette" id="Req_015" base_Class="_Ne8ZMAHDEeS8N6Bcc06S3Q"/>
+  <Requirements:DeriveReqt xmi:id="_NfFjIAHDEeS8N6Bcc06S3Q" base_Abstraction="_NfCf0AHDEeS8N6Bcc06S3Q"/>
+  <Requirements:Requirement xmi:id="_n_Kx8AH3EeSOr6S9q_OEFA" text="Appearence of elements in papyrus must be modified" id="Req_016" base_Class="_n5hc8AH3EeSOr6S9q_OEFA"/>
+  <Requirements:Requirement xmi:id="_7x0dEAH3EeSOr6S9q_OEFA" text="&#xD;&#xA;Appearence of elements of node must be modified ( color background, foregorund, size...)" id="Req_017" base_Class="_7xzO8AH3EeSOr6S9q_OEFA"/>
+  <Requirements:DeriveReqt xmi:id="_7x4HcAH3EeSOr6S9q_OEFA" base_Abstraction="_7x2SQAH3EeSOr6S9q_OEFA"/>
+  <Requirements:Requirement xmi:id="_Gy490AH4EeSOr6S9q_OEFA" text="&#xD;&#xA;&#xD;&#xD;&#xA;Appearence of elements of label node must be modified ( font, color, but not size)" id="Req_018" base_Class="_Gy3vsAH4EeSOr6S9q_OEFA"/>
+  <Requirements:DeriveReqt xmi:id="_Gy8BIAH4EeSOr6S9q_OEFA" base_Abstraction="_Gy6L8AH4EeSOr6S9q_OEFA"/>
+  <Requirements:Requirement xmi:id="_D-RngAIAEeSOr6S9q_OEFA" text="Element in papyrus must be editable" id="Req_019" base_Class="_D-PLQAIAEeSOr6S9q_OEFA"/>
+</xmi:XMI>

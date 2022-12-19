@@ -1,0 +1,7 @@
+MATCH (a)-[r1]->(b)-[r2]->(c)-[]->(d)-[]->(e)
+where a.ClassName contains 'Service' 
+           and b.ClassName contains 'Service' 
+           and c.ClassName contains 'Service' 
+           and d.ClassName contains 'Service' 
+           and e.ClassName contains 'Service' 
+return a,b,c,d,e

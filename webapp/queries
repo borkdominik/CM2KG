@@ -1,0 +1,33 @@
+
+
+
+//apply configuration
+dbms.security.procedures.unrestricted=,jwt.security.*,gds.*,apoc.*
+
+
+//delete all nodes
+MATCH (n)
+DETACH DELETE n
+
+//import graphml
+CALL apoc.import.graphml("http://localhost:8080/repository/graph/b2715d3a-9158-439b-8a2b-873089dd38d9", {})
+
+
+//sample graph
+CALL apoc.import.graphml("http://graphml.graphdrawing.org/primer/simple.graphml", {})
+
+//set node labels
+MATCH (n)
+CALL apoc.create.addLabels( id(n), [ n.ClassName ] )
+YIELD node
+RETURN node
+
+//set relationship label
+MATCH (f)-[rel]->(b)
+CALL apoc.refactor.setType(rel, rel.Label)
+YIELD input, output
+RETURN input, output
+
+//get all nodes
+Match (n)-[r]->(m)
+Return n,r,m

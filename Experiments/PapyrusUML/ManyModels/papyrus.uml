@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Document="http:///schemas/Document/_RQrLoGwBEeSIYu1Ih2FYyQ/10" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:structure="http://DeveloperProcess/schemas/structure/_rpmLUHVxEeSZ-fQGFkyJeQ/6" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/Document/_RQrLoGwBEeSIYu1Ih2FYyQ/10 pathmap://DEVELOPER_PROFILES/Document.profile.uml#_RQrLoWwBEeSIYu1Ih2FYyQ http://DeveloperProcess/schemas/structure/_rpmLUHVxEeSZ-fQGFkyJeQ/6 pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_rpmyYHVxEeSZ-fQGFkyJeQ">
+  <uml:Model xmi:id="_alL2YAN_EeWYRrYFctZWYw" name="Papyrus">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_alL2YQN_EeWYRrYFctZWYw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Model" xmi:id="_alL2YgN_EeWYRrYFctZWYw" name="Requirements"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="_alL2YwN_EeWYRrYFctZWYw" name="UseCases">
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_alL2ZAN_EeWYRrYFctZWYw" name="useCasesAbstraction" client="_alL2YwN_EeWYRrYFctZWYw" supplier="_alL2YgN_EeWYRrYFctZWYw"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_alL2ZQN_EeWYRrYFctZWYw" name="MySystem"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_alL2ZgN_EeWYRrYFctZWYw" name="Design">
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_alL2ZwN_EeWYRrYFctZWYw" name="DesignAbstraction" client="_alL2ZgN_EeWYRrYFctZWYw" supplier="_alL2YwN_EeWYRrYFctZWYw"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_jodNsAN_EeWYRrYFctZWYw" name="GenericPapyrusActor" isAbstract="true"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_5fEUoAN_EeWYRrYFctZWYw" name="GenericPapyrusUser" isAbstract="true">
+        <generalization xmi:type="uml:Generalization" xmi:id="_Oj_f8AOAEeWYRrYFctZWYw" general="_jodNsAN_EeWYRrYFctZWYw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_Dn5l0AOAEeWYRrYFctZWYw" name="ExpertPapyrusUser">
+        <generalization xmi:type="uml:Generalization" xmi:id="_QdNrYAOAEeWYRrYFctZWYw" general="_5fEUoAN_EeWYRrYFctZWYw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_GrGREAOAEeWYRrYFctZWYw" name="BasicPapyrusUser">
+        <generalization xmi:type="uml:Generalization" xmi:id="_N5290AOAEeWYRrYFctZWYw" general="_5fEUoAN_EeWYRrYFctZWYw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_Q49MMAOAEeWYRrYFctZWYw" name="GenericPapyrusDeveloper">
+        <generalization xmi:type="uml:Generalization" xmi:id="_TT6ywAOAEeWYRrYFctZWYw" general="_jodNsAN_EeWYRrYFctZWYw"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_alL2aAN_EeWYRrYFctZWYw" name="Test">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_alL2aQN_EeWYRrYFctZWYw" name="Dependency1" client="_alL2aAN_EeWYRrYFctZWYw" supplier="_alL2YwN_EeWYRrYFctZWYw"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_alL2agN_EeWYRrYFctZWYw" name="Dependency2" client="_alL2aAN_EeWYRrYFctZWYw" supplier="_alL2ZgN_EeWYRrYFctZWYw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_y01swAOJEeWYRrYFctZWYw" name="Papyrus Main Specification Document">
+      <packagedElement xmi:type="uml:Package" xmi:id="_y03h8AOJEeWYRrYFctZWYw" name="Table of Contents">
+        <packagedElement xmi:type="uml:Package" xmi:id="_y29zsAOJEeWYRrYFctZWYw" name="Requirements"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_y2-awAOJEeWYRrYFctZWYw" name="Use Cases">
+          <packagedElement xmi:type="uml:Package" xmi:id="_y2-awgOJEeWYRrYFctZWYw" name="MySystem"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_y2_B0QOJEeWYRrYFctZWYw" name="Design"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_y2_o4QOJEeWYRrYFctZWYw" name="Tests"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_y3AP8QOJEeWYRrYFctZWYw" name="Requirements Coverage"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_y03h8gOJEeWYRrYFctZWYw" name="Requirements"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_y04JAQOJEeWYRrYFctZWYw" name="Use Cases">
+        <packagedElement xmi:type="uml:Package" xmi:id="_y04JAwOJEeWYRrYFctZWYw" name="MySystem"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_y04wEQOJEeWYRrYFctZWYw" name="Design">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_y26JUAOJEeWYRrYFctZWYw">
+          <body>ActorsUseCaseDiagram</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_y26wYQOJEeWYRrYFctZWYw" name="Tests"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_y27XcQOJEeWYRrYFctZWYw" name="Requirements Coverage">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_y27-gQOJEeWYRrYFctZWYw">
+          <body>Requirements Coverage Table</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_y27-ggOJEeWYRrYFctZWYw">
+          <body></body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_y28lkQOJEeWYRrYFctZWYw">
+          <body></body>
+        </ownedComment>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_alL2awN_EeWYRrYFctZWYw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_alL2bAN_EeWYRrYFctZWYw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_alL2bQN_EeWYRrYFctZWYw" key="Version" value="0.0.7"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_alL2bgN_EeWYRrYFctZWYw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_alL2bwN_EeWYRrYFctZWYw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_alL2cAN_EeWYRrYFctZWYw" key="Date" value="2014-11-26"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_alL2cQN_EeWYRrYFctZWYw" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_alL2cgN_EeWYRrYFctZWYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_rplkQXVxEeSZ-fQGFkyJeQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_kWqjAMbXEeO09JBvNFZRNw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_alL2cwN_EeWYRrYFctZWYw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_alL2dAN_EeWYRrYFctZWYw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_alL2dQN_EeWYRrYFctZWYw" key="Version" value="0.0.7"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_alL2dgN_EeWYRrYFctZWYw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_alL2dwN_EeWYRrYFctZWYw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_alL2eAN_EeWYRrYFctZWYw" key="Date" value="2014-11-26"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_alL2eQN_EeWYRrYFctZWYw" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_alL2egN_EeWYRrYFctZWYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_rpmyYHVxEeSZ-fQGFkyJeQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_qCT3MMbXEeO09JBvNFZRNw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_alL2ewN_EeWYRrYFctZWYw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_alL2fAN_EeWYRrYFctZWYw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_alL2fQN_EeWYRrYFctZWYw" key="Version" value="0.0.7"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_alL2fgN_EeWYRrYFctZWYw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_alL2fwN_EeWYRrYFctZWYw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_alL2gAN_EeWYRrYFctZWYw" key="Date" value="2014-11-26"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_alL2gQN_EeWYRrYFctZWYw" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_alL2ggN_EeWYRrYFctZWYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_rpnZcXVxEeSZ-fQGFkyJeQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://DEVELOPER_PROFILES/developerprocess.profile.uml#_2LNtQMbYEeO09JBvNFZRNw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_alL2gwN_EeWYRrYFctZWYw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_alL2hAN_EeWYRrYFctZWYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_OOJC4LX8EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_alL2hQN_EeWYRrYFctZWYw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_alL2hgN_EeWYRrYFctZWYw" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_alL2hwN_EeWYRrYFctZWYw" key="Version" value="0.0.11"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_alL2iAN_EeWYRrYFctZWYw" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_alL2iQN_EeWYRrYFctZWYw" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_alL2igN_EeWYRrYFctZWYw" key="Date" value="2014-11-14"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_alL2iwN_EeWYRrYFctZWYw" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_alL2jAN_EeWYRrYFctZWYw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://DEVELOPER_PROFILES/Document.profile.uml#_RQrLoWwBEeSIYu1Ih2FYyQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://DEVELOPER_PROFILES/Document.profile.uml#_D0JcUMnzEeO9CYUoXDRplw"/>
+    </profileApplication>
+  </uml:Model>
+  <structure:Project xmi:id="_alL2jQN_EeWYRrYFctZWYw" author="CEA" version="0.1" base_Model="_alL2YAN_EeWYRrYFctZWYw" title="Papyrus Main Specification Document"/>
+  <structure:Requirements xmi:id="_alL2jgN_EeWYRrYFctZWYw" base_Model="_alL2YgN_EeWYRrYFctZWYw"/>
+  <structure:UseCases xmi:id="_alL2jwN_EeWYRrYFctZWYw" base_Model="_alL2YwN_EeWYRrYFctZWYw"/>
+  <structure:Design xmi:id="_alL2kAN_EeWYRrYFctZWYw" base_Model="_alL2ZgN_EeWYRrYFctZWYw"/>
+  <structure:Tests xmi:id="_alL2kQN_EeWYRrYFctZWYw" base_Model="_alL2aAN_EeWYRrYFctZWYw"/>
+  <Document:Document xmi:id="_y0264AOJEeWYRrYFctZWYw" base_Model="_y01swAOJEeWYRrYFctZWYw" author="CEA" version="0.1"/>
+  <Document:TableOfContent xmi:id="_y03h8QOJEeWYRrYFctZWYw" base_Package="_y03h8AOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_y04JAAOJEeWYRrYFctZWYw" base_Package="_y03h8gOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_y04JAgOJEeWYRrYFctZWYw" base_Package="_y04JAQOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_y04wEAOJEeWYRrYFctZWYw" base_Package="_y04JAwOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_y04wEgOJEeWYRrYFctZWYw" base_Package="_y04wEQOJEeWYRrYFctZWYw"/>
+  <Document:ImageRef xmi:id="_y26wYAOJEeWYRrYFctZWYw" base_Comment="_y26JUAOJEeWYRrYFctZWYw" ref="/export/home/flefevre/git/org.eclipse.papyrus/plugins/infra/core/org.eclipse.papyrus.infra.core/doc/imgDOC/ActorsUseCaseDiagram.png"/>
+  <Document:Section xmi:id="_y27XcAOJEeWYRrYFctZWYw" base_Package="_y26wYQOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_y27-gAOJEeWYRrYFctZWYw" base_Package="_y27XcQOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_y28lkAOJEeWYRrYFctZWYw" base_Comment="_y27-ggOJEeWYRrYFctZWYw"/>
+  <Document:Content xmi:id="_y28lkgOJEeWYRrYFctZWYw" base_Comment="_y28lkQOJEeWYRrYFctZWYw"/>
+  <Document:Table xmi:id="_y29MoAOJEeWYRrYFctZWYw" caption="RequirementsCoverageTable" base_Comment="_y27-gQOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_y29zsQOJEeWYRrYFctZWYw" base_Package="_y29zsAOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_y2-awQOJEeWYRrYFctZWYw" base_Package="_y2-awAOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_y2_B0AOJEeWYRrYFctZWYw" base_Package="_y2-awgOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_y2_o4AOJEeWYRrYFctZWYw" base_Package="_y2_B0QOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_y3AP8AOJEeWYRrYFctZWYw" base_Package="_y2_o4QOJEeWYRrYFctZWYw"/>
+  <Document:Section xmi:id="_y3A3AAOJEeWYRrYFctZWYw" base_Package="_y3AP8QOJEeWYRrYFctZWYw"/>
+</xmi:XMI>

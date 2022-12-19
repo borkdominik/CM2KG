@@ -1,0 +1,3 @@
+MATCH (n)
+WHERE n.isAbstract="true" and not (n)--() 
+return n

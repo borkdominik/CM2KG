@@ -1,0 +1,32 @@
+image: maven:3-jdk-8
+
+cache:
+  paths:
+    - target/
+
+compile:
+  stage: build
+  script:
+    - mvn compile -B
+
+test:
+  stage: test
+  script:
+    - mvn test -B
+    - cat target/site/jacoco/index.html
+
+verify:
+  stage: test
+  script:
+    - mvn verify -B
+
+pages:
+  stage: deploy
+  dependencies:
+    - test
+  script:
+    - mkdir public
+    - mv target/site/jacoco public
+  artifacts:
+    paths:
+      - public

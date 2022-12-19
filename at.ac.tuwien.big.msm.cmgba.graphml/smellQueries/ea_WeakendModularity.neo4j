@@ -1,0 +1,16 @@
+match (a)-[r]-(b)
+where  (r.Label contains 'Aggregation' or r.Label contains 'Realization' or r.Label contains "Composition" or r.Label contains "Assignment") 
+    and a.ArchimateLayer = b.ArchimateLayer
+with a, collect(r) as rels,  a+collect(b) as cluster
+//return a, nodes
+//return a, size(rels), size(nodes)
+match (m)-[r1]-(n)
+where m in cluster and n in cluster
+with a, cluster, collect(r1) as internal
+match  (m)-[r2]-(n)
+where not (r2.Label contains 'Aggregation' or r2.Label contains 'Realization' or r2.Label contains "Composition" or r2.Label contains "Assignment") and
+(not m in cluster and n in cluster)  or (m in cluster and not n in cluster)
+with a, cluster,  internal, collect(r2) as external
+where size(internal) < size(external) and size(internal)>3
+//return a, cluster, internal, external
+return a, cluster, size(internal), size(external)//, size(internal)/size(external)

@@ -1,0 +1,3145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ADOXML SYSTEM "adoxml31.dtd">
+<ADOXML version="3.1" date="10.12.2020" time="14:21" database="adoxxdb" username="muhamed1" adoversion="Version 5.1">
+<MODELS>
+<MODEL id="mod.17979" name="Aircrafts Analysis" version="" modeltype="Analysis Model" libtype="bp" applib="TEAM v0.5">
+<MODELATTRIBUTES>
+<ATTRIBUTE name="Version number" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Author" type="STRING">training1</ATTRIBUTE>
+<ATTRIBUTE name="Creation date" type="STRING">07.03.2018, 15:08</ATTRIBUTE>
+<ATTRIBUTE name="Date last changed" type="STRING">13.03.2018, 11:13:11</ATTRIBUTE>
+<ATTRIBUTE name="Last user" type="STRING">training1</ATTRIBUTE>
+<ATTRIBUTE name="Keywords" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Model type" type="ENUMERATION">Current model</ATTRIBUTE>
+<ATTRIBUTE name="State" type="ENUMERATION">In process</ATTRIBUTE>
+<ATTRIBUTE name="Reviewed on" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Reviewed by" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Number of objects and relations" type="INTEGER">116</ATTRIBUTE>
+<ATTRIBUTE name="World area" type="STRING">w:34.66cm h:34.03cm minw:5cm minh:5cm</ATTRIBUTE>
+<ATTRIBUTE name="Grid" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Zoom" type="INTEGER">100</ATTRIBUTE>
+<ATTRIBUTE name="Viewable area" type="STRING">VIEW representation:graphic
+GRAPHIC x:-16 y:554 w:985 h:748 scale:1
+TABLE
+</ATTRIBUTE>
+<ATTRIBUTE name="Current mode" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Base name" type="STRING">Aircrafts Analysis</ATTRIBUTE>
+<ATTRIBUTE name="Access state" type="ENUMERATION">write</ATTRIBUTE>
+<ATTRIBUTE name="Current page layout" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Connector marks" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Type" type="STRING">Analysis Model</ATTRIBUTE>
+<ATTRIBUTE name="Change counter" type="INTEGER">4712</ATTRIBUTE>
+<ATTRIBUTE name="Font size" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Context of version" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Position" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="__GfxThumb__" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Method GraphRep" type="STRING">GRAPHREP
+
+FONT &quot;Arial&quot; h:20pt color:black
+TEXT (&quot;ArchiMate&quot;) y:-3cm w:c h:c
+FONT &quot;Arial&quot; h:11pt color:black
+TEXT (&quot;Enterprise Architecture Modeling&quot;) y:-2.4cm w:c h:c
+
+PEN color:white style:null
+RECTANGLE x:-3.2cm y:-2cm w:6.85cm h:8.25cm
+PEN color:black
+
+FILL color:(rgbval(225, 225, 225))
+RECTANGLE x:-3cm y:-2cm w:5cm h:8cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Analysis Model&quot;) x:-2.7cm y:-1.8cm
+
+FILL color:(rgbval(205,203,255))
+RECTANGLE x:2.2cm y:-2cm w:1.2cm h:8cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;M&quot;) x:2.7cm y:-0.5cm
+TEXT (&quot;o&quot;) x:2.75cm y:0cm
+TEXT (&quot;t&quot;) x:2.8cm y:0.5cm
+TEXT (&quot;i&quot;) x:2.8cm y:1cm
+TEXT (&quot;v&quot;) x:2.8cm y:1.5cm
+TEXT (&quot;a&quot;) x:2.75cm y:2cm
+TEXT (&quot;t&quot;) x:2.8cm y:2.5cm
+TEXT (&quot;i&quot;) x:2.8cm y:3cm
+TEXT (&quot;o&quot;) x:2.75cm y:3.5cm
+TEXT (&quot;n&quot;) x:2.75cm y:4cm
+
+FILL color:(rgbval(247,224,171))
+RECTANGLE x:-2.7cm y:-1.3cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Strategy&quot;) x:-2.5cm y:-0.8cm
+
+FILL color:(rgbval(255, 253, 188))
+RECTANGLE x:-2.7cm y:-0.1cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Business&quot;) x:-2.5cm y:0.4cm
+
+FILL color:(rgbval(186, 250, 253))
+RECTANGLE x:-2.7cm y:1.1cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Application&quot;) x:-2.5cm y:1.6cm
+
+FILL color:(rgbval(221,255,223))
+RECTANGLE x:-2.7cm y:2.3cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Technology&quot;) x:-2.5cm y:2.8cm
+
+FILL color:(rgbval(172,255,174))
+RECTANGLE x:-2.7cm y:3.5cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Physical&quot;) x:-2.5cm y:4.0cm
+
+FILL color:(rgbval(255,222,224))
+RECTANGLE x:-2.7cm y:4.7cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Implementation/Migration&quot;) x:-2.5cm y:5.2cm</ATTRIBUTE>
+</MODELATTRIBUTES>
+<INSTANCE id="obj.17980" class="Business service" name="self-service">
+<ATTRIBUTE name="Position" type="STRING">NODE x:15cm y:12cm w:2.8cm h:1.4cm index:2</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">The self-service consists of reapir space rental and diagnosis.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17983" class="Business service" name="diagnosis">
+<ATTRIBUTE name="Position" type="STRING">NODE x:15.5cm y:8.5cm w:2.8cm h:1.4cm index:3</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17986" class="Business process" name="accounting">
+<ATTRIBUTE name="Position" type="STRING">NODE x:9.5cm y:14.5cm w:2.8cm h:1.4cm index:4</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17989" class="Business process" name="rental">
+<ATTRIBUTE name="Position" type="STRING">NODE x:3.5cm y:12cm w:2.8cm h:1.4cm index:5</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17992" class="Business service" name="repair space rental">
+<ATTRIBUTE name="Position" type="STRING">NODE x:9.5cm y:12cm w:2.8cm h:1.4cm index:6</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17995" class="Application service" name="diagnosis">
+<ATTRIBUTE name="Position" type="STRING">NODE x:15.5cm y:5.5cm w:2.8cm h:1.4cm index:9</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">0001:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17998" class="Application service" name="accounting">
+<ATTRIBUTE name="Position" type="STRING">NODE x:7.5cm y:16.5cm w:2.8cm h:1.4cm index:11</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">0001:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18001" class="Application interface" name="data exchange">
+<ATTRIBUTE name="Position" type="STRING">NODE x:3.5cm y:16.5cm w:2.8cm h:1.4cm index:13</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">0001:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18004" class="Facility" name="Charlie&apos;s aircrafts">
+<ATTRIBUTE name="Position" type="STRING">NODE x:30.5cm y:27.5cm w:3cm h:1.5cm index:19</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">The main company building is devided in three areas: back office, client waiting area and service center. All three parts are located on the company area, but they are physically devided, as it is very loud in the service center and the back office employees have to be concentrated for the billing.</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18007" class="Facility" name="service center">
+<ATTRIBUTE name="Position" type="STRING">NODE x:26cm y:27.5cm w:3.1cm h:1.7cm index:20</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18010" class="Equipment" name="drilling machine (6)">
+<ATTRIBUTE name="Position" type="STRING">NODE x:20.5cm y:22.5cm w:3.1cm h:1.7cm index:21</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18013" class="Equipment" name="welding equipment (5)">
+<ATTRIBUTE name="Position" type="STRING">NODE x:20.5cm y:25cm w:3.5cm h:1.7cm index:22</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18016" class="Equipment" name="toolbox (4)">
+<ATTRIBUTE name="Position" type="STRING">NODE x:20.5cm y:27.5cm w:3cm h:1.5cm index:23</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18019" class="Equipment" name="rotor blade tester (2)">
+<ATTRIBUTE name="Position" type="STRING">NODE x:20.5cm y:30cm w:3.1cm h:1.7cm index:24</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18022" class="Equipment" name="air conditioning equipment (1)">
+<ATTRIBUTE name="Position" type="STRING">NODE x:20.5cm y:32.5cm w:4cm h:2cm index:25</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18025" class="Device" name="card reader (DM)">
+<ATTRIBUTE name="Position" type="STRING">NODE x:15cm y:22.5cm w:3.1cm h:1.7cm index:34</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.18028" class="Device" name="card reader (WE)">
+<ATTRIBUTE name="Position" type="STRING">NODE x:15cm y:25cm w:3.1cm h:1.7cm index:35</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.18031" class="Device" name="card reader (TB)">
+<ATTRIBUTE name="Position" type="STRING">NODE x:15cm y:27.5cm w:3.1cm h:1.7cm index:36</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.18034" class="Device" name="card reader (RBT)">
+<ATTRIBUTE name="Position" type="STRING">NODE x:15cm y:30cm w:3.1cm h:1.7cm index:37</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.18037" class="Device" name="card reader (ACE)">
+<ATTRIBUTE name="Position" type="STRING">NODE x:15cm y:32.5cm w:3.1cm h:1.7cm index:38</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.18040" class="Communication network" name="company wide communication network">
+<ATTRIBUTE name="Position" type="STRING">NODE x:9.5cm y:27.5cm w:3.5cm h:2cm index:39</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.18043" class="Application service" name="time logging">
+<ATTRIBUTE name="Position" type="STRING">NODE x:2cm y:27.5cm w:2.8cm h:1.4cm index:52</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">0001:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18046" class="Application service" name="customer logging">
+<ATTRIBUTE name="Position" type="STRING">NODE x:7cm y:23.5cm w:2.8cm h:1.4cm index:53</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">0001:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18049" class="Application interface" name="data interface">
+<ATTRIBUTE name="Position" type="STRING">NODE x:2cm y:23.5cm w:2.8cm h:1.4cm index:54</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">0001:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18052" class="Application service" name="billing">
+<ATTRIBUTE name="Position" type="STRING">NODE x:2cm y:20cm w:2.8cm h:1.4cm index:55</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">0001:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18055" class="Business service" name="billing">
+<ATTRIBUTE name="Position" type="STRING">NODE x:19.5cm y:20cm w:2.8cm h:1.4cm index:56</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18058" class="Goal" name="increase profit">
+<ATTRIBUTE name="Position" type="STRING">NODE x:26.5cm y:5cm w:3.5cm h:1.5cm index:58</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18061" class="Goal" name="generate profit from self-service">
+<ATTRIBUTE name="Position" type="STRING">NODE x:21cm y:5cm w:3cm h:1.5cm index:59</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18064" class="Goal" name="decrease costs from classical business model">
+<ATTRIBUTE name="Position" type="STRING">NODE x:32cm y:5cm w:4cm h:2cm index:60</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18067" class="Course of action" name="standardization">
+<ATTRIBUTE name="Position" type="STRING">NODE x:30cm y:8cm w:3cm h:1.5cm index:63</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18070" class="Course of action" name="operational excellence">
+<ATTRIBUTE name="Position" type="STRING">NODE x:30cm y:11cm w:3cm h:1.5cm index:64</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18073" class="Capability" name="service management">
+<ATTRIBUTE name="Position" type="STRING">NODE x:25.5cm y:8cm w:3cm h:1.5cm index:65</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18076" class="Course of action" name="centralized IT system">
+<ATTRIBUTE name="Position" type="STRING">NODE x:25cm y:11cm w:3cm h:1.5cm index:66</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18079" class="Outcome" name="self-service catalogue">
+<ATTRIBUTE name="Position" type="STRING">NODE x:21cm y:8cm w:3.5cm h:1.5cm index:73</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18082" class="Capability" name="IT operations /management">
+<ATTRIBUTE name="Position" type="STRING">NODE x:25cm y:14cm w:3cm h:1.5cm index:76</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18085" class="Resource" name="human resources">
+<ATTRIBUTE name="Position" type="STRING">NODE x:23.5cm y:18cm w:3cm h:1.5cm index:77</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">Yes</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18088" class="Resource" name="IT resources">
+<ATTRIBUTE name="Position" type="STRING">NODE x:27.5cm y:18cm w:3cm h:1.5cm index:78</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18091" class="Grouping" name="resource pool">
+<ATTRIBUTE name="Position" type="STRING">NODE x:24.5cm y:18.5cm w:7.5cm h:5.5cm index:1</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18094" class="Facility" name="client area">
+<ATTRIBUTE name="Position" type="STRING">NODE x:30.5cm y:31cm w:3.1cm h:1.7cm index:83</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18097" class="Facility" name="back office">
+<ATTRIBUTE name="Position" type="STRING">NODE x:30.5cm y:24cm w:3.1cm h:1.7cm index:85</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18100" class="Data object" name="customer account entry">
+<ATTRIBUTE name="Position" type="STRING">NODE x:7.5cm y:18.5cm w:2.8cm h:1.4cm index:92</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18103" class="Business object" name="invoice">
+<ATTRIBUTE name="Position" type="STRING">NODE x:16.5cm y:17cm w:2.8cm h:1.4cm index:94</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18106" class="Grouping" name="diagnosis architecture">
+<ATTRIBUTE name="Position" type="STRING">NODE x:4.5cm y:7cm w:12.5cm h:8.5cm index:82</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18109" class="Device" name="diagnosis 1">
+<ATTRIBUTE name="Position" type="STRING">NODE x:3.5cm y:5cm w:3cm h:1.7cm index:84</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">Yes</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.18112" class="Device" name="diagnosis 2">
+<ATTRIBUTE name="Position" type="STRING">NODE x:7cm y:5cm w:3cm h:1.7cm index:86</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">Yes</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.18115" class="Device" name="diagnosis 3">
+<ATTRIBUTE name="Position" type="STRING">NODE x:10.5cm y:5cm w:3cm h:1.7cm index:88</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">Yes</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.18118" class="Device" name="diagnosis printer">
+<ATTRIBUTE name="Position" type="STRING">NODE x:7cm y:8cm w:3cm h:1.7cm index:90</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">Yes</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.18121" class="Technology interaction" name="customer runs diagnosis">
+<ATTRIBUTE name="Position" type="STRING">NODE x:2cm y:7.5cm w:2.8cm h:1.4cm index:96</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">After choosing a tool, an interaction between the customer/mechanic, the tool and the diagnosis takes place.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+<INTERREF name="Influence on"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.18124" class="Technology event" name="technology occupied">
+<ATTRIBUTE name="Position" type="STRING">NODE x:3.5cm y:9.5cm w:2.8cm h:1.4cm index:97</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">A customer can book all tools and machines in the companies repair center. If he/she decides to use a tool, it is blocked for other customers. This may be implemented with RDF tags or QR codes, which define user and time.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+<INTERREF name="Influence on"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.18127" class="Artifact" name="diagnosis sheet">
+<ATTRIBUTE name="Position" type="STRING">NODE x:10.5cm y:9.5cm w:2.8cm h:1.4cm index:98</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.18130" class="Location" name="service center">
+<ATTRIBUTE name="Position" type="STRING">NODE x:10.5cm y:7.5cm w:2.8cm h:1.4cm index:99</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18133" class="Business service" name="service cataloge">
+<ATTRIBUTE name="Position" type="STRING">NODE x:19.5cm y:12cm w:2.8cm h:1.4cm index:107</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">The service catalogue has more than the two assigned services, but these are the main ones. The billing is important for all other subservices and the self-service is the new business model in Peter&apos;s company.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18136" class="Value" name="save capital for investments">
+<ATTRIBUTE name="Position" type="STRING">NODE x:26.5cm y:2cm w:3.2cm h:1.6cm index:109</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.18139" class="Requirement" name="expand resource pool">
+<ATTRIBUTE name="Position" type="STRING">NODE x:25.5cm y:20cm w:2.8cm h:1.4cm index:111</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">Peter wants to hire new IT staff and he would like to invest in new tools and machines for the self-service in order to get more customers.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<CONNECTOR id="con.18142" class="Aggregation">
+<FROM instance="self-service" class="Business service"></FROM>
+<TO instance="repair space rental" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:7</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18143" class="Aggregation">
+<FROM instance="self-service" class="Business service"></FROM>
+<TO instance="diagnosis" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:15.5cm y1:10cm index:114</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18144" class="Serving">
+<FROM instance="accounting" class="Business process"></FROM>
+<TO instance="self-service" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:15cm y1:14.5cm index:8</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18145" class="Realization">
+<FROM instance="rental" class="Business process"></FROM>
+<TO instance="repair space rental" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:16</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18146" class="Triggering">
+<FROM instance="rental" class="Business process"></FROM>
+<TO instance="accounting" class="Business process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:3.5cm y1:14.5cm index:18</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18147" class="Realization">
+<FROM instance="diagnosis" class="Application service"></FROM>
+<TO instance="diagnosis" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:17</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18148" class="Serving">
+<FROM instance="accounting" class="Application service"></FROM>
+<TO instance="accounting" class="Business process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:10cm y1:16.5cm index:12</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18149" class="Flow">
+<FROM instance="data exchange" class="Application interface"></FROM>
+<TO instance="billing" class="Application service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:2.5cm y1:18cm index:14</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18150" class="Flow">
+<FROM instance="data exchange" class="Application interface"></FROM>
+<TO instance="accounting" class="Application service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:15</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18151" class="Specialization">
+<FROM instance="service center" class="Facility"></FROM>
+<TO instance="Charlie&apos;s aircrafts" class="Facility"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:91</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18152" class="Assignment">
+<FROM instance="drilling machine (6)" class="Equipment"></FROM>
+<TO instance="service center" class="Facility"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:25.5cm y1:22.5cm index:26</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18153" class="Association">
+<FROM instance="drilling machine (6)" class="Equipment"></FROM>
+<TO instance="card reader (DM)" class="Device"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:42</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18154" class="Assignment">
+<FROM instance="welding equipment (5)" class="Equipment"></FROM>
+<TO instance="service center" class="Facility"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:25.5cm y1:25cm index:27</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18155" class="Association">
+<FROM instance="welding equipment (5)" class="Equipment"></FROM>
+<TO instance="card reader (WE)" class="Device"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:43</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18156" class="Assignment">
+<FROM instance="toolbox (4)" class="Equipment"></FROM>
+<TO instance="service center" class="Facility"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:31</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18157" class="Association">
+<FROM instance="toolbox (4)" class="Equipment"></FROM>
+<TO instance="card reader (TB)" class="Device"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:44</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18158" class="Assignment">
+<FROM instance="rotor blade tester (2)" class="Equipment"></FROM>
+<TO instance="service center" class="Facility"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:25.5cm y1:30cm index:32</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18159" class="Association">
+<FROM instance="rotor blade tester (2)" class="Equipment"></FROM>
+<TO instance="card reader (RBT)" class="Device"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:45</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18160" class="Assignment">
+<FROM instance="air conditioning equipment (1)" class="Equipment"></FROM>
+<TO instance="service center" class="Facility"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:25.5cm y1:32.5cm index:33</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18161" class="Association">
+<FROM instance="air conditioning equipment (1)" class="Equipment"></FROM>
+<TO instance="card reader (ACE)" class="Device"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:46</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18162" class="Flow">
+<FROM instance="card reader (DM)" class="Device"></FROM>
+<TO instance="company wide communication network" class="Communication network"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:10cm y1:22.5cm index:47</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18163" class="Flow">
+<FROM instance="card reader (WE)" class="Device"></FROM>
+<TO instance="company wide communication network" class="Communication network"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:10cm y1:25cm index:48</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18164" class="Flow">
+<FROM instance="card reader (TB)" class="Device"></FROM>
+<TO instance="company wide communication network" class="Communication network"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:49</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18165" class="Flow">
+<FROM instance="card reader (RBT)" class="Device"></FROM>
+<TO instance="company wide communication network" class="Communication network"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:10cm y1:30cm index:50</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18166" class="Flow">
+<FROM instance="card reader (ACE)" class="Device"></FROM>
+<TO instance="company wide communication network" class="Communication network"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:10cm y1:32.5cm index:51</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18167" class="Triggering">
+<FROM instance="company wide communication network" class="Communication network"></FROM>
+<TO instance="time logging" class="Application service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:40</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18168" class="Triggering">
+<FROM instance="company wide communication network" class="Communication network"></FROM>
+<TO instance="customer logging" class="Application service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:7cm y1:27.5cm index:41</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18169" class="Flow">
+<FROM instance="time logging" class="Application service"></FROM>
+<TO instance="data interface" class="Application interface"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:29</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18170" class="Flow">
+<FROM instance="customer logging" class="Application service"></FROM>
+<TO instance="data interface" class="Application interface"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:30</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18171" class="Assignment">
+<FROM instance="data interface" class="Application interface"></FROM>
+<TO instance="billing" class="Application service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:28</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18172" class="Serving">
+<FROM instance="billing" class="Application service"></FROM>
+<TO instance="rental" class="Business process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:1cm y1:12cm index:10</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18173" class="Serving">
+<FROM instance="billing" class="Application service"></FROM>
+<TO instance="billing" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:57</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18174" class="Association">
+<FROM instance="billing" class="Application service"></FROM>
+<TO instance="customer account entry" class="Data object"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:93</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18175" class="Association">
+<FROM instance="billing" class="Business service"></FROM>
+<TO instance="invoice" class="Business object"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:95</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18176" class="Aggregation">
+<FROM instance="increase profit" class="Goal"></FROM>
+<TO instance="generate profit from self-service" class="Goal"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:61</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18177" class="Aggregation">
+<FROM instance="increase profit" class="Goal"></FROM>
+<TO instance="decrease costs from classical business model" class="Goal"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:62</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18178" class="Influence">
+<FROM instance="standardization" class="Course of action"></FROM>
+<TO instance="decrease costs from classical business model" class="Goal"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:31cm y1:6.5cm index:68</ATTRIBUTE>
+<ATTRIBUTE name="Character" type="ENUMERATION">positive</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18179" class="Association">
+<FROM instance="operational excellence" class="Course of action"></FROM>
+<TO instance="decrease costs from classical business model" class="Goal"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:33cm y1:11cm index:70</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18180" class="Aggregation">
+<FROM instance="operational excellence" class="Course of action"></FROM>
+<TO instance="centralized IT system" class="Course of action"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:71</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18181" class="Aggregation">
+<FROM instance="operational excellence" class="Course of action"></FROM>
+<TO instance="standardization" class="Course of action"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:72</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18182" class="Realization">
+<FROM instance="service management" class="Capability"></FROM>
+<TO instance="standardization" class="Course of action"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:67</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18183" class="Realization">
+<FROM instance="service management" class="Capability"></FROM>
+<TO instance="self-service catalogue" class="Outcome"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:75</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18184" class="Influence">
+<FROM instance="centralized IT system" class="Course of action"></FROM>
+<TO instance="self-service catalogue" class="Outcome"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:21.5cm y1:11cm index:74</ATTRIBUTE>
+<ATTRIBUTE name="Character" type="ENUMERATION">positive</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18185" class="Influence">
+<FROM instance="self-service catalogue" class="Outcome"></FROM>
+<TO instance="generate profit from self-service" class="Goal"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:69</ATTRIBUTE>
+<ATTRIBUTE name="Character" type="ENUMERATION">positive</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18186" class="Realization">
+<FROM instance="IT operations /management" class="Capability"></FROM>
+<TO instance="centralized IT system" class="Course of action"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:81</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18187" class="Assignment">
+<FROM instance="human resources" class="Resource"></FROM>
+<TO instance="IT operations /management" class="Capability"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:22.5cm y1:14cm index:79</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18188" class="Association">
+<FROM instance="human resources" class="Resource"></FROM>
+<TO instance="expand resource pool" class="Requirement"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:23cm y1:20cm index:112</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18189" class="Assignment">
+<FROM instance="IT resources" class="Resource"></FROM>
+<TO instance="IT operations /management" class="Capability"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:28cm y1:14cm index:80</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18190" class="Association">
+<FROM instance="IT resources" class="Resource"></FROM>
+<TO instance="expand resource pool" class="Requirement"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:28cm y1:20cm index:113</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18191" class="Specialization">
+<FROM instance="client area" class="Facility"></FROM>
+<TO instance="Charlie&apos;s aircrafts" class="Facility"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:89</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18192" class="Specialization">
+<FROM instance="back office" class="Facility"></FROM>
+<TO instance="Charlie&apos;s aircrafts" class="Facility"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:87</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18193" class="Serving">
+<FROM instance="diagnosis architecture" class="Grouping"></FROM>
+<TO instance="diagnosis" class="Application service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:13.5cm y1:5.5cm index:106</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18194" class="Association">
+<FROM instance="diagnosis 1" class="Device"></FROM>
+<TO instance="customer runs diagnosis" class="Technology interaction"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:1.5cm y1:5cm index:103</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18195" class="Serving">
+<FROM instance="diagnosis printer" class="Device"></FROM>
+<TO instance="diagnosis 1" class="Device"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:100</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18196" class="Serving">
+<FROM instance="diagnosis printer" class="Device"></FROM>
+<TO instance="diagnosis 2" class="Device"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:101</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18197" class="Serving">
+<FROM instance="diagnosis printer" class="Device"></FROM>
+<TO instance="diagnosis 3" class="Device"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:102</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18198" class="Association">
+<FROM instance="diagnosis printer" class="Device"></FROM>
+<TO instance="diagnosis sheet" class="Artifact"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:7.5cm y1:9.5cm index:104</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18199" class="Triggering">
+<FROM instance="technology occupied" class="Technology event"></FROM>
+<TO instance="customer runs diagnosis" class="Technology interaction"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:1.5cm y1:9.5cm index:105</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18200" class="Realization">
+<FROM instance="service cataloge" class="Business service"></FROM>
+<TO instance="self-service catalogue" class="Outcome"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:18.5cm y1:8cm index:108</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18201" class="Aggregation">
+<FROM instance="service cataloge" class="Business service"></FROM>
+<TO instance="self-service" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:115</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18202" class="Aggregation">
+<FROM instance="service cataloge" class="Business service"></FROM>
+<TO instance="billing" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:116</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.18203" class="Association">
+<FROM instance="save capital for investments" class="Value"></FROM>
+<TO instance="increase profit" class="Goal"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:110</ATTRIBUTE>
+</CONNECTOR>
+</MODEL>
+<MODEL id="mod.17830" name="Aircrafts Technology" version="" modeltype="Technology Layer" libtype="bp" applib="TEAM v0.5">
+<MODELATTRIBUTES>
+<ATTRIBUTE name="Version number" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Author" type="STRING">training1</ATTRIBUTE>
+<ATTRIBUTE name="Creation date" type="STRING">07.03.2018, 15:08</ATTRIBUTE>
+<ATTRIBUTE name="Date last changed" type="STRING">13.03.2018, 11:09:16</ATTRIBUTE>
+<ATTRIBUTE name="Last user" type="STRING">training1</ATTRIBUTE>
+<ATTRIBUTE name="Keywords" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Model type" type="ENUMERATION">Current model</ATTRIBUTE>
+<ATTRIBUTE name="State" type="ENUMERATION">In process</ATTRIBUTE>
+<ATTRIBUTE name="Reviewed on" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Reviewed by" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Number of objects and relations" type="INTEGER">71</ATTRIBUTE>
+<ATTRIBUTE name="World area" type="STRING">w:27.17cm h:31.01cm minw:5cm minh:5cm</ATTRIBUTE>
+<ATTRIBUTE name="Grid" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Zoom" type="INTEGER">100</ATTRIBUTE>
+<ATTRIBUTE name="Viewable area" type="STRING">VIEW representation:graphic
+GRAPHIC x:-16 y:279 w:985 h:748 scale:1
+TABLE
+</ATTRIBUTE>
+<ATTRIBUTE name="Current mode" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Base name" type="STRING">Aircrafts Technology</ATTRIBUTE>
+<ATTRIBUTE name="Access state" type="ENUMERATION">write</ATTRIBUTE>
+<ATTRIBUTE name="Current page layout" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Connector marks" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Type" type="STRING">Technology Layer</ATTRIBUTE>
+<ATTRIBUTE name="Change counter" type="INTEGER">4989</ATTRIBUTE>
+<ATTRIBUTE name="Font size" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Context of version" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Position" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="__GfxThumb__" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Method GraphRep" type="STRING">GRAPHREP
+
+FONT &quot;Arial&quot; h:20pt color:black
+TEXT (&quot;ArchiMate&quot;) y:-3cm w:c h:c
+FONT &quot;Arial&quot; h:11pt color:black
+TEXT (&quot;Enterprise Architecture Modeling&quot;) y:-2.4cm w:c h:c
+
+PEN color:white style:null
+RECTANGLE x:-3.2cm y:-2cm w:6.85cm h:8.25cm
+PEN color:black
+
+FILL color:(rgbval(225, 225, 225))
+RECTANGLE x:-3cm y:-2cm w:5cm h:8cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Analysis Model&quot;) x:-2.7cm y:-1.8cm
+
+FILL color:(rgbval(205,203,255))
+RECTANGLE x:2.2cm y:-2cm w:1.2cm h:8cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;M&quot;) x:2.7cm y:-0.5cm
+TEXT (&quot;o&quot;) x:2.75cm y:0cm
+TEXT (&quot;t&quot;) x:2.8cm y:0.5cm
+TEXT (&quot;i&quot;) x:2.8cm y:1cm
+TEXT (&quot;v&quot;) x:2.8cm y:1.5cm
+TEXT (&quot;a&quot;) x:2.75cm y:2cm
+TEXT (&quot;t&quot;) x:2.8cm y:2.5cm
+TEXT (&quot;i&quot;) x:2.8cm y:3cm
+TEXT (&quot;o&quot;) x:2.75cm y:3.5cm
+TEXT (&quot;n&quot;) x:2.75cm y:4cm
+
+FILL color:(rgbval(247,224,171))
+RECTANGLE x:-2.7cm y:-1.3cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Strategy&quot;) x:-2.5cm y:-0.8cm
+
+FILL color:(rgbval(255, 253, 188))
+RECTANGLE x:-2.7cm y:-0.1cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Business&quot;) x:-2.5cm y:0.4cm
+
+FILL color:(rgbval(186, 250, 253))
+RECTANGLE x:-2.7cm y:1.1cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Application&quot;) x:-2.5cm y:1.6cm
+
+FILL color:(rgbval(221,255,223))
+RECTANGLE x:-2.7cm y:2.3cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Technology&quot;) x:-2.5cm y:2.8cm
+
+FILL color:(rgbval(172,255,174))
+RECTANGLE x:-2.7cm y:3.5cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Physical&quot;) x:-2.5cm y:4.0cm
+
+FILL color:(rgbval(255,222,224))
+RECTANGLE x:-2.7cm y:4.7cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Implementation/Migration&quot;) x:-2.5cm y:5.2cm</ATTRIBUTE>
+</MODELATTRIBUTES>
+<INSTANCE id="obj.17831" class="Device" name="workstation">
+<ATTRIBUTE name="Position" type="STRING">NODE x:16cm y:22.5cm w:3cm h:1.7cm index:4</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17834" class="Device" name="Printer">
+<ATTRIBUTE name="Position" type="STRING">NODE x:16cm y:18.5cm w:3cm h:1.7cm index:5</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17837" class="Device" name="billing workstation">
+<ATTRIBUTE name="Position" type="STRING">NODE x:10.5cm y:29cm w:3cm h:1.7cm index:7</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17840" class="Device" name="bill printer">
+<ATTRIBUTE name="Position" type="STRING">NODE x:10.5cm y:27cm w:3cm h:1.7cm index:8</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17843" class="Device" name="thinclient b">
+<ATTRIBUTE name="Position" type="STRING">NODE x:17.5cm y:26.5cm w:3cm h:1.7cm index:9</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17846" class="Device" name="thinclient a">
+<ATTRIBUTE name="Position" type="STRING">NODE x:14cm y:26.5cm w:3cm h:1.7cm index:10</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17849" class="Grouping" name="billing infrastructure">
+<ATTRIBUTE name="Position" type="STRING">NODE x:12.5cm y:27.5cm w:11cm h:6.5cm index:3</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17852" class="Technology service" name="client-server operations">
+<ATTRIBUTE name="Position" type="STRING">NODE x:16cm y:29cm w:3cm h:1.5cm index:11</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+<INTERREF name="Influence on"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17855" class="Grouping" name="diagnosis architecture">
+<ATTRIBUTE name="Position" type="STRING">NODE x:11.5cm y:13cm w:12.5cm h:8.5cm index:12</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17858" class="Device" name="diagnosis 1">
+<ATTRIBUTE name="Position" type="STRING">NODE x:10.5cm y:11cm w:3cm h:1.7cm index:13</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">Yes</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17861" class="Device" name="diagnosis 2">
+<ATTRIBUTE name="Position" type="STRING">NODE x:14cm y:11cm w:3cm h:1.7cm index:14</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">Yes</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17864" class="Device" name="diagnosis 3">
+<ATTRIBUTE name="Position" type="STRING">NODE x:17.5cm y:11cm w:3cm h:1.7cm index:15</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">Yes</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17867" class="Device" name="diagnosis printer">
+<ATTRIBUTE name="Position" type="STRING">NODE x:14cm y:14cm w:3cm h:1.7cm index:16</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">Yes</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17870" class="Technology service" name="office">
+<ATTRIBUTE name="Position" type="STRING">NODE x:25cm y:20.5cm w:2.8cm h:1.4cm index:17</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">Yes</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+<INTERREF name="Influence on"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17873" class="Technology service" name="browser">
+<ATTRIBUTE name="Position" type="STRING">NODE x:23.5cm y:16cm w:2.8cm h:1.4cm index:18</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">Yes</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+<INTERREF name="Influence on"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17876" class="Technology service" name="mail client">
+<ATTRIBUTE name="Position" type="STRING">NODE x:23.5cm y:19cm w:2.8cm h:1.4cm index:19</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">Yes</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+<INTERREF name="Influence on"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17879" class="Technology interface" name="data exchange">
+<ATTRIBUTE name="Position" type="STRING">NODE x:2cm y:20cm w:2.8cm h:1.4cm index:20</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+<INTERREF name="Influence on"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17882" class="Technology service" name="billing">
+<ATTRIBUTE name="Position" type="STRING">NODE x:2cm y:27.5cm w:2.8cm h:1.4cm index:21</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+<INTERREF name="Influence on">
+<IREF type="objectreference" tmodeltype="Business Layer" tmodelname="Aircrafts Business" tmodelver="" tclassname="Business service" tobjname="rare parts ordering"></IREF>
+<IREF type="objectreference" tmodeltype="Business Layer" tmodelname="Aircrafts Business" tmodelver="" tclassname="Business service" tobjname="storage"></IREF>
+</INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17885" class="Technology service" name="diagnosis">
+<ATTRIBUTE name="Position" type="STRING">NODE x:4cm y:13cm w:2.8cm h:1.4cm index:22</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+<INTERREF name="Influence on">
+<IREF type="objectreference" tmodeltype="Business Layer" tmodelname="Aircrafts Business" tmodelver="" tclassname="Business service" tobjname="maintaning and repair service"></IREF>
+<IREF type="objectreference" tmodeltype="Business Layer" tmodelname="Aircrafts Business" tmodelver="" tclassname="Business process" tobjname="help customer"></IREF>
+<IREF type="objectreference" tmodeltype="Business Layer" tmodelname="Aircrafts Business" tmodelver="" tclassname="Business service" tobjname="self-repair"></IREF>
+<IREF type="objectreference" tmodeltype="Business Layer" tmodelname="Aircrafts Business" tmodelver="" tclassname="Business function" tobjname="provide reapair services"></IREF>
+<IREF type="objectreference" tmodeltype="Business Layer" tmodelname="Aircrafts Business" tmodelver="" tclassname="Business interaction" tobjname="repairing"></IREF>
+<IREF type="objectreference" tmodeltype="Business Layer" tmodelname="Aircrafts Business" tmodelver="" tclassname="Business process" tobjname="repair on own"></IREF>
+</INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17888" class="Technology service" name="accounting">
+<ATTRIBUTE name="Position" type="STRING">NODE x:5.5cm y:22.5cm w:2.8cm h:1.4cm index:23</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+<INTERREF name="Influence on"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17891" class="Technology service" name="marketing">
+<ATTRIBUTE name="Position" type="STRING">NODE x:2cm y:4.5cm w:2.8cm h:1.4cm index:24</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+<INTERREF name="Influence on">
+<IREF type="objectreference" tmodeltype="Business Layer" tmodelname="Aircrafts Business" tmodelver="" tclassname="Business service" tobjname="sightseeing flights"></IREF>
+<IREF type="objectreference" tmodeltype="Business Layer" tmodelname="Aircrafts Business" tmodelver="" tclassname="Business event" tobjname="customer wants to book a service"></IREF>
+<IREF type="objectreference" tmodeltype="Business Layer" tmodelname="Aircrafts Business" tmodelver="" tclassname="Business interface" tobjname="website"></IREF>
+</INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17894" class="Technology service" name="printing">
+<ATTRIBUTE name="Position" type="STRING">NODE x:6.5cm y:20cm w:2.8cm h:1.4cm index:25</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+<INTERREF name="Influence on">
+<IREF type="objectreference" tmodeltype="Business Layer" tmodelname="Aircrafts Business" tmodelver="" tclassname="Business process" tobjname="traffic rules"></IREF>
+<IREF type="objectreference" tmodeltype="Business Layer" tmodelname="Aircrafts Business" tmodelver="" tclassname="Business service" tobjname="self-repair"></IREF>
+<IREF type="objectreference" tmodeltype="Business Layer" tmodelname="Aircrafts Business" tmodelver="" tclassname="Business process" tobjname="help customer"></IREF>
+</INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17897" class="Communication network" name="printer">
+<ATTRIBUTE name="Position" type="STRING">NODE x:11cm y:18cm w:2.8cm h:1.4cm index:29</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">As all printer have to be network compatible, there is an own network for the printers established.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17900" class="Technology interaction" name="customer runs diagnosis">
+<ATTRIBUTE name="Position" type="STRING">NODE x:9cm y:13.5cm w:2.8cm h:1.4cm index:34</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">After choosing a tool, an interaction between the customer/mechanic, the tool and the diagnosis takes place.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+<INTERREF name="Influence on">
+<IREF type="objectreference" tmodeltype="Business Layer" tmodelname="Aircrafts Business" tmodelver="" tclassname="Business event" tobjname="customer wants to book a service"></IREF>
+<IREF type="objectreference" tmodeltype="Business Layer" tmodelname="Aircrafts Business" tmodelver="" tclassname="Business process" tobjname="help customer"></IREF>
+<IREF type="objectreference" tmodeltype="Business Layer" tmodelname="Aircrafts Business" tmodelver="" tclassname="Business service" tobjname="self-repair"></IREF>
+</INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17903" class="Technology event" name="technology occupied">
+<ATTRIBUTE name="Position" type="STRING">NODE x:10.5cm y:15.5cm w:2.8cm h:1.4cm index:35</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">A customer can book all tools and machines in the companies repair center. If he/she decides to use a tool, it is blocked for other customers. This may be implemented with RDF tags or QR codes, which define user and time.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+<INTERREF name="Influence on">
+<IREF type="objectreference" tmodeltype="Business Layer" tmodelname="Aircrafts Business" tmodelver="" tclassname="Business event" tobjname="aircraft broken - improvement necessary"></IREF>
+</INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17906" class="Technology process" name="host updated website">
+<ATTRIBUTE name="Position" type="STRING">NODE x:11cm y:4cm w:2.8cm h:1.4cm index:36</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+<INTERREF name="Influence on">
+<IREF type="objectreference" tmodeltype="Business Layer" tmodelname="Aircrafts Business" tmodelver="" tclassname="Business event" tobjname="customer wants to book a service"></IREF>
+<IREF type="objectreference" tmodeltype="Business Layer" tmodelname="Aircrafts Business" tmodelver="" tclassname="Business interface" tobjname="website"></IREF>
+</INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17909" class="Technology function" name="update website">
+<ATTRIBUTE name="Position" type="STRING">NODE x:7cm y:4cm w:2.8cm h:1.4cm index:37</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+<INTERREF name="Influence on">
+<IREF type="objectreference" tmodeltype="Business Layer" tmodelname="Aircrafts Business" tmodelver="" tclassname="Business interface" tobjname="website"></IREF>
+</INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17912" class="Path" name="transformation to analog data">
+<ATTRIBUTE name="Position" type="STRING">NODE x:12.5cm y:21cm w:2.8cm h:1.4cm index:38</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">The data transforms from digital to analog data during the printing.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17915" class="Artifact" name="diagnosis sheet">
+<ATTRIBUTE name="Position" type="STRING">NODE x:17.5cm y:15.5cm w:2.8cm h:1.4cm index:39</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17918" class="System software" name="windows">
+<ATTRIBUTE name="Position" type="STRING">NODE x:23.5cm y:22.5cm w:2.8cm h:1.4cm index:40</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17921" class="Node" name="virtual data host">
+<ATTRIBUTE name="Position" type="STRING">NODE x:10.5cm y:6cm w:2.8cm h:1.4cm index:41</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17924" class="Technology service" name="scheduler">
+<ATTRIBUTE name="Position" type="STRING">NODE x:25cm y:17.5cm w:2.8cm h:1.4cm index:43</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">Yes</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+<INTERREF name="Influence on"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17927" class="Grouping" name="basic services for workstations and thin clients">
+<ATTRIBUTE name="Position" type="STRING">NODE x:23.5cm y:19cm w:5cm h:11cm index:1</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17930" class="Location" name="service center">
+<ATTRIBUTE name="Position" type="STRING">NODE x:17.5cm y:13.5cm w:2.8cm h:1.4cm index:44</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17933" class="Grouping" name="webbased marketing technology">
+<ATTRIBUTE name="Position" type="STRING">NODE x:9.5cm y:4.78cm w:12cm h:5.5cm index:2</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17936" class="Technology service" name="web-server operations">
+<ATTRIBUTE name="Position" type="STRING">NODE x:15.5cm y:4cm w:3cm h:1.5cm index:61</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+<INTERREF name="Influence on">
+<IREF type="objectreference" tmodeltype="Business Layer" tmodelname="Aircrafts Business" tmodelver="" tclassname="Business interface" tobjname="website"></IREF>
+</INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17939" class="Node" name="webserver">
+<ATTRIBUTE name="Position" type="STRING">NODE x:14.5cm y:6cm w:2.8cm h:1.4cm index:62</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17942" class="Device" name="marketing workstation">
+<ATTRIBUTE name="Position" type="STRING">NODE x:7cm y:6cm w:3cm h:1.7cm index:69</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<CONNECTOR id="con.17945" class="Realization">
+<FROM instance="workstation" class="Device"></FROM>
+<TO instance="accounting" class="Technology service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:56</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17946" class="Serving">
+<FROM instance="Printer" class="Device"></FROM>
+<TO instance="workstation" class="Device"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:6</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17947" class="Assignment">
+<FROM instance="billing workstation" class="Device"></FROM>
+<TO instance="client-server operations" class="Technology service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:58</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17948" class="Assignment">
+<FROM instance="thinclient b" class="Device"></FROM>
+<TO instance="client-server operations" class="Technology service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:17cm y1:27.5cm index:59</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17949" class="Assignment">
+<FROM instance="thinclient a" class="Device"></FROM>
+<TO instance="client-server operations" class="Technology service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:15cm y1:27.5cm index:60</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17950" class="Realization">
+<FROM instance="billing infrastructure" class="Grouping"></FROM>
+<TO instance="billing" class="Technology service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:54</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17951" class="Realization">
+<FROM instance="diagnosis architecture" class="Grouping"></FROM>
+<TO instance="diagnosis" class="Technology service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:55</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17952" class="Association">
+<FROM instance="diagnosis 1" class="Device"></FROM>
+<TO instance="customer runs diagnosis" class="Technology interaction"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:8.5cm y1:11cm index:51</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17953" class="Serving">
+<FROM instance="diagnosis printer" class="Device"></FROM>
+<TO instance="diagnosis 1" class="Device"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:45</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17954" class="Serving">
+<FROM instance="diagnosis printer" class="Device"></FROM>
+<TO instance="diagnosis 2" class="Device"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:46</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17955" class="Serving">
+<FROM instance="diagnosis printer" class="Device"></FROM>
+<TO instance="diagnosis 3" class="Device"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:47</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17956" class="Association">
+<FROM instance="diagnosis printer" class="Device"></FROM>
+<TO instance="diagnosis sheet" class="Artifact"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:14.5cm y1:15.5cm index:53</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17957" class="Association">
+<FROM instance="data exchange" class="Technology interface"></FROM>
+<TO instance="diagnosis" class="Technology service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:2cm y1:13cm index:26</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17958" class="Association">
+<FROM instance="data exchange" class="Technology interface"></FROM>
+<TO instance="accounting" class="Technology service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:2cm y1:22.5cm index:27</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17959" class="Association">
+<FROM instance="data exchange" class="Technology interface"></FROM>
+<TO instance="marketing" class="Technology service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:57</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17960" class="Association">
+<FROM instance="billing" class="Technology service"></FROM>
+<TO instance="data exchange" class="Technology interface"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:28</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17961" class="Association">
+<FROM instance="printing" class="Technology service"></FROM>
+<TO instance="data exchange" class="Technology interface"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:71</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17962" class="Realization">
+<FROM instance="printer" class="Communication network"></FROM>
+<TO instance="printing" class="Technology service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:6.5cm y1:18cm index:30</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17963" class="Aggregation">
+<FROM instance="printer" class="Communication network"></FROM>
+<TO instance="Printer" class="Device"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:13.5cm y1:18cm index:31</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17964" class="Aggregation">
+<FROM instance="printer" class="Communication network"></FROM>
+<TO instance="bill printer" class="Device"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:10.5cm y1:21cm index:32</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17965" class="Aggregation">
+<FROM instance="printer" class="Communication network"></FROM>
+<TO instance="diagnosis printer" class="Device"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:14cm y1:17.5cm index:33</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17966" class="Realization">
+<FROM instance="printer" class="Communication network"></FROM>
+<TO instance="transformation to analog data" class="Path"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:12cm y1:19.5cm index:52</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17967" class="Triggering">
+<FROM instance="technology occupied" class="Technology event"></FROM>
+<TO instance="customer runs diagnosis" class="Technology interaction"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:8.5cm y1:15.5cm index:66</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17968" class="Serving">
+<FROM instance="update website" class="Technology function"></FROM>
+<TO instance="host updated website" class="Technology process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:64</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17969" class="Realization">
+<FROM instance="windows" class="System software"></FROM>
+<TO instance="office" class="Technology service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:22.5cm y1:20.5cm index:42</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17970" class="Specialization">
+<FROM instance="virtual data host" class="Node"></FROM>
+<TO instance="webserver" class="Node"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:63</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17971" class="Serving">
+<FROM instance="basic services for workstations and thin clients" class="Grouping"></FROM>
+<TO instance="diagnosis architecture" class="Grouping"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:21.5cm y1:14.5cm index:48</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17972" class="Serving">
+<FROM instance="basic services for workstations and thin clients" class="Grouping"></FROM>
+<TO instance="billing infrastructure" class="Grouping"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:24cm y1:28cm index:49</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17973" class="Serving">
+<FROM instance="basic services for workstations and thin clients" class="Grouping"></FROM>
+<TO instance="workstation" class="Device"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:20.5cm y1:22.5cm index:50</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17974" class="Serving">
+<FROM instance="basic services for workstations and thin clients" class="Grouping"></FROM>
+<TO instance="webbased marketing technology" class="Grouping"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:23.5cm y1:4.5cm index:70</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17975" class="Realization">
+<FROM instance="webbased marketing technology" class="Grouping"></FROM>
+<TO instance="marketing" class="Technology service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:4.5cm y1:4.5cm index:68</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17976" class="Flow">
+<FROM instance="web-server operations" class="Technology service"></FROM>
+<TO instance="host updated website" class="Technology process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:67</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17977" class="Realization">
+<FROM instance="webserver" class="Node"></FROM>
+<TO instance="web-server operations" class="Technology service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:16.5cm y1:6cm index:65</ATTRIBUTE>
+</CONNECTOR>
+</MODEL>
+<MODEL id="mod.17650" name="Aircrafts Application" version="" modeltype="Application Layer" libtype="bp" applib="TEAM v0.5">
+<MODELATTRIBUTES>
+<ATTRIBUTE name="Version number" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Author" type="STRING">training1</ATTRIBUTE>
+<ATTRIBUTE name="Creation date" type="STRING">07.03.2018, 15:07</ATTRIBUTE>
+<ATTRIBUTE name="Date last changed" type="STRING">13.03.2018, 10:57:48</ATTRIBUTE>
+<ATTRIBUTE name="Last user" type="STRING">training1</ATTRIBUTE>
+<ATTRIBUTE name="Keywords" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Model type" type="ENUMERATION">Current model</ATTRIBUTE>
+<ATTRIBUTE name="State" type="ENUMERATION">In process</ATTRIBUTE>
+<ATTRIBUTE name="Reviewed on" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Reviewed by" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Number of objects and relations" type="INTEGER">90</ATTRIBUTE>
+<ATTRIBUTE name="World area" type="STRING">w:25.1cm h:26.33cm minw:5cm minh:5cm</ATTRIBUTE>
+<ATTRIBUTE name="Grid" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Zoom" type="INTEGER">100</ATTRIBUTE>
+<ATTRIBUTE name="Viewable area" type="STRING">VIEW representation:graphic
+GRAPHIC x:-16 y:120 w:735 h:475 scale:1
+TABLE
+</ATTRIBUTE>
+<ATTRIBUTE name="Current mode" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Base name" type="STRING">Aircrafts Application</ATTRIBUTE>
+<ATTRIBUTE name="Access state" type="ENUMERATION">write</ATTRIBUTE>
+<ATTRIBUTE name="Current page layout" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Connector marks" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Type" type="STRING">Application Layer</ATTRIBUTE>
+<ATTRIBUTE name="Change counter" type="INTEGER">2366</ATTRIBUTE>
+<ATTRIBUTE name="Font size" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Context of version" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Position" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="__GfxThumb__" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Method GraphRep" type="STRING">GRAPHREP
+
+FONT &quot;Arial&quot; h:20pt color:black
+TEXT (&quot;ArchiMate&quot;) y:-3cm w:c h:c
+FONT &quot;Arial&quot; h:11pt color:black
+TEXT (&quot;Enterprise Architecture Modeling&quot;) y:-2.4cm w:c h:c
+
+PEN color:white style:null
+RECTANGLE x:-3.2cm y:-2cm w:6.85cm h:8.25cm
+PEN color:black
+
+FILL color:(rgbval(225, 225, 225))
+RECTANGLE x:-3cm y:-2cm w:5cm h:8cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Analysis Model&quot;) x:-2.7cm y:-1.8cm
+
+FILL color:(rgbval(205,203,255))
+RECTANGLE x:2.2cm y:-2cm w:1.2cm h:8cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;M&quot;) x:2.7cm y:-0.5cm
+TEXT (&quot;o&quot;) x:2.75cm y:0cm
+TEXT (&quot;t&quot;) x:2.8cm y:0.5cm
+TEXT (&quot;i&quot;) x:2.8cm y:1cm
+TEXT (&quot;v&quot;) x:2.8cm y:1.5cm
+TEXT (&quot;a&quot;) x:2.75cm y:2cm
+TEXT (&quot;t&quot;) x:2.8cm y:2.5cm
+TEXT (&quot;i&quot;) x:2.8cm y:3cm
+TEXT (&quot;o&quot;) x:2.75cm y:3.5cm
+TEXT (&quot;n&quot;) x:2.75cm y:4cm
+
+FILL color:(rgbval(247,224,171))
+RECTANGLE x:-2.7cm y:-1.3cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Strategy&quot;) x:-2.5cm y:-0.8cm
+
+FILL color:(rgbval(255, 253, 188))
+RECTANGLE x:-2.7cm y:-0.1cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Business&quot;) x:-2.5cm y:0.4cm
+
+FILL color:(rgbval(186, 250, 253))
+RECTANGLE x:-2.7cm y:1.1cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Application&quot;) x:-2.5cm y:1.6cm
+
+FILL color:(rgbval(221,255,223))
+RECTANGLE x:-2.7cm y:2.3cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Technology&quot;) x:-2.5cm y:2.8cm
+
+FILL color:(rgbval(172,255,174))
+RECTANGLE x:-2.7cm y:3.5cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Physical&quot;) x:-2.5cm y:4.0cm
+
+FILL color:(rgbval(255,222,224))
+RECTANGLE x:-2.7cm y:4.7cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Implementation/Migration&quot;) x:-2.5cm y:5.2cm</ATTRIBUTE>
+</MODELATTRIBUTES>
+<INSTANCE id="obj.17651" class="Application component" name="aircrafts webpage">
+<ATTRIBUTE name="Position" type="STRING">NODE x:14cm y:7cm w:2.8cm h:1.4cm index:2</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING">The webpage is usually controlled once a month, therefore the valid until date is set to the beginning of a month, so that it is updated regularly.</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">The webpage offers various kinds of information: history, booking, ...
+Furthermore, all important contact data is provided. Customers can find the mail address, the phone number and the location details.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">2018:03:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17654" class="Application interface" name="webservice interface">
+<ATTRIBUTE name="Position" type="STRING">NODE x:14cm y:9.5cm w:2.8cm h:1.4cm index:3</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">1900:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17657" class="Application component" name="customer database">
+<ATTRIBUTE name="Position" type="STRING">NODE x:9.5cm y:12.5cm w:2.8cm h:1.4cm index:4</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING">The database should be valid for a long time, so a consistent data stock can be built up.</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">2050:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17660" class="Application component" name="billing">
+<ATTRIBUTE name="Position" type="STRING">NODE x:19cm y:12.5cm w:2.8cm h:1.4cm index:5</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING">The billing is valid for a year, as new laws are often published at the beginning of a year.
+
+If there are regulations during the year, like the cash register guideline, they have to be implemented immediately.</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">2019:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17663" class="Application collaboration" name="provision of services">
+<ATTRIBUTE name="Position" type="STRING">NODE x:14cm y:12.5cm w:2.8cm h:1.4cm index:6</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">2018:04:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17666" class="Application event" name="digitalize customer sheets">
+<ATTRIBUTE name="Position" type="STRING">NODE x:9.5cm y:16cm w:2.8cm h:1.4cm index:10</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING">This event takes about 9 minutes and 30 seconds for each customer sheet.</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Time" type="TIME">00:000:00:09:30</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17669" class="Application process" name="support advertising">
+<ATTRIBUTE name="Position" type="STRING">NODE x:5cm y:16cm w:2.8cm h:1.4cm index:11</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">2021:05:03</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17672" class="Data object" name="relevant customer data">
+<ATTRIBUTE name="Position" type="STRING">NODE x:9.5cm y:20cm w:2.8cm h:1.4cm index:12</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17675" class="Application service" name="type in new customers">
+<ATTRIBUTE name="Position" type="STRING">NODE x:2cm y:14cm w:2.8cm h:1.4cm index:13</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">2019:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17678" class="Application collaboration" name="database update">
+<ATTRIBUTE name="Position" type="STRING">NODE x:5cm y:9cm w:2.8cm h:1.4cm index:14</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">2019:05:02</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17681" class="Application function" name="create new customer">
+<ATTRIBUTE name="Position" type="STRING">NODE x:2cm y:11cm w:2.8cm h:1.4cm index:15</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">2020:06:03</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17684" class="Data object" name="individual">
+<ATTRIBUTE name="Position" type="STRING">NODE x:9.5cm y:23cm w:2.8cm h:1.4cm index:19</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17687" class="Data object" name="company">
+<ATTRIBUTE name="Position" type="STRING">NODE x:5cm y:20cm w:2.8cm h:1.4cm index:20</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17690" class="Data object" name="group options">
+<ATTRIBUTE name="Position" type="STRING">NODE x:5cm y:23cm w:2.8cm h:1.4cm index:21</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17693" class="Application event" name="request package">
+<ATTRIBUTE name="Position" type="STRING">NODE x:14cm y:4.5cm w:2.8cm h:1.4cm index:26</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING">This event usually takes approximately 15 minutes.</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">If the customer decides to book a package, either on phone, directly in the office, by web form or via mail, the new request has to be entered into the application. The application user has to enter the data.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Time" type="TIME">00:000:00:15:00</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17696" class="Application process" name="obtain confirmation">
+<ATTRIBUTE name="Position" type="STRING">NODE x:9.5cm y:3cm w:2.8cm h:1.4cm index:27</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">2020:01:07</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17699" class="Application service" name="send mail to customer">
+<ATTRIBUTE name="Position" type="STRING">NODE x:5.5cm y:3cm w:2.8cm h:1.4cm index:28</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">2019:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17702" class="Application service" name="set up customer database">
+<ATTRIBUTE name="Position" type="STRING">NODE x:9.5cm y:6cm w:2.8cm h:1.4cm index:29</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">2021:05:07</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17705" class="Application function" name="prepare service for customer">
+<ATTRIBUTE name="Position" type="STRING">NODE x:1.5cm y:3cm w:2.8cm h:1.4cm index:30</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">2018:03:02</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17708" class="Application function" name="generate customer entry">
+<ATTRIBUTE name="Position" type="STRING">NODE x:5.5cm y:6cm w:2.8cm h:1.4cm index:31</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">2021:05:07</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17711" class="Application collaboration" name="supply package">
+<ATTRIBUTE name="Position" type="STRING">NODE x:1.5cm y:6cm w:2.8cm h:1.4cm index:32</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING">As a good business developes new services regularly, the collaboration is valid for only one year.</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">2019:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17714" class="Data object" name="customer data">
+<ATTRIBUTE name="Position" type="STRING">NODE x:18.5cm y:4.5cm w:2.8cm h:1.4cm index:38</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17717" class="Data object" name="personal">
+<ATTRIBUTE name="Position" type="STRING">NODE x:18.5cm y:1.5cm w:2.8cm h:1.4cm index:39</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">The data object dealing with personal data contains:
+1) name of customer
+2) address of customer
+3) contact details</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17720" class="Data object" name="orders">
+<ATTRIBUTE name="Position" type="STRING">NODE x:18.5cm y:7.5cm w:2.8cm h:1.4cm index:41</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">This data object includes:
+1) chosen packages
+2) chosen invoicing (online, offline)
+3) chosen options</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17723" class="Data object" name="notes">
+<ATTRIBUTE name="Position" type="STRING">NODE x:23cm y:4.5cm w:2.8cm h:1.4cm index:40</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">The customer can have special wishes or questions, which are contained in this data object.</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17726" class="Application component" name="review mechanisms">
+<ATTRIBUTE name="Position" type="STRING">NODE x:18.5cm y:9.5cm w:2.8cm h:1.4cm index:45</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING">The review mechanism is not valid for a long time, as it should be improved further.</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">The customers are possible to review their experiences on the webpage or with a printed form in the office. Until now, the reviews are only collected. Future improvements could be that Peter can analyse them with services and functions provided by the application.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">2018:06:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17729" class="Application interaction" name="combine old and new customers">
+<ATTRIBUTE name="Position" type="STRING">NODE x:9.5cm y:9cm w:2.8cm h:1.4cm index:47</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">1400:05:28</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17732" class="Application event" name="company creates bill">
+<ATTRIBUTE name="Position" type="STRING">NODE x:23cm y:12.5cm w:2.8cm h:1.4cm index:51</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Time" type="TIME">00:000:00:20:00</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17735" class="Application event" name="company gets bill">
+<ATTRIBUTE name="Position" type="STRING">NODE x:16.5cm y:15cm w:2.8cm h:1.4cm index:53</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">The company gets bills only from suppliers. They are used in the long-run, as the company is satisfied with them.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17738" class="Application process" name="create direct debit for IBAN">
+<ATTRIBUTE name="Position" type="STRING">NODE x:16.5cm y:17cm w:2.8cm h:1.4cm index:55</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING">All direct debit suppliers have to be controlled once a year (regarding business failure, ...).</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">This step process step can be neglegted, if the company got any bills from the supplier before.
+
+This step is only relevant for new suppliers.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">2019:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17741" class="Application process" name="remove from bank account">
+<ATTRIBUTE name="Position" type="STRING">NODE x:13.5cm y:19.5cm w:2.8cm h:1.4cm index:56</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING">This process will not change a lot, therefore it is valid for a long time.</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">This application process step is automatically conducted. Therefore, no user has to interact, as the bank works as a broker between supplier and company.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">2050:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17744" class="Application process" name="connect to mail program">
+<ATTRIBUTE name="Position" type="STRING">NODE x:20cm y:20cm w:2.8cm h:1.4cm index:57</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">2020:01:24</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17747" class="Application process" name="online (signate)">
+<ATTRIBUTE name="Position" type="STRING">NODE x:20cm y:17.5cm w:2.8cm h:1.4cm index:58</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING">There are new signation methods, as security is getting more important.</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">2017:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17750" class="Application process" name="offline (print)">
+<ATTRIBUTE name="Position" type="STRING">NODE x:23.5cm y:17.5cm w:2.8cm h:1.4cm index:59</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING">Valid only one year, because it is likely that printed bills are outdated some day.</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">If the customer wants to pay directly in the office, following interaction with the post office is left out. The bill is directly handed over to the customer and he/she can pay cash.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">2019:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17753" class="Application process" name="control if invoice sent">
+<ATTRIBUTE name="Position" type="STRING">NODE x:20cm y:22.5cm w:2.8cm h:1.4cm index:60</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">2020:01:02</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17756" class="Application service" name="provide invoicing">
+<ATTRIBUTE name="Position" type="STRING">NODE x:23cm y:15cm w:2.8cm h:1.4cm index:61</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">2030:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17759" class="Application service" name="list all bills from month">
+<ATTRIBUTE name="Position" type="STRING">NODE x:13.5cm y:24.5cm w:2.8cm h:1.4cm index:62</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">2018:05:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17762" class="Application function" name="provide sort of control">
+<ATTRIBUTE name="Position" type="STRING">NODE x:13.5cm y:22cm w:2.8cm h:1.4cm index:63</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">2018:04:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17765" class="Application function" name="success message">
+<ATTRIBUTE name="Position" type="STRING">NODE x:20cm y:25cm w:2.8cm h:1.4cm index:64</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">0001:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17768" class="Or Junction" name="Or Junction-58789">
+<ATTRIBUTE name="Position" type="STRING">NODE x:13.5cm y:17cm index:65</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17771" class="Or Junction" name="Or Junction-58802">
+<ATTRIBUTE name="Position" type="STRING">NODE x:20cm y:15cm index:74</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17774" class="Application interaction" name="mail to post office">
+<ATTRIBUTE name="Position" type="STRING">NODE x:23.5cm y:20cm w:2.8cm h:1.4cm index:78</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">The application notifies the postman, so that he knows, there are some letters he has to pick up the next time he has to come to the company or latest the next day.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">0001:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17777" class="Data object" name="customer review">
+<ATTRIBUTE name="Position" type="STRING">NODE x:22cm y:9.5cm w:2.8cm h:1.4cm index:81</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17780" class="Grouping" name="customer database">
+<ATTRIBUTE name="Position" type="STRING">NODE x:5.82cm y:21cm w:8.5cm h:6.5cm index:1</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<CONNECTOR id="con.17783" class="Serving">
+<FROM instance="aircrafts webpage" class="Application component"></FROM>
+<TO instance="request package" class="Application event"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:37</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17784" class="Serving">
+<FROM instance="webservice interface" class="Application interface"></FROM>
+<TO instance="aircrafts webpage" class="Application component"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:9</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17785" class="Serving">
+<FROM instance="webservice interface" class="Application interface"></FROM>
+<TO instance="review mechanisms" class="Application component"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:46</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17786" class="Serving">
+<FROM instance="customer database" class="Application component"></FROM>
+<TO instance="digitalize customer sheets" class="Application event"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:25</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17787" class="Serving">
+<FROM instance="billing" class="Application component"></FROM>
+<TO instance="company creates bill" class="Application event"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:52</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17788" class="Serving">
+<FROM instance="billing" class="Application component"></FROM>
+<TO instance="company gets bill" class="Application event"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:54</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17789" class="Composition">
+<FROM instance="provision of services" class="Application collaboration"></FROM>
+<TO instance="webservice interface" class="Application interface"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:7</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17790" class="Aggregation">
+<FROM instance="provision of services" class="Application collaboration"></FROM>
+<TO instance="billing" class="Application component"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:8</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17791" class="Aggregation">
+<FROM instance="provision of services" class="Application collaboration"></FROM>
+<TO instance="customer database" class="Application component"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:87</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17792" class="Triggering">
+<FROM instance="digitalize customer sheets" class="Application event"></FROM>
+<TO instance="support advertising" class="Application process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:17</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17793" class="Association">
+<FROM instance="relevant customer data" class="Data object"></FROM>
+<TO instance="digitalize customer sheets" class="Application event"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:24</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17794" class="Serving">
+<FROM instance="type in new customers" class="Application service"></FROM>
+<TO instance="support advertising" class="Application process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:2cm y1:16cm index:16</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17795" class="Realization">
+<FROM instance="create new customer" class="Application function"></FROM>
+<TO instance="type in new customers" class="Application service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:18</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17796" class="Serving">
+<FROM instance="create new customer" class="Application function"></FROM>
+<TO instance="database update" class="Application collaboration"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:2cm y1:9cm index:88</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17797" class="Specialization">
+<FROM instance="individual" class="Data object"></FROM>
+<TO instance="relevant customer data" class="Data object"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:86</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17798" class="Composition">
+<FROM instance="company" class="Data object"></FROM>
+<TO instance="group options" class="Data object"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:22</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17799" class="Specialization">
+<FROM instance="company" class="Data object"></FROM>
+<TO instance="relevant customer data" class="Data object"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:23</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17800" class="Association">
+<FROM instance="request package" class="Application event"></FROM>
+<TO instance="customer data" class="Data object"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:44</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17801" class="Triggering">
+<FROM instance="request package" class="Application event"></FROM>
+<TO instance="obtain confirmation" class="Application process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:14cm y1:3cm index:85</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17802" class="Serving">
+<FROM instance="send mail to customer" class="Application service"></FROM>
+<TO instance="obtain confirmation" class="Application process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:35</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17803" class="Serving">
+<FROM instance="set up customer database" class="Application service"></FROM>
+<TO instance="obtain confirmation" class="Application process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:36</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17804" class="Serving">
+<FROM instance="set up customer database" class="Application service"></FROM>
+<TO instance="combine old and new customers" class="Application interaction"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:48</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17805" class="Realization">
+<FROM instance="prepare service for customer" class="Application function"></FROM>
+<TO instance="send mail to customer" class="Application service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:33</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17806" class="Serving">
+<FROM instance="prepare service for customer" class="Application function"></FROM>
+<TO instance="supply package" class="Application collaboration"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:90</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17807" class="Realization">
+<FROM instance="generate customer entry" class="Application function"></FROM>
+<TO instance="set up customer database" class="Application service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:34</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17808" class="Serving">
+<FROM instance="generate customer entry" class="Application function"></FROM>
+<TO instance="supply package" class="Application collaboration"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:89</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17809" class="Composition">
+<FROM instance="customer data" class="Data object"></FROM>
+<TO instance="orders" class="Data object"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:43</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17810" class="Composition">
+<FROM instance="customer data" class="Data object"></FROM>
+<TO instance="notes" class="Data object"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:42</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17811" class="Composition">
+<FROM instance="customer data" class="Data object"></FROM>
+<TO instance="personal" class="Data object"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:84</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17812" class="Access">
+<FROM instance="review mechanisms" class="Application component"></FROM>
+<TO instance="customer review" class="Data object"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:82</ATTRIBUTE>
+<ATTRIBUTE name="Character" type="ENUMERATION">no Arrow</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17813" class="Serving">
+<FROM instance="combine old and new customers" class="Application interaction"></FROM>
+<TO instance="customer database" class="Application component"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:49</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17814" class="Serving">
+<FROM instance="combine old and new customers" class="Application interaction"></FROM>
+<TO instance="database update" class="Application collaboration"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:50</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17815" class="Triggering">
+<FROM instance="company creates bill" class="Application event"></FROM>
+<TO instance="provide invoicing" class="Application service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:73</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17816" class="Association">
+<FROM instance="company gets bill" class="Application event"></FROM>
+<TO instance="Or Junction-58789" class="Or Junction"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:13.5cm y1:15cm index:72</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17817" class="Triggering">
+<FROM instance="create direct debit for IBAN" class="Application process"></FROM>
+<TO instance="remove from bank account" class="Application process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:16.5cm y1:19.5cm index:68</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17818" class="Flow">
+<FROM instance="connect to mail program" class="Application process"></FROM>
+<TO instance="control if invoice sent" class="Application process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:80</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17819" class="Triggering">
+<FROM instance="online (signate)" class="Application process"></FROM>
+<TO instance="connect to mail program" class="Application process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:77</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17820" class="Triggering">
+<FROM instance="offline (print)" class="Application process"></FROM>
+<TO instance="mail to post office" class="Application interaction"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:79</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17821" class="Association">
+<FROM instance="provide invoicing" class="Application service"></FROM>
+<TO instance="Or Junction-58802" class="Or Junction"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:83</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17822" class="Serving">
+<FROM instance="provide sort of control" class="Application function"></FROM>
+<TO instance="remove from bank account" class="Application process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:69</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17823" class="Realization">
+<FROM instance="provide sort of control" class="Application function"></FROM>
+<TO instance="list all bills from month" class="Application service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:70</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17824" class="Serving">
+<FROM instance="success message" class="Application function"></FROM>
+<TO instance="control if invoice sent" class="Application process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:71</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17825" class="Triggering">
+<FROM instance="Or Junction-58789" class="Or Junction"></FROM>
+<TO instance="create direct debit for IBAN" class="Application process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:66</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17826" class="Triggering">
+<FROM instance="Or Junction-58789" class="Or Junction"></FROM>
+<TO instance="remove from bank account" class="Application process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:67</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17827" class="Triggering">
+<FROM instance="Or Junction-58802" class="Or Junction"></FROM>
+<TO instance="offline (print)" class="Application process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:75</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17828" class="Triggering">
+<FROM instance="Or Junction-58802" class="Or Junction"></FROM>
+<TO instance="online (signate)" class="Application process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:76</ATTRIBUTE>
+</CONNECTOR>
+</MODEL>
+<MODEL id="mod.17401" name="Aircrafts Business" version="" modeltype="Business Layer" libtype="bp" applib="TEAM v0.5">
+<MODELATTRIBUTES>
+<ATTRIBUTE name="Version number" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Author" type="STRING">training1</ATTRIBUTE>
+<ATTRIBUTE name="Creation date" type="STRING">07.03.2018, 15:05</ATTRIBUTE>
+<ATTRIBUTE name="Date last changed" type="STRING">13.03.2018, 11:03:31</ATTRIBUTE>
+<ATTRIBUTE name="Last user" type="STRING">training1</ATTRIBUTE>
+<ATTRIBUTE name="Keywords" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Model type" type="ENUMERATION">Current model</ATTRIBUTE>
+<ATTRIBUTE name="State" type="ENUMERATION">In process</ATTRIBUTE>
+<ATTRIBUTE name="Reviewed on" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Reviewed by" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Number of objects and relations" type="INTEGER">127</ATTRIBUTE>
+<ATTRIBUTE name="World area" type="STRING">w:36.2cm h:39.63cm minw:5cm minh:5cm</ATTRIBUTE>
+<ATTRIBUTE name="Grid" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Zoom" type="INTEGER">100</ATTRIBUTE>
+<ATTRIBUTE name="Viewable area" type="STRING">VIEW representation:graphic
+GRAPHIC x:-16 y:153 w:985 h:748 scale:1
+TABLE
+</ATTRIBUTE>
+<ATTRIBUTE name="Current mode" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Base name" type="STRING">Aircrafts Business</ATTRIBUTE>
+<ATTRIBUTE name="Access state" type="ENUMERATION">write</ATTRIBUTE>
+<ATTRIBUTE name="Current page layout" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Connector marks" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Type" type="STRING">Business Layer</ATTRIBUTE>
+<ATTRIBUTE name="Change counter" type="INTEGER">9942</ATTRIBUTE>
+<ATTRIBUTE name="Font size" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Context of version" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Position" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="__GfxThumb__" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Method GraphRep" type="STRING">GRAPHREP
+
+FONT &quot;Arial&quot; h:20pt color:black
+TEXT (&quot;ArchiMate&quot;) y:-3cm w:c h:c
+FONT &quot;Arial&quot; h:11pt color:black
+TEXT (&quot;Enterprise Architecture Modeling&quot;) y:-2.4cm w:c h:c
+
+PEN color:white style:null
+RECTANGLE x:-3.2cm y:-2cm w:6.85cm h:8.25cm
+PEN color:black
+
+FILL color:(rgbval(225, 225, 225))
+RECTANGLE x:-3cm y:-2cm w:5cm h:8cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Analysis Model&quot;) x:-2.7cm y:-1.8cm
+
+FILL color:(rgbval(205,203,255))
+RECTANGLE x:2.2cm y:-2cm w:1.2cm h:8cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;M&quot;) x:2.7cm y:-0.5cm
+TEXT (&quot;o&quot;) x:2.75cm y:0cm
+TEXT (&quot;t&quot;) x:2.8cm y:0.5cm
+TEXT (&quot;i&quot;) x:2.8cm y:1cm
+TEXT (&quot;v&quot;) x:2.8cm y:1.5cm
+TEXT (&quot;a&quot;) x:2.75cm y:2cm
+TEXT (&quot;t&quot;) x:2.8cm y:2.5cm
+TEXT (&quot;i&quot;) x:2.8cm y:3cm
+TEXT (&quot;o&quot;) x:2.75cm y:3.5cm
+TEXT (&quot;n&quot;) x:2.75cm y:4cm
+
+FILL color:(rgbval(247,224,171))
+RECTANGLE x:-2.7cm y:-1.3cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Strategy&quot;) x:-2.5cm y:-0.8cm
+
+FILL color:(rgbval(255, 253, 188))
+RECTANGLE x:-2.7cm y:-0.1cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Business&quot;) x:-2.5cm y:0.4cm
+
+FILL color:(rgbval(186, 250, 253))
+RECTANGLE x:-2.7cm y:1.1cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Application&quot;) x:-2.5cm y:1.6cm
+
+FILL color:(rgbval(221,255,223))
+RECTANGLE x:-2.7cm y:2.3cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Technology&quot;) x:-2.5cm y:2.8cm
+
+FILL color:(rgbval(172,255,174))
+RECTANGLE x:-2.7cm y:3.5cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Physical&quot;) x:-2.5cm y:4.0cm
+
+FILL color:(rgbval(255,222,224))
+RECTANGLE x:-2.7cm y:4.7cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Implementation/Migration&quot;) x:-2.5cm y:5.2cm</ATTRIBUTE>
+</MODELATTRIBUTES>
+<INSTANCE id="obj.17402" class="Business actor" name="Christina">
+<ATTRIBUTE name="Position" type="STRING">NODE x:10.5cm y:5.5cm w:2.8cm h:1.4cm index:4</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsible for"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17405" class="Business actor" name="Marie">
+<ATTRIBUTE name="Position" type="STRING">NODE x:16.5cm y:8cm w:2.8cm h:1.4cm index:5</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsible for">
+<IREF type="objectreference" tmodeltype="Technology Layer" tmodelname="Aircrafts Technology" tmodelver="" tclassname="Communication network" tobjname="printer"></IREF>
+</INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17408" class="Business actor" name="Carl">
+<ATTRIBUTE name="Position" type="STRING">NODE x:21cm y:9cm w:2.8cm h:1.4cm index:6</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsible for">
+<IREF type="objectreference" tmodeltype="Technology Layer" tmodelname="Aircrafts Technology" tmodelver="" tclassname="Device" tobjname="diagnosis 2"></IREF>
+<IREF type="objectreference" tmodeltype="Technology Layer" tmodelname="Aircrafts Technology" tmodelver="" tclassname="Device" tobjname="diagnosis 3"></IREF>
+</INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17411" class="Business actor" name="Mark">
+<ATTRIBUTE name="Position" type="STRING">NODE x:13cm y:7.5cm w:2.8cm h:1.4cm index:7</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsible for"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17414" class="Business actor" name="Peter">
+<ATTRIBUTE name="Position" type="STRING">NODE x:27cm y:5.5cm w:2.8cm h:1.4cm index:8</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsible for"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17417" class="Business role" name="pilot">
+<ATTRIBUTE name="Position" type="STRING">NODE x:10.5cm y:9.5cm w:2.8cm h:1.4cm index:9</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING">10 pilots altogether</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsible for"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17420" class="Business role" name="mechanic">
+<ATTRIBUTE name="Position" type="STRING">NODE x:23.5cm y:15cm w:2.8cm h:1.4cm index:10</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING">5 mechanics taken over
+4 mechanics hired
+-----------------------------
+9 mechanics altogether</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">Can be rented on hourly basis by customers.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsible for">
+<IREF type="objectreference" tmodeltype="Technology Layer" tmodelname="Aircrafts Technology" tmodelver="" tclassname="Technology interaction" tobjname="customer runs diagnosis"></IREF>
+<IREF type="objectreference" tmodeltype="Technology Layer" tmodelname="Aircrafts Technology" tmodelver="" tclassname="Technology service" tobjname="diagnosis"></IREF>
+<IREF type="objectreference" tmodeltype="Technology Layer" tmodelname="Aircrafts Technology" tmodelver="" tclassname="Technology event" tobjname="technology occupied"></IREF>
+</INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17423" class="Business role" name="office employee">
+<ATTRIBUTE name="Position" type="STRING">NODE x:16.5cm y:11.5cm w:2.8cm h:1.4cm index:11</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING">4 office employees altogether</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsible for">
+<IREF type="objectreference" tmodeltype="Technology Layer" tmodelname="Aircrafts Technology" tmodelver="" tclassname="Technology service" tobjname="office"></IREF>
+<IREF type="objectreference" tmodeltype="Technology Layer" tmodelname="Aircrafts Technology" tmodelver="" tclassname="Technology service" tobjname="billing"></IREF>
+<IREF type="objectreference" tmodeltype="Technology Layer" tmodelname="Aircrafts Technology" tmodelver="" tclassname="Technology service" tobjname="marketing"></IREF>
+<IREF type="objectreference" tmodeltype="Technology Layer" tmodelname="Aircrafts Technology" tmodelver="" tclassname="Technology service" tobjname="accounting"></IREF>
+<IREF type="objectreference" tmodeltype="Technology Layer" tmodelname="Aircrafts Technology" tmodelver="" tclassname="Technology process" tobjname="host updated website"></IREF>
+<IREF type="objectreference" tmodeltype="Technology Layer" tmodelname="Aircrafts Technology" tmodelver="" tclassname="Technology function" tobjname="update website"></IREF>
+</INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17426" class="Business role" name="teacher">
+<ATTRIBUTE name="Position" type="STRING">NODE x:13cm y:11.5cm w:2.8cm h:1.4cm index:12</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsible for"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17429" class="Business role" name="tourist guide">
+<ATTRIBUTE name="Position" type="STRING">NODE x:19.5cm y:18.5cm w:2.8cm h:1.4cm index:13</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING">As it is possible that there are different guides for tourist groups, there is no assigned actor.</ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">The tourist guide is not needed every day. Tourists from abroad are not coming everyday. Therefore, the employment is regulated. The guide comes, when his/her special language skills are needed.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsible for"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17432" class="Business collaboration" name="teaching">
+<ATTRIBUTE name="Position" type="STRING">NODE x:11cm y:14.5cm w:2.8cm h:1.4cm index:14</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17435" class="Business role" name="manager">
+<ATTRIBUTE name="Position" type="STRING">NODE x:32cm y:5.5cm w:2.8cm h:1.4cm index:15</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsible for">
+<IREF type="objectreference" tmodeltype="Technology Layer" tmodelname="Aircrafts Technology" tmodelver="" tclassname="System software" tobjname="windows"></IREF>
+<IREF type="objectreference" tmodeltype="Technology Layer" tmodelname="Aircrafts Technology" tmodelver="" tclassname="Technology function" tobjname="update website"></IREF>
+</INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17438" class="Business actor" name="Carina">
+<ATTRIBUTE name="Position" type="STRING">NODE x:23.5cm y:11cm w:2.8cm h:1.4cm index:21</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsible for">
+<IREF type="objectreference" tmodeltype="Technology Layer" tmodelname="Aircrafts Technology" tmodelver="" tclassname="Artifact" tobjname="diagnosis sheet"></IREF>
+<IREF type="objectreference" tmodeltype="Technology Layer" tmodelname="Aircrafts Technology" tmodelver="" tclassname="Device" tobjname="diagnosis printer"></IREF>
+<IREF type="objectreference" tmodeltype="Technology Layer" tmodelname="Aircrafts Technology" tmodelver="" tclassname="Device" tobjname="diagnosis 1"></IREF>
+</INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.17441" class="Business object" name="helicopter">
+<ATTRIBUTE name="Position" type="STRING">NODE x:11.5cm y:22cm w:2.8cm h:1.4cm index:25</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17444" class="Business object" name="sailplane">
+<ATTRIBUTE name="Position" type="STRING">NODE x:15cm y:22cm w:2.8cm h:1.4cm index:26</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">To conduct a flight with a sailplane is more expensive, due to the more complicate take-off.</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17447" class="Business service" name="sightseeing flights">
+<ATTRIBUTE name="Position" type="STRING">NODE x:11.5cm y:29.5cm w:2.8cm h:1.4cm index:27</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17450" class="Business service" name="self-repair">
+<ATTRIBUTE name="Position" type="STRING">NODE x:21.5cm y:32cm w:2.8cm h:1.4cm index:28</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17453" class="Business service" name="maintaning and repair service">
+<ATTRIBUTE name="Position" type="STRING">NODE x:25.1cm y:32.05cm w:3cm h:1.5cm index:29</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17456" class="Business service" name="rare parts ordering">
+<ATTRIBUTE name="Position" type="STRING">NODE x:28.5cm y:32cm w:2.8cm h:1.4cm index:30</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17459" class="Business service" name="storage">
+<ATTRIBUTE name="Position" type="STRING">NODE x:2cm y:32.5cm w:2.8cm h:1.4cm index:31</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17462" class="Business service" name="flight lessons">
+<ATTRIBUTE name="Position" type="STRING">NODE x:4.5cm y:29.5cm w:2.8cm h:1.4cm index:32</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17465" class="Business interface" name="mail">
+<ATTRIBUTE name="Position" type="STRING">NODE x:23.5cm y:3cm w:2.8cm h:1.4cm index:33</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17468" class="Business interface" name="website">
+<ATTRIBUTE name="Position" type="STRING">NODE x:18cm y:2.5cm w:2.8cm h:1.4cm index:34</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17471" class="Business interface" name="office">
+<ATTRIBUTE name="Position" type="STRING">NODE x:12.5cm y:3cm w:2.8cm h:1.4cm index:35</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17474" class="Location" name="Peter&apos;s aircrafts">
+<ATTRIBUTE name="Position" type="STRING">NODE x:18cm y:5.5cm w:2.8cm h:1.4cm index:36</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17477" class="Business process" name="technological explanations">
+<ATTRIBUTE name="Position" type="STRING">NODE x:2cm y:16cm w:2.8cm h:1.4cm index:37</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17480" class="Business process" name="traffic rules">
+<ATTRIBUTE name="Position" type="STRING">NODE x:6cm y:13.5cm w:2.8cm h:1.4cm index:38</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17483" class="Business process" name="trainings flight">
+<ATTRIBUTE name="Position" type="STRING">NODE x:6cm y:16cm w:2.8cm h:1.4cm index:39</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17486" class="Business function" name="provide reapair services">
+<ATTRIBUTE name="Position" type="STRING">NODE x:25cm y:25cm w:2.8cm h:1.4cm index:40</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17489" class="Business function" name="provide additionals">
+<ATTRIBUTE name="Position" type="STRING">NODE x:2cm y:21cm w:2.8cm h:1.4cm index:41</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17492" class="Business function" name="provide former main service">
+<ATTRIBUTE name="Position" type="STRING">NODE x:11.5cm y:27cm w:2.8cm h:1.4cm index:42</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17495" class="Business interaction" name="teaching">
+<ATTRIBUTE name="Position" type="STRING">NODE x:2cm y:13.5cm w:2.8cm h:1.4cm index:43</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17498" class="Business interaction" name="repairing">
+<ATTRIBUTE name="Position" type="STRING">NODE x:33.5cm y:25cm w:2.8cm h:1.4cm index:44</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17501" class="Business interaction" name="guiding tourists">
+<ATTRIBUTE name="Position" type="STRING">NODE x:19.5cm y:27cm w:2.8cm h:1.4cm index:45</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">Mainly associated with the tourist guide. If the customers did not chose a tourist guide, the pilot can take over this communication.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17504" class="Representation" name="documentation">
+<ATTRIBUTE name="Position" type="STRING">NODE x:21.5cm y:37.5cm w:3cm h:1.74cm index:46</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17507" class="Contract" name="general sails agreement">
+<ATTRIBUTE name="Position" type="STRING">NODE x:16.5cm y:37.5cm w:2.8cm h:1.4cm index:47</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17510" class="Contract" name="teaching agreement">
+<ATTRIBUTE name="Position" type="STRING">NODE x:26.5cm y:37.5cm w:2.8cm h:1.4cm index:48</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17513" class="Business object" name="aircraft&apos;s interest">
+<ATTRIBUTE name="Position" type="STRING">NODE x:21.5cm y:35cm w:2.8cm h:1.4cm index:49</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17516" class="Grouping" name="flights">
+<ATTRIBUTE name="Position" type="STRING">NODE x:13.67cm y:25.29cm w:11.5cm h:12.5cm index:2</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17519" class="Grouping" name="repair / maintain">
+<ATTRIBUTE name="Position" type="STRING">NODE x:27.5cm y:24.5cm w:12cm h:10cm index:1</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17522" class="Grouping" name="storage">
+<ATTRIBUTE name="Position" type="STRING">NODE x:6.5cm y:23cm w:3.5cm h:9cm index:50</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17525" class="Grouping" name="lessons">
+<ATTRIBUTE name="Position" type="STRING">NODE x:3cm y:14.5cm w:8cm h:6.5cm index:3</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17528" class="Business process" name="choose aircraft">
+<ATTRIBUTE name="Position" type="STRING">NODE x:11.5cm y:24cm w:2.8cm h:1.4cm index:51</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17531" class="Business process" name="choose duration/location">
+<ATTRIBUTE name="Position" type="STRING">NODE x:15.5cm y:24cm w:2.8cm h:1.4cm index:52</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">The location depends a little bit on the chosen aircraft. As flights over cities are more common and easier with helicopters. Furthermore, the wind is relevant for sailplanes.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17534" class="Business process" name="choose tourist guide">
+<ATTRIBUTE name="Position" type="STRING">NODE x:19.5cm y:24cm w:2.8cm h:1.4cm index:53</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">This is an optional process part. If no guide is chosen, the pilot tries his/her best to explain the sights.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17537" class="Business process" name="enjoy flight with customers">
+<ATTRIBUTE name="Position" type="STRING">NODE x:15.5cm y:27cm w:2.8cm h:1.4cm index:54</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17540" class="Business process" name="sort out task">
+<ATTRIBUTE name="Position" type="STRING">NODE x:25cm y:22.5cm w:2.8cm h:1.4cm index:55</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17543" class="Business process" name="help customer">
+<ATTRIBUTE name="Position" type="STRING">NODE x:31.5cm y:22.5cm w:2.8cm h:1.4cm index:56</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">Mechanis can be booked on hourly basis.
+
+The customer is allowed to use the tools and machines provided by the company.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17546" class="Business process" name="repair on own">
+<ATTRIBUTE name="Position" type="STRING">NODE x:30cm y:25cm w:2.8cm h:1.4cm index:57</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">There are three rapair and service packages offered to the customer.
+1) basic: general technical check
+2) silver: basic + smaller repairs
+3) gold: silver +cleaning and refueling</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17549" class="Business process" name="order rare parts">
+<ATTRIBUTE name="Position" type="STRING">NODE x:27.5cm y:27.5cm w:2.8cm h:1.4cm index:58</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">Another package can be booked: for example the mechanics can after the ordering and receiving of the rare parts build them in the customers plane.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17552" class="Business process" name="check result">
+<ATTRIBUTE name="Position" type="STRING">NODE x:33.5cm y:27.5cm w:2.8cm h:1.4cm index:59</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">A check should ensure constant quality of the services and avoid accidents because of human mistakes.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17555" class="Business process" name="find empty place">
+<ATTRIBUTE name="Position" type="STRING">NODE x:7cm y:21cm w:2.8cm h:1.4cm index:60</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17558" class="Business process" name="bring aircraft of customer there">
+<ATTRIBUTE name="Position" type="STRING">NODE x:7cm y:26cm w:2.8cm h:1.4cm index:61</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17561" class="Business process" name="discuss options">
+<ATTRIBUTE name="Position" type="STRING">NODE x:7cm y:23.5cm w:2.8cm h:1.4cm index:62</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">There are additional booking options, like the usage of the runway for take-off and landing. As the storage package is booked, the fee of the options is reduced.
+
+It is also possible to book only the runway usage, but this is not very common, therefore it is not modeled in detail. The difference would be a higher fee for only renting the runway.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17564" class="Or Junction" name="Or Junction-58436">
+<ATTRIBUTE name="Position" type="STRING">NODE x:27.5cm y:22.5cm index:63</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17567" class="Business event" name="aircraft broken - improvement necessary">
+<ATTRIBUTE name="Position" type="STRING">NODE x:27.5cm y:15.5cm w:4cm h:1.5cm index:73</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17570" class="Business event" name="customer wants to book a service">
+<ATTRIBUTE name="Position" type="STRING">NODE x:15.5cm y:16cm w:2.8cm h:1.4cm index:74</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17573" class="Or Junction" name="Or Junction-58481">
+<ATTRIBUTE name="Position" type="STRING">NODE x:2cm y:25cm index:94</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17576" class="Or Junction" name="Or Junction-58484">
+<ATTRIBUTE name="Position" type="STRING">NODE x:25cm y:29.5cm index:95</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.17579" class="Product" name="former cashcow service">
+<ATTRIBUTE name="Position" type="STRING">NODE x:16.5cm y:29.5cm w:3.5cm h:1.5cm index:116</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">This is the main product, already offered by Charlie.</ATTRIBUTE>
+</INSTANCE>
+<CONNECTOR id="con.17582" class="Assignment">
+<FROM instance="Christina" class="Business actor"></FROM>
+<TO instance="pilot" class="Business role"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:20</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17583" class="Association">
+<FROM instance="Christina" class="Business actor"></FROM>
+<TO instance="Peter&apos;s aircrafts" class="Location"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:64</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17584" class="Assignment">
+<FROM instance="Marie" class="Business actor"></FROM>
+<TO instance="office employee" class="Business role"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:17</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17585" class="Association">
+<FROM instance="Marie" class="Business actor"></FROM>
+<TO instance="Peter&apos;s aircrafts" class="Location"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:67</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17586" class="Assignment">
+<FROM instance="Carl" class="Business actor"></FROM>
+<TO instance="mechanic" class="Business role"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:20.5cm y1:15cm index:16</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17587" class="Association">
+<FROM instance="Carl" class="Business actor"></FROM>
+<TO instance="Peter&apos;s aircrafts" class="Location"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:65</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17588" class="Assignment">
+<FROM instance="Mark" class="Business actor"></FROM>
+<TO instance="teacher" class="Business role"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:18</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17589" class="Association">
+<FROM instance="Mark" class="Business actor"></FROM>
+<TO instance="Peter&apos;s aircrafts" class="Location"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:68</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17590" class="Assignment">
+<FROM instance="Peter" class="Business actor"></FROM>
+<TO instance="manager" class="Business role"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:19</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17591" class="Association">
+<FROM instance="Peter" class="Business actor"></FROM>
+<TO instance="Peter&apos;s aircrafts" class="Location"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:69</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17592" class="Serving">
+<FROM instance="pilot" class="Business role"></FROM>
+<TO instance="teaching" class="Business collaboration"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:10.5cm y1:11.5cm index:23</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17593" class="Assignment">
+<FROM instance="mechanic" class="Business role"></FROM>
+<TO instance="repair / maintain" class="Grouping"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:24cm y1:17.5cm index:124</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17594" class="Assignment">
+<FROM instance="office employee" class="Business role"></FROM>
+<TO instance="customer wants to book a service" class="Business event"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:16cm y1:13cm index:125</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17595" class="Serving">
+<FROM instance="teacher" class="Business role"></FROM>
+<TO instance="teaching" class="Business collaboration"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:13cm y1:14.5cm index:24</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17596" class="Assignment">
+<FROM instance="tourist guide" class="Business role"></FROM>
+<TO instance="guiding tourists" class="Business interaction"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 2 x1:22cm y1:18.5cm x2:22cm y2:27cm index:123</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17597" class="Assignment">
+<FROM instance="teaching" class="Business collaboration"></FROM>
+<TO instance="lessons" class="Grouping"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:126</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17598" class="Assignment">
+<FROM instance="Carina" class="Business actor"></FROM>
+<TO instance="mechanic" class="Business role"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:22</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17599" class="Association">
+<FROM instance="Carina" class="Business actor"></FROM>
+<TO instance="Peter&apos;s aircrafts" class="Location"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:23.5cm y1:8cm index:66</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17600" class="Composition">
+<FROM instance="Peter&apos;s aircrafts" class="Location"></FROM>
+<TO instance="office" class="Business interface"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:70</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17601" class="Composition">
+<FROM instance="Peter&apos;s aircrafts" class="Location"></FROM>
+<TO instance="website" class="Business interface"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:71</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17602" class="Composition">
+<FROM instance="Peter&apos;s aircrafts" class="Location"></FROM>
+<TO instance="mail" class="Business interface"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:72</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17603" class="Association">
+<FROM instance="Peter&apos;s aircrafts" class="Location"></FROM>
+<TO instance="tourist guide" class="Business role"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:18.5cm y1:10.5cm index:127</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17604" class="Flow">
+<FROM instance="technological explanations" class="Business process"></FROM>
+<TO instance="teaching" class="Business interaction"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:87</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17605" class="Flow">
+<FROM instance="traffic rules" class="Business process"></FROM>
+<TO instance="trainings flight" class="Business process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:88</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17606" class="Access">
+<FROM instance="provide reapair services" class="Business function"></FROM>
+<TO instance="Or Junction-58484" class="Or Junction"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:97</ATTRIBUTE>
+<ATTRIBUTE name="Character" type="ENUMERATION">no Arrow</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17607" class="Triggering">
+<FROM instance="provide reapair services" class="Business function"></FROM>
+<TO instance="sort out task" class="Business process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:103</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17608" class="Access">
+<FROM instance="provide additionals" class="Business function"></FROM>
+<TO instance="Or Junction-58481" class="Or Junction"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:96</ATTRIBUTE>
+<ATTRIBUTE name="Character" type="ENUMERATION">no Arrow</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17609" class="Triggering">
+<FROM instance="provide additionals" class="Business function"></FROM>
+<TO instance="technological explanations" class="Business process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:104</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17610" class="Triggering">
+<FROM instance="provide additionals" class="Business function"></FROM>
+<TO instance="find empty place" class="Business process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:105</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17611" class="Realization">
+<FROM instance="provide former main service" class="Business function"></FROM>
+<TO instance="sightseeing flights" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:93</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17612" class="Triggering">
+<FROM instance="provide former main service" class="Business function"></FROM>
+<TO instance="choose aircraft" class="Business process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:106</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17613" class="Flow">
+<FROM instance="teaching" class="Business interaction"></FROM>
+<TO instance="traffic rules" class="Business process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:107</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17614" class="Flow">
+<FROM instance="repairing" class="Business interaction"></FROM>
+<TO instance="check result" class="Business process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:108</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17615" class="Flow">
+<FROM instance="guiding tourists" class="Business interaction"></FROM>
+<TO instance="enjoy flight with customers" class="Business process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:109</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17616" class="Realization">
+<FROM instance="documentation" class="Representation"></FROM>
+<TO instance="teaching agreement" class="Contract"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:112</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17617" class="Realization">
+<FROM instance="documentation" class="Representation"></FROM>
+<TO instance="general sails agreement" class="Contract"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:113</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17618" class="Realization">
+<FROM instance="documentation" class="Representation"></FROM>
+<TO instance="aircraft&apos;s interest" class="Business object"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:114</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17619" class="Association">
+<FROM instance="aircraft&apos;s interest" class="Business object"></FROM>
+<TO instance="flight lessons" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:4.5cm y1:32cm index:115</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17620" class="Association">
+<FROM instance="aircraft&apos;s interest" class="Business object"></FROM>
+<TO instance="self-repair" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:118</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17621" class="Association">
+<FROM instance="aircraft&apos;s interest" class="Business object"></FROM>
+<TO instance="maintaning and repair service" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:119</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17622" class="Association">
+<FROM instance="aircraft&apos;s interest" class="Business object"></FROM>
+<TO instance="rare parts ordering" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:28.5cm y1:35cm index:120</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17623" class="Association">
+<FROM instance="aircraft&apos;s interest" class="Business object"></FROM>
+<TO instance="sightseeing flights" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:121</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17624" class="Association">
+<FROM instance="aircraft&apos;s interest" class="Business object"></FROM>
+<TO instance="storage" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:2cm y1:35cm index:122</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17625" class="Flow">
+<FROM instance="choose aircraft" class="Business process"></FROM>
+<TO instance="choose duration/location" class="Business process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:75</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17626" class="Association">
+<FROM instance="choose aircraft" class="Business process"></FROM>
+<TO instance="helicopter" class="Business object"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:110</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17627" class="Association">
+<FROM instance="choose aircraft" class="Business process"></FROM>
+<TO instance="sailplane" class="Business object"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:111</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17628" class="Flow">
+<FROM instance="choose duration/location" class="Business process"></FROM>
+<TO instance="choose tourist guide" class="Business process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:76</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17629" class="Flow">
+<FROM instance="choose tourist guide" class="Business process"></FROM>
+<TO instance="guiding tourists" class="Business interaction"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:77</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17630" class="Access">
+<FROM instance="sort out task" class="Business process"></FROM>
+<TO instance="Or Junction-58436" class="Or Junction"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:84</ATTRIBUTE>
+<ATTRIBUTE name="Character" type="ENUMERATION">no Arrow</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17631" class="Flow">
+<FROM instance="help customer" class="Business process"></FROM>
+<TO instance="repairing" class="Business interaction"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:33.5cm y1:22.5cm index:81</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17632" class="Flow">
+<FROM instance="repair on own" class="Business process"></FROM>
+<TO instance="check result" class="Business process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:82</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17633" class="Flow">
+<FROM instance="order rare parts" class="Business process"></FROM>
+<TO instance="check result" class="Business process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:83</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17634" class="Flow">
+<FROM instance="find empty place" class="Business process"></FROM>
+<TO instance="discuss options" class="Business process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:85</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17635" class="Flow">
+<FROM instance="discuss options" class="Business process"></FROM>
+<TO instance="bring aircraft of customer there" class="Business process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:86</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17636" class="Flow">
+<FROM instance="Or Junction-58436" class="Or Junction"></FROM>
+<TO instance="help customer" class="Business process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:78</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17637" class="Flow">
+<FROM instance="Or Junction-58436" class="Or Junction"></FROM>
+<TO instance="repair on own" class="Business process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:79</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17638" class="Flow">
+<FROM instance="Or Junction-58436" class="Or Junction"></FROM>
+<TO instance="order rare parts" class="Business process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:80</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17639" class="Triggering">
+<FROM instance="aircraft broken - improvement necessary" class="Business event"></FROM>
+<TO instance="repair / maintain" class="Grouping"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:92</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17640" class="Triggering">
+<FROM instance="customer wants to book a service" class="Business event"></FROM>
+<TO instance="flights" class="Grouping"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:15.5cm y1:17.5cm index:89</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17641" class="Triggering">
+<FROM instance="customer wants to book a service" class="Business event"></FROM>
+<TO instance="storage" class="Grouping"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:9.5cm y1:16.5cm index:90</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17642" class="Triggering">
+<FROM instance="customer wants to book a service" class="Business event"></FROM>
+<TO instance="lessons" class="Grouping"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:11cm y1:16cm index:91</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17643" class="Realization">
+<FROM instance="Or Junction-58481" class="Or Junction"></FROM>
+<TO instance="flight lessons" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:98</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17644" class="Realization">
+<FROM instance="Or Junction-58481" class="Or Junction"></FROM>
+<TO instance="storage" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:99</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17645" class="Realization">
+<FROM instance="Or Junction-58484" class="Or Junction"></FROM>
+<TO instance="maintaning and repair service" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:100</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17646" class="Realization">
+<FROM instance="Or Junction-58484" class="Or Junction"></FROM>
+<TO instance="rare parts ordering" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:101</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17647" class="Realization">
+<FROM instance="Or Junction-58484" class="Or Junction"></FROM>
+<TO instance="self-repair" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:102</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.17648" class="Serving">
+<FROM instance="former cashcow service" class="Product"></FROM>
+<TO instance="sightseeing flights" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:117</ATTRIBUTE>
+</CONNECTOR>
+</MODEL>
+</MODELS>
+<MODELGROUPS>
+<MODELGROUP name="Charlie&apos;s Aircrafts">
+<MODELREFERENCE name="Aircrafts Business" version="" modeltype="Business Layer" libtype="bp"></MODELREFERENCE>
+<MODELREFERENCE name="Aircrafts Application" version="" modeltype="Application Layer" libtype="bp"></MODELREFERENCE>
+<MODELREFERENCE name="Aircrafts Technology" version="" modeltype="Technology Layer" libtype="bp"></MODELREFERENCE>
+<MODELREFERENCE name="Aircrafts Analysis" version="" modeltype="Analysis Model" libtype="bp"></MODELREFERENCE>
+</MODELGROUP>
+</MODELGROUPS>
+</ADOXML>

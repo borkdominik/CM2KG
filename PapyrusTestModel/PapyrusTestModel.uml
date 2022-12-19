@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="__zURsJj8EeqEM7mFKilpXw" name="pppmodels">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_mU8LIOAoEeu-XNcrlfd6Uw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_BK2jIOYHEeuzZOeHOQQcTg" name="Class2"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_BaMmsOYHEeuzZOeHOQQcTg" name="Class3"/>
+  <packagedElement xmi:type="uml:Abstraction" xmi:id="_CIblsOYHEeuzZOeHOQQcTg" name="someAbstraction" client="_BK2jIOYHEeuzZOeHOQQcTg" supplier="_BaMmsOYHEeuzZOeHOQQcTg"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_EXtgsOYHEeuzZOeHOQQcTg" name="Class5">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_IDrcIeYHEeuzZOeHOQQcTg" name="class6" type="_E1BHwOYHEeuzZOeHOQQcTg" association="_IDq1EOYHEeuzZOeHOQQcTg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IDrcIuYHEeuzZOeHOQQcTg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IDrcI-YHEeuzZOeHOQQcTg" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_E1BHwOYHEeuzZOeHOQQcTg" name="Class6"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_IDq1EOYHEeuzZOeHOQQcTg" memberEnd="_IDrcIeYHEeuzZOeHOQQcTg _IDrcJOYHEeuzZOeHOQQcTg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IDq1EeYHEeuzZOeHOQQcTg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IDrcIOYHEeuzZOeHOQQcTg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_IDrcJOYHEeuzZOeHOQQcTg" name="class5" type="_EXtgsOYHEeuzZOeHOQQcTg" association="_IDq1EOYHEeuzZOeHOQQcTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Ifl8EOYHEeuzZOeHOQQcTg" name="Class8"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_I-oBcOYHEeuzZOeHOQQcTg" name="Class9"/>
+  <packagedElement xmi:type="uml:AssociationClass" xmi:id="_LAOFwOYHEeuzZOeHOQQcTg" name="AssociationClass10" memberEnd="_LAOs0uYHEeuzZOeHOQQcTg _LAOs0-YHEeuzZOeHOQQcTg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LAOs0OYHEeuzZOeHOQQcTg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LAOs0eYHEeuzZOeHOQQcTg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_LAOs0uYHEeuzZOeHOQQcTg" name="class9" type="_I-oBcOYHEeuzZOeHOQQcTg" association="_LAOFwOYHEeuzZOeHOQQcTg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_LAOs0-YHEeuzZOeHOQQcTg" name="class8" type="_Ifl8EOYHEeuzZOeHOQQcTg" association="_LAOFwOYHEeuzZOeHOQQcTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_M7uwMOYHEeuzZOeHOQQcTg" name="Class11"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_NeSqsOYHEeuzZOeHOQQcTg" name="Class12"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QV2tsOYHEeuzZOeHOQQcTg" name="Class13">
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_QkyhkOYHEeuzZOeHOQQcTg" name="Class14"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_RmoZEOYHEeuzZOeHOQQcTg" name="Class14"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_R0ufcOYHEeuzZOeHOQQcTg" name="Class15"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_TpiE8OYHEeuzZOeHOQQcTg" client="_RmoZEOYHEeuzZOeHOQQcTg" supplier="_R0ufcOYHEeuzZOeHOQQcTg"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_UjFjIOYHEeuzZOeHOQQcTg" name="Class17">
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_XzinQOYHEeuzZOeHOQQcTg" alias="someElementImport" importedElement="_U0rCYOYHEeuzZOeHOQQcTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_U0rCYOYHEeuzZOeHOQQcTg" name="Class18"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Y9bAcOYHEeuzZOeHOQQcTg" name="Class19">
+    <generalization xmi:type="uml:Generalization" xmi:id="_aSyQ4OYHEeuzZOeHOQQcTg" general="_Zjh-MOYHEeuzZOeHOQQcTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Zjh-MOYHEeuzZOeHOQQcTg" name="Class20" isAbstract="true"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_axm64OYHEeuzZOeHOQQcTg" name="Class21"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_bDJW0OYHEeuzZOeHOQQcTg" name="Class22"/>
+  <packagedElement xmi:type="uml:InformationFlow" xmi:id="_c0eKgOYHEeuzZOeHOQQcTg" informationSource="_axm64OYHEeuzZOeHOQQcTg" informationTarget="_bDJW0OYHEeuzZOeHOQQcTg"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_gI6WwOYHEeuzZOeHOQQcTg" name="Class24"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_gdtiEOYHEeuzZOeHOQQcTg" name="Class25"/>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_lk9vwOYHEeuzZOeHOQQcTg" client="_gI6WwOYHEeuzZOeHOQQcTg" supplier="_gdtiEOYHEeuzZOeHOQQcTg"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_wIQvYOYHEeuzZOeHOQQcTg" name="Component27">
+    <packagedElement xmi:type="uml:Realization" xmi:id="_3o2L8OYHEeuzZOeHOQQcTg" client="_wIQvYOYHEeuzZOeHOQQcTg" supplier="_1GqjEOYHEeuzZOeHOQQcTg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_1GqjEOYHEeuzZOeHOQQcTg" name="Package28">
+    <packagedElement xmi:type="uml:Class" xmi:id="__-j5sOYHEeuzZOeHOQQcTg" name="Class1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_EpJIsOlZEeuvjt9HwkR8Hw" name="UnitilizedAbstractClass" isAbstract="true"/>
+</uml:Model>

@@ -1,0 +1,57 @@
+
+option 1 go to https://github.com/big-thesis/Smajevic.Metamodel2Graph and clone the repository
+run maven clean on at.ac.tuwien.big.msm.cmgba.graphml project
+run maven install on at.ac.tuwien.big.msm.cmgba.graphml
+
+run maven clean on webapp project
+run maven install on webapp project
+-> then navigate to target folder
+
+option 2 use already compiled jar file from the zip file I sent via email
+
+
+--navigate to webapp folder in repository
+
+--to create docker image
+docker build -t springboot-docker-cm2kb-webapp:latest .
+
+---create network
+docker network create cm2kg-neo4j
+
+
+--create neo4j docker container
+docker run --name neo4j-cm2kg-instance -p7474:7474 -p7687:7687 -d -v $HOME/neo4j/data:/data -v $HOME/neo4j/logs:/logs -v $HOME/neo4j/import:/var/lib/neo4j/import --env NEO4J_AUTH=neo4j/test -e NEO4J_apoc_export_file_enabled=true -e NEO4J_apoc_import_file_enabled=true -e NEO4J_dbms_security_procedures_whitelist=apoc.coll.*,apoc.load.*,apoc.*,gds.* -e NEO4J_dbms_security_procedures_unrestricted=apoc.*,gds.* --net cm2kg-neo4j neo4j:latest 
+
+--in bash excecute following
+mv labs/apoc-4.4.0.7-core.jar plugins
+cd plugins
+wget https://graphdatascience.ninja/neo4j-graph-data-science-2.1.9.zip
+apt-get update && apt-get install -y unzip
+unzip neo4j-graph-data-science-2.1.9.zip
+rm neo4j-graph-data-science-2.1.9.zip
+
+--now restart container
+
+--test neo4j browser in browser, username:neo4j, password:admin
+http://localhost:7474/browser/
+
+--now test apoc plugin in neo4j
+CALL apoc.help('keyword')
+
+--now test gds plugin in neo4j
+RETURN gds.version()
+
+--now create web app docker container
+docker run --name cm2kgwebapp -p 8080:8080 --net cm2kg-neo4j springboot-docker-cm2kb-webapp
+
+
+--test web app in browser
+http://localhost:8080/
+
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+MATCH (a)-[r]-(b)
+WHERE a.ClassName='SystemSoftware' and (r.Label='AssociationRelationship' or r.Label='RealizationRelationship' or r.Label='AssignmentRelationship')
+with a,count(r) as cnt
+MATCH (a)-[r1]-(b1)
+where cnt>1 and (r1.Label='AssociationRelationship' or r1.Label='RealizationRelationship' or r1.Label='AssignmentRelationship')
+//return a
+return a,b1

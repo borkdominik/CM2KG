@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.opengroup.org/xsd/archimate/3.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengroup.org/xsd/archimate/3.0/ http://www.opengroup.org/xsd/archimate/3.1/archimate3_Diagram.xsd" identifier="id-6a18db2b">
+  <name xml:lang="en">PayNow</name>
+  <elements>
+    <element identifier="id-75d26025" xsi:type="BusinessActor">
+      <name xml:lang="en">Service Provider</name>
+      <documentation xml:lang="en">Party 2 in Contract</documentation>
+    </element>
+    <element identifier="id-7430b38a" xsi:type="BusinessActor">
+      <name xml:lang="en">Service Consumer</name>
+      <documentation xml:lang="en">Party 1 in Contract</documentation>
+    </element>
+    <element identifier="c633df8a" xsi:type="BusinessRole">
+      <name xml:lang="en">Requester</name>
+    </element>
+    <element identifier="id-96d14f95" xsi:type="BusinessRole">
+      <name xml:lang="en">Fulfiller</name>
+    </element>
+    <element identifier="id-12ed38a5" xsi:type="BusinessCollaboration">
+      <name xml:lang="en">Business Collaboration</name>
+    </element>
+    <element identifier="d9b126b8" xsi:type="Contract">
+      <name xml:lang="en">Service Agreement</name>
+    </element>
+    <element identifier="id-1dca85ea" xsi:type="BusinessInterface">
+      <name xml:lang="en">Service Desk</name>
+    </element>
+    <element identifier="id-04eff9da" xsi:type="BusinessEvent">
+      <name xml:lang="en">Business Event</name>
+    </element>
+    <element identifier="id-3a819648" xsi:type="BusinessProcess">
+      <name xml:lang="en">Business Process</name>
+    </element>
+    <element identifier="c0bb1c73" xsi:type="BusinessObject">
+      <name xml:lang="en">Business Object</name>
+    </element>
+    <element identifier="cb617a48" xsi:type="BusinessService">
+      <name xml:lang="en">IMaaS</name>
+      <documentation xml:lang="en">Incident Management as a Service</documentation>
+    </element>
+    <element identifier="id-9646d6e8" xsi:type="BusinessObject">
+      <name xml:lang="en">Incident Ticket/Request</name>
+      <documentation xml:lang="en">/*struct TaskRecord {
+		bytes32 sys_id;
+		address requester;
+		string created_on;*/
+		/*Priorities taskPriority;
+	  States taskState;
+		int taskType;
+		int timeWorked;
+		address assigned_to;
+		bool active;
+		address updated_by;
+		//DateTime created_on;
+		DateTime updated_on;
+		DateTime closed_on;
+	}</documentation>
+    </element>
+    <element identifier="id-7c84df22" xsi:type="DataObject">
+      <name xml:lang="en">Incident Record/Object</name>
+    </element>
+    <element identifier="id-46670a3d" xsi:type="DataObject">
+      <name xml:lang="en">incidents[sys_id]</name>
+    </element>
+    <element identifier="id-5054a846" xsi:type="DataObject">
+      <name xml:lang="en">Stages</name>
+      <documentation xml:lang="en">{in_progress, canceled, paused, completed, breached}</documentation>
+    </element>
+    <element identifier="f43a5a75" xsi:type="DataObject">
+      <name xml:lang="en">States</name>
+      <documentation xml:lang="en">{open, assigned, in_progress, resolved, closed}</documentation>
+    </element>
+    <element identifier="id-9a5ff4b7" xsi:type="Artifact">
+      <name xml:lang="en">Incident instance</name>
+    </element>
+    <element identifier="id-276c162e" xsi:type="Artifact">
+      <name xml:lang="en">opened_at</name>
+      <documentation xml:lang="en">DateTime</documentation>
+    </element>
+    <element identifier="id-84b7368f" xsi:type="Artifact">
+      <name xml:lang="en">opened_by</name>
+      <documentation xml:lang="en">Address</documentation>
+    </element>
+    <element identifier="b4ee3376" xsi:type="Artifact">
+      <name xml:lang="en">state</name>
+      <documentation xml:lang="en">Address</documentation>
+    </element>
+    <element identifier="id-2debd40b" xsi:type="Artifact">
+      <name xml:lang="en">current state</name>
+    </element>
+    <element identifier="id-1ac4b359" xsi:type="Artifact">
+      <name xml:lang="en">latest change</name>
+    </element>
+    <element identifier="e9ec9136" xsi:type="Artifact">
+      <name xml:lang="en">state changes</name>
+      <documentation xml:lang="en">array of all state changes with timestamps
+map[DateTime =&gt; States] stateChanges; ??</documentation>
+    </element>
+  </elements>
+  <relationships>
+    <relationship identifier="id-8c587d4c" source="b4ee3376" target="id-2debd40b" xsi:type="Composition" />
+    <relationship identifier="c33538fa" source="b4ee3376" target="id-1ac4b359" xsi:type="Composition" />
+    <relationship identifier="a0044e82" source="b4ee3376" target="e9ec9136" xsi:type="Composition" />
+  </relationships>
+  <organizations>
+    <item>
+      <label xml:lang="en">Business</label>
+      <item identifierRef="id-75d26025" />
+      <item identifierRef="id-7430b38a" />
+      <item identifierRef="c633df8a" />
+      <item identifierRef="id-96d14f95" />
+      <item identifierRef="id-12ed38a5" />
+      <item identifierRef="d9b126b8" />
+      <item identifierRef="id-1dca85ea" />
+      <item identifierRef="id-04eff9da" />
+      <item identifierRef="id-3a819648" />
+      <item identifierRef="c0bb1c73" />
+      <item identifierRef="cb617a48" />
+      <item identifierRef="id-9646d6e8" />
+    </item>
+    <item>
+      <label xml:lang="en">Application</label>
+      <item identifierRef="id-7c84df22" />
+      <item identifierRef="id-46670a3d" />
+      <item identifierRef="id-5054a846" />
+      <item identifierRef="f43a5a75" />
+    </item>
+    <item>
+      <label xml:lang="en">Technology &amp; Physical</label>
+      <item identifierRef="id-9a5ff4b7" />
+      <item identifierRef="id-276c162e" />
+      <item identifierRef="id-84b7368f" />
+      <item identifierRef="b4ee3376" />
+      <item identifierRef="id-2debd40b" />
+      <item identifierRef="id-1ac4b359" />
+      <item identifierRef="e9ec9136" />
+    </item>
+    <item>
+      <label xml:lang="en">Relations</label>
+      <item identifierRef="id-8c587d4c" />
+      <item identifierRef="c33538fa" />
+      <item identifierRef="a0044e82" />
+    </item>
+    <item>
+      <label xml:lang="en">Views</label>
+      <item identifierRef="id-644e050e" />
+      <item identifierRef="id-24f58bed" />
+    </item>
+  </organizations>
+  <views>
+    <diagrams>
+      <view identifier="id-644e050e" xsi:type="Diagram">
+        <name xml:lang="en">Highlevel</name>
+        <node identifier="ab366c26" elementRef="id-75d26025" xsi:type="Element" x="516" y="42" w="120" h="55">
+          <style>
+            <fillColor r="255" g="255" b="181" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Lucida Grande" size="12">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="df431a75" elementRef="id-7430b38a" xsi:type="Element" x="24" y="42" w="120" h="55">
+          <style>
+            <fillColor r="255" g="255" b="181" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Lucida Grande" size="12">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="a6305de5" elementRef="c633df8a" xsi:type="Element" x="24" y="138" w="120" h="55">
+          <style>
+            <fillColor r="255" g="255" b="181" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Lucida Grande" size="12">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="cadcb10a" elementRef="id-96d14f95" xsi:type="Element" x="516" y="138" w="120" h="55">
+          <style>
+            <fillColor r="255" g="255" b="181" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Lucida Grande" size="12">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="id-9bd091f9" elementRef="d9b126b8" xsi:type="Element" x="240" y="24" w="120" h="55">
+          <style>
+            <fillColor r="255" g="255" b="181" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Lucida Grande" size="12">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="id-5ecb6915" elementRef="id-1dca85ea" xsi:type="Element" x="240" y="168" w="120" h="55">
+          <style>
+            <fillColor r="255" g="255" b="181" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Lucida Grande" size="12">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="c409ac7c" elementRef="id-04eff9da" xsi:type="Element" x="24" y="234" w="120" h="55">
+          <style>
+            <fillColor r="255" g="255" b="181" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Lucida Grande" size="12">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="a0b683a4" elementRef="id-3a819648" xsi:type="Element" x="264" y="306" w="313" h="55">
+          <style>
+            <fillColor r="255" g="255" b="181" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Lucida Grande" size="12">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="edf52119" elementRef="c0bb1c73" xsi:type="Element" x="48" y="306" w="120" h="55">
+          <style>
+            <fillColor r="255" g="255" b="181" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Lucida Grande" size="12">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="id-76b973ca" elementRef="cb617a48" xsi:type="Element" x="240" y="96" w="120" h="55">
+          <style>
+            <fillColor r="255" g="255" b="181" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Lucida Grande" size="12">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+      </view>
+      <view identifier="id-24f58bed" xsi:type="Diagram">
+        <name xml:lang="en">Data Model</name>
+        <node identifier="id-72e64693" elementRef="id-9646d6e8" xsi:type="Element" x="36" y="48" w="158" h="55">
+          <style>
+            <fillColor r="255" g="255" b="181" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Lucida Grande" size="12">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="id-2dac5181" elementRef="id-7c84df22" xsi:type="Element" x="36" y="144" w="158" h="55">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Lucida Grande" size="12">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="be1d8312" x="336" y="48" w="400" h="505" xsi:type="Container">
+          <label xml:lang="en">Open Incidents</label>
+          <documentation xml:lang="en">Array of incidents
+map of structures</documentation>
+          <style>
+            <fillColor r="210" g="215" b="215" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Lucida Grande" size="12">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+          <node identifier="id-2ee12a6a" elementRef="id-46670a3d" xsi:type="Element" x="348" y="84" w="373" h="457">
+            <style>
+              <fillColor r="181" g="255" b="255" a="100" />
+              <lineColor r="92" g="92" b="92" a="100" />
+              <font name="Lucida Grande" size="12">
+                <color r="0" g="0" b="0" />
+              </font>
+            </style>
+            <node identifier="eb7a9c22" elementRef="id-276c162e" xsi:type="Element" x="368" y="130" w="120" h="27">
+              <style>
+                <fillColor r="201" g="231" b="183" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Lucida Grande" size="12">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="b703b196" elementRef="id-84b7368f" xsi:type="Element" x="368" y="168" w="120" h="27">
+              <style>
+                <fillColor r="201" g="231" b="183" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Lucida Grande" size="12">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+            </node>
+            <node identifier="id-436f2c94" elementRef="b4ee3376" xsi:type="Element" x="368" y="204" w="341" h="325">
+              <style>
+                <fillColor r="201" g="231" b="183" a="100" />
+                <lineColor r="92" g="92" b="92" a="100" />
+                <font name="Lucida Grande" size="12">
+                  <color r="0" g="0" b="0" />
+                </font>
+              </style>
+              <node identifier="id-893b08c3" elementRef="id-2debd40b" xsi:type="Element" x="380" y="228" w="120" h="25">
+                <style>
+                  <fillColor r="201" g="231" b="183" a="100" />
+                  <lineColor r="92" g="92" b="92" a="100" />
+                  <font name="Lucida Grande" size="12">
+                    <color r="0" g="0" b="0" />
+                  </font>
+                </style>
+              </node>
+              <node identifier="id-95d26150" elementRef="id-1ac4b359" xsi:type="Element" x="380" y="264" w="120" h="25">
+                <style>
+                  <fillColor r="201" g="231" b="183" a="100" />
+                  <lineColor r="92" g="92" b="92" a="100" />
+                  <font name="Lucida Grande" size="12">
+                    <color r="0" g="0" b="0" />
+                  </font>
+                </style>
+              </node>
+              <node identifier="id-24e9602b" elementRef="e9ec9136" xsi:type="Element" x="380" y="300" w="120" h="61">
+                <style>
+                  <fillColor r="201" g="231" b="183" a="100" />
+                  <lineColor r="92" g="92" b="92" a="100" />
+                  <font name="Lucida Grande" size="12">
+                    <color r="0" g="0" b="0" />
+                  </font>
+                </style>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node identifier="e988ba30" elementRef="id-5054a846" xsi:type="Element" x="36" y="228" w="158" h="61">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Lucida Grande" size="12">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+        <node identifier="id-5b09984e" elementRef="f43a5a75" xsi:type="Element" x="39" y="300" w="151" h="61">
+          <style>
+            <fillColor r="181" g="255" b="255" a="100" />
+            <lineColor r="92" g="92" b="92" a="100" />
+            <font name="Lucida Grande" size="12">
+              <color r="0" g="0" b="0" />
+            </font>
+          </style>
+        </node>
+      </view>
+    </diagrams>
+  </views>
+</model>

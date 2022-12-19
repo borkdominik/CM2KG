@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+	<title>EA Graph Analysis</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<a class="navbar-brand" href="#">CM2KG</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+				aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" th:href="@{/cm2kg/}">Home <span class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+
+			</div>
+		</nav>
+	</header>
+	
+	<div class="jumbotron text-center">
+		<h1>CM2KG Conceptual Model to Knowledge Graph</h1>
+		<p>Transform your conceptual model (Archi, ADOxx, Papyrus ...) to GraphML and gain insights about your model by apply graph based-anaylsis.</p>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+				<h3>Step 1</h3>
+				<p>Upload your model.</p>
+			</div>
+			<div class="col-sm-3">
+				<h3>Step 2</h3>
+				<p>Your model is converted..</p>
+
+			</div>
+			<div class="col-sm-3">
+				<h3>Step 3</h3>
+				<p>Take your GraphML model.</p>
+			</div>
+			
+			<div class="col-sm-3">
+				<h3>Step 4</h3>
+				<p>Gain insight about your model.</p>
+			</div>
+		</div>
+		
+		
+		<div class="">
+			<!--<a class="btn btn-light btn-lg active" role="button" aria-pressed="true" href="#">
+				<img src="https://www.eclipse.org/modeling/emf/images/emf_logo.png" width="50">
+				Ecore
+			</a>-->
+			
+			<a class="btn btn-light btn-lg active" role="button" aria-pressed="true" th:href="@{~/cm2kg/upload/archi}">
+				<img src="https://www.archimatetool.com/wp-content/uploads/2018/07/header.png" width="50">
+				Archi
+			</a>
+			<a class="btn btn-light btn-lg active" role="button" aria-pressed="true" th:href="@{~/cm2kg/upload/adoxx}">
+				<img src="https://www.adoxx.org/live/image/layout_set_logo?img_id=179909&amp;t=1613409791706" width="20">
+				ADOxx
+			</a>
+			<a class="btn btn-light btn-lg active" role="button" aria-pressed="true" th:href="@{~/cm2kg/upload/papyrusuml}">
+				<img src="https://www.eclipse.org/papyrus/img/logo.png" width="20">
+				Papyrus
+			</a>
+			
+		</div>
+	</div>
+
+</body>
+
+</html>

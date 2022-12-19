@@ -1,0 +1,8 @@
+MATCH (a)-[r1]-(b1)
+WHERE 
+(a:BusinessService or a:ApplicationService or a:TechnologyService)
+and (b1:BusinessObject or b1:DataObject or b1:SystemSoftware)
+with a,r1,b1
+match (a)
+where not (a)--(:BusinessService)
+return a

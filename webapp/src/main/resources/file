@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ADOXML SYSTEM "adoxml31.dtd">
+<ADOXML version="3.1" date="17.01.2021" time="21:51" database="adoxxdb" username="muhamed2" adoversion="Version 5.1">
+<MODELS>
+<MODEL id="mod.19566" name="Aircrafts Analysis" version="" modeltype="Analysis Model" libtype="bp" applib="TEAM v0.5-Smajevic">
+<MODELATTRIBUTES>
+<ATTRIBUTE name="Version number" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Author" type="STRING">training1</ATTRIBUTE>
+<ATTRIBUTE name="Creation date" type="STRING">07.03.2018, 15:08</ATTRIBUTE>
+<ATTRIBUTE name="Date last changed" type="STRING">17.01.2021, 21:51:17</ATTRIBUTE>
+<ATTRIBUTE name="Last user" type="STRING">muhamed2</ATTRIBUTE>
+<ATTRIBUTE name="Keywords" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Comment" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Model type" type="ENUMERATION">Current model</ATTRIBUTE>
+<ATTRIBUTE name="State" type="ENUMERATION">In process</ATTRIBUTE>
+<ATTRIBUTE name="Reviewed on" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Reviewed by" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Number of objects and relations" type="INTEGER">129</ATTRIBUTE>
+<ATTRIBUTE name="World area" type="STRING">w:43cm h:34.03cm minw:5cm minh:5cm</ATTRIBUTE>
+<ATTRIBUTE name="Grid" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Zoom" type="INTEGER">100</ATTRIBUTE>
+<ATTRIBUTE name="Viewable area" type="STRING">VIEW representation:graphic
+GRAPHIC x:-16 y:-16 w:1537 h:916 scale:1
+TABLE
+</ATTRIBUTE>
+<ATTRIBUTE name="Current mode" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Base name" type="STRING">Aircrafts Analysis</ATTRIBUTE>
+<ATTRIBUTE name="Access state" type="ENUMERATION">write</ATTRIBUTE>
+<ATTRIBUTE name="Current page layout" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Connector marks" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Type" type="STRING">Analysis Model</ATTRIBUTE>
+<ATTRIBUTE name="Change counter" type="INTEGER">4976</ATTRIBUTE>
+<ATTRIBUTE name="Font size" type="INTEGER">0</ATTRIBUTE>
+<ATTRIBUTE name="Context of version" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Position" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="__GfxThumb__" type="LONGSTRING">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</ATTRIBUTE>
+<ATTRIBUTE name="Method GraphRep" type="STRING">GRAPHREP
+
+FONT &quot;Arial&quot; h:20pt color:black
+TEXT (&quot;ArchiMate&quot;) y:-3cm w:c h:c
+FONT &quot;Arial&quot; h:11pt color:black
+TEXT (&quot;Enterprise Architecture Modeling&quot;) y:-2.4cm w:c h:c
+
+PEN color:white style:null
+RECTANGLE x:-3.2cm y:-2cm w:6.85cm h:8.25cm
+PEN color:black
+
+FILL color:(rgbval(225, 225, 225))
+RECTANGLE x:-3cm y:-2cm w:5cm h:8cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Analysis Model&quot;) x:-2.7cm y:-1.8cm
+
+FILL color:(rgbval(205,203,255))
+RECTANGLE x:2.2cm y:-2cm w:1.2cm h:8cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;M&quot;) x:2.7cm y:-0.5cm
+TEXT (&quot;o&quot;) x:2.75cm y:0cm
+TEXT (&quot;t&quot;) x:2.8cm y:0.5cm
+TEXT (&quot;i&quot;) x:2.8cm y:1cm
+TEXT (&quot;v&quot;) x:2.8cm y:1.5cm
+TEXT (&quot;a&quot;) x:2.75cm y:2cm
+TEXT (&quot;t&quot;) x:2.8cm y:2.5cm
+TEXT (&quot;i&quot;) x:2.8cm y:3cm
+TEXT (&quot;o&quot;) x:2.75cm y:3.5cm
+TEXT (&quot;n&quot;) x:2.75cm y:4cm
+
+FILL color:(rgbval(247,224,171))
+RECTANGLE x:-2.7cm y:-1.3cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Strategy&quot;) x:-2.5cm y:-0.8cm
+
+FILL color:(rgbval(255, 253, 188))
+RECTANGLE x:-2.7cm y:-0.1cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Business&quot;) x:-2.5cm y:0.4cm
+
+FILL color:(rgbval(186, 250, 253))
+RECTANGLE x:-2.7cm y:1.1cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Application&quot;) x:-2.5cm y:1.6cm
+
+FILL color:(rgbval(221,255,223))
+RECTANGLE x:-2.7cm y:2.3cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Technology&quot;) x:-2.5cm y:2.8cm
+
+FILL color:(rgbval(172,255,174))
+RECTANGLE x:-2.7cm y:3.5cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Physical&quot;) x:-2.5cm y:4.0cm
+
+FILL color:(rgbval(255,222,224))
+RECTANGLE x:-2.7cm y:4.7cm w:4.4cm h:1cm
+FONT &quot;Arial&quot; h:10pt color:black
+TEXT (&quot;Implementation/Migration&quot;) x:-2.5cm y:5.2cm</ATTRIBUTE>
+</MODELATTRIBUTES>
+<INSTANCE id="obj.19567" class="Business service" name="self-service">
+<ATTRIBUTE name="Position" type="STRING">NODE x:15cm y:12cm w:2.8cm h:1.4cm index:2</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">The self-service consists of reapir space rental and diagnosis.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19570" class="Business service" name="diagnosis">
+<ATTRIBUTE name="Position" type="STRING">NODE x:15.5cm y:8.5cm w:2.8cm h:1.4cm index:3</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19573" class="Business process" name="accounting">
+<ATTRIBUTE name="Position" type="STRING">NODE x:9.5cm y:14.5cm w:2.8cm h:1.4cm index:4</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19576" class="Business process" name="rental">
+<ATTRIBUTE name="Position" type="STRING">NODE x:3.5cm y:12cm w:2.8cm h:1.4cm index:5</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19579" class="Business service" name="repair space rental">
+<ATTRIBUTE name="Position" type="STRING">NODE x:9.5cm y:12cm w:2.8cm h:1.4cm index:6</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19582" class="Application service" name="diagnosis">
+<ATTRIBUTE name="Position" type="STRING">NODE x:15.5cm y:5.5cm w:2.8cm h:1.4cm index:9</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">0001:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19585" class="Application service" name="accounting">
+<ATTRIBUTE name="Position" type="STRING">NODE x:7.5cm y:16.5cm w:2.8cm h:1.4cm index:11</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">0001:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19588" class="Application interface" name="data exchange">
+<ATTRIBUTE name="Position" type="STRING">NODE x:3.5cm y:16.5cm w:2.8cm h:1.4cm index:13</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">0001:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19591" class="Facility" name="Charlie&apos;s aircrafts">
+<ATTRIBUTE name="Position" type="STRING">NODE x:30.5cm y:27.5cm w:3cm h:1.5cm index:19</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">The main company building is devided in three areas: back office, client waiting area and service center. All three parts are located on the company area, but they are physically devided, as it is very loud in the service center and the back office employees have to be concentrated for the billing.</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19594" class="Facility" name="service center">
+<ATTRIBUTE name="Position" type="STRING">NODE x:26cm y:27.5cm w:3.1cm h:1.7cm index:20</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19597" class="Equipment" name="drilling machine (6)">
+<ATTRIBUTE name="Position" type="STRING">NODE x:20.5cm y:22.5cm w:3.1cm h:1.7cm index:21</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19600" class="Equipment" name="welding equipment (5)">
+<ATTRIBUTE name="Position" type="STRING">NODE x:20.5cm y:25cm w:3.5cm h:1.7cm index:22</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19603" class="Equipment" name="toolbox (4)">
+<ATTRIBUTE name="Position" type="STRING">NODE x:20.5cm y:27.5cm w:3cm h:1.5cm index:23</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19606" class="Equipment" name="rotor blade tester (2)">
+<ATTRIBUTE name="Position" type="STRING">NODE x:20.5cm y:30cm w:3.1cm h:1.7cm index:24</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19609" class="Equipment" name="air conditioning equipment (1)">
+<ATTRIBUTE name="Position" type="STRING">NODE x:20.5cm y:32.5cm w:4cm h:2cm index:25</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19612" class="Device" name="card reader (DM)">
+<ATTRIBUTE name="Position" type="STRING">NODE x:15cm y:22.5cm w:3.1cm h:1.7cm index:34</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.19615" class="Device" name="card reader (WE)">
+<ATTRIBUTE name="Position" type="STRING">NODE x:15cm y:25cm w:3.1cm h:1.7cm index:35</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.19618" class="Device" name="card reader (TB)">
+<ATTRIBUTE name="Position" type="STRING">NODE x:15cm y:27.5cm w:3.1cm h:1.7cm index:36</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.19621" class="Device" name="card reader (RBT)">
+<ATTRIBUTE name="Position" type="STRING">NODE x:15cm y:30cm w:3.1cm h:1.7cm index:37</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.19624" class="Device" name="card reader (ACE)">
+<ATTRIBUTE name="Position" type="STRING">NODE x:15cm y:32.5cm w:3.1cm h:1.7cm index:38</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.19627" class="Communication network" name="company wide communication network">
+<ATTRIBUTE name="Position" type="STRING">NODE x:9.5cm y:27.5cm w:3.5cm h:2cm index:39</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.19630" class="Application service" name="time logging">
+<ATTRIBUTE name="Position" type="STRING">NODE x:2cm y:27.5cm w:2.8cm h:1.4cm index:52</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">0001:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19633" class="Application service" name="customer logging">
+<ATTRIBUTE name="Position" type="STRING">NODE x:7cm y:23.5cm w:2.8cm h:1.4cm index:53</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">0001:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19636" class="Application interface" name="data interface">
+<ATTRIBUTE name="Position" type="STRING">NODE x:2cm y:23.5cm w:2.8cm h:1.4cm index:54</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">0001:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19639" class="Application service" name="billing">
+<ATTRIBUTE name="Position" type="STRING">NODE x:2cm y:20cm w:2.8cm h:1.4cm index:55</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Valid until" type="DATE">0001:01:01</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19642" class="Business service" name="billing">
+<ATTRIBUTE name="Position" type="STRING">NODE x:19.5cm y:20cm w:2.8cm h:1.4cm index:56</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19645" class="Goal" name="increase profit">
+<ATTRIBUTE name="Position" type="STRING">NODE x:26.5cm y:5cm w:3.5cm h:1.5cm index:58</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19648" class="Goal" name="generate profit from self-service">
+<ATTRIBUTE name="Position" type="STRING">NODE x:21cm y:5cm w:3cm h:1.5cm index:59</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19651" class="Goal" name="decrease costs from classical business model">
+<ATTRIBUTE name="Position" type="STRING">NODE x:32cm y:5cm w:4cm h:2cm index:60</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19654" class="Course of action" name="standardization">
+<ATTRIBUTE name="Position" type="STRING">NODE x:30cm y:8cm w:3cm h:1.5cm index:63</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19657" class="Course of action" name="operational excellence">
+<ATTRIBUTE name="Position" type="STRING">NODE x:30cm y:11cm w:3cm h:1.5cm index:64</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19660" class="Capability" name="service management">
+<ATTRIBUTE name="Position" type="STRING">NODE x:25.5cm y:8cm w:3cm h:1.5cm index:65</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19663" class="Course of action" name="centralized IT system">
+<ATTRIBUTE name="Position" type="STRING">NODE x:25cm y:11cm w:3cm h:1.5cm index:66</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19666" class="Outcome" name="self-service catalogue">
+<ATTRIBUTE name="Position" type="STRING">NODE x:21cm y:8cm w:3.5cm h:1.5cm index:73</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19669" class="Capability" name="IT operations /management">
+<ATTRIBUTE name="Position" type="STRING">NODE x:25cm y:14cm w:3cm h:1.5cm index:76</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19672" class="Resource" name="human resources">
+<ATTRIBUTE name="Position" type="STRING">NODE x:23.5cm y:18cm w:3cm h:1.5cm index:77</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">Yes</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19675" class="Resource" name="IT resources">
+<ATTRIBUTE name="Position" type="STRING">NODE x:27.5cm y:18cm w:3cm h:1.5cm index:78</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19678" class="Grouping" name="resource pool">
+<ATTRIBUTE name="Position" type="STRING">NODE x:24.5cm y:18.5cm w:7.5cm h:5.5cm index:1</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19681" class="Facility" name="client area">
+<ATTRIBUTE name="Position" type="STRING">NODE x:30.5cm y:31cm w:3.1cm h:1.7cm index:83</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19684" class="Facility" name="back office">
+<ATTRIBUTE name="Position" type="STRING">NODE x:30.5cm y:24cm w:3.1cm h:1.7cm index:85</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19687" class="Data object" name="customer account entry">
+<ATTRIBUTE name="Position" type="STRING">NODE x:7.5cm y:18.5cm w:2.8cm h:1.4cm index:92</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19690" class="Business object" name="invoice">
+<ATTRIBUTE name="Position" type="STRING">NODE x:16.5cm y:17cm w:2.8cm h:1.4cm index:94</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19693" class="Grouping" name="diagnosis architecture">
+<ATTRIBUTE name="Position" type="STRING">NODE x:4.5cm y:7cm w:12.5cm h:8.5cm index:82</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19696" class="Device" name="diagnosis 1">
+<ATTRIBUTE name="Position" type="STRING">NODE x:3.5cm y:5cm w:3cm h:1.7cm index:84</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">Yes</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.19699" class="Device" name="diagnosis 2">
+<ATTRIBUTE name="Position" type="STRING">NODE x:7cm y:5cm w:3cm h:1.7cm index:86</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">Yes</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.19702" class="Device" name="diagnosis 3">
+<ATTRIBUTE name="Position" type="STRING">NODE x:10.5cm y:5.5cm w:3cm h:1.7cm index:88</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">Yes</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.19705" class="Device" name="diagnosis printer">
+<ATTRIBUTE name="Position" type="STRING">NODE x:7cm y:8cm w:3cm h:1.7cm index:90</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">Yes</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.19708" class="Technology interaction" name="customer runs diagnosis">
+<ATTRIBUTE name="Position" type="STRING">NODE x:2cm y:7.5cm w:2.8cm h:1.4cm index:96</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">After choosing a tool, an interaction between the customer/mechanic, the tool and the diagnosis takes place.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+<INTERREF name="Influence on"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.19711" class="Technology event" name="technology occupied">
+<ATTRIBUTE name="Position" type="STRING">NODE x:3.5cm y:9.5cm w:2.8cm h:1.4cm index:97</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">A customer can book all tools and machines in the companies repair center. If he/she decides to use a tool, it is blocked for other customers. This may be implemented with RDF tags or QR codes, which define user and time.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Time" type="TIME">00:000:00:00:00</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+<INTERREF name="Influence on"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.19714" class="Artifact" name="diagnosis sheet">
+<ATTRIBUTE name="Position" type="STRING">NODE x:10.5cm y:9.5cm w:2.8cm h:1.4cm index:98</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+</INSTANCE>
+<INSTANCE id="obj.19717" class="Location" name="service center">
+<ATTRIBUTE name="Position" type="STRING">NODE x:10.5cm y:7.5cm w:2.8cm h:1.4cm index:99</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19720" class="Business service" name="service cataloge">
+<ATTRIBUTE name="Position" type="STRING">NODE x:19.5cm y:12cm w:2.8cm h:1.4cm index:106</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">The service catalogue has more than the two assigned services, but these are the main ones. The billing is important for all other subservices and the self-service is the new business model in Peter&apos;s company.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19723" class="Value" name="save capital for investments">
+<ATTRIBUTE name="Position" type="STRING">NODE x:26.5cm y:2cm w:3.2cm h:1.6cm index:108</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19726" class="Requirement" name="expand resource pool">
+<ATTRIBUTE name="Position" type="STRING">NODE x:25.5cm y:20cm w:2.8cm h:1.4cm index:110</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING">Peter wants to hire new IT staff and he would like to invest in new tools and machines for the self-service in order to get more customers.</ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19846" class="Grouping" name="Grouping-19846">
+<ATTRIBUTE name="Position" type="STRING">NODE x:33.22cm y:15.53cm w:7.5cm h:5cm index:116</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+</INSTANCE>
+<INSTANCE id="obj.19849" class="Technology interface" name="Technology interface-19849">
+<ATTRIBUTE name="Position" type="STRING">NODE x:33.5cm y:15.5cm w:2.8cm h:1.4cm index:117</ATTRIBUTE>
+<ATTRIBUTE name="External tool coupling" type="STRING"></ATTRIBUTE>
+<ATTRIBUTE name="Layer label" type="ENUMERATION">No</ATTRIBUTE>
+<ATTRIBUTE name="Notes" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Description" type="LONGSTRING"></ATTRIBUTE>
+<ATTRIBUTE name="Icon" type="ENUMERATION">No</ATTRIBUTE>
+<INTERREF name="Responsibility"></INTERREF>
+<INTERREF name="Influence on"></INTERREF>
+</INSTANCE>
+<CONNECTOR id="con.19729" class="Aggregation">
+<FROM instance="self-service" class="Business service"></FROM>
+<TO instance="repair space rental" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:7</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19730" class="Aggregation">
+<FROM instance="self-service" class="Business service"></FROM>
+<TO instance="diagnosis" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:15.5cm y1:10cm index:113</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19731" class="Serving">
+<FROM instance="accounting" class="Business process"></FROM>
+<TO instance="self-service" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:15cm y1:14.5cm index:8</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19732" class="Realization">
+<FROM instance="rental" class="Business process"></FROM>
+<TO instance="repair space rental" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:16</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19733" class="Triggering">
+<FROM instance="rental" class="Business process"></FROM>
+<TO instance="accounting" class="Business process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:3.5cm y1:14.5cm index:18</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19734" class="Realization">
+<FROM instance="diagnosis" class="Application service"></FROM>
+<TO instance="diagnosis" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:17</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19735" class="Serving">
+<FROM instance="accounting" class="Application service"></FROM>
+<TO instance="accounting" class="Business process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:10cm y1:16.5cm index:12</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19736" class="Flow">
+<FROM instance="data exchange" class="Application interface"></FROM>
+<TO instance="billing" class="Application service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:2.5cm y1:18cm index:14</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19737" class="Flow">
+<FROM instance="data exchange" class="Application interface"></FROM>
+<TO instance="accounting" class="Application service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:15</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19738" class="Specialization">
+<FROM instance="service center" class="Facility"></FROM>
+<TO instance="Charlie&apos;s aircrafts" class="Facility"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:91</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19739" class="Assignment">
+<FROM instance="drilling machine (6)" class="Equipment"></FROM>
+<TO instance="service center" class="Facility"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:25.5cm y1:22.5cm index:26</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19740" class="Association">
+<FROM instance="drilling machine (6)" class="Equipment"></FROM>
+<TO instance="card reader (DM)" class="Device"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:42</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19741" class="Assignment">
+<FROM instance="welding equipment (5)" class="Equipment"></FROM>
+<TO instance="service center" class="Facility"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:25.5cm y1:25cm index:27</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19742" class="Association">
+<FROM instance="welding equipment (5)" class="Equipment"></FROM>
+<TO instance="card reader (WE)" class="Device"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:43</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19743" class="Assignment">
+<FROM instance="toolbox (4)" class="Equipment"></FROM>
+<TO instance="service center" class="Facility"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:31</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19744" class="Association">
+<FROM instance="toolbox (4)" class="Equipment"></FROM>
+<TO instance="card reader (TB)" class="Device"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:44</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19745" class="Assignment">
+<FROM instance="rotor blade tester (2)" class="Equipment"></FROM>
+<TO instance="service center" class="Facility"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:25.5cm y1:30cm index:32</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19746" class="Association">
+<FROM instance="rotor blade tester (2)" class="Equipment"></FROM>
+<TO instance="card reader (RBT)" class="Device"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:45</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19747" class="Assignment">
+<FROM instance="air conditioning equipment (1)" class="Equipment"></FROM>
+<TO instance="service center" class="Facility"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:25.5cm y1:32.5cm index:33</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19748" class="Association">
+<FROM instance="air conditioning equipment (1)" class="Equipment"></FROM>
+<TO instance="card reader (ACE)" class="Device"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:46</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19749" class="Flow">
+<FROM instance="card reader (DM)" class="Device"></FROM>
+<TO instance="company wide communication network" class="Communication network"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:10cm y1:22.5cm index:47</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19750" class="Flow">
+<FROM instance="card reader (WE)" class="Device"></FROM>
+<TO instance="company wide communication network" class="Communication network"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:10cm y1:25cm index:48</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19751" class="Flow">
+<FROM instance="card reader (TB)" class="Device"></FROM>
+<TO instance="company wide communication network" class="Communication network"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:49</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19752" class="Flow">
+<FROM instance="card reader (RBT)" class="Device"></FROM>
+<TO instance="company wide communication network" class="Communication network"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:10cm y1:30cm index:50</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19753" class="Flow">
+<FROM instance="card reader (ACE)" class="Device"></FROM>
+<TO instance="company wide communication network" class="Communication network"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:10cm y1:32.5cm index:51</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19754" class="Triggering">
+<FROM instance="company wide communication network" class="Communication network"></FROM>
+<TO instance="time logging" class="Application service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:40</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19755" class="Triggering">
+<FROM instance="company wide communication network" class="Communication network"></FROM>
+<TO instance="customer logging" class="Application service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:7cm y1:27.5cm index:41</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19756" class="Flow">
+<FROM instance="time logging" class="Application service"></FROM>
+<TO instance="data interface" class="Application interface"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:29</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19757" class="Flow">
+<FROM instance="customer logging" class="Application service"></FROM>
+<TO instance="data interface" class="Application interface"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:30</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19758" class="Assignment">
+<FROM instance="data interface" class="Application interface"></FROM>
+<TO instance="billing" class="Application service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:28</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19759" class="Serving">
+<FROM instance="billing" class="Application service"></FROM>
+<TO instance="rental" class="Business process"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:1cm y1:12cm index:10</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19760" class="Serving">
+<FROM instance="billing" class="Application service"></FROM>
+<TO instance="billing" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:57</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19761" class="Association">
+<FROM instance="billing" class="Application service"></FROM>
+<TO instance="customer account entry" class="Data object"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:93</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19762" class="Association">
+<FROM instance="billing" class="Business service"></FROM>
+<TO instance="invoice" class="Business object"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:95</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19763" class="Aggregation">
+<FROM instance="increase profit" class="Goal"></FROM>
+<TO instance="generate profit from self-service" class="Goal"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:61</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19764" class="Aggregation">
+<FROM instance="increase profit" class="Goal"></FROM>
+<TO instance="decrease costs from classical business model" class="Goal"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:62</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19765" class="Influence">
+<FROM instance="standardization" class="Course of action"></FROM>
+<TO instance="decrease costs from classical business model" class="Goal"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:31cm y1:6.5cm index:68</ATTRIBUTE>
+<ATTRIBUTE name="Character" type="ENUMERATION">positive</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19766" class="Association">
+<FROM instance="operational excellence" class="Course of action"></FROM>
+<TO instance="decrease costs from classical business model" class="Goal"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:33cm y1:11cm index:70</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19767" class="Aggregation">
+<FROM instance="operational excellence" class="Course of action"></FROM>
+<TO instance="centralized IT system" class="Course of action"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:71</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19768" class="Aggregation">
+<FROM instance="operational excellence" class="Course of action"></FROM>
+<TO instance="standardization" class="Course of action"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:72</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19769" class="Realization">
+<FROM instance="service management" class="Capability"></FROM>
+<TO instance="standardization" class="Course of action"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:67</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19770" class="Realization">
+<FROM instance="service management" class="Capability"></FROM>
+<TO instance="self-service catalogue" class="Outcome"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:75</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19771" class="Influence">
+<FROM instance="centralized IT system" class="Course of action"></FROM>
+<TO instance="self-service catalogue" class="Outcome"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:21.5cm y1:11cm index:74</ATTRIBUTE>
+<ATTRIBUTE name="Character" type="ENUMERATION">positive</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19772" class="Influence">
+<FROM instance="self-service catalogue" class="Outcome"></FROM>
+<TO instance="generate profit from self-service" class="Goal"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:69</ATTRIBUTE>
+<ATTRIBUTE name="Character" type="ENUMERATION">positive</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19773" class="Realization">
+<FROM instance="IT operations /management" class="Capability"></FROM>
+<TO instance="centralized IT system" class="Course of action"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:81</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19774" class="Assignment">
+<FROM instance="human resources" class="Resource"></FROM>
+<TO instance="IT operations /management" class="Capability"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:22.5cm y1:14cm index:79</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19775" class="Association">
+<FROM instance="human resources" class="Resource"></FROM>
+<TO instance="expand resource pool" class="Requirement"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:23cm y1:20cm index:111</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19776" class="Assignment">
+<FROM instance="IT resources" class="Resource"></FROM>
+<TO instance="IT operations /management" class="Capability"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:28cm y1:14cm index:80</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19777" class="Association">
+<FROM instance="IT resources" class="Resource"></FROM>
+<TO instance="expand resource pool" class="Requirement"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:28cm y1:20cm index:112</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19778" class="Specialization">
+<FROM instance="client area" class="Facility"></FROM>
+<TO instance="Charlie&apos;s aircrafts" class="Facility"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:89</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19779" class="Specialization">
+<FROM instance="back office" class="Facility"></FROM>
+<TO instance="Charlie&apos;s aircrafts" class="Facility"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:87</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19780" class="Association">
+<FROM instance="diagnosis 1" class="Device"></FROM>
+<TO instance="customer runs diagnosis" class="Technology interaction"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:1.5cm y1:5cm index:103</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19781" class="Serving">
+<FROM instance="diagnosis printer" class="Device"></FROM>
+<TO instance="diagnosis 1" class="Device"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:100</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19782" class="Serving">
+<FROM instance="diagnosis printer" class="Device"></FROM>
+<TO instance="diagnosis 2" class="Device"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:101</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19783" class="Serving">
+<FROM instance="diagnosis printer" class="Device"></FROM>
+<TO instance="diagnosis 3" class="Device"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:102</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19784" class="Association">
+<FROM instance="diagnosis printer" class="Device"></FROM>
+<TO instance="diagnosis sheet" class="Artifact"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:7.5cm y1:9.5cm index:104</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19785" class="Triggering">
+<FROM instance="technology occupied" class="Technology event"></FROM>
+<TO instance="customer runs diagnosis" class="Technology interaction"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:1.5cm y1:9.5cm index:105</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19786" class="Realization">
+<FROM instance="service cataloge" class="Business service"></FROM>
+<TO instance="self-service catalogue" class="Outcome"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 1 x1:18.5cm y1:8cm index:107</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19787" class="Aggregation">
+<FROM instance="service cataloge" class="Business service"></FROM>
+<TO instance="self-service" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:114</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19788" class="Aggregation">
+<FROM instance="service cataloge" class="Business service"></FROM>
+<TO instance="billing" class="Business service"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:115</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19789" class="Association">
+<FROM instance="save capital for investments" class="Value"></FROM>
+<TO instance="increase profit" class="Goal"></TO>
+<ATTRIBUTE name="Positions" type="STRING">EDGE 0 index:109</ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19835" class="Is inside">
+<FROM instance="diagnosis 1" class="Device"></FROM>
+<TO instance="diagnosis architecture" class="Grouping"></TO>
+<ATTRIBUTE name="AutoConnect" type="STRING"></ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19836" class="Is inside">
+<FROM instance="diagnosis 3" class="Device"></FROM>
+<TO instance="diagnosis architecture" class="Grouping"></TO>
+<ATTRIBUTE name="AutoConnect" type="STRING"></ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19837" class="Is inside">
+<FROM instance="diagnosis printer" class="Device"></FROM>
+<TO instance="diagnosis architecture" class="Grouping"></TO>
+<ATTRIBUTE name="AutoConnect" type="STRING"></ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19838" class="Is inside">
+<FROM instance="customer runs diagnosis" class="Technology interaction"></FROM>
+<TO instance="diagnosis architecture" class="Grouping"></TO>
+<ATTRIBUTE name="AutoConnect" type="STRING"></ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19839" class="Is inside">
+<FROM instance="diagnosis sheet" class="Artifact"></FROM>
+<TO instance="diagnosis architecture" class="Grouping"></TO>
+<ATTRIBUTE name="AutoConnect" type="STRING"></ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19840" class="Is inside">
+<FROM instance="diagnosis 2" class="Device"></FROM>
+<TO instance="diagnosis architecture" class="Grouping"></TO>
+<ATTRIBUTE name="AutoConnect" type="STRING"></ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19841" class="Is inside">
+<FROM instance="technology occupied" class="Technology event"></FROM>
+<TO instance="diagnosis architecture" class="Grouping"></TO>
+<ATTRIBUTE name="AutoConnect" type="STRING"></ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19842" class="Is inside">
+<FROM instance="service center" class="Location"></FROM>
+<TO instance="diagnosis architecture" class="Grouping"></TO>
+<ATTRIBUTE name="AutoConnect" type="STRING"></ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19843" class="Is inside">
+<FROM instance="human resources" class="Resource"></FROM>
+<TO instance="resource pool" class="Grouping"></TO>
+<ATTRIBUTE name="AutoConnect" type="STRING"></ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19844" class="Is inside">
+<FROM instance="IT resources" class="Resource"></FROM>
+<TO instance="resource pool" class="Grouping"></TO>
+<ATTRIBUTE name="AutoConnect" type="STRING"></ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19845" class="Is inside">
+<FROM instance="expand resource pool" class="Requirement"></FROM>
+<TO instance="resource pool" class="Grouping"></TO>
+<ATTRIBUTE name="AutoConnect" type="STRING"></ATTRIBUTE>
+</CONNECTOR>
+<CONNECTOR id="con.19852" class="Is inside">
+<FROM instance="Technology interface-19849" class="Technology interface"></FROM>
+<TO instance="Grouping-19846" class="Grouping"></TO>
+<ATTRIBUTE name="AutoConnect" type="STRING"></ATTRIBUTE>
+</CONNECTOR>
+</MODEL>
+</MODELS>
+</ADOXML>

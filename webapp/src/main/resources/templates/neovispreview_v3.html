@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+	<title>EA Graph Analysis</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<script src="https://cdn.neo4jlabs.com/neovis.js/v1.5.0/neovis.js"></script>
+
+
+	<link rel="stylesheet" th:href="@{/cm2kg/js/codemirror.css}" />
+	<link rel="stylesheet" th:href="@{/cm2kg/js/neo.css}" />
+	<script th:src="@{/cm2kg/js/codemirror.js}"></script>
+	<script th:src="@{/cm2kg/js/matchbrackets.js}"></script>
+	<script th:src="@{/cm2kg/js/cypher.js}"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.6.0/split.min.js"></script>
+
+	<style>
+		.split {
+			display: flex;
+			flex-direction: row;
+		}
+
+		.gutter {
+			background-color: #eee;
+			background-repeat: no-repeat;
+			background-position: 50%;
+		}
+
+		.gutter.gutter-horizontal {
+			background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
+			cursor: col-resize;
+		}
+	</style>
+
+</head>
+
+<body onload="draw()">
+
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<a class="navbar-brand" href="#">CM2KG</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+				aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" th:href="@{/cm2kg/}">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" th:href="@{/cm2kg/upload}">Import another model</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" th:href="@{|/cm2kg/repository/graph/${uid}|}">Download .graphml</a>
+					</li>
+					<li class="nav-item">
+						<a th:text="${testAppConfigVar}" href="#"></a>
+						<a class="nav-link" th:href="@{|/cm2kg/repository/graph/${uid}|}">Share .graphml</a>
+					</li>
+				</ul>
+
+			</div>
+		</nav>
+	</header>
+
+
+
+	<main role="main" style="margin-top:55px">
+
+		<div class="row" style="margin-left: 20px; margin-right: 20px;">
+			<input type="hidden" th:value="${neovisServerUrl}" id="neovisServerUrl" />
+			<input type="hidden" th:value="${neovisUser}" id="neovisUser" />
+			<input type="hidden" th:value="${neovisPassword}" id="neovisPassword" />
+
+			<div id="split-0">
+				<div class="card mb-4 box-shadow">
+					<div class="card-header">
+						<h4 class="my-0 font-weight-normal">Alghoritms</h4>
+					</div>
+					<div class="card-body">
+						<div class="form-group">
+
+							<label for="exampleFormControlSelect1">Centralities</label>
+							<select class="form-control" id="centralityAlghoritm">
+								<option value="select">Select</option>
+								<option value="degree">Degree</option>
+								<option value="eigenvector">Eigenvector</option>
+								<option value="pagerank">Page Rank</option>
+								<option value="betweenness">Betweenness</option>
+								<option value="closeness">Closeness</option>
+							</select>
+
+							<label for="communityAlghoritm">Community Detection</label>
+							<select class="form-control" id="communityAlghoritm">
+								<option value="select">Select</option>
+								<option value="scc">Strongly Connected Components</option>
+								<option value="wcc">Weakly Connected Components</option>
+								<option value="louvain">louvain</option>
+								<option value="modularityOptimization">modularityOptimization</option>
+								<option value="labelPropagation">labelPropagation</option>
+								<option value="localClusteringCoefficient">localClusteringCoefficient</option>
+							</select>
+
+							<label for="exampleFormControlSelect3">Similarity</label>
+							<select class="form-control" id="similarityAlghoritm">
+								<option value="select">Select</option>
+								<option value="nodeSimilarity">Node Similarity</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+
+							<label for="alghoritmQuery">Alghorithm query:</label>
+							<textarea rows="20" cols="50" class="form-control" id="alghoritmQuery"></textarea>
+
+						</div>
+						<input type="submit" value="Execute" id="reloadAlgo" onclick="drawAlgorithm2(labelConf)">
+
+					</div>
+				</div>
+
+
+			</div>
+
+			<div id="split-1">
+				<div class="card mb-4 box-shadow">
+					<div class="card-header">
+						<h4 class="my-0 font-weight-normal">Graph preview</h4>
+					</div>
+					<div class="card-body">
+						<div id="viz" style="height:900px"></div>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="split-2">
+				<div class="card mb-4 box-shadow">
+					<div class="card-header">
+						<h4 class="my-0 font-weight-normal">Configuration</h4>
+					</div>
+					<div class="card-body">
+						<div class="form-group">
+							<label for="caption">Caption</label>
+							<input type="text" class="form-control" id="caption" placeholder="Enter property name"
+								value="Label">
+
+							<label for="size">Size</label>
+							<input type="text" class="form-control" id="size" placeholder="Enter property name"
+								value="score">
+
+							<label for="community">Community (node color)</label>
+							<input type="text" class="form-control" id="community" placeholder="Enter property name"
+								value="ClassName">
+
+							<label for="size">Node size</label>
+							<input type="text" class="form-control" id="size" placeholder="Enter property name"
+								value="20">
+
+							<label for="font">Font</label>
+							<input type="text" class="form-control" id="font" placeholder="Enter property name"
+								value="19px arial red">
+
+							<label for="thickness">Thickness</label>
+							<input type="text" class="form-control" id="thickness" placeholder="Enter property name"
+								value="1">
+
+							<label for="arrows">Arrows</label>
+							<select class="form-control" id="arrows">
+								<option>true</option>
+								<option>false</option>
+							</select>
+
+							<label for="hierarchical">Hierarchical</label>
+							<select class="form-control" id="hierarchical">
+								<option>false</option>
+								<option>true</option>
+							</select>
+
+							<label for="hierarchical_sort_method">Hierarchical_sort_method</label>
+							<select class="form-control" id="hierarchical_sort_method">
+								<option>hubsize</option>
+								<option>directed</option>
+							</select>
+
+							<label for="cypher">Cypher query:</label>
+							<textarea rows="4" cols="50" id="cypher" class="form-control">
+MATCH (n)-[r]->(m)
+optional match (a)
+where not (a)--()
+RETURN n,r,m,a
+							</textarea>
+
+						</div>
+						<input type="submit" value="Submit" id="reload" onclick="draw()">
+
+					</div>
+				</div>
+
+
+			</div>
+
+		</div>
+		<main>
+</body>
+
+<script type="text/javascript">
+
+	Split(['#split-0', '#split-1', '#split-2'], {
+		minSize: 50,
+		sizes: [25, 50, 25]
+	})
+
+
+	//<textarea rows="4" cols="50" id="cypher" class="form-control">
+	// define config car
+	// instantiate nodevis object
+	// draw
+
+	window.onload = function () {
+		var mime = 'application/x-cypher-query';
+		// get mime type
+		if (window.location.href.indexOf('mime=') > -1) {
+			mime = window.location.href.substr(window.location.href.indexOf('mime=') + 5);
+		}
+		window.editorAlghoritm = CodeMirror.fromTextArea(document.getElementById('alghoritmQuery'), {
+			mode: mime,
+			indentWithTabs: true,
+			smartIndent: true,
+			lineNumbers: true,
+			matchBrackets: true,
+			autofocus: true,
+			theme: 'neo'
+		});
+		window.editorCypher = CodeMirror.fromTextArea(document.getElementById('cypher'), {
+			mode: mime,
+			indentWithTabs: true,
+			smartIndent: true,
+			lineNumbers: true,
+			matchBrackets: true,
+			autofocus: true,
+			theme: 'neo'
+		});
+
+		draw();
+	};
+
+	/*var editor1 = CodeMirror.fromTextArea(document.getElementById('alghoritmQuery'), {
+		mode: "application/x-cypher-query",
+		lineNumbers: true,
+		matchBrackets: true,
+		theme: '3024-night'
+	  });
+	*/
+
+	console.log(NeoVis.NEOVIS_DEFAULT_CONFIG);
+
+	var viz;
+
+	function draw(labelConf) {
+		console.log(labelConf);
+
+		var config = {
+			container_id: "viz",
+			server_url: $("#neovisServerUrl").val(),
+			server_user: $("#neovisUser").val(),
+			server_password: $("#neovisPassword").val(),
+			labels: {
+				"Character": {
+				},
+				[NeoVis.NEOVIS_DEFAULT_CONFIG]: {
+					"caption": $("#caption").val(),
+					"size": $("#size").val(),
+					"group": $("#community").val(),
+					"font": $("#font").val()
+				}
+			},
+			relationships: {
+				"INTERACTS": {
+					"thickness": "weight",
+					"caption": false
+				},
+				[NeoVis.NEOVIS_DEFAULT_CONFIG]: {
+					"caption": $("#caption").val(),
+					"thickness": $("#thickness").val(),
+					"font": $("#font").val()
+				}
+			},
+			arrows: ($("#arrows").val() === 'true'),
+			hierarchical: ($("#hierarchical").val() === 'true'),
+			hierarchical_sort_method: $("#hierarchical_sort_method").val(),
+			initial_cypher: window.editorCypher.getValue()
+		};
+
+		viz = new NeoVis.default(config);
+		viz.render();
+		console.log(viz);
+
+
+	}
+	var labelConf = [];
+
+	function addConfig() {
+		var driver = neo4j.driver(
+			$("#neovisServerUrl").val(),
+			neo4j.auth.basic($("#neovisUser").val(), $("#neovisPassword").val())
+		);
+
+		labelConf = [];
+
+		var communityCounter = 0;
+		var session = driver.session();
+		session
+			.run("MATCH (n) RETURN distinct labels(n)[0] as label", {
+
+			})
+			.subscribe({
+				onKeys: keys => {
+					console.log(keys)
+				},
+				onNext: record => {
+					console.log(record.get('label'));
+					if (record.get('label')) {
+
+						var communityResult;
+						/*if(record.get('community'))
+							communityResult = $("#community").val();
+						else
+							communityResult = communityCounter;
+						*/
+						//TO FIX THIS
+						communityResult = $("#community").val();
+
+						labelConf[record.get('label')] = {
+							"caption": $("#caption").val(),
+							"size": $("#size").val()//,
+							//"community": communityResult // Math.floor(Math.random() * 20) + 0  //"#" + ((1<<24)*Math.random() | 0).toString(16)
+						};
+					}
+					communityCounter++;
+
+				},
+				onCompleted: () => {
+					session.close() // returns a Promise
+					driver.close();
+					console.log(labelConf);
+
+					console.log(JSON.stringify(labelConf));
+					draw(labelConf);
+				},
+				onError: error => {
+					console.log(error)
+				}
+			});
+	}
+
+
+	function drawAlgorithm2() {
+
+		var fullQuery = window.editorAlghoritm.getValue();
+		var commands = fullQuery.split(';');
+
+		//first delete existing graph if there is some
+		$.ajax({
+			type: "POST",
+			url: '/cm2kg/neo4j/query',
+			contentType: "application/json",
+			data: "CALL gds.graph.drop('in-memory-graph-1661952531320');",
+			success: function (response) {
+			},
+			error: function () {
+			}
+		});
+
+		console.log(commands[0]);
+		$.ajax({
+			type: "POST",
+			url: '/cm2kg/neo4j/query',
+			contentType: "application/json",
+			data: commands[0],
+			success: function (response) {
+				console.log(commands[1]);
+				$.ajax({
+					type: "POST",
+					url: '/cm2kg/neo4j/query',
+					contentType: "application/json",
+					data: commands[1],
+					success: function (response) {
+						console.log(commands[2]);
+						$.ajax({
+							type: "POST",
+							url: '/cm2kg/neo4j/query',
+							contentType: "application/json",
+							data: commands[2],
+							success: function (response) {
+								draw();
+							},
+							error: function () {
+
+								alert("Error executing following command: " + commands[2]);
+							}
+						});
+					},
+					error: function () {
+
+						alert("Error executing following command: " + commands[1]);
+					}
+				});
+			},
+			error: function () {
+
+				alert("Error executing following command: " + commands[0]);
+			}
+		});
+		/*
+		var commands = fullQuery.split(';');
+		for (const cmd of commands) {
+			console.log(cmd);
+			var config = {
+				container_id: "viz",
+				server_url: $("#neovisServerUrl").val(),
+				server_user: $("#neovisUser").val(),
+				server_password: $("#neovisPassword").val(),
+				labels: {
+					"Character": {
+					},
+					[NeoVis.NEOVIS_DEFAULT_CONFIG]: {
+						"caption": $("#caption").val(),
+						"size": $("#size").val(),
+						"community": $("#community").val(),
+						"font": $("#font").val()
+					}
+				},
+				relationships: {
+					"INTERACTS": {
+						"thickness": "weight",
+						"caption": false
+					},
+					[NeoVis.NEOVIS_DEFAULT_CONFIG]: {
+						"caption": $("#caption").val(),
+						"thickness": $("#thickness").val(),
+						"font": $("#font").val()
+					}
+				},
+				arrows: ($("#arrows").val() === 'true'),
+				hierarchical: ($("#hierarchical").val() === 'true'),
+				hierarchical_sort_method: $("#hierarchical_sort_method").val(),
+				initial_cypher: cmd
+			};
+
+			viz = new NeoVis.default(config);
+			viz.render();
+			console.log(viz);
+		}
+
+		draw();*/
+	}
+
+	function drawAlgorithm() {
+		//$("#alghoritmQuery").val();
+
+		var driver = neo4j.driver(
+			$("#neovisServerUrl").val(),
+			neo4j.auth.basic($("#neovisUser").val(), $("#neovisPassword").val())
+		);
+
+		var session = driver.session();
+		session
+			.run($("#alghoritmQuery").val(), {
+
+			})
+			.subscribe({
+				onKeys: keys => {
+					console.log(keys)
+				},
+				onNext: record => {
+					//console.log(record.get('name'))
+				},
+				onCompleted: () => {
+					session.close() // returns a Promise
+					driver.close();
+					addConfig();
+
+				},
+				onError: error => {
+					console.log(error)
+				}
+			});
+	}
+
+	//initial load
+	//drawAlgorithm();
+</script>
+
+
+<script type="text/javascript">
+
+	/*
+	:param limit => ( 42);
+	:param config => ({relationshipWeightProperty: null,writeProperty: 'score'});
+	:param graphConfig => ({nodeProjection: '*',relationshipProjection: {relType: {type: '*',orientation: 'NATURAL',properties: {}}}});
+	:param communityNodeLimit => ( 10);*/
+	var degree =
+		`CALL gds.graph.project('in-memory-graph-1661952531320', '*', {relType: {type: '*',orientation: 'NATURAL',properties: {}}}, {});
+CALL gds.degree.write('in-memory-graph-1661952531320', {relationshipWeightProperty: null,writeProperty: 'score'});
+CALL gds.graph.drop('in-memory-graph-1661952531320');
+`;
+
+
+	var eigenvector =
+		`CALL gds.graph.project('in-memory-graph-1661952531320', '*', {relType: {type: '*',orientation: 'NATURAL',properties: {}}}, {});
+CALL gds.eigenvector.write('in-memory-graph-1661952531320', {relationshipWeightProperty: null,writeProperty: 'score'});
+CALL gds.graph.drop('in-memory-graph-1661952531320');
+`;
+	var pagerank =
+		`CALL gds.graph.project('in-memory-graph-1661952531320', '*', {relType: {type: '*',orientation: 'NATURAL',properties: {}}}, {});
+CALL gds.pageRank.write('in-memory-graph-1661952531320', {relationshipWeightProperty: null,writeProperty: 'score'});
+CALL gds.graph.drop('in-memory-graph-1661952531320');
+`;
+
+	var betweenness =
+		`CALL gds.graph.project('in-memory-graph-1661952531320', '*', {relType: {type: '*',orientation: 'NATURAL',properties: {}}}, {});
+CALL gds.betweenness.write('in-memory-graph-1661952531320', {relationshipWeightProperty: null,writeProperty: 'score'});
+CALL gds.graph.drop('in-memory-graph-1661952531320');
+`;
+
+	var closeness =
+		`CALL gds.graph.project('in-memory-graph-1661952531320', '*', {relType: {type: '*',orientation: 'NATURAL',properties: {}}}, {});
+CALL gds.beta.closeness.write('in-memory-graph-1661952531320', {relationshipWeightProperty: null,writeProperty: 'score'});
+CALL gds.graph.drop('in-memory-graph-1661952531320');
+`;
+
+
+	var louvain =
+		`CALL gds.graph.project('in-memory-graph-1661952531320', '*', {relType: {type: '*',orientation: 'UNDIRECTED',properties: {}}}, {});
+CALL gds.louvain.write('in-memory-graph-1661952531320', {relationshipWeightProperty: null,writeProperty: 'community'});
+CALL gds.graph.drop('in-memory-graph-1661952531320');
+`;
+
+	var modularityOptimization =
+		`CALL gds.graph.project('in-memory-graph-1661952531320', '*', {relType: {type: '*',orientation: 'UNDIRECTED',properties: {}}}, {});
+CALL gds.beta.modularityOptimization.write('in-memory-graph-1661952531320', {relationshipWeightProperty: null,writeProperty: 'community'});
+CALL gds.graph.drop('in-memory-graph-1661952531320');
+`;
+
+	var labelPropagation =
+		`CALL gds.graph.project('in-memory-graph-1661952531320', '*', {relType: {type: '*',orientation: 'UNDIRECTED',properties: {}}}, {});
+CALL gds.labelPropagation.write('in-memory-graph-1661952531320', {relationshipWeightProperty: null,writeProperty: 'community'});
+CALL gds.graph.drop('in-memory-graph-1661952531320');
+`;
+
+
+	var localClusteringCoefficient =
+		`CALL gds.graph.project('in-memory-graph-1661952531320', '*', {relType: {type: '*',orientation: 'UNDIRECTED',properties: {}}}, {});
+CALL gds.localClusteringCoefficient.write('in-memory-graph-1661952531320', {relationshipWeightProperty: null,writeProperty: 'community'});
+CALL gds.graph.drop('in-memory-graph-1661952531320');
+`;
+
+	var scc =
+		`CALL gds.graph.project('in-memory-graph-1661952531320', '*', {relType: {type: '*',orientation: 'UNDIRECTED',properties: {}}}, {});
+CALL gds.alpha.scc.write('in-memory-graph-1661952531320', {relationshipWeightProperty: null,writeProperty: 'community'});
+CALL gds.graph.drop('in-memory-graph-1661952531320');
+`;
+
+	var wcc =
+		`CALL gds.graph.project('in-memory-graph-1661952531320', '*', {relType: {type: '*',orientation: 'UNDIRECTED',properties: {}}}, {});
+CALL gds.wcc.write('in-memory-graph-1661952531320', {relationshipWeightProperty: null,writeProperty: 'community'});
+CALL gds.graph.drop('in-memory-graph-1661952531320');
+`;
+
+	var nodeSimilarity =
+		`CALL gds.graph.project('in-memory-graph-1661952531320', '*', {relType: {type: '*',orientation: 'NATURAL',properties: {}}}, {});
+CALL gds.nodeSimilarity.write('in-memory-graph-1661952531320', {similarityMetric: 'Jaccard',similarityCutoff: 0.1,degreeCutoff: 1,writeProperty: 'score',writeRelationshipType: 'SIMILAR'});
+CALL gds.graph.drop('in-memory-graph-1661952531320');
+`;
+
+	$("#alghoritmQuery").val(degree);
+
+	$('#centralityAlghoritm').on('change', function () {
+
+		if (this.value === "degree")
+			window.editorAlghoritm.getDoc().setValue(degree); //$("#alghoritmQuery").val(degree);
+		if (this.value === "eigenvector")
+			window.editorAlghoritm.getDoc().setValue(eigenvector);//$("#alghoritmQuery").val(eigenvector);
+		if (this.value === "pagerank")
+			window.editorAlghoritm.getDoc().setValue(pagerank);//$("#alghoritmQuery").val(pagerank);
+		if (this.value === "betweenness")
+			window.editorAlghoritm.getDoc().setValue(betweenness);//$("#alghoritmQuery").val(betweenness);
+		if (this.value === "closeness")
+			window.editorAlghoritm.getDoc().setValue(closeness);//$("#alghoritmQuery").val(closeness);
+	});
+
+
+	$('#communityAlghoritm').on('change', function () {
+		if (this.value === "scc")
+			$("#alghoritmQuery").val(scc);
+		if (this.value === "wcc")
+			$("#alghoritmQuery").val(wcc);
+		if (this.value === "louvain")
+			$("#alghoritmQuery").val(louvain);
+		if (this.value === "modularityOptimization")
+			$("#alghoritmQuery").val(modularityOptimization);
+		if (this.value === "labelPropagation")
+			$("#alghoritmQuery").val(labelPropagation);
+		if (this.value === "localClusteringCoefficient")
+			$("#alghoritmQuery").val(localClusteringCoefficient);
+
+	});
+
+	$('#similarityAlghoritm').on('change', function () {
+
+		if (this.value === "nodeSimilarity")
+			$("#alghoritmQuery").val(nodeSimilarity);
+	});
+
+	/*
+		`CALL gds.alpha.degree.write({
+	  nodeProjection: '*',
+	  relationshipProjection: {
+		relType: {
+		  type: '*',
+		  orientation: 'REVERSE',
+		  properties: {}
+		}
+	  },
+	  relationshipWeightProperty: null,
+	  writeProperty: 'score'
+	});
+	`;
+
+
+		var eigenvector =
+			`CALL gds.alpha.eigenvector.write({
+	  nodeProjection: '*',
+	  relationshipProjection: {
+		relType: {
+		  type: '*',
+		  orientation: 'NATURAL',
+		  properties: {}
+		}
+	  },
+	  maxIterations: 20,
+	  normalization: 'none',
+	  writeProperty: 'score'
+	});
+	`;
+		var pagerank =
+			`CALL gds.pageRank.write({
+	  nodeProjection: '*',
+	  relationshipProjection: {
+		relType: {
+		  type: '*',
+		  orientation: 'NATURAL',
+		  properties: {}
+		}
+	  },
+	  relationshipWeightProperty: null,
+	  dampingFactor: 0.85,
+	  maxIterations: 20,
+	  writeProperty: 'score'
+	});
+	`;
+
+		var betweenness =
+			`CALL gds.betweenness.write({
+	  nodeProjection: '*',
+	  relationshipProjection: {
+		relType: {
+		  type: '*',
+		  orientation: 'NATURAL',
+		  properties: {}
+		}
+	  },
+	  writeProperty: 'score'
+	});
+
+	`;
+
+		var closeness =
+			`CALL gds.alpha.closeness.write({
+	  nodeProjection: '*',
+	  relationshipProjection: {
+		relType: {
+		  type: '*',
+		  orientation: 'NATURAL',
+		  properties: {}
+		}
+	  },
+	  writeProperty: 'score'
+	});
+	`;
+
+
+		var louvain =
+			`CALL gds.louvain.write({
+	  nodeProjection: '*',
+	  relationshipProjection: {
+		relType: {
+		  type: '*',
+		  orientation: 'UNDIRECTED',
+		  properties: {}
+		}
+	  },
+	  relationshipWeightProperty: null,
+	  includeIntermediateCommunities: false,
+	  seedProperty: '',
+	  writeProperty: 'community'
+	});
+	`;
+
+		var modularityOptimization =
+			`CALL gds.beta.modularityOptimization.write({
+	  nodeProjection: '*',
+	  relationshipProjection: {
+		relType: {
+		  type: '*',
+		  orientation: 'UNDIRECTED',
+		  properties: {}
+		}
+	  },
+	  relationshipWeightProperty: null,
+	  seedProperty: '',
+	  maxIterations: 10,
+	  tolerance: 0.0001,
+	  writeProperty: 'community'
+	});
+	`;
+
+		var labelPropagation =
+			`CALL gds.labelPropagation.write({
+	  nodeProjection: '*',
+	  relationshipProjection: {
+		relType: {
+		  type: '*',
+		  orientation: 'UNDIRECTED',
+		  properties: {}
+		}
+	  },
+	  relationshipWeightProperty: null,
+	  writeProperty: 'community'
+	});
+	`;
+
+
+		var localClusteringCoefficient =
+			`CALL gds.localClusteringCoefficient.write({
+	  nodeProjection: '*',
+	  relationshipProjection: {
+		relType: {
+		  type: '*',
+		  orientation: 'UNDIRECTED',
+		  properties: {}
+		}
+	  },
+	  writeProperty: 'community'
+	});
+	`;
+
+	var scc =
+			`CALL gds.alpha.scc.write({
+	  nodeProjection: '*',
+	  relationshipProjection: {
+		relType: {
+		  type: '*',
+		  orientation: 'UNDIRECTED',
+		  properties: {}
+		}
+	  },
+	  writeProperty: 'community'
+	});
+	`;
+
+	var wcc =
+			`CALL gds.wcc.write({
+	  nodeProjection: '*',
+	  relationshipProjection: {
+		relType: {
+		  type: '*',
+		  orientation: 'UNDIRECTED',
+		  properties: {}
+		}
+	  },
+	  writeProperty: 'community'
+	});
+	`;
+
+	var nodeSimilarity =
+			`CALL gds.nodeSimilarity.write({
+		nodeProjection: '*',
+	  relationshipProjection: {
+		relType: {
+		  type: '*',
+		  orientation: 'REVERSE',
+		  properties: {}
+		}
+	  },
+		writeRelationshipType: 'SIMILAR',
+		writeProperty: 'score'
+	});
+	`;
+	*/
+
+
+
+</script>
+
+</html>

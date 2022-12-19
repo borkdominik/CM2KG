@@ -1,0 +1,253 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>at.ac.tuwien.big.msm.cmgba.graphml</groupId>
+	<artifactId>at.ac.tuwien.big.msm.cmgba.graphml</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.eclipse.uml2</groupId>
+			<artifactId>org.eclipse.uml2.uml</artifactId>
+			<version>3.1.0.v201006071150</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.neo4j</groupId>
+			<artifactId>neo4j</artifactId>
+			<version>4.2.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.neo4j</groupId>
+			<artifactId>neo4j-bolt</artifactId>
+			<version>4.2.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.neo4j.driver</groupId>
+			<artifactId>neo4j-java-driver</artifactId>
+			<version>4.2.0</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>com.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>5.3</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.eclipse.emf/org.eclipse.emf.ecore -->
+		<dependency>
+		    <groupId>org.eclipse.emf</groupId>
+		    <artifactId>org.eclipse.emf.ecore</artifactId>
+		    <version>2.27.0</version>
+		</dependency>
+		
+		<!-- ArchiMate specific dependencies -->
+		<dependency>
+		    <groupId>com.archimatetool.jdom</groupId>
+		    <artifactId>com.archimatetool.jdom</artifactId>
+		    <version>1.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.archimatetool.model</groupId>
+		    <artifactId>com.archimatetool.model</artifactId>
+		    <version>1.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.archimatetool.editor</groupId>
+		    <artifactId>com.archimatetool.editor</artifactId>
+		    <version>1.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.opengroup.archimate.xmlexchange</groupId>
+		    <artifactId>org.opengroup.archimate.xmlexchange</artifactId>
+		    <version>1.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.archimatetool.widgets</groupId>
+		    <artifactId>com.archimatetool.widgets</artifactId>
+		    <version>1.0</version>
+		</dependency>
+		<!-- ArchiMate specific dependencies -->
+		
+		<!-- test ecore model -->
+		<dependency>
+		    <groupId>at.ac.tuwien.big.msm.cmgba.atl</groupId>
+		    <artifactId>at.ac.tuwien.big.msm.cmgba.atl</artifactId>
+		    <version>1.0</version>
+		</dependency>
+		<!-- test ecore model -->
+		
+		
+		<!-- https://mvnrepository.com/artifact/org.jdom/jdom2 -->
+		<dependency>
+		    <groupId>org.jdom</groupId>
+		    <artifactId>jdom2</artifactId>
+		    <version>2.0.6.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.eclipse/gef -->
+		<dependency>
+		    <groupId>org.eclipse</groupId>
+		    <artifactId>gef</artifactId>
+		    <version>3.2.100-v20070620</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.eclipse.swt/org.eclipse.swt.win32.win32.x86_64 -->
+		<dependency>
+		    <groupId>org.eclipse.swt</groupId>
+		    <artifactId>org.eclipse.swt.win32.win32.x86_64</artifactId>
+		    <version>4.3</version>
+		</dependency>
+
+
+	</dependencies>
+	
+	
+	<build>
+		<sourceDirectory>src-gen</sourceDirectory>
+		<plugins>
+
+				<plugin>
+		            <groupId>org.codehaus.mojo</groupId>
+		            <artifactId>build-helper-maven-plugin</artifactId>
+		            <version>3.2.0</version>
+		            <executions>
+		                <execution>
+		                    <phase>generate-sources</phase>
+		                    <goals>
+		                        <goal>add-source</goal>
+		                    </goals>
+		                    <configuration>
+		                        <sources>
+		                            <source>src</source>
+		                        </sources>
+		                    </configuration>
+		                </execution>
+		            </executions>
+		        </plugin>
+				
+				<plugin>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.8.1</version>
+					<configuration>
+						<source>1.8</source>
+						<target>1.8</target>
+					</configuration>
+				</plugin>
+				
+				
+				<plugin>
+				    <groupId>org.apache.maven.plugins</groupId>
+				    <artifactId>maven-install-plugin</artifactId>
+				    <version>2.5.2</version>
+				    <executions>
+				        <execution>
+				            <id>install-external-1</id>
+				            <phase>clean</phase>
+				            <configuration>
+				                <file>${project.basedir}/com.archimatetool.jdom.jar</file>
+				                <repositoryLayout>default</repositoryLayout>
+				                <groupId>com.archimatetool.jdom</groupId>
+				                <artifactId>com.archimatetool.jdom</artifactId>
+				                <version>1.0</version>
+				                <packaging>jar</packaging>
+				                <generatePom>true</generatePom>
+				            </configuration>
+				            <goals>
+				                <goal>install-file</goal>
+				            </goals>
+				        </execution>
+						
+						<execution>
+				            <id>install-external-2</id>
+				            <phase>clean</phase>
+				            <configuration>
+				                <file>${project.basedir}/com.archimatetool.model.jar</file>
+				                <repositoryLayout>default</repositoryLayout>
+				                <groupId>com.archimatetool.model</groupId>
+				                <artifactId>com.archimatetool.model</artifactId>
+				                <version>1.0</version>
+				                <packaging>jar</packaging>
+				                <generatePom>true</generatePom>
+				            </configuration>
+				            <goals>
+				                <goal>install-file</goal>
+				            </goals>
+				        </execution>
+	
+						<execution>
+				            <id>install-external-3</id>
+				            <phase>clean</phase>
+				            <configuration>
+				                <file>${project.basedir}/com.archimatetool.editor.jar</file>
+				                <repositoryLayout>default</repositoryLayout>
+				                <groupId>com.archimatetool.editor</groupId>
+				                <artifactId>com.archimatetool.editor</artifactId>
+				                <version>1.0</version>
+				                <packaging>jar</packaging>
+				                <generatePom>true</generatePom>
+				            </configuration>
+				            <goals>
+				                <goal>install-file</goal>
+				            </goals>
+				        </execution>
+						
+						<execution>
+				            <id>install-external-4</id>
+				            <phase>clean</phase>
+				            <configuration>
+				                <file>${project.basedir}/org.opengroup.archimate.xmlexchange.jar</file>
+				                <repositoryLayout>default</repositoryLayout>
+				                <groupId>org.opengroup.archimate.xmlexchange</groupId>
+				                <artifactId>org.opengroup.archimate.xmlexchange</artifactId>
+				                <version>1.0</version>
+				                <packaging>jar</packaging>
+				                <generatePom>true</generatePom>
+				            </configuration>
+				            <goals>
+				                <goal>install-file</goal>
+				            </goals>
+				        </execution>
+						<execution>
+				            <id>install-external-5</id>
+				            <phase>clean</phase>
+				            <configuration>
+				                <file>${project.basedir}/com.archimatetool.widgets.jar</file>
+				                <repositoryLayout>default</repositoryLayout>
+				                <groupId>com.archimatetool.widgets</groupId>
+				                <artifactId>com.archimatetool.widgets</artifactId>
+				                <version>1.0</version>
+				                <packaging>jar</packaging>
+				                <generatePom>true</generatePom>
+				            </configuration>
+				            <goals>
+				                <goal>install-file</goal>
+				            </goals>
+				        </execution>
+	
+						<execution>
+				            <id>install-external-6</id>
+				            <phase>clean</phase>
+				            <configuration>
+				                <file>${project.basedir}/at.ac.tuwien.big.msm.cmgba.atl.jar</file>
+				                <repositoryLayout>default</repositoryLayout>
+				                <groupId>at.ac.tuwien.big.msm.cmgba.atl</groupId>
+				                <artifactId>at.ac.tuwien.big.msm.cmgba.atl</artifactId>
+				                <version>1.0</version>
+				                <packaging>jar</packaging>
+				                <generatePom>true</generatePom>
+				            </configuration>
+				            <goals>
+				                <goal>install-file</goal>
+				            </goals>
+				        </execution>
+				    </executions>
+				</plugin>
+				
+				
+			</plugins>
+		
+	</build>
+</project>
