@@ -283,7 +283,7 @@ public class Archimate2GraphML extends Ecore2GraphML {
 
 			edge.setName(((INameable) source).getName());
 			edge.setSource(
-					(ConnectableElement) getObjectById(getObjectID(((IArchimateRelationship) source).getTarget())));
+					(ConnectableElement) getObjectById(getObjectID(((IArchimateRelationship) source).getSource())));
 		} else {
 			edge.setName(ref.eClass().getName());
 			edge.setSource((ConnectableElement) getObjectById(getObjectID(source)));
