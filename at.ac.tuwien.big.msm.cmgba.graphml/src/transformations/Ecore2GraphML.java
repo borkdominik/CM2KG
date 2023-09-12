@@ -116,6 +116,21 @@ public class Ecore2GraphML {
 			archimateLayer.setValue("IPhysicalElement");
 		}
 		n.getDataAttributes().add(archimateLayer);
+		
+		// adding custum properties
+		EContentsEList<?> props = (EContentsEList<?>) e.eContents();
+		if (props != null) {
+			props.forEach(p-> {
+				Property prop =  (Property) p;
+				Data a = graphFactory.createData();
+				String propKey = prop.getKey();
+				String propValue = prop.getValue();
+				a.setKey(propKey);
+				a.setValue(propValue);
+				
+				n.getDataAttributes().add(a);
+			});
+		}
 
 		List<EAttribute> attributes = e.eClass().getEAllAttributes();
 		for (int i = 0; i < attributes.size(); i++) {
