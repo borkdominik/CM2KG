@@ -11,6 +11,7 @@ import org.eclipse.emf.common.util.TreeIterator;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EReference;
+import org.eclipse.emf.ecore.util.EContentsEList;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 
 import com.archimatetool.model.IApplicationElement;
@@ -18,6 +19,7 @@ import com.archimatetool.model.IBusinessElement;
 import com.archimatetool.model.IMotivationElement;
 import com.archimatetool.model.IPhysicalElement;
 import com.archimatetool.model.ITechnologyElement;
+import com.archimatetool.model.impl.Property;
 import at.ac.tuwien.big.msm.cmgba.graphml.ConnectableElement;
 import at.ac.tuwien.big.msm.cmgba.graphml.Data;
 import at.ac.tuwien.big.msm.cmgba.graphml.Edge;
